@@ -1,0 +1,9 @@
+# # PortInOrderListOrderListRejectReasonList
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**reject_reason_item** | [**\OpenAPI\Client\Model\PortInOrderListOrderListRejectReasonListRejectReasonItem[]**](PortInOrderListOrderListRejectReasonListRejectReasonItem.md) |  | [optional]
+
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

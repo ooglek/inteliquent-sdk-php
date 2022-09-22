@@ -1,0 +1,12 @@
+# # ResponseSelectAuthorization
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**success** | **bool** |  | [optional]
+**reason** | **string** |  | [optional]
+**detail** | **string** |  | [optional]
+**auth_config** | [**\OpenAPI\Client\Model\ResponseSelectAuthorizationAuthConfig**](ResponseSelectAuthorizationAuthConfig.md) |  | [optional]
+
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

@@ -1,0 +1,11 @@
+# # InlineResponse20048
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**status_code** | **string** | 200 | [optional]
+**status** | **string** | success response | [optional]
+**customer_ocn** | [**\OpenAPI\Client\Model\InlineResponse20048CustomerOcn[]**](InlineResponse20048CustomerOcn.md) |  | [optional]
+
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)
