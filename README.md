@@ -1170,8 +1170,6 @@ Class | Method | HTTP request | Description
 - [ResponseTnFeatureMessageList](docs/Model/ResponseTnFeatureMessageList.md)
 - [ResponseTnFeatureMessageListTnFeatureList](docs/Model/ResponseTnFeatureMessageListTnFeatureList.md)
 - [ResponseTnFeatureMessageListTnFeatureListTnFeatureItem](docs/Model/ResponseTnFeatureMessageListTnFeatureListTnFeatureItem.md)
-- [ResponseTnInventoryCoverage](docs/Model/ResponseTnInventoryCoverage.md)
-- [ResponseTnInventoryCoverageTnInventoryCoverageList](docs/Model/ResponseTnInventoryCoverageTnInventoryCoverageList.md)
 - [ResponseTnPortOutPin](docs/Model/ResponseTnPortOutPin.md)
 - [ResponseTnPortOutPinPortOutPinList](docs/Model/ResponseTnPortOutPinPortOutPinList.md)
 - [ResponseTnPortOutPinPortOutPinListPortOutPinItem](docs/Model/ResponseTnPortOutPinPortOutPinListPortOutPinItem.md)

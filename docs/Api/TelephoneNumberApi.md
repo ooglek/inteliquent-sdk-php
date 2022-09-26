@@ -588,7 +588,7 @@ Name | Type | Description  | Notes
 ## `tnInventoryCoveragePost()`
 
 ```php
-tnInventoryCoveragePost($payload): \OpenAPI\Client\Model\ResponseTnInventoryCoverage
+tnInventoryCoveragePost($payload): object
 ```
 
 Retrieve Telephone Number Inventory Coverage
@@ -632,7 +632,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ResponseTnInventoryCoverage**](../Model/ResponseTnInventoryCoverage.md)
+**object**
 
 ### Authorization
 

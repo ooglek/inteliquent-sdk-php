@@ -3671,7 +3671,7 @@ class TelephoneNumberApi
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ResponseTnInventoryCoverage|\OpenAPI\Client\Model\InlineResponse40814|\OpenAPI\Client\Model\InlineResponse40918|\OpenAPI\Client\Model\InlineResponse4145|\OpenAPI\Client\Model\InlineResponse430|\OpenAPI\Client\Model\InlineResponse431
+     * @return object|\OpenAPI\Client\Model\InlineResponse40814|\OpenAPI\Client\Model\InlineResponse40918|\OpenAPI\Client\Model\InlineResponse4145|\OpenAPI\Client\Model\InlineResponse430|\OpenAPI\Client\Model\InlineResponse431
      */
     public function tnInventoryCoveragePost($payload)
     {
@@ -3688,7 +3688,7 @@ class TelephoneNumberApi
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ResponseTnInventoryCoverage|\OpenAPI\Client\Model\InlineResponse40814|\OpenAPI\Client\Model\InlineResponse40918|\OpenAPI\Client\Model\InlineResponse4145|\OpenAPI\Client\Model\InlineResponse430|\OpenAPI\Client\Model\InlineResponse431, HTTP status code, HTTP response headers (array of strings)
+     * @return array of object|\OpenAPI\Client\Model\InlineResponse40814|\OpenAPI\Client\Model\InlineResponse40918|\OpenAPI\Client\Model\InlineResponse4145|\OpenAPI\Client\Model\InlineResponse430|\OpenAPI\Client\Model\InlineResponse431, HTTP status code, HTTP response headers (array of strings)
      */
     public function tnInventoryCoveragePostWithHttpInfo($payload)
     {
@@ -3731,14 +3731,14 @@ class TelephoneNumberApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ResponseTnInventoryCoverage' === '\SplFileObject') {
+                    if ('object' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ResponseTnInventoryCoverage', []),
+                        ObjectSerializer::deserialize($content, 'object', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -3804,7 +3804,7 @@ class TelephoneNumberApi
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ResponseTnInventoryCoverage';
+            $returnType = 'object';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3822,7 +3822,7 @@ class TelephoneNumberApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ResponseTnInventoryCoverage',
+                        'object',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3904,7 +3904,7 @@ class TelephoneNumberApi
      */
     public function tnInventoryCoveragePostAsyncWithHttpInfo($payload)
     {
-        $returnType = '\OpenAPI\Client\Model\ResponseTnInventoryCoverage';
+        $returnType = 'object';
         $request = $this->tnInventoryCoveragePostRequest($payload);
 
         return $this->client
