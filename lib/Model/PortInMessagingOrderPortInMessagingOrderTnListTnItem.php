@@ -69,7 +69,7 @@ class PortInMessagingOrderPortInMessagingOrderTnListTnItem implements ModelInter
         'auth_date' => '\DateTime',
         'account_pin' => 'string',
         'tn_feature' => '\OpenAPI\Client\Model\PortInMessagingOrderPortInMessagingOrderTnListTnFeature',
-        'end_user' => '\OpenAPI\Client\Model\PortInOrderPortInOrderTnListEndUser'
+        'end_user' => '\OpenAPI\Client\Model\PortInMessagingOrderPortInMessagingOrderTnListEndUser'
     ];
 
     /**
@@ -479,7 +479,7 @@ class PortInMessagingOrderPortInMessagingOrderTnListTnItem implements ModelInter
     /**
      * Gets end_user
      *
-     * @return \OpenAPI\Client\Model\PortInOrderPortInOrderTnListEndUser|null
+     * @return \OpenAPI\Client\Model\PortInMessagingOrderPortInMessagingOrderTnListEndUser|null
      */
     public function getEndUser()
     {
@@ -489,7 +489,7 @@ class PortInMessagingOrderPortInMessagingOrderTnListTnItem implements ModelInter
     /**
      * Sets end_user
      *
-     * @param \OpenAPI\Client\Model\PortInOrderPortInOrderTnListEndUser|null $end_user end_user
+     * @param \OpenAPI\Client\Model\PortInMessagingOrderPortInMessagingOrderTnListEndUser|null $end_user end_user
      *
      * @return self
      */

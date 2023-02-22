@@ -42,7 +42,7 @@ $apiInstance = new OpenAPI\Client\Api\PortInApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject79(); // \OpenAPI\Client\Model\InlineObject79
+$payload = new \OpenAPI\Client\Model\InlineObject80(); // \OpenAPI\Client\Model\InlineObject80
 
 try {
     $result = $apiInstance->portInAvailabilityPost($payload);
@@ -56,7 +56,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject79**](../Model/InlineObject79.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject80**](../Model/InlineObject80.md)|  |
 
 ### Return type
 
@@ -104,7 +104,7 @@ $apiInstance = new OpenAPI\Client\Api\PortInApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject82(); // \OpenAPI\Client\Model\InlineObject82
+$payload = new \OpenAPI\Client\Model\InlineObject83(); // \OpenAPI\Client\Model\InlineObject83
 
 try {
     $result = $apiInstance->portInOrderActivatePost($payload);
@@ -118,7 +118,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject82**](../Model/InlineObject82.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject83**](../Model/InlineObject83.md)|  |
 
 ### Return type
 
@@ -166,7 +166,7 @@ $apiInstance = new OpenAPI\Client\Api\PortInApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject81(); // \OpenAPI\Client\Model\InlineObject81
+$payload = new \OpenAPI\Client\Model\InlineObject82(); // \OpenAPI\Client\Model\InlineObject82
 
 try {
     $result = $apiInstance->portInOrderAvailableActivationPost($payload);
@@ -180,7 +180,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject81**](../Model/InlineObject81.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject82**](../Model/InlineObject82.md)|  |
 
 ### Return type
 
@@ -228,7 +228,7 @@ $apiInstance = new OpenAPI\Client\Api\PortInApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject83(); // \OpenAPI\Client\Model\InlineObject83
+$payload = new \OpenAPI\Client\Model\InlineObject84(); // \OpenAPI\Client\Model\InlineObject84
 
 try {
     $result = $apiInstance->portInOrderListPost($payload);
@@ -242,7 +242,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject83**](../Model/InlineObject83.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject84**](../Model/InlineObject84.md)|  |
 
 ### Return type
 
@@ -290,7 +290,7 @@ $apiInstance = new OpenAPI\Client\Api\PortInApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject78(); // \OpenAPI\Client\Model\InlineObject78
+$payload = new \OpenAPI\Client\Model\InlineObject79(); // \OpenAPI\Client\Model\InlineObject79
 
 try {
     $result = $apiInstance->portInOrderPost($payload);
@@ -304,7 +304,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject78**](../Model/InlineObject78.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject79**](../Model/InlineObject79.md)|  |
 
 ### Return type
 
@@ -352,7 +352,7 @@ $apiInstance = new OpenAPI\Client\Api\PortInApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject84(); // \OpenAPI\Client\Model\InlineObject84
+$payload = new \OpenAPI\Client\Model\InlineObject85(); // \OpenAPI\Client\Model\InlineObject85
 
 try {
     $result = $apiInstance->portInOrderTnListPost($payload);
@@ -366,7 +366,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject84**](../Model/InlineObject84.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject85**](../Model/InlineObject85.md)|  |
 
 ### Return type
 
@@ -414,7 +414,7 @@ $apiInstance = new OpenAPI\Client\Api\PortInApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject89(); // \OpenAPI\Client\Model\InlineObject89
+$payload = new \OpenAPI\Client\Model\InlineObject90(); // \OpenAPI\Client\Model\InlineObject90
 
 try {
     $result = $apiInstance->tnCsrLookupPost($payload);
@@ -428,7 +428,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject89**](../Model/InlineObject89.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject90**](../Model/InlineObject90.md)|  |
 
 ### Return type
 

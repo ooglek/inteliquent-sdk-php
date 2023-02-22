@@ -24,5 +24,6 @@ Name | Type | Description | Notes
 **fqdn_list** | [**\OpenAPI\Client\Model\TrunkGroupOrderTrunkGroupOrderFqdnList**](TrunkGroupOrderTrunkGroupOrderFqdnList.md) |  | [optional]
 **codec_list** | [**\OpenAPI\Client\Model\TrunkGroupOrderTrunkGroupOrderCodecList**](TrunkGroupOrderTrunkGroupOrderCodecList.md) |  | [optional]
 **customer_service_address** | [**\OpenAPI\Client\Model\TrunkGroupOrderTrunkGroupOrderCustomerServiceAddress**](TrunkGroupOrderTrunkGroupOrderCustomerServiceAddress.md) |  | [optional]
+**enterprise_customer_account** | [**\OpenAPI\Client\Model\TrunkGroupUpdateEnterpriseCustomerAccount**](TrunkGroupUpdateEnterpriseCustomerAccount.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

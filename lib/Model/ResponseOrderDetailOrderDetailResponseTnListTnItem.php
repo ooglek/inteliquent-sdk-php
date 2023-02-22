@@ -73,6 +73,7 @@ class ResponseOrderDetailOrderDetailResponseTnListTnItem implements ModelInterfa
         'auth_date' => '\DateTime',
         'account_pin' => 'string',
         'port_out_pin' => 'string',
+        'routing_option' => 'string',
         'routing_label' => 'string',
         'resp_org_id' => 'string',
         'port_dt' => '\DateTime',
@@ -116,6 +117,7 @@ class ResponseOrderDetailOrderDetailResponseTnListTnItem implements ModelInterfa
         'auth_date' => 'date',
         'account_pin' => null,
         'port_out_pin' => null,
+        'routing_option' => null,
         'routing_label' => null,
         'resp_org_id' => null,
         'port_dt' => 'date',
@@ -178,6 +180,7 @@ class ResponseOrderDetailOrderDetailResponseTnListTnItem implements ModelInterfa
         'auth_date' => 'authDate',
         'account_pin' => 'accountPin',
         'port_out_pin' => 'portOutPin',
+        'routing_option' => 'routingOption',
         'routing_label' => 'routingLabel',
         'resp_org_id' => 'respOrgId',
         'port_dt' => 'portDt',
@@ -219,6 +222,7 @@ class ResponseOrderDetailOrderDetailResponseTnListTnItem implements ModelInterfa
         'auth_date' => 'setAuthDate',
         'account_pin' => 'setAccountPin',
         'port_out_pin' => 'setPortOutPin',
+        'routing_option' => 'setRoutingOption',
         'routing_label' => 'setRoutingLabel',
         'resp_org_id' => 'setRespOrgId',
         'port_dt' => 'setPortDt',
@@ -260,6 +264,7 @@ class ResponseOrderDetailOrderDetailResponseTnListTnItem implements ModelInterfa
         'auth_date' => 'getAuthDate',
         'account_pin' => 'getAccountPin',
         'port_out_pin' => 'getPortOutPin',
+        'routing_option' => 'getRoutingOption',
         'routing_label' => 'getRoutingLabel',
         'resp_org_id' => 'getRespOrgId',
         'port_dt' => 'getPortDt',
@@ -352,6 +357,7 @@ class ResponseOrderDetailOrderDetailResponseTnListTnItem implements ModelInterfa
         $this->container['auth_date'] = $data['auth_date'] ?? null;
         $this->container['account_pin'] = $data['account_pin'] ?? null;
         $this->container['port_out_pin'] = $data['port_out_pin'] ?? null;
+        $this->container['routing_option'] = $data['routing_option'] ?? null;
         $this->container['routing_label'] = $data['routing_label'] ?? null;
         $this->container['resp_org_id'] = $data['resp_org_id'] ?? null;
         $this->container['port_dt'] = $data['port_dt'] ?? null;
@@ -706,6 +712,30 @@ class ResponseOrderDetailOrderDetailResponseTnListTnItem implements ModelInterfa
     public function setPortOutPin($port_out_pin)
     {
         $this->container['port_out_pin'] = $port_out_pin;
+
+        return $this;
+    }
+
+    /**
+     * Gets routing_option
+     *
+     * @return string|null
+     */
+    public function getRoutingOption()
+    {
+        return $this->container['routing_option'];
+    }
+
+    /**
+     * Sets routing_option
+     *
+     * @param string|null $routing_option routing_option
+     *
+     * @return self
+     */
+    public function setRoutingOption($routing_option)
+    {
+        $this->container['routing_option'] = $routing_option;
 
         return $this;
     }

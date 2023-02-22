@@ -14,6 +14,8 @@ Name | Type | Description | Notes
 **cic_company_name** | **string** |  | [optional]
 **activate_display_name** | **string** |  | [optional]
 **activate_date** | **string** |  | [optional]
+**tn_note** | **string** |  | [optional]
+**dno** | **string** |  | [optional]
 **tn_feature** | [**\OpenAPI\Client\Model\ResponseTfDetailTfListTnFeature**](ResponseTfDetailTfListTnFeature.md) |  | [optional]
 **dnis** | **string** |  | [optional]
 **billing_tn** | **string** |  | [optional]

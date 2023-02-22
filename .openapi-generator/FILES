@@ -48,7 +48,6 @@ docs/Model/BrandStatusList.md
 docs/Model/BrandStatusListMessagingBrandStatuses.md
 docs/Model/BrandStockExchangeList.md
 docs/Model/BrandStockExchangeListMessagingBrandStockExchangeList.md
-docs/Model/BulkTnInventoryTnInventorySearchItem.md
 docs/Model/CampaignClassList.md
 docs/Model/CampaignClassListMessageCampaignClassList.md
 docs/Model/CampaignClassListMessageCampaignClassListMessageCampaignClassItem.md
@@ -195,7 +194,6 @@ docs/Model/InlineObject195.md
 docs/Model/InlineObject196.md
 docs/Model/InlineObject197.md
 docs/Model/InlineObject198.md
-docs/Model/InlineObject199.md
 docs/Model/InlineObject2.md
 docs/Model/InlineObject20.md
 docs/Model/InlineObject21.md
@@ -340,12 +338,6 @@ docs/Model/InlineResponse20045.md
 docs/Model/InlineResponse20045CustomerNotificationList.md
 docs/Model/InlineResponse20045CustomerNotificationListTypeList.md
 docs/Model/InlineResponse20045CustomerNotificationListTypeListTypeItem.md
-docs/Model/InlineResponse20046.md
-docs/Model/InlineResponse20046NetworkStats.md
-docs/Model/InlineResponse20047.md
-docs/Model/InlineResponse20047PeerIPs.md
-docs/Model/InlineResponse20048.md
-docs/Model/InlineResponse20048CustomerOcn.md
 docs/Model/InlineResponse2004TimeProfiles.md
 docs/Model/InlineResponse2005.md
 docs/Model/InlineResponse2005TimeProfile.md
@@ -362,6 +354,8 @@ docs/Model/InlineResponse4001.md
 docs/Model/InlineResponse4002.md
 docs/Model/InlineResponse401.md
 docs/Model/InlineResponse4011.md
+docs/Model/InlineResponse403.md
+docs/Model/InlineResponse4031.md
 docs/Model/InlineResponse404.md
 docs/Model/InlineResponse408.md
 docs/Model/InlineResponse4081.md
@@ -547,6 +541,7 @@ docs/Model/InlineResponse4223.md
 docs/Model/InlineResponse4224.md
 docs/Model/InlineResponse425.md
 docs/Model/InlineResponse4251.md
+docs/Model/InlineResponse42510.md
 docs/Model/InlineResponse4252.md
 docs/Model/InlineResponse4253.md
 docs/Model/InlineResponse4254.md
@@ -554,6 +549,7 @@ docs/Model/InlineResponse4255.md
 docs/Model/InlineResponse4256.md
 docs/Model/InlineResponse4257.md
 docs/Model/InlineResponse4258.md
+docs/Model/InlineResponse4259.md
 docs/Model/InlineResponse426.md
 docs/Model/InlineResponse4261.md
 docs/Model/InlineResponse430.md
@@ -652,6 +648,7 @@ docs/Model/PortInAvailabilityTnList.md
 docs/Model/PortInAvailabilityTnListTnItem.md
 docs/Model/PortInMessagingOrderPortInMessagingOrder.md
 docs/Model/PortInMessagingOrderPortInMessagingOrderTnList.md
+docs/Model/PortInMessagingOrderPortInMessagingOrderTnListEndUser.md
 docs/Model/PortInMessagingOrderPortInMessagingOrderTnListTnFeature.md
 docs/Model/PortInMessagingOrderPortInMessagingOrderTnListTnItem.md
 docs/Model/PortInOrderList.md
@@ -810,6 +807,12 @@ docs/Model/ResponseRoutingLabelDetailRoutingLabelListRoutingLabelItem.md
 docs/Model/ResponseRoutingLabelSearchAssigned.md
 docs/Model/ResponseRoutingLabelSearchAssignedRoutingLabelList.md
 docs/Model/ResponseRoutingLabelSearchAssignedRoutingLabelListRoutingLabelItem.md
+docs/Model/ResponseRoutingOptionDetail.md
+docs/Model/ResponseRoutingOptionDetailRoutingOptionDetails.md
+docs/Model/ResponseRoutingOptionDetailRoutingProductTypes.md
+docs/Model/ResponseRoutingOptionDetailRoutingTrunkGroups.md
+docs/Model/ResponseRoutingOptionList.md
+docs/Model/ResponseRoutingOptionListRoutingOptionList.md
 docs/Model/ResponseSearchAssignedTn.md
 docs/Model/ResponseSearchAssignedTnTnList.md
 docs/Model/ResponseSearchAssignedTnTnListTnItem.md
@@ -900,6 +903,7 @@ docs/Model/ResponseTnSearchAssignedBasicTnBasicList.md
 docs/Model/ResponseTnSearchAssignedBasicTnBasicListTnBasicItem.md
 docs/Model/ResponseTrunkGroupDetail.md
 docs/Model/ResponseTrunkGroupDetailTrunkGroupDetail.md
+docs/Model/ResponseTrunkGroupDetailTrunkGroupDetailEnterpriseCustomerAccount.md
 docs/Model/ResponseTrunkGroupList.md
 docs/Model/ResponseTrunkGroupListTrunkGroupList.md
 docs/Model/ResponseTrunkGroupOrder.md
@@ -925,6 +929,8 @@ docs/Model/TfDisconnectTnList.md
 docs/Model/TfDisconnectTnListTnItem.md
 docs/Model/TfDnisTnList.md
 docs/Model/TfDnisTnListTnItem.md
+docs/Model/TfDnoTnList.md
+docs/Model/TfDnoTnListTnItem.md
 docs/Model/TfFeatureOrderTfFeatureOrder.md
 docs/Model/TfFeatureOrderTfFeatureOrderTnList.md
 docs/Model/TfFeatureOrderTfFeatureOrderTnListTnFeature.md
@@ -964,11 +970,15 @@ docs/Model/TimeProfileSpecialDayTimeProfileSpecialDaySpecialDaySchedules.md
 docs/Model/TimeProfileTimeProfile.md
 docs/Model/TimeProfileTimeProfileSchedule.md
 docs/Model/TimeProfileTimeProfileScheduleDayOfWeek.md
+docs/Model/TnAltSpidTnList.md
+docs/Model/TnAltSpidTnListTnItem.md
 docs/Model/TnDetailPageSort.md
 docs/Model/TnDetailTnSearchList.md
 docs/Model/TnDetailTnSearchListTnSearchItem.md
 docs/Model/TnDisconnectTnList.md
 docs/Model/TnDisconnectTnListTnItem.md
+docs/Model/TnDnoTnList.md
+docs/Model/TnDnoTnListTnItem.md
 docs/Model/TnE911NotificationListTnE911Notification.md
 docs/Model/TnE911NotificationTnE911Notification.md
 docs/Model/TnE911NotificationTnE911NotificationEmailList.md
@@ -1057,6 +1067,7 @@ docs/Model/TrunkGroupOrderTrunkGroupOrderCustomerSipSignalingListCustomerSipSign
 docs/Model/TrunkGroupOrderTrunkGroupOrderFqdnList.md
 docs/Model/TrunkGroupOrderTrunkGroupOrderFqdnListFqdnItem.md
 docs/Model/TrunkGroupOrderTrunkGroupOrderTrunkGroupFeature.md
+docs/Model/TrunkGroupUpdateEnterpriseCustomerAccount.md
 docs/Model/TrunkGroupUtilizationResponse.md
 docs/Model/TrunkGroupUtilizationResponseTrunkGroupUtilList.md
 docs/Model/TrunkGroupUtilizationResponseTrunkGroupUtilListTrunkGroupUtilItem.md
@@ -1120,7 +1131,6 @@ lib/Model/BrandStatusList.php
 lib/Model/BrandStatusListMessagingBrandStatuses.php
 lib/Model/BrandStockExchangeList.php
 lib/Model/BrandStockExchangeListMessagingBrandStockExchangeList.php
-lib/Model/BulkTnInventoryTnInventorySearchItem.php
 lib/Model/CampaignClassList.php
 lib/Model/CampaignClassListMessageCampaignClassList.php
 lib/Model/CampaignClassListMessageCampaignClassListMessageCampaignClassItem.php
@@ -1267,7 +1277,6 @@ lib/Model/InlineObject195.php
 lib/Model/InlineObject196.php
 lib/Model/InlineObject197.php
 lib/Model/InlineObject198.php
-lib/Model/InlineObject199.php
 lib/Model/InlineObject2.php
 lib/Model/InlineObject20.php
 lib/Model/InlineObject21.php
@@ -1412,12 +1421,6 @@ lib/Model/InlineResponse20045.php
 lib/Model/InlineResponse20045CustomerNotificationList.php
 lib/Model/InlineResponse20045CustomerNotificationListTypeList.php
 lib/Model/InlineResponse20045CustomerNotificationListTypeListTypeItem.php
-lib/Model/InlineResponse20046.php
-lib/Model/InlineResponse20046NetworkStats.php
-lib/Model/InlineResponse20047.php
-lib/Model/InlineResponse20047PeerIPs.php
-lib/Model/InlineResponse20048.php
-lib/Model/InlineResponse20048CustomerOcn.php
 lib/Model/InlineResponse2004TimeProfiles.php
 lib/Model/InlineResponse2005.php
 lib/Model/InlineResponse2005TimeProfile.php
@@ -1434,6 +1437,8 @@ lib/Model/InlineResponse4001.php
 lib/Model/InlineResponse4002.php
 lib/Model/InlineResponse401.php
 lib/Model/InlineResponse4011.php
+lib/Model/InlineResponse403.php
+lib/Model/InlineResponse4031.php
 lib/Model/InlineResponse404.php
 lib/Model/InlineResponse408.php
 lib/Model/InlineResponse4081.php
@@ -1619,6 +1624,7 @@ lib/Model/InlineResponse4223.php
 lib/Model/InlineResponse4224.php
 lib/Model/InlineResponse425.php
 lib/Model/InlineResponse4251.php
+lib/Model/InlineResponse42510.php
 lib/Model/InlineResponse4252.php
 lib/Model/InlineResponse4253.php
 lib/Model/InlineResponse4254.php
@@ -1626,6 +1632,7 @@ lib/Model/InlineResponse4255.php
 lib/Model/InlineResponse4256.php
 lib/Model/InlineResponse4257.php
 lib/Model/InlineResponse4258.php
+lib/Model/InlineResponse4259.php
 lib/Model/InlineResponse426.php
 lib/Model/InlineResponse4261.php
 lib/Model/InlineResponse430.php
@@ -1725,6 +1732,7 @@ lib/Model/PortInAvailabilityTnList.php
 lib/Model/PortInAvailabilityTnListTnItem.php
 lib/Model/PortInMessagingOrderPortInMessagingOrder.php
 lib/Model/PortInMessagingOrderPortInMessagingOrderTnList.php
+lib/Model/PortInMessagingOrderPortInMessagingOrderTnListEndUser.php
 lib/Model/PortInMessagingOrderPortInMessagingOrderTnListTnFeature.php
 lib/Model/PortInMessagingOrderPortInMessagingOrderTnListTnItem.php
 lib/Model/PortInOrderList.php
@@ -1883,6 +1891,12 @@ lib/Model/ResponseRoutingLabelDetailRoutingLabelListRoutingLabelItem.php
 lib/Model/ResponseRoutingLabelSearchAssigned.php
 lib/Model/ResponseRoutingLabelSearchAssignedRoutingLabelList.php
 lib/Model/ResponseRoutingLabelSearchAssignedRoutingLabelListRoutingLabelItem.php
+lib/Model/ResponseRoutingOptionDetail.php
+lib/Model/ResponseRoutingOptionDetailRoutingOptionDetails.php
+lib/Model/ResponseRoutingOptionDetailRoutingProductTypes.php
+lib/Model/ResponseRoutingOptionDetailRoutingTrunkGroups.php
+lib/Model/ResponseRoutingOptionList.php
+lib/Model/ResponseRoutingOptionListRoutingOptionList.php
 lib/Model/ResponseSearchAssignedTn.php
 lib/Model/ResponseSearchAssignedTnTnList.php
 lib/Model/ResponseSearchAssignedTnTnListTnItem.php
@@ -1973,6 +1987,7 @@ lib/Model/ResponseTnSearchAssignedBasicTnBasicList.php
 lib/Model/ResponseTnSearchAssignedBasicTnBasicListTnBasicItem.php
 lib/Model/ResponseTrunkGroupDetail.php
 lib/Model/ResponseTrunkGroupDetailTrunkGroupDetail.php
+lib/Model/ResponseTrunkGroupDetailTrunkGroupDetailEnterpriseCustomerAccount.php
 lib/Model/ResponseTrunkGroupList.php
 lib/Model/ResponseTrunkGroupListTrunkGroupList.php
 lib/Model/ResponseTrunkGroupOrder.php
@@ -1998,6 +2013,8 @@ lib/Model/TfDisconnectTnList.php
 lib/Model/TfDisconnectTnListTnItem.php
 lib/Model/TfDnisTnList.php
 lib/Model/TfDnisTnListTnItem.php
+lib/Model/TfDnoTnList.php
+lib/Model/TfDnoTnListTnItem.php
 lib/Model/TfFeatureOrderTfFeatureOrder.php
 lib/Model/TfFeatureOrderTfFeatureOrderTnList.php
 lib/Model/TfFeatureOrderTfFeatureOrderTnListTnFeature.php
@@ -2037,11 +2054,15 @@ lib/Model/TimeProfileSpecialDayTimeProfileSpecialDaySpecialDaySchedules.php
 lib/Model/TimeProfileTimeProfile.php
 lib/Model/TimeProfileTimeProfileSchedule.php
 lib/Model/TimeProfileTimeProfileScheduleDayOfWeek.php
+lib/Model/TnAltSpidTnList.php
+lib/Model/TnAltSpidTnListTnItem.php
 lib/Model/TnDetailPageSort.php
 lib/Model/TnDetailTnSearchList.php
 lib/Model/TnDetailTnSearchListTnSearchItem.php
 lib/Model/TnDisconnectTnList.php
 lib/Model/TnDisconnectTnListTnItem.php
+lib/Model/TnDnoTnList.php
+lib/Model/TnDnoTnListTnItem.php
 lib/Model/TnE911NotificationListTnE911Notification.php
 lib/Model/TnE911NotificationTnE911Notification.php
 lib/Model/TnE911NotificationTnE911NotificationEmailList.php
@@ -2130,6 +2151,7 @@ lib/Model/TrunkGroupOrderTrunkGroupOrderCustomerSipSignalingListCustomerSipSigna
 lib/Model/TrunkGroupOrderTrunkGroupOrderFqdnList.php
 lib/Model/TrunkGroupOrderTrunkGroupOrderFqdnListFqdnItem.php
 lib/Model/TrunkGroupOrderTrunkGroupOrderTrunkGroupFeature.php
+lib/Model/TrunkGroupUpdateEnterpriseCustomerAccount.php
 lib/Model/TrunkGroupUtilizationResponse.php
 lib/Model/TrunkGroupUtilizationResponseTrunkGroupUtilList.php
 lib/Model/TrunkGroupUtilizationResponseTrunkGroupUtilListTrunkGroupUtilItem.php
@@ -2146,3 +2168,22 @@ lib/Model/WhitelistedAddressResultPostalAddress.php
 lib/Model/WhitelistedAddressWhitelistedAddressList.php
 lib/ObjectSerializer.php
 phpunit.xml.dist
+test/Model/InlineResponse4031Test.php
+test/Model/InlineResponse403Test.php
+test/Model/InlineResponse42510Test.php
+test/Model/InlineResponse4259Test.php
+test/Model/PortInMessagingOrderPortInMessagingOrderTnListEndUserTest.php
+test/Model/ResponseRoutingOptionDetailRoutingOptionDetailsTest.php
+test/Model/ResponseRoutingOptionDetailRoutingProductTypesTest.php
+test/Model/ResponseRoutingOptionDetailRoutingTrunkGroupsTest.php
+test/Model/ResponseRoutingOptionDetailTest.php
+test/Model/ResponseRoutingOptionListRoutingOptionListTest.php
+test/Model/ResponseRoutingOptionListTest.php
+test/Model/ResponseTrunkGroupDetailTrunkGroupDetailEnterpriseCustomerAccountTest.php
+test/Model/TfDnoTnListTest.php
+test/Model/TfDnoTnListTnItemTest.php
+test/Model/TnAltSpidTnListTest.php
+test/Model/TnAltSpidTnListTnItemTest.php
+test/Model/TnDnoTnListTest.php
+test/Model/TnDnoTnListTnItemTest.php
+test/Model/TrunkGroupUpdateEnterpriseCustomerAccountTest.php

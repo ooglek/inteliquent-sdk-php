@@ -89,7 +89,7 @@ $apiInstance = new OpenAPI\Client\Api\AccountSettingsApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject132(); // \OpenAPI\Client\Model\InlineObject132
+$payload = new \OpenAPI\Client\Model\InlineObject135(); // \OpenAPI\Client\Model\InlineObject135
 
 try {
     $result = $apiInstance->accountDefaultDetailPost($payload);
@@ -203,11 +203,12 @@ Class | Method | HTTP request | Description
 *NetworkApi* | [**dtmfRelayListPost**](docs/Api/NetworkApi.md#dtmfrelaylistpost) | **POST** /dtmfRelayList | DTMF Relay List
 *NetworkApi* | [**e911CallSearchPost**](docs/Api/NetworkApi.md#e911callsearchpost) | **POST** /e911CallSearch | Retrieve 911 Call Detail Records
 *NetworkApi* | [**messageDetailSearchPost**](docs/Api/NetworkApi.md#messagedetailsearchpost) | **POST** /messageDetailSearch | Retrieve Message Detail Record
-*NetworkApi* | [**networkStatsPost**](docs/Api/NetworkApi.md#networkstatspost) | **POST** /networkStats | Retrieve network stats
-*NetworkApi* | [**peerIPsPost**](docs/Api/NetworkApi.md#peeripspost) | **POST** /peerIPs | Retrieve a list of Peer IP addresses
 *NetworkApi* | [**routingLabelDetailPost**](docs/Api/NetworkApi.md#routinglabeldetailpost) | **POST** /routingLabelDetail | Retrieve Toll Free Routing Label Detail
 *NetworkApi* | [**routingLabelSearchAssignedPost**](docs/Api/NetworkApi.md#routinglabelsearchassignedpost) | **POST** /routingLabelSearchAssigned | Search Assigned Toll Free Routing Label
 *NetworkApi* | [**routingLabelUpdatePost**](docs/Api/NetworkApi.md#routinglabelupdatepost) | **POST** /routingLabelUpdate | Change Toll Free Routing Label Name
+*NetworkApi* | [**routingOptionDetailPost**](docs/Api/NetworkApi.md#routingoptiondetailpost) | **POST** /routingOptionDetail | Routing Option Details
+*NetworkApi* | [**routingOptionListPost**](docs/Api/NetworkApi.md#routingoptionlistpost) | **POST** /routingOptionList | Routing Option List
+*NetworkApi* | [**routingOptionPost**](docs/Api/NetworkApi.md#routingoptionpost) | **POST** /routingOption | Change Routing Option Name
 *NetworkApi* | [**switchLocationListPost**](docs/Api/NetworkApi.md#switchlocationlistpost) | **POST** /switchLocationList | Inteliquent Switch Locations
 *NetworkApi* | [**testTrunkGroupPost**](docs/Api/NetworkApi.md#testtrunkgrouppost) | **POST** /testTrunkGroup | Test a Trunk group
 *NetworkApi* | [**trunkGroupDetailPost**](docs/Api/NetworkApi.md#trunkgroupdetailpost) | **POST** /trunkGroupDetail | Trunk Group Details
@@ -219,11 +220,8 @@ Class | Method | HTTP request | Description
 *NetworkApi* | [**trunkGroupSessionUpdatePost**](docs/Api/NetworkApi.md#trunkgroupsessionupdatepost) | **POST** /trunkGroupSessionUpdate | Update Trunk Group Session Count
 *NetworkApi* | [**trunkGroupUpdatePost**](docs/Api/NetworkApi.md#trunkgroupupdatepost) | **POST** /trunkGroupUpdate | Change Trunk Group Name
 *NetworkApi* | [**trunkGroupUtilizationPost**](docs/Api/NetworkApi.md#trunkgrouputilizationpost) | **POST** /trunkGroupUtilization | Retrieve Trunk Group Utilization Detail
-*OrderApi* | [**addOrderContactNotePost**](docs/Api/OrderApi.md#addordercontactnotepost) | **POST** /addOrderContactNote | Order Add Contact Note to an existing order
-*OrderApi* | [**customerOcnPost**](docs/Api/OrderApi.md#customerocnpost) | **POST** /customerOcn | Retrieve list of OCN
 *OrderApi* | [**excludedE911DetailPost**](docs/Api/OrderApi.md#excludede911detailpost) | **POST** /excludedE911Detail | Retrieve Excluded E911 Detail
 *OrderApi* | [**excludedFeatureListPost**](docs/Api/OrderApi.md#excludedfeaturelistpost) | **POST** /excludedFeatureList | Retrieve Excluded Feature List
-*OrderApi* | [**excludedTnFromTnOrderListPost**](docs/Api/OrderApi.md#excludedtnfromtnorderlistpost) | **POST** /excludedTnFromTnOrderList | Retrieve Excluded Telephone Number List
 *OrderApi* | [**excludedTnListPost**](docs/Api/OrderApi.md#excludedtnlistpost) | **POST** /excludedTnList | Retrieve Excluded Telephone Number List
 *OrderApi* | [**orderAddDocumentPost**](docs/Api/OrderApi.md#orderadddocumentpost) | **POST** /orderAddDocument | Add Order Document
 *OrderApi* | [**orderAddNotePost**](docs/Api/OrderApi.md#orderaddnotepost) | **POST** /orderAddNote | Add Order Note
@@ -261,12 +259,12 @@ Class | Method | HTTP request | Description
 *ReferenceApi* | [**tnFeatureMessageListPost**](docs/Api/ReferenceApi.md#tnfeaturemessagelistpost) | **POST** /tnFeatureMessageList | Retrieve Messaging Numbers
 *ReferenceApi* | [**tnPortOutHistoryPost**](docs/Api/ReferenceApi.md#tnportouthistorypost) | **POST** /tnPortOutHistory | Telephone Number Port-Out History
 *ReferenceApi* | [**whitelistedAddressPost**](docs/Api/ReferenceApi.md#whitelistedaddresspost) | **POST** /whitelistedAddress | White List Address
-*TelephoneNumberApi* | [**bulkTnInventoryPost**](docs/Api/TelephoneNumberApi.md#bulktninventorypost) | **POST** /bulkTnInventory | Multi Search Telephone Number Inventory
-*TelephoneNumberApi* | [**npaNxxFootPrintPost**](docs/Api/TelephoneNumberApi.md#npanxxfootprintpost) | **POST** /npaNxxFootPrint | Return NPA NXX Footprint
 *TelephoneNumberApi* | [**portOutPinUpdatePost**](docs/Api/TelephoneNumberApi.md#portoutpinupdatepost) | **POST** /portOutPinUpdate | Update Port-Out PIN for Active Telephone Number
+*TelephoneNumberApi* | [**tnAltSpidPost**](docs/Api/TelephoneNumberApi.md#tnaltspidpost) | **POST** /tnAltSpid | Add or Remove Alternative SPID for Active Telephone Number
 *TelephoneNumberApi* | [**tnAssignedListPost**](docs/Api/TelephoneNumberApi.md#tnassignedlistpost) | **POST** /tnAssignedList | Retrieve Assigned Telephone Number List
 *TelephoneNumberApi* | [**tnDetailPost**](docs/Api/TelephoneNumberApi.md#tndetailpost) | **POST** /tnDetail | Retrieve Telephone Number Detail
 *TelephoneNumberApi* | [**tnDisconnectPost**](docs/Api/TelephoneNumberApi.md#tndisconnectpost) | **POST** /tnDisconnect | Disconnect Active Telephone Number
+*TelephoneNumberApi* | [**tnDnoPost**](docs/Api/TelephoneNumberApi.md#tndnopost) | **POST** /tnDno | Update Active Telephone Number Dno
 *TelephoneNumberApi* | [**tnFeatureOrderPost**](docs/Api/TelephoneNumberApi.md#tnfeatureorderpost) | **POST** /tnFeatureOrder | Add, Update, or Remove Active Telephone Number Feature
 *TelephoneNumberApi* | [**tnForwardListPost**](docs/Api/TelephoneNumberApi.md#tnforwardlistpost) | **POST** /tnForwardList | Phone Number Call Forward Listing
 *TelephoneNumberApi* | [**tnForwardPost**](docs/Api/TelephoneNumberApi.md#tnforwardpost) | **POST** /tnForward | Manage Phone Number Call Forward Settings
@@ -287,6 +285,7 @@ Class | Method | HTTP request | Description
 *TollFreeApi* | [**tfDetailPost**](docs/Api/TollFreeApi.md#tfdetailpost) | **POST** /tfDetail | Search Assigned Toll Free Number Detail
 *TollFreeApi* | [**tfDisconnectPost**](docs/Api/TollFreeApi.md#tfdisconnectpost) | **POST** /tfDisconnect | Disconnect Toll Free Number
 *TollFreeApi* | [**tfDnisPost**](docs/Api/TollFreeApi.md#tfdnispost) | **POST** /tfDnis | Update dnis value for Toll free numbers
+*TollFreeApi* | [**tfDnoPost**](docs/Api/TollFreeApi.md#tfdnopost) | **POST** /tfDno | Update dno setting for Toll free numbers
 *TollFreeApi* | [**tfFeatureCNamListPost**](docs/Api/TollFreeApi.md#tffeaturecnamlistpost) | **POST** /tfFeatureCNamList | Retrieve Assigned TF for feature Calling Name
 *TollFreeApi* | [**tfFeatureE911ListPost**](docs/Api/TollFreeApi.md#tffeaturee911listpost) | **POST** /tfFeatureE911List | Retrieve E911 Toll Free Numbers
 *TollFreeApi* | [**tfFeatureMessageListPost**](docs/Api/TollFreeApi.md#tffeaturemessagelistpost) | **POST** /tfFeatureMessageList | Retrieve Assigned TF for feature Message
@@ -335,7 +334,6 @@ Class | Method | HTTP request | Description
 - [BrandStatusListMessagingBrandStatuses](docs/Model/BrandStatusListMessagingBrandStatuses.md)
 - [BrandStockExchangeList](docs/Model/BrandStockExchangeList.md)
 - [BrandStockExchangeListMessagingBrandStockExchangeList](docs/Model/BrandStockExchangeListMessagingBrandStockExchangeList.md)
-- [BulkTnInventoryTnInventorySearchItem](docs/Model/BulkTnInventoryTnInventorySearchItem.md)
 - [CampaignClassList](docs/Model/CampaignClassList.md)
 - [CampaignClassListMessageCampaignClassList](docs/Model/CampaignClassListMessageCampaignClassList.md)
 - [CampaignClassListMessageCampaignClassListMessageCampaignClassItem](docs/Model/CampaignClassListMessageCampaignClassListMessageCampaignClassItem.md)
@@ -482,7 +480,6 @@ Class | Method | HTTP request | Description
 - [InlineObject196](docs/Model/InlineObject196.md)
 - [InlineObject197](docs/Model/InlineObject197.md)
 - [InlineObject198](docs/Model/InlineObject198.md)
-- [InlineObject199](docs/Model/InlineObject199.md)
 - [InlineObject2](docs/Model/InlineObject2.md)
 - [InlineObject20](docs/Model/InlineObject20.md)
 - [InlineObject21](docs/Model/InlineObject21.md)
@@ -627,12 +624,6 @@ Class | Method | HTTP request | Description
 - [InlineResponse20045CustomerNotificationList](docs/Model/InlineResponse20045CustomerNotificationList.md)
 - [InlineResponse20045CustomerNotificationListTypeList](docs/Model/InlineResponse20045CustomerNotificationListTypeList.md)
 - [InlineResponse20045CustomerNotificationListTypeListTypeItem](docs/Model/InlineResponse20045CustomerNotificationListTypeListTypeItem.md)
-- [InlineResponse20046](docs/Model/InlineResponse20046.md)
-- [InlineResponse20046NetworkStats](docs/Model/InlineResponse20046NetworkStats.md)
-- [InlineResponse20047](docs/Model/InlineResponse20047.md)
-- [InlineResponse20047PeerIPs](docs/Model/InlineResponse20047PeerIPs.md)
-- [InlineResponse20048](docs/Model/InlineResponse20048.md)
-- [InlineResponse20048CustomerOcn](docs/Model/InlineResponse20048CustomerOcn.md)
 - [InlineResponse2004TimeProfiles](docs/Model/InlineResponse2004TimeProfiles.md)
 - [InlineResponse2005](docs/Model/InlineResponse2005.md)
 - [InlineResponse2005TimeProfile](docs/Model/InlineResponse2005TimeProfile.md)
@@ -649,6 +640,8 @@ Class | Method | HTTP request | Description
 - [InlineResponse4002](docs/Model/InlineResponse4002.md)
 - [InlineResponse401](docs/Model/InlineResponse401.md)
 - [InlineResponse4011](docs/Model/InlineResponse4011.md)
+- [InlineResponse403](docs/Model/InlineResponse403.md)
+- [InlineResponse4031](docs/Model/InlineResponse4031.md)
 - [InlineResponse404](docs/Model/InlineResponse404.md)
 - [InlineResponse408](docs/Model/InlineResponse408.md)
 - [InlineResponse4081](docs/Model/InlineResponse4081.md)
@@ -834,6 +827,7 @@ Class | Method | HTTP request | Description
 - [InlineResponse4224](docs/Model/InlineResponse4224.md)
 - [InlineResponse425](docs/Model/InlineResponse425.md)
 - [InlineResponse4251](docs/Model/InlineResponse4251.md)
+- [InlineResponse42510](docs/Model/InlineResponse42510.md)
 - [InlineResponse4252](docs/Model/InlineResponse4252.md)
 - [InlineResponse4253](docs/Model/InlineResponse4253.md)
 - [InlineResponse4254](docs/Model/InlineResponse4254.md)
@@ -841,6 +835,7 @@ Class | Method | HTTP request | Description
 - [InlineResponse4256](docs/Model/InlineResponse4256.md)
 - [InlineResponse4257](docs/Model/InlineResponse4257.md)
 - [InlineResponse4258](docs/Model/InlineResponse4258.md)
+- [InlineResponse4259](docs/Model/InlineResponse4259.md)
 - [InlineResponse426](docs/Model/InlineResponse426.md)
 - [InlineResponse4261](docs/Model/InlineResponse4261.md)
 - [InlineResponse430](docs/Model/InlineResponse430.md)
@@ -939,6 +934,7 @@ Class | Method | HTTP request | Description
 - [PortInAvailabilityTnListTnItem](docs/Model/PortInAvailabilityTnListTnItem.md)
 - [PortInMessagingOrderPortInMessagingOrder](docs/Model/PortInMessagingOrderPortInMessagingOrder.md)
 - [PortInMessagingOrderPortInMessagingOrderTnList](docs/Model/PortInMessagingOrderPortInMessagingOrderTnList.md)
+- [PortInMessagingOrderPortInMessagingOrderTnListEndUser](docs/Model/PortInMessagingOrderPortInMessagingOrderTnListEndUser.md)
 - [PortInMessagingOrderPortInMessagingOrderTnListTnFeature](docs/Model/PortInMessagingOrderPortInMessagingOrderTnListTnFeature.md)
 - [PortInMessagingOrderPortInMessagingOrderTnListTnItem](docs/Model/PortInMessagingOrderPortInMessagingOrderTnListTnItem.md)
 - [PortInOrderList](docs/Model/PortInOrderList.md)
@@ -1097,6 +1093,12 @@ Class | Method | HTTP request | Description
 - [ResponseRoutingLabelSearchAssigned](docs/Model/ResponseRoutingLabelSearchAssigned.md)
 - [ResponseRoutingLabelSearchAssignedRoutingLabelList](docs/Model/ResponseRoutingLabelSearchAssignedRoutingLabelList.md)
 - [ResponseRoutingLabelSearchAssignedRoutingLabelListRoutingLabelItem](docs/Model/ResponseRoutingLabelSearchAssignedRoutingLabelListRoutingLabelItem.md)
+- [ResponseRoutingOptionDetail](docs/Model/ResponseRoutingOptionDetail.md)
+- [ResponseRoutingOptionDetailRoutingOptionDetails](docs/Model/ResponseRoutingOptionDetailRoutingOptionDetails.md)
+- [ResponseRoutingOptionDetailRoutingProductTypes](docs/Model/ResponseRoutingOptionDetailRoutingProductTypes.md)
+- [ResponseRoutingOptionDetailRoutingTrunkGroups](docs/Model/ResponseRoutingOptionDetailRoutingTrunkGroups.md)
+- [ResponseRoutingOptionList](docs/Model/ResponseRoutingOptionList.md)
+- [ResponseRoutingOptionListRoutingOptionList](docs/Model/ResponseRoutingOptionListRoutingOptionList.md)
 - [ResponseSearchAssignedTn](docs/Model/ResponseSearchAssignedTn.md)
 - [ResponseSearchAssignedTnTnList](docs/Model/ResponseSearchAssignedTnTnList.md)
 - [ResponseSearchAssignedTnTnListTnItem](docs/Model/ResponseSearchAssignedTnTnListTnItem.md)
@@ -1187,6 +1189,7 @@ Class | Method | HTTP request | Description
 - [ResponseTnSearchAssignedBasicTnBasicListTnBasicItem](docs/Model/ResponseTnSearchAssignedBasicTnBasicListTnBasicItem.md)
 - [ResponseTrunkGroupDetail](docs/Model/ResponseTrunkGroupDetail.md)
 - [ResponseTrunkGroupDetailTrunkGroupDetail](docs/Model/ResponseTrunkGroupDetailTrunkGroupDetail.md)
+- [ResponseTrunkGroupDetailTrunkGroupDetailEnterpriseCustomerAccount](docs/Model/ResponseTrunkGroupDetailTrunkGroupDetailEnterpriseCustomerAccount.md)
 - [ResponseTrunkGroupList](docs/Model/ResponseTrunkGroupList.md)
 - [ResponseTrunkGroupListTrunkGroupList](docs/Model/ResponseTrunkGroupListTrunkGroupList.md)
 - [ResponseTrunkGroupOrder](docs/Model/ResponseTrunkGroupOrder.md)
@@ -1212,6 +1215,8 @@ Class | Method | HTTP request | Description
 - [TfDisconnectTnListTnItem](docs/Model/TfDisconnectTnListTnItem.md)
 - [TfDnisTnList](docs/Model/TfDnisTnList.md)
 - [TfDnisTnListTnItem](docs/Model/TfDnisTnListTnItem.md)
+- [TfDnoTnList](docs/Model/TfDnoTnList.md)
+- [TfDnoTnListTnItem](docs/Model/TfDnoTnListTnItem.md)
 - [TfFeatureOrderTfFeatureOrder](docs/Model/TfFeatureOrderTfFeatureOrder.md)
 - [TfFeatureOrderTfFeatureOrderTnList](docs/Model/TfFeatureOrderTfFeatureOrderTnList.md)
 - [TfFeatureOrderTfFeatureOrderTnListTnFeature](docs/Model/TfFeatureOrderTfFeatureOrderTnListTnFeature.md)
@@ -1251,11 +1256,15 @@ Class | Method | HTTP request | Description
 - [TimeProfileTimeProfile](docs/Model/TimeProfileTimeProfile.md)
 - [TimeProfileTimeProfileSchedule](docs/Model/TimeProfileTimeProfileSchedule.md)
 - [TimeProfileTimeProfileScheduleDayOfWeek](docs/Model/TimeProfileTimeProfileScheduleDayOfWeek.md)
+- [TnAltSpidTnList](docs/Model/TnAltSpidTnList.md)
+- [TnAltSpidTnListTnItem](docs/Model/TnAltSpidTnListTnItem.md)
 - [TnDetailPageSort](docs/Model/TnDetailPageSort.md)
 - [TnDetailTnSearchList](docs/Model/TnDetailTnSearchList.md)
 - [TnDetailTnSearchListTnSearchItem](docs/Model/TnDetailTnSearchListTnSearchItem.md)
 - [TnDisconnectTnList](docs/Model/TnDisconnectTnList.md)
 - [TnDisconnectTnListTnItem](docs/Model/TnDisconnectTnListTnItem.md)
+- [TnDnoTnList](docs/Model/TnDnoTnList.md)
+- [TnDnoTnListTnItem](docs/Model/TnDnoTnListTnItem.md)
 - [TnE911NotificationListTnE911Notification](docs/Model/TnE911NotificationListTnE911Notification.md)
 - [TnE911NotificationTnE911Notification](docs/Model/TnE911NotificationTnE911Notification.md)
 - [TnE911NotificationTnE911NotificationEmailList](docs/Model/TnE911NotificationTnE911NotificationEmailList.md)
@@ -1344,6 +1353,7 @@ Class | Method | HTTP request | Description
 - [TrunkGroupOrderTrunkGroupOrderFqdnList](docs/Model/TrunkGroupOrderTrunkGroupOrderFqdnList.md)
 - [TrunkGroupOrderTrunkGroupOrderFqdnListFqdnItem](docs/Model/TrunkGroupOrderTrunkGroupOrderFqdnListFqdnItem.md)
 - [TrunkGroupOrderTrunkGroupOrderTrunkGroupFeature](docs/Model/TrunkGroupOrderTrunkGroupOrderTrunkGroupFeature.md)
+- [TrunkGroupUpdateEnterpriseCustomerAccount](docs/Model/TrunkGroupUpdateEnterpriseCustomerAccount.md)
 - [TrunkGroupUtilizationResponse](docs/Model/TrunkGroupUtilizationResponse.md)
 - [TrunkGroupUtilizationResponseTrunkGroupUtilList](docs/Model/TrunkGroupUtilizationResponseTrunkGroupUtilList.md)
 - [TrunkGroupUtilizationResponseTrunkGroupUtilListTrunkGroupUtilItem](docs/Model/TrunkGroupUtilizationResponseTrunkGroupUtilListTrunkGroupUtilItem.md)

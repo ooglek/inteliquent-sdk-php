@@ -62,6 +62,7 @@ class TnUpdateTnListTnItem implements ModelInterface, ArrayAccess, \JsonSerializ
     protected static $openAPITypes = [
         'tn' => 'string',
         'trunk_group' => 'string',
+        'routing_option' => 'string',
         'routing_label' => 'string',
         'tn_note' => 'string'
     ];
@@ -76,6 +77,7 @@ class TnUpdateTnListTnItem implements ModelInterface, ArrayAccess, \JsonSerializ
     protected static $openAPIFormats = [
         'tn' => null,
         'trunk_group' => null,
+        'routing_option' => null,
         'routing_label' => null,
         'tn_note' => null
     ];
@@ -109,6 +111,7 @@ class TnUpdateTnListTnItem implements ModelInterface, ArrayAccess, \JsonSerializ
     protected static $attributeMap = [
         'tn' => 'tn',
         'trunk_group' => 'trunkGroup',
+        'routing_option' => 'routingOption',
         'routing_label' => 'routingLabel',
         'tn_note' => 'tnNote'
     ];
@@ -121,6 +124,7 @@ class TnUpdateTnListTnItem implements ModelInterface, ArrayAccess, \JsonSerializ
     protected static $setters = [
         'tn' => 'setTn',
         'trunk_group' => 'setTrunkGroup',
+        'routing_option' => 'setRoutingOption',
         'routing_label' => 'setRoutingLabel',
         'tn_note' => 'setTnNote'
     ];
@@ -133,6 +137,7 @@ class TnUpdateTnListTnItem implements ModelInterface, ArrayAccess, \JsonSerializ
     protected static $getters = [
         'tn' => 'getTn',
         'trunk_group' => 'getTrunkGroup',
+        'routing_option' => 'getRoutingOption',
         'routing_label' => 'getRoutingLabel',
         'tn_note' => 'getTnNote'
     ];
@@ -196,6 +201,7 @@ class TnUpdateTnListTnItem implements ModelInterface, ArrayAccess, \JsonSerializ
     {
         $this->container['tn'] = $data['tn'] ?? null;
         $this->container['trunk_group'] = $data['trunk_group'] ?? null;
+        $this->container['routing_option'] = $data['routing_option'] ?? null;
         $this->container['routing_label'] = $data['routing_label'] ?? null;
         $this->container['tn_note'] = $data['tn_note'] ?? null;
     }
@@ -214,6 +220,9 @@ class TnUpdateTnListTnItem implements ModelInterface, ArrayAccess, \JsonSerializ
         }
         if ($this->container['trunk_group'] === null) {
             $invalidProperties[] = "'trunk_group' can't be null";
+        }
+        if ($this->container['routing_option'] === null) {
+            $invalidProperties[] = "'routing_option' can't be null";
         }
         return $invalidProperties;
     }
@@ -267,13 +276,37 @@ class TnUpdateTnListTnItem implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets trunk_group
      *
-     * @param string $trunk_group New desired trunk group to assign to the telephone number (e.g. CHCGIL24CL1_897)
+     * @param string $trunk_group New desired trunk group to assign to the telephone number (e.g. CHCGIL24CL1_897). Either routing option or trunkGroup is required.
      *
      * @return self
      */
     public function setTrunkGroup($trunk_group)
     {
         $this->container['trunk_group'] = $trunk_group;
+
+        return $this;
+    }
+
+    /**
+     * Gets routing_option
+     *
+     * @return string
+     */
+    public function getRoutingOption()
+    {
+        return $this->container['routing_option'];
+    }
+
+    /**
+     * Sets routing_option
+     *
+     * @param string $routing_option New desired routing option to assign to the telephone number (e.g. API Rename Trunk 1663041555072). Either routing option or trunkGroup is required.
+     *
+     * @return self
+     */
+    public function setRoutingOption($routing_option)
+    {
+        $this->container['routing_option'] = $routing_option;
 
         return $this;
     }

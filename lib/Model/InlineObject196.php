@@ -60,8 +60,7 @@ class InlineObject196 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'private_key' => 'string',
-        'customer_notification_list' => '\OpenAPI\Client\Model\InlineResponse20045CustomerNotificationList'
+        'private_key' => 'string'
     ];
 
     /**
@@ -72,8 +71,7 @@ class InlineObject196 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'private_key' => null,
-        'customer_notification_list' => null
+        'private_key' => null
     ];
 
     /**
@@ -103,8 +101,7 @@ class InlineObject196 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        'private_key' => 'privateKey',
-        'customer_notification_list' => 'customerNotificationList'
+        'private_key' => 'privateKey'
     ];
 
     /**
@@ -113,8 +110,7 @@ class InlineObject196 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        'private_key' => 'setPrivateKey',
-        'customer_notification_list' => 'setCustomerNotificationList'
+        'private_key' => 'setPrivateKey'
     ];
 
     /**
@@ -123,8 +119,7 @@ class InlineObject196 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        'private_key' => 'getPrivateKey',
-        'customer_notification_list' => 'getCustomerNotificationList'
+        'private_key' => 'getPrivateKey'
     ];
 
     /**
@@ -185,7 +180,6 @@ class InlineObject196 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['customer_notification_list'] = $data['customer_notification_list'] ?? null;
     }
 
     /**
@@ -232,30 +226,6 @@ class InlineObject196 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function setPrivateKey($private_key)
     {
         $this->container['private_key'] = $private_key;
-
-        return $this;
-    }
-
-    /**
-     * Gets customer_notification_list
-     *
-     * @return \OpenAPI\Client\Model\InlineResponse20045CustomerNotificationList|null
-     */
-    public function getCustomerNotificationList()
-    {
-        return $this->container['customer_notification_list'];
-    }
-
-    /**
-     * Sets customer_notification_list
-     *
-     * @param \OpenAPI\Client\Model\InlineResponse20045CustomerNotificationList|null $customer_notification_list customer_notification_list
-     *
-     * @return self
-     */
-    public function setCustomerNotificationList($customer_notification_list)
-    {
-        $this->container['customer_notification_list'] = $customer_notification_list;
 
         return $this;
     }

@@ -60,7 +60,17 @@ class InlineObject132 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'private_key' => 'string'
+        'private_key' => 'string',
+        'tn' => 'string',
+        'name' => 'string',
+        'street_num' => 'string',
+        'street_info' => 'string',
+        'location' => 'string',
+        'city' => 'string',
+        'state' => 'string',
+        'postal_code' => 'string',
+        'postal_code_plus_four' => 'string',
+        'remove_e911' => 'string'
     ];
 
     /**
@@ -71,7 +81,17 @@ class InlineObject132 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'private_key' => null
+        'private_key' => null,
+        'tn' => null,
+        'name' => null,
+        'street_num' => null,
+        'street_info' => null,
+        'location' => null,
+        'city' => null,
+        'state' => null,
+        'postal_code' => null,
+        'postal_code_plus_four' => null,
+        'remove_e911' => null
     ];
 
     /**
@@ -101,7 +121,17 @@ class InlineObject132 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        'private_key' => 'privateKey'
+        'private_key' => 'privateKey',
+        'tn' => 'tn',
+        'name' => 'name',
+        'street_num' => 'streetNum',
+        'street_info' => 'streetInfo',
+        'location' => 'location',
+        'city' => 'city',
+        'state' => 'state',
+        'postal_code' => 'postalCode',
+        'postal_code_plus_four' => 'postalCodePlusFour',
+        'remove_e911' => 'removeE911'
     ];
 
     /**
@@ -110,7 +140,17 @@ class InlineObject132 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        'private_key' => 'setPrivateKey'
+        'private_key' => 'setPrivateKey',
+        'tn' => 'setTn',
+        'name' => 'setName',
+        'street_num' => 'setStreetNum',
+        'street_info' => 'setStreetInfo',
+        'location' => 'setLocation',
+        'city' => 'setCity',
+        'state' => 'setState',
+        'postal_code' => 'setPostalCode',
+        'postal_code_plus_four' => 'setPostalCodePlusFour',
+        'remove_e911' => 'setRemoveE911'
     ];
 
     /**
@@ -119,7 +159,17 @@ class InlineObject132 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        'private_key' => 'getPrivateKey'
+        'private_key' => 'getPrivateKey',
+        'tn' => 'getTn',
+        'name' => 'getName',
+        'street_num' => 'getStreetNum',
+        'street_info' => 'getStreetInfo',
+        'location' => 'getLocation',
+        'city' => 'getCity',
+        'state' => 'getState',
+        'postal_code' => 'getPostalCode',
+        'postal_code_plus_four' => 'getPostalCodePlusFour',
+        'remove_e911' => 'getRemoveE911'
     ];
 
     /**
@@ -180,6 +230,16 @@ class InlineObject132 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
+        $this->container['tn'] = $data['tn'] ?? null;
+        $this->container['name'] = $data['name'] ?? null;
+        $this->container['street_num'] = $data['street_num'] ?? null;
+        $this->container['street_info'] = $data['street_info'] ?? null;
+        $this->container['location'] = $data['location'] ?? null;
+        $this->container['city'] = $data['city'] ?? null;
+        $this->container['state'] = $data['state'] ?? null;
+        $this->container['postal_code'] = $data['postal_code'] ?? null;
+        $this->container['postal_code_plus_four'] = $data['postal_code_plus_four'] ?? null;
+        $this->container['remove_e911'] = $data['remove_e911'] ?? null;
     }
 
     /**
@@ -193,6 +253,9 @@ class InlineObject132 implements ModelInterface, ArrayAccess, \JsonSerializable
 
         if ($this->container['private_key'] === null) {
             $invalidProperties[] = "'private_key' can't be null";
+        }
+        if ($this->container['tn'] === null) {
+            $invalidProperties[] = "'tn' can't be null";
         }
         return $invalidProperties;
     }
@@ -222,13 +285,253 @@ class InlineObject132 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets private_key
      *
-     * @param string $private_key API key required to validate your application
+     * @param string $private_key API key required to validate your application; can be retrieved from Admin page of customer portal
      *
      * @return self
      */
     public function setPrivateKey($private_key)
     {
         $this->container['private_key'] = $private_key;
+
+        return $this;
+    }
+
+    /**
+     * Gets tn
+     *
+     * @return string
+     */
+    public function getTn()
+    {
+        return $this->container['tn'];
+    }
+
+    /**
+     * Sets tn
+     *
+     * @param string $tn Telephone Number
+     *
+     * @return self
+     */
+    public function setTn($tn)
+    {
+        $this->container['tn'] = $tn;
+
+        return $this;
+    }
+
+    /**
+     * Gets name
+     *
+     * @return string|null
+     */
+    public function getName()
+    {
+        return $this->container['name'];
+    }
+
+    /**
+     * Sets name
+     *
+     * @param string|null $name E911 address name
+     *
+     * @return self
+     */
+    public function setName($name)
+    {
+        $this->container['name'] = $name;
+
+        return $this;
+    }
+
+    /**
+     * Gets street_num
+     *
+     * @return string|null
+     */
+    public function getStreetNum()
+    {
+        return $this->container['street_num'];
+    }
+
+    /**
+     * Sets street_num
+     *
+     * @param string|null $street_num E911 address street number (e.g. 100, 550)
+     *
+     * @return self
+     */
+    public function setStreetNum($street_num)
+    {
+        $this->container['street_num'] = $street_num;
+
+        return $this;
+    }
+
+    /**
+     * Gets street_info
+     *
+     * @return string|null
+     */
+    public function getStreetInfo()
+    {
+        return $this->container['street_info'];
+    }
+
+    /**
+     * Sets street_info
+     *
+     * @param string|null $street_info E911 address street information (e.g. W Adams St)
+     *
+     * @return self
+     */
+    public function setStreetInfo($street_info)
+    {
+        $this->container['street_info'] = $street_info;
+
+        return $this;
+    }
+
+    /**
+     * Gets location
+     *
+     * @return string|null
+     */
+    public function getLocation()
+    {
+        return $this->container['location'];
+    }
+
+    /**
+     * Sets location
+     *
+     * @param string|null $location E911 address additional address infotmation
+     *
+     * @return self
+     */
+    public function setLocation($location)
+    {
+        $this->container['location'] = $location;
+
+        return $this;
+    }
+
+    /**
+     * Gets city
+     *
+     * @return string|null
+     */
+    public function getCity()
+    {
+        return $this->container['city'];
+    }
+
+    /**
+     * Sets city
+     *
+     * @param string|null $city E911 address city
+     *
+     * @return self
+     */
+    public function setCity($city)
+    {
+        $this->container['city'] = $city;
+
+        return $this;
+    }
+
+    /**
+     * Gets state
+     *
+     * @return string|null
+     */
+    public function getState()
+    {
+        return $this->container['state'];
+    }
+
+    /**
+     * Sets state
+     *
+     * @param string|null $state E911 address state
+     *
+     * @return self
+     */
+    public function setState($state)
+    {
+        $this->container['state'] = $state;
+
+        return $this;
+    }
+
+    /**
+     * Gets postal_code
+     *
+     * @return string|null
+     */
+    public function getPostalCode()
+    {
+        return $this->container['postal_code'];
+    }
+
+    /**
+     * Sets postal_code
+     *
+     * @param string|null $postal_code E911 address zip code
+     *
+     * @return self
+     */
+    public function setPostalCode($postal_code)
+    {
+        $this->container['postal_code'] = $postal_code;
+
+        return $this;
+    }
+
+    /**
+     * Gets postal_code_plus_four
+     *
+     * @return string|null
+     */
+    public function getPostalCodePlusFour()
+    {
+        return $this->container['postal_code_plus_four'];
+    }
+
+    /**
+     * Sets postal_code_plus_four
+     *
+     * @param string|null $postal_code_plus_four E911 address postal code plus four characters
+     *
+     * @return self
+     */
+    public function setPostalCodePlusFour($postal_code_plus_four)
+    {
+        $this->container['postal_code_plus_four'] = $postal_code_plus_four;
+
+        return $this;
+    }
+
+    /**
+     * Gets remove_e911
+     *
+     * @return string|null
+     */
+    public function getRemoveE911()
+    {
+        return $this->container['remove_e911'];
+    }
+
+    /**
+     * Sets remove_e911
+     *
+     * @param string|null $remove_e911 This flag will be used to remove E911 for specified TN (e.g. Y, N)
+     *
+     * @return self
+     */
+    public function setRemoveE911($remove_e911)
+    {
+        $this->container['remove_e911'] = $remove_e911;
 
         return $this;
     }

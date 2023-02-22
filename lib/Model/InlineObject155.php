@@ -249,7 +249,7 @@ class InlineObject155 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets order_id
      *
-     * @param int|null $order_id Order Id
+     * @param int|null $order_id Order Id, if entered, will show the orders matching this order Id.
      *
      * @return self
      */

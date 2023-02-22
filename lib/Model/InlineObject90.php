@@ -61,16 +61,17 @@ class InlineObject90 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'customer_order_reference' => 'string',
+        'tn' => 'string',
+        'account_num' => 'string',
+        'atn' => 'string',
+        'address_line1' => 'string',
+        'city' => 'string',
         'state' => 'string',
-        'lata' => 'string',
-        'rate_center' => 'string',
-        'npa' => 'string',
-        'nxx' => 'string',
-        'quantity' => 'int',
-        'trunk_group' => 'string',
-        'activate' => 'string',
-        'customer_ocn' => 'string'
+        'zip_code' => 'string',
+        'auth_name' => 'string',
+        'pin' => 'string',
+        'password' => 'string',
+        'cust_code' => 'string'
     ];
 
     /**
@@ -82,16 +83,17 @@ class InlineObject90 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'customer_order_reference' => null,
+        'tn' => null,
+        'account_num' => null,
+        'atn' => null,
+        'address_line1' => null,
+        'city' => null,
         'state' => null,
-        'lata' => null,
-        'rate_center' => null,
-        'npa' => null,
-        'nxx' => null,
-        'quantity' => null,
-        'trunk_group' => null,
-        'activate' => null,
-        'customer_ocn' => null
+        'zip_code' => null,
+        'auth_name' => null,
+        'pin' => null,
+        'password' => null,
+        'cust_code' => null
     ];
 
     /**
@@ -122,16 +124,17 @@ class InlineObject90 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'customer_order_reference' => 'customerOrderReference',
+        'tn' => 'tn',
+        'account_num' => 'accountNum',
+        'atn' => 'atn',
+        'address_line1' => 'addressLine1',
+        'city' => 'city',
         'state' => 'state',
-        'lata' => 'lata',
-        'rate_center' => 'rateCenter',
-        'npa' => 'npa',
-        'nxx' => 'nxx',
-        'quantity' => 'quantity',
-        'trunk_group' => 'trunkGroup',
-        'activate' => 'activate',
-        'customer_ocn' => 'customerOcn'
+        'zip_code' => 'zipCode',
+        'auth_name' => 'authName',
+        'pin' => 'pin',
+        'password' => 'password',
+        'cust_code' => 'custCode'
     ];
 
     /**
@@ -141,16 +144,17 @@ class InlineObject90 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'customer_order_reference' => 'setCustomerOrderReference',
+        'tn' => 'setTn',
+        'account_num' => 'setAccountNum',
+        'atn' => 'setAtn',
+        'address_line1' => 'setAddressLine1',
+        'city' => 'setCity',
         'state' => 'setState',
-        'lata' => 'setLata',
-        'rate_center' => 'setRateCenter',
-        'npa' => 'setNpa',
-        'nxx' => 'setNxx',
-        'quantity' => 'setQuantity',
-        'trunk_group' => 'setTrunkGroup',
-        'activate' => 'setActivate',
-        'customer_ocn' => 'setCustomerOcn'
+        'zip_code' => 'setZipCode',
+        'auth_name' => 'setAuthName',
+        'pin' => 'setPin',
+        'password' => 'setPassword',
+        'cust_code' => 'setCustCode'
     ];
 
     /**
@@ -160,16 +164,17 @@ class InlineObject90 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'customer_order_reference' => 'getCustomerOrderReference',
+        'tn' => 'getTn',
+        'account_num' => 'getAccountNum',
+        'atn' => 'getAtn',
+        'address_line1' => 'getAddressLine1',
+        'city' => 'getCity',
         'state' => 'getState',
-        'lata' => 'getLata',
-        'rate_center' => 'getRateCenter',
-        'npa' => 'getNpa',
-        'nxx' => 'getNxx',
-        'quantity' => 'getQuantity',
-        'trunk_group' => 'getTrunkGroup',
-        'activate' => 'getActivate',
-        'customer_ocn' => 'getCustomerOcn'
+        'zip_code' => 'getZipCode',
+        'auth_name' => 'getAuthName',
+        'pin' => 'getPin',
+        'password' => 'getPassword',
+        'cust_code' => 'getCustCode'
     ];
 
     /**
@@ -230,16 +235,17 @@ class InlineObject90 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['customer_order_reference'] = $data['customer_order_reference'] ?? null;
+        $this->container['tn'] = $data['tn'] ?? null;
+        $this->container['account_num'] = $data['account_num'] ?? null;
+        $this->container['atn'] = $data['atn'] ?? null;
+        $this->container['address_line1'] = $data['address_line1'] ?? null;
+        $this->container['city'] = $data['city'] ?? null;
         $this->container['state'] = $data['state'] ?? null;
-        $this->container['lata'] = $data['lata'] ?? null;
-        $this->container['rate_center'] = $data['rate_center'] ?? null;
-        $this->container['npa'] = $data['npa'] ?? null;
-        $this->container['nxx'] = $data['nxx'] ?? null;
-        $this->container['quantity'] = $data['quantity'] ?? null;
-        $this->container['trunk_group'] = $data['trunk_group'] ?? null;
-        $this->container['activate'] = $data['activate'] ?? null;
-        $this->container['customer_ocn'] = $data['customer_ocn'] ?? null;
+        $this->container['zip_code'] = $data['zip_code'] ?? null;
+        $this->container['auth_name'] = $data['auth_name'] ?? null;
+        $this->container['pin'] = $data['pin'] ?? null;
+        $this->container['password'] = $data['password'] ?? null;
+        $this->container['cust_code'] = $data['cust_code'] ?? null;
     }
 
     /**
@@ -253,9 +259,6 @@ class InlineObject90 implements ModelInterface, ArrayAccess, \JsonSerializable
 
         if ($this->container['private_key'] === null) {
             $invalidProperties[] = "'private_key' can't be null";
-        }
-        if ($this->container['quantity'] === null) {
-            $invalidProperties[] = "'quantity' can't be null";
         }
         return $invalidProperties;
     }
@@ -297,25 +300,121 @@ class InlineObject90 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets customer_order_reference
+     * Gets tn
      *
      * @return string|null
      */
-    public function getCustomerOrderReference()
+    public function getTn()
     {
-        return $this->container['customer_order_reference'];
+        return $this->container['tn'];
     }
 
     /**
-     * Sets customer_order_reference
+     * Sets tn
      *
-     * @param string|null $customer_order_reference Customer for whom the order is.
+     * @param string|null $tn Telephone Number
      *
      * @return self
      */
-    public function setCustomerOrderReference($customer_order_reference)
+    public function setTn($tn)
     {
-        $this->container['customer_order_reference'] = $customer_order_reference;
+        $this->container['tn'] = $tn;
+
+        return $this;
+    }
+
+    /**
+     * Gets account_num
+     *
+     * @return string|null
+     */
+    public function getAccountNum()
+    {
+        return $this->container['account_num'];
+    }
+
+    /**
+     * Sets account_num
+     *
+     * @param string|null $account_num Account Number
+     *
+     * @return self
+     */
+    public function setAccountNum($account_num)
+    {
+        $this->container['account_num'] = $account_num;
+
+        return $this;
+    }
+
+    /**
+     * Gets atn
+     *
+     * @return string|null
+     */
+    public function getAtn()
+    {
+        return $this->container['atn'];
+    }
+
+    /**
+     * Sets atn
+     *
+     * @param string|null $atn Account Telephone Number
+     *
+     * @return self
+     */
+    public function setAtn($atn)
+    {
+        $this->container['atn'] = $atn;
+
+        return $this;
+    }
+
+    /**
+     * Gets address_line1
+     *
+     * @return string|null
+     */
+    public function getAddressLine1()
+    {
+        return $this->container['address_line1'];
+    }
+
+    /**
+     * Sets address_line1
+     *
+     * @param string|null $address_line1 TN address line1 information
+     *
+     * @return self
+     */
+    public function setAddressLine1($address_line1)
+    {
+        $this->container['address_line1'] = $address_line1;
+
+        return $this;
+    }
+
+    /**
+     * Gets city
+     *
+     * @return string|null
+     */
+    public function getCity()
+    {
+        return $this->container['city'];
+    }
+
+    /**
+     * Sets city
+     *
+     * @param string|null $city TN address city
+     *
+     * @return self
+     */
+    public function setCity($city)
+    {
+        $this->container['city'] = $city;
 
         return $this;
     }
@@ -333,7 +432,7 @@ class InlineObject90 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets state
      *
-     * @param string|null $state Two-letter state or province abbreviation (e.g. IL, CA)
+     * @param string|null $state TN address state
      *
      * @return self
      */
@@ -345,193 +444,121 @@ class InlineObject90 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets lata
+     * Gets zip_code
      *
      * @return string|null
      */
-    public function getLata()
+    public function getZipCode()
     {
-        return $this->container['lata'];
+        return $this->container['zip_code'];
     }
 
     /**
-     * Sets lata
+     * Sets zip_code
      *
-     * @param string|null $lata Three-digit local access and transport area code
+     * @param string|null $zip_code TN address zip code
      *
      * @return self
      */
-    public function setLata($lata)
+    public function setZipCode($zip_code)
     {
-        $this->container['lata'] = $lata;
+        $this->container['zip_code'] = $zip_code;
 
         return $this;
     }
 
     /**
-     * Gets rate_center
+     * Gets auth_name
      *
      * @return string|null
      */
-    public function getRateCenter()
+    public function getAuthName()
     {
-        return $this->container['rate_center'];
+        return $this->container['auth_name'];
     }
 
     /**
-     * Sets rate_center
+     * Sets auth_name
      *
-     * @param string|null $rate_center Rate center abbreviation (e.g. WSHNGTNZN1)
+     * @param string|null $auth_name Authorized User Name
      *
      * @return self
      */
-    public function setRateCenter($rate_center)
+    public function setAuthName($auth_name)
     {
-        $this->container['rate_center'] = $rate_center;
+        $this->container['auth_name'] = $auth_name;
 
         return $this;
     }
 
     /**
-     * Gets npa
+     * Gets pin
      *
      * @return string|null
      */
-    public function getNpa()
+    public function getPin()
     {
-        return $this->container['npa'];
+        return $this->container['pin'];
     }
 
     /**
-     * Sets npa
+     * Sets pin
      *
-     * @param string|null $npa Three-digit NPA
+     * @param string|null $pin Account PIN
      *
      * @return self
      */
-    public function setNpa($npa)
+    public function setPin($pin)
     {
-        $this->container['npa'] = $npa;
+        $this->container['pin'] = $pin;
 
         return $this;
     }
 
     /**
-     * Gets nxx
+     * Gets password
      *
      * @return string|null
      */
-    public function getNxx()
+    public function getPassword()
     {
-        return $this->container['nxx'];
+        return $this->container['password'];
     }
 
     /**
-     * Sets nxx
+     * Sets password
      *
-     * @param string|null $nxx Three-digit NXX
+     * @param string|null $password Account Password
      *
      * @return self
      */
-    public function setNxx($nxx)
+    public function setPassword($password)
     {
-        $this->container['nxx'] = $nxx;
+        $this->container['password'] = $password;
 
         return $this;
     }
 
     /**
-     * Gets quantity
-     *
-     * @return int
-     */
-    public function getQuantity()
-    {
-        return $this->container['quantity'];
-    }
-
-    /**
-     * Sets quantity
-     *
-     * @param int $quantity Quantity of numbers to request
-     *
-     * @return self
-     */
-    public function setQuantity($quantity)
-    {
-        $this->container['quantity'] = $quantity;
-
-        return $this;
-    }
-
-    /**
-     * Gets trunk_group
+     * Gets cust_code
      *
      * @return string|null
      */
-    public function getTrunkGroup()
+    public function getCustCode()
     {
-        return $this->container['trunk_group'];
+        return $this->container['cust_code'];
     }
 
     /**
-     * Sets trunk_group
+     * Sets cust_code
      *
-     * @param string|null $trunk_group Desired trunk group for the telephone number
+     * @param string|null $cust_code Customer Code
      *
      * @return self
      */
-    public function setTrunkGroup($trunk_group)
+    public function setCustCode($cust_code)
     {
-        $this->container['trunk_group'] = $trunk_group;
-
-        return $this;
-    }
-
-    /**
-     * Gets activate
-     *
-     * @return string|null
-     */
-    public function getActivate()
-    {
-        return $this->container['activate'];
-    }
-
-    /**
-     * Sets activate
-     *
-     * @param string|null $activate Activate flag (Yes/No)
-     *
-     * @return self
-     */
-    public function setActivate($activate)
-    {
-        $this->container['activate'] = $activate;
-
-        return $this;
-    }
-
-    /**
-     * Gets customer_ocn
-     *
-     * @return string|null
-     */
-    public function getCustomerOcn()
-    {
-        return $this->container['customer_ocn'];
-    }
-
-    /**
-     * Sets customer_ocn
-     *
-     * @param string|null $customer_ocn OCN
-     *
-     * @return self
-     */
-    public function setCustomerOcn($customer_ocn)
-    {
-        $this->container['customer_ocn'] = $customer_ocn;
+        $this->container['cust_code'] = $cust_code;
 
         return $this;
     }

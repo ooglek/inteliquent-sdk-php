@@ -61,9 +61,7 @@ class InlineObject103 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'tn_mask' => 'string',
-        'tn_status' => 'string',
-        'routing_label' => 'string'
+        'tn_list' => '\OpenAPI\Client\Model\TfRespOrgTnList'
     ];
 
     /**
@@ -75,9 +73,7 @@ class InlineObject103 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'tn_mask' => null,
-        'tn_status' => null,
-        'routing_label' => null
+        'tn_list' => null
     ];
 
     /**
@@ -108,9 +104,7 @@ class InlineObject103 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'tn_mask' => 'tnMask',
-        'tn_status' => 'tnStatus',
-        'routing_label' => 'routingLabel'
+        'tn_list' => 'tnList'
     ];
 
     /**
@@ -120,9 +114,7 @@ class InlineObject103 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'tn_mask' => 'setTnMask',
-        'tn_status' => 'setTnStatus',
-        'routing_label' => 'setRoutingLabel'
+        'tn_list' => 'setTnList'
     ];
 
     /**
@@ -132,9 +124,7 @@ class InlineObject103 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'tn_mask' => 'getTnMask',
-        'tn_status' => 'getTnStatus',
-        'routing_label' => 'getRoutingLabel'
+        'tn_list' => 'getTnList'
     ];
 
     /**
@@ -195,9 +185,7 @@ class InlineObject103 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['tn_mask'] = $data['tn_mask'] ?? null;
-        $this->container['tn_status'] = $data['tn_status'] ?? null;
-        $this->container['routing_label'] = $data['routing_label'] ?? null;
+        $this->container['tn_list'] = $data['tn_list'] ?? null;
     }
 
     /**
@@ -237,7 +225,7 @@ class InlineObject103 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets private_key
      *
-     * @param string|null $private_key private_key
+     * @param string|null $private_key Private Key
      *
      * @return self
      */
@@ -249,73 +237,25 @@ class InlineObject103 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets tn_mask
+     * Gets tn_list
      *
-     * @return string|null
+     * @return \OpenAPI\Client\Model\TfRespOrgTnList|null
      */
-    public function getTnMask()
+    public function getTnList()
     {
-        return $this->container['tn_mask'];
+        return $this->container['tn_list'];
     }
 
     /**
-     * Sets tn_mask
+     * Sets tn_list
      *
-     * @param string|null $tn_mask tn_mask
+     * @param \OpenAPI\Client\Model\TfRespOrgTnList|null $tn_list tn_list
      *
      * @return self
      */
-    public function setTnMask($tn_mask)
+    public function setTnList($tn_list)
     {
-        $this->container['tn_mask'] = $tn_mask;
-
-        return $this;
-    }
-
-    /**
-     * Gets tn_status
-     *
-     * @return string|null
-     */
-    public function getTnStatus()
-    {
-        return $this->container['tn_status'];
-    }
-
-    /**
-     * Sets tn_status
-     *
-     * @param string|null $tn_status tn_status
-     *
-     * @return self
-     */
-    public function setTnStatus($tn_status)
-    {
-        $this->container['tn_status'] = $tn_status;
-
-        return $this;
-    }
-
-    /**
-     * Gets routing_label
-     *
-     * @return string|null
-     */
-    public function getRoutingLabel()
-    {
-        return $this->container['routing_label'];
-    }
-
-    /**
-     * Sets routing_label
-     *
-     * @param string|null $routing_label routing_label
-     *
-     * @return self
-     */
-    public function setRoutingLabel($routing_label)
-    {
-        $this->container['routing_label'] = $routing_label;
+        $this->container['tn_list'] = $tn_list;
 
         return $this;
     }

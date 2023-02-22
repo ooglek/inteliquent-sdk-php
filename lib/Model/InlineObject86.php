@@ -61,7 +61,7 @@ class InlineObject86 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'tn_e911_notification' => '\OpenAPI\Client\Model\TnE911NotificationListTnE911Notification'
+        'tn_e911_notification' => '\OpenAPI\Client\Model\TnE911NotificationTnE911Notification'
     ];
 
     /**
@@ -245,7 +245,7 @@ class InlineObject86 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets tn_e911_notification
      *
-     * @return \OpenAPI\Client\Model\TnE911NotificationListTnE911Notification
+     * @return \OpenAPI\Client\Model\TnE911NotificationTnE911Notification
      */
     public function getTnE911Notification()
     {
@@ -255,7 +255,7 @@ class InlineObject86 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets tn_e911_notification
      *
-     * @param \OpenAPI\Client\Model\TnE911NotificationListTnE911Notification $tn_e911_notification tn_e911_notification
+     * @param \OpenAPI\Client\Model\TnE911NotificationTnE911Notification $tn_e911_notification tn_e911_notification
      *
      * @return self
      */

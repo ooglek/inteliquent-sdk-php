@@ -61,7 +61,8 @@ class InlineObject185 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'tn_order' => '\OpenAPI\Client\Model\IntlTnOrderTnOrder'
+        'country_ref' => 'string',
+        'quantity' => 'int'
     ];
 
     /**
@@ -73,7 +74,8 @@ class InlineObject185 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'tn_order' => null
+        'country_ref' => null,
+        'quantity' => null
     ];
 
     /**
@@ -104,7 +106,8 @@ class InlineObject185 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'tn_order' => 'tnOrder'
+        'country_ref' => 'countryRef',
+        'quantity' => 'quantity'
     ];
 
     /**
@@ -114,7 +117,8 @@ class InlineObject185 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'tn_order' => 'setTnOrder'
+        'country_ref' => 'setCountryRef',
+        'quantity' => 'setQuantity'
     ];
 
     /**
@@ -124,7 +128,8 @@ class InlineObject185 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'tn_order' => 'getTnOrder'
+        'country_ref' => 'getCountryRef',
+        'quantity' => 'getQuantity'
     ];
 
     /**
@@ -185,7 +190,8 @@ class InlineObject185 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['tn_order'] = $data['tn_order'] ?? null;
+        $this->container['country_ref'] = $data['country_ref'] ?? null;
+        $this->container['quantity'] = $data['quantity'] ?? null;
     }
 
     /**
@@ -237,25 +243,49 @@ class InlineObject185 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets tn_order
+     * Gets country_ref
      *
-     * @return \OpenAPI\Client\Model\IntlTnOrderTnOrder|null
+     * @return string|null
      */
-    public function getTnOrder()
+    public function getCountryRef()
     {
-        return $this->container['tn_order'];
+        return $this->container['country_ref'];
     }
 
     /**
-     * Sets tn_order
+     * Sets country_ref
      *
-     * @param \OpenAPI\Client\Model\IntlTnOrderTnOrder|null $tn_order tn_order
+     * @param string|null $country_ref country_ref
      *
      * @return self
      */
-    public function setTnOrder($tn_order)
+    public function setCountryRef($country_ref)
     {
-        $this->container['tn_order'] = $tn_order;
+        $this->container['country_ref'] = $country_ref;
+
+        return $this;
+    }
+
+    /**
+     * Gets quantity
+     *
+     * @return int|null
+     */
+    public function getQuantity()
+    {
+        return $this->container['quantity'];
+    }
+
+    /**
+     * Sets quantity
+     *
+     * @param int|null $quantity quantity
+     *
+     * @return self
+     */
+    public function setQuantity($quantity)
+    {
+        $this->container['quantity'] = $quantity;
 
         return $this;
     }

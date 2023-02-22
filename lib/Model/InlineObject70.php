@@ -61,8 +61,7 @@ class InlineObject70 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'voice_script' => '\OpenAPI\Client\Model\VoiceScriptVoiceScript[]',
-        'remove_script' => 'string'
+        'tn_e911_order' => '\OpenAPI\Client\Model\TnE911OrderTnE911Order'
     ];
 
     /**
@@ -74,8 +73,7 @@ class InlineObject70 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'voice_script' => null,
-        'remove_script' => null
+        'tn_e911_order' => null
     ];
 
     /**
@@ -106,8 +104,7 @@ class InlineObject70 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'voice_script' => 'voiceScript',
-        'remove_script' => 'removeScript'
+        'tn_e911_order' => 'tnE911Order'
     ];
 
     /**
@@ -117,8 +114,7 @@ class InlineObject70 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'voice_script' => 'setVoiceScript',
-        'remove_script' => 'setRemoveScript'
+        'tn_e911_order' => 'setTnE911Order'
     ];
 
     /**
@@ -128,8 +124,7 @@ class InlineObject70 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'voice_script' => 'getVoiceScript',
-        'remove_script' => 'getRemoveScript'
+        'tn_e911_order' => 'getTnE911Order'
     ];
 
     /**
@@ -190,8 +185,7 @@ class InlineObject70 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['voice_script'] = $data['voice_script'] ?? null;
-        $this->container['remove_script'] = $data['remove_script'] ?? null;
+        $this->container['tn_e911_order'] = $data['tn_e911_order'] ?? null;
     }
 
     /**
@@ -205,6 +199,9 @@ class InlineObject70 implements ModelInterface, ArrayAccess, \JsonSerializable
 
         if ($this->container['private_key'] === null) {
             $invalidProperties[] = "'private_key' can't be null";
+        }
+        if ($this->container['tn_e911_order'] === null) {
+            $invalidProperties[] = "'tn_e911_order' can't be null";
         }
         return $invalidProperties;
     }
@@ -246,49 +243,25 @@ class InlineObject70 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets voice_script
+     * Gets tn_e911_order
      *
-     * @return \OpenAPI\Client\Model\VoiceScriptVoiceScript[]|null
+     * @return \OpenAPI\Client\Model\TnE911OrderTnE911Order
      */
-    public function getVoiceScript()
+    public function getTnE911Order()
     {
-        return $this->container['voice_script'];
+        return $this->container['tn_e911_order'];
     }
 
     /**
-     * Sets voice_script
+     * Sets tn_e911_order
      *
-     * @param \OpenAPI\Client\Model\VoiceScriptVoiceScript[]|null $voice_script List containing TN or domain information. If “removeScript” is not set (implying adding a script), only 1 domain or 1 TN must be included in the list. If “removeScript” is set to “Y”, then multiple TNs can be sent as part of the list
+     * @param \OpenAPI\Client\Model\TnE911OrderTnE911Order $tn_e911_order tn_e911_order
      *
      * @return self
      */
-    public function setVoiceScript($voice_script)
+    public function setTnE911Order($tn_e911_order)
     {
-        $this->container['voice_script'] = $voice_script;
-
-        return $this;
-    }
-
-    /**
-     * Gets remove_script
-     *
-     * @return string|null
-     */
-    public function getRemoveScript()
-    {
-        return $this->container['remove_script'];
-    }
-
-    /**
-     * Sets remove_script
-     *
-     * @param string|null $remove_script If you want to remove the script associated with the given TNs, then pass this flag with the value of Y
-     *
-     * @return self
-     */
-    public function setRemoveScript($remove_script)
-    {
-        $this->container['remove_script'] = $remove_script;
+        $this->container['tn_e911_order'] = $tn_e911_order;
 
         return $this;
     }

@@ -80,7 +80,8 @@ class TrunkGroupOrderTrunkGroupOrder implements ModelInterface, ArrayAccess, \Js
         'customer_media_list' => '\OpenAPI\Client\Model\TrunkGroupOrderTrunkGroupOrderCustomerMediaList',
         'fqdn_list' => '\OpenAPI\Client\Model\TrunkGroupOrderTrunkGroupOrderFqdnList',
         'codec_list' => '\OpenAPI\Client\Model\TrunkGroupOrderTrunkGroupOrderCodecList',
-        'customer_service_address' => '\OpenAPI\Client\Model\TrunkGroupOrderTrunkGroupOrderCustomerServiceAddress'
+        'customer_service_address' => '\OpenAPI\Client\Model\TrunkGroupOrderTrunkGroupOrderCustomerServiceAddress',
+        'enterprise_customer_account' => '\OpenAPI\Client\Model\TrunkGroupUpdateEnterpriseCustomerAccount'
     ];
 
     /**
@@ -110,7 +111,8 @@ class TrunkGroupOrderTrunkGroupOrder implements ModelInterface, ArrayAccess, \Js
         'customer_media_list' => null,
         'fqdn_list' => null,
         'codec_list' => null,
-        'customer_service_address' => null
+        'customer_service_address' => null,
+        'enterprise_customer_account' => null
     ];
 
     /**
@@ -159,7 +161,8 @@ class TrunkGroupOrderTrunkGroupOrder implements ModelInterface, ArrayAccess, \Js
         'customer_media_list' => 'customerMediaList',
         'fqdn_list' => 'fqdnList',
         'codec_list' => 'codecList',
-        'customer_service_address' => 'customerServiceAddress'
+        'customer_service_address' => 'customerServiceAddress',
+        'enterprise_customer_account' => 'enterpriseCustomerAccount'
     ];
 
     /**
@@ -187,7 +190,8 @@ class TrunkGroupOrderTrunkGroupOrder implements ModelInterface, ArrayAccess, \Js
         'customer_media_list' => 'setCustomerMediaList',
         'fqdn_list' => 'setFqdnList',
         'codec_list' => 'setCodecList',
-        'customer_service_address' => 'setCustomerServiceAddress'
+        'customer_service_address' => 'setCustomerServiceAddress',
+        'enterprise_customer_account' => 'setEnterpriseCustomerAccount'
     ];
 
     /**
@@ -215,7 +219,8 @@ class TrunkGroupOrderTrunkGroupOrder implements ModelInterface, ArrayAccess, \Js
         'customer_media_list' => 'getCustomerMediaList',
         'fqdn_list' => 'getFqdnList',
         'codec_list' => 'getCodecList',
-        'customer_service_address' => 'getCustomerServiceAddress'
+        'customer_service_address' => 'getCustomerServiceAddress',
+        'enterprise_customer_account' => 'getEnterpriseCustomerAccount'
     ];
 
     /**
@@ -295,6 +300,7 @@ class TrunkGroupOrderTrunkGroupOrder implements ModelInterface, ArrayAccess, \Js
         $this->container['fqdn_list'] = $data['fqdn_list'] ?? null;
         $this->container['codec_list'] = $data['codec_list'] ?? null;
         $this->container['customer_service_address'] = $data['customer_service_address'] ?? null;
+        $this->container['enterprise_customer_account'] = $data['enterprise_customer_account'] ?? null;
     }
 
     /**
@@ -797,6 +803,30 @@ class TrunkGroupOrderTrunkGroupOrder implements ModelInterface, ArrayAccess, \Js
     public function setCustomerServiceAddress($customer_service_address)
     {
         $this->container['customer_service_address'] = $customer_service_address;
+
+        return $this;
+    }
+
+    /**
+     * Gets enterprise_customer_account
+     *
+     * @return \OpenAPI\Client\Model\TrunkGroupUpdateEnterpriseCustomerAccount|null
+     */
+    public function getEnterpriseCustomerAccount()
+    {
+        return $this->container['enterprise_customer_account'];
+    }
+
+    /**
+     * Sets enterprise_customer_account
+     *
+     * @param \OpenAPI\Client\Model\TrunkGroupUpdateEnterpriseCustomerAccount|null $enterprise_customer_account enterprise_customer_account
+     *
+     * @return self
+     */
+    public function setEnterpriseCustomerAccount($enterprise_customer_account)
+    {
+        $this->container['enterprise_customer_account'] = $enterprise_customer_account;
 
         return $this;
     }

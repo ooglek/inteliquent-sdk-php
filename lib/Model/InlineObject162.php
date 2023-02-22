@@ -60,7 +60,9 @@ class InlineObject162 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'private_key' => 'string'
+        'private_key' => 'string',
+        'customer_order_reference' => 'string',
+        'tn_list' => '\OpenAPI\Client\Model\TfBtnTnList'
     ];
 
     /**
@@ -71,7 +73,9 @@ class InlineObject162 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'private_key' => null
+        'private_key' => null,
+        'customer_order_reference' => null,
+        'tn_list' => null
     ];
 
     /**
@@ -101,7 +105,9 @@ class InlineObject162 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        'private_key' => 'privateKey'
+        'private_key' => 'privateKey',
+        'customer_order_reference' => 'customerOrderReference',
+        'tn_list' => 'tnList'
     ];
 
     /**
@@ -110,7 +116,9 @@ class InlineObject162 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        'private_key' => 'setPrivateKey'
+        'private_key' => 'setPrivateKey',
+        'customer_order_reference' => 'setCustomerOrderReference',
+        'tn_list' => 'setTnList'
     ];
 
     /**
@@ -119,7 +127,9 @@ class InlineObject162 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        'private_key' => 'getPrivateKey'
+        'private_key' => 'getPrivateKey',
+        'customer_order_reference' => 'getCustomerOrderReference',
+        'tn_list' => 'getTnList'
     ];
 
     /**
@@ -180,6 +190,8 @@ class InlineObject162 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
+        $this->container['customer_order_reference'] = $data['customer_order_reference'] ?? null;
+        $this->container['tn_list'] = $data['tn_list'] ?? null;
     }
 
     /**
@@ -191,6 +203,12 @@ class InlineObject162 implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         $invalidProperties = [];
 
+        if ($this->container['private_key'] === null) {
+            $invalidProperties[] = "'private_key' can't be null";
+        }
+        if ($this->container['tn_list'] === null) {
+            $invalidProperties[] = "'tn_list' can't be null";
+        }
         return $invalidProperties;
     }
 
@@ -209,7 +227,7 @@ class InlineObject162 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets private_key
      *
-     * @return string|null
+     * @return string
      */
     public function getPrivateKey()
     {
@@ -219,13 +237,61 @@ class InlineObject162 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets private_key
      *
-     * @param string|null $private_key private_key
+     * @param string $private_key API key required to validate your application
      *
      * @return self
      */
     public function setPrivateKey($private_key)
     {
         $this->container['private_key'] = $private_key;
+
+        return $this;
+    }
+
+    /**
+     * Gets customer_order_reference
+     *
+     * @return string|null
+     */
+    public function getCustomerOrderReference()
+    {
+        return $this->container['customer_order_reference'];
+    }
+
+    /**
+     * Sets customer_order_reference
+     *
+     * @param string|null $customer_order_reference Alphanumeric order reference name
+     *
+     * @return self
+     */
+    public function setCustomerOrderReference($customer_order_reference)
+    {
+        $this->container['customer_order_reference'] = $customer_order_reference;
+
+        return $this;
+    }
+
+    /**
+     * Gets tn_list
+     *
+     * @return \OpenAPI\Client\Model\TfBtnTnList
+     */
+    public function getTnList()
+    {
+        return $this->container['tn_list'];
+    }
+
+    /**
+     * Sets tn_list
+     *
+     * @param \OpenAPI\Client\Model\TfBtnTnList $tn_list tn_list
+     *
+     * @return self
+     */
+    public function setTnList($tn_list)
+    {
+        $this->container['tn_list'] = $tn_list;
 
         return $this;
     }

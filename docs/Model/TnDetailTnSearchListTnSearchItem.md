@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **tn_mask** | **string** | Ten-digit telephone number (e.g. 3123804519) |
 **tn_status** | **string** | Telephone number status | [optional]
 **trunk_group_name** | **string** | Assigned trunk group name (e.g. CHCGIL24CL1_897) | [optional]
+**routing_option** | **string** | Assigned routing option (e.g. API Rename Trunk 1663041555072) | [optional]
 **lata** | **string** | Three-digit local access and transport area code (e.g. 358, 360, 362) | [optional]
 **rate_center** | **string** | Rate center abbreviation (e.g. WSHNGTNZN1) | [optional]
 **province** | **string** | Two-letter state or province abbreviation (e.g. IL, CA) | [optional]
@@ -28,5 +29,7 @@ Name | Type | Description | Notes
 **messaging** | **string** | Search for numbers with or without messaging enabled; acceptable values are Y and N | [optional]
 **net_number_id** | **string** |  | [optional]
 **wireless** | **string** | Search for wireline or wireless numbers; acceptable values are Y and N | [optional]
+**dno** | **string** | Search for tns that have DNO set to Y or N.Acceptable values are Y and N | [optional]
+**alt_spid** | **string** | Search for tns that have the specified altSpid. | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

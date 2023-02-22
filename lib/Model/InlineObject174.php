@@ -61,7 +61,8 @@ class InlineObject174 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'tn_reserve' => '\OpenAPI\Client\Model\IntlTnReserveTnReserve'
+        'order_id' => 'int',
+        'customer_order_reference' => 'string'
     ];
 
     /**
@@ -73,7 +74,8 @@ class InlineObject174 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'tn_reserve' => null
+        'order_id' => null,
+        'customer_order_reference' => null
     ];
 
     /**
@@ -104,7 +106,8 @@ class InlineObject174 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'tn_reserve' => 'tnReserve'
+        'order_id' => 'orderId',
+        'customer_order_reference' => 'customerOrderReference'
     ];
 
     /**
@@ -114,7 +117,8 @@ class InlineObject174 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'tn_reserve' => 'setTnReserve'
+        'order_id' => 'setOrderId',
+        'customer_order_reference' => 'setCustomerOrderReference'
     ];
 
     /**
@@ -124,7 +128,8 @@ class InlineObject174 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'tn_reserve' => 'getTnReserve'
+        'order_id' => 'getOrderId',
+        'customer_order_reference' => 'getCustomerOrderReference'
     ];
 
     /**
@@ -185,7 +190,8 @@ class InlineObject174 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['tn_reserve'] = $data['tn_reserve'] ?? null;
+        $this->container['order_id'] = $data['order_id'] ?? null;
+        $this->container['customer_order_reference'] = $data['customer_order_reference'] ?? null;
     }
 
     /**
@@ -237,25 +243,49 @@ class InlineObject174 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets tn_reserve
+     * Gets order_id
      *
-     * @return \OpenAPI\Client\Model\IntlTnReserveTnReserve|null
+     * @return int|null
      */
-    public function getTnReserve()
+    public function getOrderId()
     {
-        return $this->container['tn_reserve'];
+        return $this->container['order_id'];
     }
 
     /**
-     * Sets tn_reserve
+     * Sets order_id
      *
-     * @param \OpenAPI\Client\Model\IntlTnReserveTnReserve|null $tn_reserve tn_reserve
+     * @param int|null $order_id order_id
      *
      * @return self
      */
-    public function setTnReserve($tn_reserve)
+    public function setOrderId($order_id)
     {
-        $this->container['tn_reserve'] = $tn_reserve;
+        $this->container['order_id'] = $order_id;
+
+        return $this;
+    }
+
+    /**
+     * Gets customer_order_reference
+     *
+     * @return string|null
+     */
+    public function getCustomerOrderReference()
+    {
+        return $this->container['customer_order_reference'];
+    }
+
+    /**
+     * Sets customer_order_reference
+     *
+     * @param string|null $customer_order_reference customer_order_reference
+     *
+     * @return self
+     */
+    public function setCustomerOrderReference($customer_order_reference)
+    {
+        $this->container['customer_order_reference'] = $customer_order_reference;
 
         return $this;
     }

@@ -121,7 +121,7 @@ class WebhooksApi
      *
      * Webhook for order apis
      *
-     * @param  \OpenAPI\Client\Model\InlineObject143 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject144 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -138,7 +138,7 @@ class WebhooksApi
      *
      * Webhook for order apis
      *
-     * @param  \OpenAPI\Client\Model\InlineObject143 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject144 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -251,7 +251,7 @@ class WebhooksApi
      *
      * Webhook for order apis
      *
-     * @param  \OpenAPI\Client\Model\InlineObject143 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject144 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -271,7 +271,7 @@ class WebhooksApi
      *
      * Webhook for order apis
      *
-     * @param  \OpenAPI\Client\Model\InlineObject143 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject144 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -317,7 +317,7 @@ class WebhooksApi
     /**
      * Create request for operation 'customerConfiguredWebhookURLForOrderUpdatesPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject143 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject144 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

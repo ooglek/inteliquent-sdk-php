@@ -61,8 +61,7 @@ class InlineObject110 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'routing_label' => 'string',
-        'new_routing_label' => 'string'
+        'routing_label' => 'string'
     ];
 
     /**
@@ -74,8 +73,7 @@ class InlineObject110 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'routing_label' => null,
-        'new_routing_label' => null
+        'routing_label' => null
     ];
 
     /**
@@ -106,8 +104,7 @@ class InlineObject110 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'routing_label' => 'routingLabel',
-        'new_routing_label' => 'newRoutingLabel'
+        'routing_label' => 'routingLabel'
     ];
 
     /**
@@ -117,8 +114,7 @@ class InlineObject110 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'routing_label' => 'setRoutingLabel',
-        'new_routing_label' => 'setNewRoutingLabel'
+        'routing_label' => 'setRoutingLabel'
     ];
 
     /**
@@ -128,8 +124,7 @@ class InlineObject110 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'routing_label' => 'getRoutingLabel',
-        'new_routing_label' => 'getNewRoutingLabel'
+        'routing_label' => 'getRoutingLabel'
     ];
 
     /**
@@ -191,7 +186,6 @@ class InlineObject110 implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
         $this->container['routing_label'] = $data['routing_label'] ?? null;
-        $this->container['new_routing_label'] = $data['new_routing_label'] ?? null;
     }
 
     /**
@@ -208,9 +202,6 @@ class InlineObject110 implements ModelInterface, ArrayAccess, \JsonSerializable
         }
         if ($this->container['routing_label'] === null) {
             $invalidProperties[] = "'routing_label' can't be null";
-        }
-        if ($this->container['new_routing_label'] === null) {
-            $invalidProperties[] = "'new_routing_label' can't be null";
         }
         return $invalidProperties;
     }
@@ -271,30 +262,6 @@ class InlineObject110 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function setRoutingLabel($routing_label)
     {
         $this->container['routing_label'] = $routing_label;
-
-        return $this;
-    }
-
-    /**
-     * Gets new_routing_label
-     *
-     * @return string
-     */
-    public function getNewRoutingLabel()
-    {
-        return $this->container['new_routing_label'];
-    }
-
-    /**
-     * Sets new_routing_label
-     *
-     * @param string $new_routing_label New routing label name
-     *
-     * @return self
-     */
-    public function setNewRoutingLabel($new_routing_label)
-    {
-        $this->container['new_routing_label'] = $new_routing_label;
 
         return $this;
     }

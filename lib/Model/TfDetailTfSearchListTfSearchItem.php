@@ -78,7 +78,8 @@ class TfDetailTfSearchListTfSearchItem implements ModelInterface, ArrayAccess, \
         'message_type' => 'string',
         'net_number_id' => 'string',
         'dnis' => 'string',
-        'billing_tn' => 'string'
+        'billing_tn' => 'string',
+        'dno' => 'string'
     ];
 
     /**
@@ -107,7 +108,8 @@ class TfDetailTfSearchListTfSearchItem implements ModelInterface, ArrayAccess, \
         'message_type' => null,
         'net_number_id' => null,
         'dnis' => null,
-        'billing_tn' => null
+        'billing_tn' => null,
+        'dno' => null
     ];
 
     /**
@@ -155,7 +157,8 @@ class TfDetailTfSearchListTfSearchItem implements ModelInterface, ArrayAccess, \
         'message_type' => 'messageType',
         'net_number_id' => 'netNumberId',
         'dnis' => 'dnis',
-        'billing_tn' => 'billingTn'
+        'billing_tn' => 'billingTn',
+        'dno' => 'dno'
     ];
 
     /**
@@ -182,7 +185,8 @@ class TfDetailTfSearchListTfSearchItem implements ModelInterface, ArrayAccess, \
         'message_type' => 'setMessageType',
         'net_number_id' => 'setNetNumberId',
         'dnis' => 'setDnis',
-        'billing_tn' => 'setBillingTn'
+        'billing_tn' => 'setBillingTn',
+        'dno' => 'setDno'
     ];
 
     /**
@@ -209,7 +213,8 @@ class TfDetailTfSearchListTfSearchItem implements ModelInterface, ArrayAccess, \
         'message_type' => 'getMessageType',
         'net_number_id' => 'getNetNumberId',
         'dnis' => 'getDnis',
-        'billing_tn' => 'getBillingTn'
+        'billing_tn' => 'getBillingTn',
+        'dno' => 'getDno'
     ];
 
     /**
@@ -264,6 +269,8 @@ class TfDetailTfSearchListTfSearchItem implements ModelInterface, ArrayAccess, \
     const MESSAGE_TYPE_SMS_ALT = 'SMS_ALT';
     const MESSAGE_TYPE_MMS_ALT = 'MMS_ALT';
     const MESSAGE_TYPE_SMSMMS_ALT = 'SMSMMS_ALT';
+    const DNO_Y = 'Y';
+    const DNO_N = 'N';
 
     /**
      * Gets allowable values of the enum
@@ -310,6 +317,19 @@ class TfDetailTfSearchListTfSearchItem implements ModelInterface, ArrayAccess, \
     }
 
     /**
+     * Gets allowable values of the enum
+     *
+     * @return string[]
+     */
+    public function getDnoAllowableValues()
+    {
+        return [
+            self::DNO_Y,
+            self::DNO_N,
+        ];
+    }
+
+    /**
      * Associative array for storing property values
      *
      * @var mixed[]
@@ -343,6 +363,7 @@ class TfDetailTfSearchListTfSearchItem implements ModelInterface, ArrayAccess, \
         $this->container['net_number_id'] = $data['net_number_id'] ?? null;
         $this->container['dnis'] = $data['dnis'] ?? null;
         $this->container['billing_tn'] = $data['billing_tn'] ?? null;
+        $this->container['dno'] = $data['dno'] ?? null;
     }
 
     /**
@@ -377,6 +398,15 @@ class TfDetailTfSearchListTfSearchItem implements ModelInterface, ArrayAccess, \
             $invalidProperties[] = sprintf(
                 "invalid value '%s' for 'message_type', must be one of '%s'",
                 $this->container['message_type'],
+                implode("', '", $allowedValues)
+            );
+        }
+
+        $allowedValues = $this->getDnoAllowableValues();
+        if (!is_null($this->container['dno']) && !in_array($this->container['dno'], $allowedValues, true)) {
+            $invalidProperties[] = sprintf(
+                "invalid value '%s' for 'dno', must be one of '%s'",
+                $this->container['dno'],
                 implode("', '", $allowedValues)
             );
         }
@@ -878,6 +908,40 @@ class TfDetailTfSearchListTfSearchItem implements ModelInterface, ArrayAccess, \
     public function setBillingTn($billing_tn)
     {
         $this->container['billing_tn'] = $billing_tn;
+
+        return $this;
+    }
+
+    /**
+     * Gets dno
+     *
+     * @return string|null
+     */
+    public function getDno()
+    {
+        return $this->container['dno'];
+    }
+
+    /**
+     * Sets dno
+     *
+     * @param string|null $dno Search for tns that have DNO set to Y or N.Acceptable values are Y and N
+     *
+     * @return self
+     */
+    public function setDno($dno)
+    {
+        $allowedValues = $this->getDnoAllowableValues();
+        if (!is_null($dno) && !in_array($dno, $allowedValues, true)) {
+            throw new \InvalidArgumentException(
+                sprintf(
+                    "Invalid value '%s' for 'dno', must be one of '%s'",
+                    $dno,
+                    implode("', '", $allowedValues)
+                )
+            );
+        }
+        $this->container['dno'] = $dno;
 
         return $this;
     }

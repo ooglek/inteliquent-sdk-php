@@ -36,7 +36,7 @@ $apiInstance = new OpenAPI\Client\Api\PortOutPinLogListApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject137(); // \OpenAPI\Client\Model\InlineObject137
+$payload = new \OpenAPI\Client\Model\InlineObject138(); // \OpenAPI\Client\Model\InlineObject138
 
 try {
     $result = $apiInstance->portOutPinLogListPost($payload);
@@ -50,7 +50,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject137**](../Model/InlineObject137.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject138**](../Model/InlineObject138.md)|  |
 
 ### Return type
 

@@ -61,7 +61,7 @@ class InlineObject72 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'tn_forward' => '\OpenAPI\Client\Model\TnForwardTnForward'
+        'voice_script' => '\OpenAPI\Client\Model\VoiceScriptDetailVoiceScript[]'
     ];
 
     /**
@@ -73,7 +73,7 @@ class InlineObject72 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'tn_forward' => null
+        'voice_script' => null
     ];
 
     /**
@@ -104,7 +104,7 @@ class InlineObject72 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'tn_forward' => 'tnForward'
+        'voice_script' => 'voiceScript'
     ];
 
     /**
@@ -114,7 +114,7 @@ class InlineObject72 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'tn_forward' => 'setTnForward'
+        'voice_script' => 'setVoiceScript'
     ];
 
     /**
@@ -124,7 +124,7 @@ class InlineObject72 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'tn_forward' => 'getTnForward'
+        'voice_script' => 'getVoiceScript'
     ];
 
     /**
@@ -185,7 +185,7 @@ class InlineObject72 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['tn_forward'] = $data['tn_forward'] ?? null;
+        $this->container['voice_script'] = $data['voice_script'] ?? null;
     }
 
     /**
@@ -199,9 +199,6 @@ class InlineObject72 implements ModelInterface, ArrayAccess, \JsonSerializable
 
         if ($this->container['private_key'] === null) {
             $invalidProperties[] = "'private_key' can't be null";
-        }
-        if ($this->container['tn_forward'] === null) {
-            $invalidProperties[] = "'tn_forward' can't be null";
         }
         return $invalidProperties;
     }
@@ -243,25 +240,25 @@ class InlineObject72 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets tn_forward
+     * Gets voice_script
      *
-     * @return \OpenAPI\Client\Model\TnForwardTnForward
+     * @return \OpenAPI\Client\Model\VoiceScriptDetailVoiceScript[]|null
      */
-    public function getTnForward()
+    public function getVoiceScript()
     {
-        return $this->container['tn_forward'];
+        return $this->container['voice_script'];
     }
 
     /**
-     * Sets tn_forward
+     * Sets voice_script
      *
-     * @param \OpenAPI\Client\Model\TnForwardTnForward $tn_forward tn_forward
+     * @param \OpenAPI\Client\Model\VoiceScriptDetailVoiceScript[]|null $voice_script Contains requested voice script settings, only 1 domain can be sent, but if TN then, multiple TNs can be sent as part of the list
      *
      * @return self
      */
-    public function setTnForward($tn_forward)
+    public function setVoiceScript($voice_script)
     {
-        $this->container['tn_forward'] = $tn_forward;
+        $this->container['voice_script'] = $voice_script;
 
         return $this;
     }

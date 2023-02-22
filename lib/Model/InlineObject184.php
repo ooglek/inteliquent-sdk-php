@@ -61,7 +61,9 @@ class InlineObject184 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'tn_note' => '\OpenAPI\Client\Model\IntlTnNoteUpdateTnNote'
+        'portal_user_id' => 'int',
+        'order_id' => 'int',
+        'tn_list' => '\OpenAPI\Client\Model\IntlTnEndUserTnList'
     ];
 
     /**
@@ -73,7 +75,9 @@ class InlineObject184 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'tn_note' => null
+        'portal_user_id' => null,
+        'order_id' => null,
+        'tn_list' => null
     ];
 
     /**
@@ -104,7 +108,9 @@ class InlineObject184 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'tn_note' => 'tnNote'
+        'portal_user_id' => 'portalUserId',
+        'order_id' => 'orderId',
+        'tn_list' => 'tnList'
     ];
 
     /**
@@ -114,7 +120,9 @@ class InlineObject184 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'tn_note' => 'setTnNote'
+        'portal_user_id' => 'setPortalUserId',
+        'order_id' => 'setOrderId',
+        'tn_list' => 'setTnList'
     ];
 
     /**
@@ -124,7 +132,9 @@ class InlineObject184 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'tn_note' => 'getTnNote'
+        'portal_user_id' => 'getPortalUserId',
+        'order_id' => 'getOrderId',
+        'tn_list' => 'getTnList'
     ];
 
     /**
@@ -185,7 +195,9 @@ class InlineObject184 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['tn_note'] = $data['tn_note'] ?? null;
+        $this->container['portal_user_id'] = $data['portal_user_id'] ?? null;
+        $this->container['order_id'] = $data['order_id'] ?? null;
+        $this->container['tn_list'] = $data['tn_list'] ?? null;
     }
 
     /**
@@ -237,25 +249,73 @@ class InlineObject184 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets tn_note
+     * Gets portal_user_id
      *
-     * @return \OpenAPI\Client\Model\IntlTnNoteUpdateTnNote|null
+     * @return int|null
      */
-    public function getTnNote()
+    public function getPortalUserId()
     {
-        return $this->container['tn_note'];
+        return $this->container['portal_user_id'];
     }
 
     /**
-     * Sets tn_note
+     * Sets portal_user_id
      *
-     * @param \OpenAPI\Client\Model\IntlTnNoteUpdateTnNote|null $tn_note tn_note
+     * @param int|null $portal_user_id portal_user_id
      *
      * @return self
      */
-    public function setTnNote($tn_note)
+    public function setPortalUserId($portal_user_id)
     {
-        $this->container['tn_note'] = $tn_note;
+        $this->container['portal_user_id'] = $portal_user_id;
+
+        return $this;
+    }
+
+    /**
+     * Gets order_id
+     *
+     * @return int|null
+     */
+    public function getOrderId()
+    {
+        return $this->container['order_id'];
+    }
+
+    /**
+     * Sets order_id
+     *
+     * @param int|null $order_id order_id
+     *
+     * @return self
+     */
+    public function setOrderId($order_id)
+    {
+        $this->container['order_id'] = $order_id;
+
+        return $this;
+    }
+
+    /**
+     * Gets tn_list
+     *
+     * @return \OpenAPI\Client\Model\IntlTnEndUserTnList|null
+     */
+    public function getTnList()
+    {
+        return $this->container['tn_list'];
+    }
+
+    /**
+     * Sets tn_list
+     *
+     * @param \OpenAPI\Client\Model\IntlTnEndUserTnList|null $tn_list tn_list
+     *
+     * @return self
+     */
+    public function setTnList($tn_list)
+    {
+        $this->container['tn_list'] = $tn_list;
 
         return $this;
     }

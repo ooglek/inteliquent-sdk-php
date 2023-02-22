@@ -61,7 +61,7 @@ class InlineObject154 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'order_id' => 'int'
+        'change_trunk_group_order' => '\OpenAPI\Client\Model\ChangeTrunkGroupOrderChangeTrunkGroupOrder'
     ];
 
     /**
@@ -73,7 +73,7 @@ class InlineObject154 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'order_id' => null
+        'change_trunk_group_order' => null
     ];
 
     /**
@@ -104,7 +104,7 @@ class InlineObject154 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'order_id' => 'orderId'
+        'change_trunk_group_order' => 'changeTrunkGroupOrder'
     ];
 
     /**
@@ -114,7 +114,7 @@ class InlineObject154 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'order_id' => 'setOrderId'
+        'change_trunk_group_order' => 'setChangeTrunkGroupOrder'
     ];
 
     /**
@@ -124,7 +124,7 @@ class InlineObject154 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'order_id' => 'getOrderId'
+        'change_trunk_group_order' => 'getChangeTrunkGroupOrder'
     ];
 
     /**
@@ -185,7 +185,7 @@ class InlineObject154 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['order_id'] = $data['order_id'] ?? null;
+        $this->container['change_trunk_group_order'] = $data['change_trunk_group_order'] ?? null;
     }
 
     /**
@@ -197,6 +197,12 @@ class InlineObject154 implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         $invalidProperties = [];
 
+        if ($this->container['private_key'] === null) {
+            $invalidProperties[] = "'private_key' can't be null";
+        }
+        if ($this->container['change_trunk_group_order'] === null) {
+            $invalidProperties[] = "'change_trunk_group_order' can't be null";
+        }
         return $invalidProperties;
     }
 
@@ -215,7 +221,7 @@ class InlineObject154 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets private_key
      *
-     * @return string|null
+     * @return string
      */
     public function getPrivateKey()
     {
@@ -225,7 +231,7 @@ class InlineObject154 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets private_key
      *
-     * @param string|null $private_key Private Key
+     * @param string $private_key API key required to validate your application
      *
      * @return self
      */
@@ -237,25 +243,25 @@ class InlineObject154 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets order_id
+     * Gets change_trunk_group_order
      *
-     * @return int|null
+     * @return \OpenAPI\Client\Model\ChangeTrunkGroupOrderChangeTrunkGroupOrder
      */
-    public function getOrderId()
+    public function getChangeTrunkGroupOrder()
     {
-        return $this->container['order_id'];
+        return $this->container['change_trunk_group_order'];
     }
 
     /**
-     * Sets order_id
+     * Sets change_trunk_group_order
      *
-     * @param int|null $order_id Order Id, if entered, will show the orders matching this order Id.
+     * @param \OpenAPI\Client\Model\ChangeTrunkGroupOrderChangeTrunkGroupOrder $change_trunk_group_order change_trunk_group_order
      *
      * @return self
      */
-    public function setOrderId($order_id)
+    public function setChangeTrunkGroupOrder($change_trunk_group_order)
     {
-        $this->container['order_id'] = $order_id;
+        $this->container['change_trunk_group_order'] = $change_trunk_group_order;
 
         return $this;
     }

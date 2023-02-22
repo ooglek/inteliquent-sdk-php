@@ -61,7 +61,7 @@ class InlineObject69 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'tn_e911_order' => '\OpenAPI\Client\Model\TnE911OrderTnE911Order'
+        'tn_feature_order' => '\OpenAPI\Client\Model\TnFeatureOrderTnFeatureOrder'
     ];
 
     /**
@@ -73,7 +73,7 @@ class InlineObject69 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'tn_e911_order' => null
+        'tn_feature_order' => null
     ];
 
     /**
@@ -104,7 +104,7 @@ class InlineObject69 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'tn_e911_order' => 'tnE911Order'
+        'tn_feature_order' => 'tnFeatureOrder'
     ];
 
     /**
@@ -114,7 +114,7 @@ class InlineObject69 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'tn_e911_order' => 'setTnE911Order'
+        'tn_feature_order' => 'setTnFeatureOrder'
     ];
 
     /**
@@ -124,7 +124,7 @@ class InlineObject69 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'tn_e911_order' => 'getTnE911Order'
+        'tn_feature_order' => 'getTnFeatureOrder'
     ];
 
     /**
@@ -185,7 +185,7 @@ class InlineObject69 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['tn_e911_order'] = $data['tn_e911_order'] ?? null;
+        $this->container['tn_feature_order'] = $data['tn_feature_order'] ?? null;
     }
 
     /**
@@ -200,8 +200,8 @@ class InlineObject69 implements ModelInterface, ArrayAccess, \JsonSerializable
         if ($this->container['private_key'] === null) {
             $invalidProperties[] = "'private_key' can't be null";
         }
-        if ($this->container['tn_e911_order'] === null) {
-            $invalidProperties[] = "'tn_e911_order' can't be null";
+        if ($this->container['tn_feature_order'] === null) {
+            $invalidProperties[] = "'tn_feature_order' can't be null";
         }
         return $invalidProperties;
     }
@@ -243,25 +243,25 @@ class InlineObject69 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets tn_e911_order
+     * Gets tn_feature_order
      *
-     * @return \OpenAPI\Client\Model\TnE911OrderTnE911Order
+     * @return \OpenAPI\Client\Model\TnFeatureOrderTnFeatureOrder
      */
-    public function getTnE911Order()
+    public function getTnFeatureOrder()
     {
-        return $this->container['tn_e911_order'];
+        return $this->container['tn_feature_order'];
     }
 
     /**
-     * Sets tn_e911_order
+     * Sets tn_feature_order
      *
-     * @param \OpenAPI\Client\Model\TnE911OrderTnE911Order $tn_e911_order tn_e911_order
+     * @param \OpenAPI\Client\Model\TnFeatureOrderTnFeatureOrder $tn_feature_order tn_feature_order
      *
      * @return self
      */
-    public function setTnE911Order($tn_e911_order)
+    public function setTnFeatureOrder($tn_feature_order)
     {
-        $this->container['tn_e911_order'] = $tn_e911_order;
+        $this->container['tn_feature_order'] = $tn_feature_order;
 
         return $this;
     }

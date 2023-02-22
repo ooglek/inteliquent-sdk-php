@@ -39,7 +39,7 @@ $apiInstance = new OpenAPI\Client\Api\CustomerNotificationsApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject195(); // \OpenAPI\Client\Model\InlineObject195
+$payload = new \OpenAPI\Client\Model\InlineObject197(); // \OpenAPI\Client\Model\InlineObject197
 
 try {
     $result = $apiInstance->customerNotificationListPost($payload);
@@ -53,7 +53,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject195**](../Model/InlineObject195.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject197**](../Model/InlineObject197.md)|  |
 
 ### Return type
 
@@ -101,7 +101,7 @@ $apiInstance = new OpenAPI\Client\Api\CustomerNotificationsApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject196(); // \OpenAPI\Client\Model\InlineObject196
+$payload = new \OpenAPI\Client\Model\InlineObject198(); // \OpenAPI\Client\Model\InlineObject198
 
 try {
     $result = $apiInstance->customerNotificationPost($payload);
@@ -115,7 +115,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject196**](../Model/InlineObject196.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject198**](../Model/InlineObject198.md)|  |
 
 ### Return type
 
@@ -163,7 +163,7 @@ $apiInstance = new OpenAPI\Client\Api\CustomerNotificationsApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject193(); // \OpenAPI\Client\Model\InlineObject193
+$payload = new \OpenAPI\Client\Model\InlineObject195(); // \OpenAPI\Client\Model\InlineObject195
 
 try {
     $result = $apiInstance->notificationTypesPost($payload);
@@ -177,7 +177,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject193**](../Model/InlineObject193.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject195**](../Model/InlineObject195.md)|  |
 
 ### Return type
 
@@ -225,7 +225,7 @@ $apiInstance = new OpenAPI\Client\Api\CustomerNotificationsApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject194(); // \OpenAPI\Client\Model\InlineObject194
+$payload = new \OpenAPI\Client\Model\InlineObject196(); // \OpenAPI\Client\Model\InlineObject196
 
 try {
     $result = $apiInstance->webhookTypesPost($payload);
@@ -239,7 +239,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject194**](../Model/InlineObject194.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject196**](../Model/InlineObject196.md)|  |
 
 ### Return type
 

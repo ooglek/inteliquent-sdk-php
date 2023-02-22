@@ -63,7 +63,7 @@ class ResponseTnDetailSearchIdTnFeature implements ModelInterface, ArrayAccess, 
         'caller_id' => '\OpenAPI\Client\Model\PortInOrderPortInOrderTnListTnFeatureCallerId',
         'directory_listing' => '\OpenAPI\Client\Model\ResponseTnDetailSearchIdTnFeatureDirectoryListing',
         'e911' => '\OpenAPI\Client\Model\ResponseTnDetailSearchIdTnFeatureE911',
-        'messaging' => '\OpenAPI\Client\Model\TfMessagingOrderTfMessagingOrderTnListTnFeatureMessaging'
+        'messaging' => '\OpenAPI\Client\Model\PortInOrderPortInOrderTnListTnFeatureMessaging'
     ];
 
     /**
@@ -299,7 +299,7 @@ class ResponseTnDetailSearchIdTnFeature implements ModelInterface, ArrayAccess, 
     /**
      * Gets messaging
      *
-     * @return \OpenAPI\Client\Model\TfMessagingOrderTfMessagingOrderTnListTnFeatureMessaging|null
+     * @return \OpenAPI\Client\Model\PortInOrderPortInOrderTnListTnFeatureMessaging|null
      */
     public function getMessaging()
     {
@@ -309,7 +309,7 @@ class ResponseTnDetailSearchIdTnFeature implements ModelInterface, ArrayAccess, 
     /**
      * Sets messaging
      *
-     * @param \OpenAPI\Client\Model\TfMessagingOrderTfMessagingOrderTnListTnFeatureMessaging|null $messaging messaging
+     * @param \OpenAPI\Client\Model\PortInOrderPortInOrderTnListTnFeatureMessaging|null $messaging messaging
      *
      * @return self
      */

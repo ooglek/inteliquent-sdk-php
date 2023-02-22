@@ -61,9 +61,7 @@ class InlineObject61 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'customer_order_reference' => 'string',
-        'desired_due_date' => 'string',
-        'tn_list' => '\OpenAPI\Client\Model\TnDisconnectTnList'
+        'tn_list' => '\OpenAPI\Client\Model\TnAltSpidTnList'
     ];
 
     /**
@@ -75,8 +73,6 @@ class InlineObject61 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'customer_order_reference' => null,
-        'desired_due_date' => null,
         'tn_list' => null
     ];
 
@@ -108,8 +104,6 @@ class InlineObject61 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'customer_order_reference' => 'customerOrderReference',
-        'desired_due_date' => 'desiredDueDate',
         'tn_list' => 'tnList'
     ];
 
@@ -120,8 +114,6 @@ class InlineObject61 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'customer_order_reference' => 'setCustomerOrderReference',
-        'desired_due_date' => 'setDesiredDueDate',
         'tn_list' => 'setTnList'
     ];
 
@@ -132,8 +124,6 @@ class InlineObject61 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'customer_order_reference' => 'getCustomerOrderReference',
-        'desired_due_date' => 'getDesiredDueDate',
         'tn_list' => 'getTnList'
     ];
 
@@ -195,8 +185,6 @@ class InlineObject61 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['customer_order_reference'] = $data['customer_order_reference'] ?? null;
-        $this->container['desired_due_date'] = $data['desired_due_date'] ?? null;
         $this->container['tn_list'] = $data['tn_list'] ?? null;
     }
 
@@ -249,57 +237,9 @@ class InlineObject61 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets customer_order_reference
-     *
-     * @return string|null
-     */
-    public function getCustomerOrderReference()
-    {
-        return $this->container['customer_order_reference'];
-    }
-
-    /**
-     * Sets customer_order_reference
-     *
-     * @param string|null $customer_order_reference Alphanumeric order reference name
-     *
-     * @return self
-     */
-    public function setCustomerOrderReference($customer_order_reference)
-    {
-        $this->container['customer_order_reference'] = $customer_order_reference;
-
-        return $this;
-    }
-
-    /**
-     * Gets desired_due_date
-     *
-     * @return string|null
-     */
-    public function getDesiredDueDate()
-    {
-        return $this->container['desired_due_date'];
-    }
-
-    /**
-     * Sets desired_due_date
-     *
-     * @param string|null $desired_due_date desired_due_date
-     *
-     * @return self
-     */
-    public function setDesiredDueDate($desired_due_date)
-    {
-        $this->container['desired_due_date'] = $desired_due_date;
-
-        return $this;
-    }
-
-    /**
      * Gets tn_list
      *
-     * @return \OpenAPI\Client\Model\TnDisconnectTnList|null
+     * @return \OpenAPI\Client\Model\TnAltSpidTnList|null
      */
     public function getTnList()
     {
@@ -309,7 +249,7 @@ class InlineObject61 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets tn_list
      *
-     * @param \OpenAPI\Client\Model\TnDisconnectTnList|null $tn_list tn_list
+     * @param \OpenAPI\Client\Model\TnAltSpidTnList|null $tn_list tn_list
      *
      * @return self
      */

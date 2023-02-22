@@ -60,24 +60,17 @@ class InlineObject144 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'private_key' => 'string',
-        'start_date' => 'string',
-        'end_date' => 'string',
-        'call_type' => 'string',
-        'call_status' => 'string',
-        'call_destination' => 'string',
-        'call_provisioned' => 'string',
-        'source_tn' => 'string',
-        'e911_contains' => 'string',
-        'name' => 'string',
-        'street_num' => 'string',
-        'street_info' => 'string',
-        'location' => 'string',
-        'city' => 'string',
-        'state' => 'string',
-        'postal_code' => 'string',
-        'time_zone' => 'string',
-        'page_sort' => '\OpenAPI\Client\Model\E911CallSearchPageSort'
+        'message' => 'string',
+        'notification_type' => 'string',
+        'order_id' => 'int',
+        'customer_order_reference' => 'string',
+        'order_type' => 'string',
+        'order_status' => 'string',
+        'timestamp' => 'string',
+        'tn_group' => 'string',
+        'group_status' => 'string',
+        'tn_list' => '\OpenAPI\Client\Model\CustomerConfiguredWebhookURLForOrderUpdatesTnList',
+        'tn_item' => '\OpenAPI\Client\Model\CustomerConfiguredWebhookURLForOrderUpdatesTnItem'
     ];
 
     /**
@@ -88,24 +81,17 @@ class InlineObject144 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'private_key' => null,
-        'start_date' => null,
-        'end_date' => null,
-        'call_type' => null,
-        'call_status' => null,
-        'call_destination' => null,
-        'call_provisioned' => null,
-        'source_tn' => null,
-        'e911_contains' => null,
-        'name' => null,
-        'street_num' => null,
-        'street_info' => null,
-        'location' => null,
-        'city' => null,
-        'state' => null,
-        'postal_code' => null,
-        'time_zone' => null,
-        'page_sort' => null
+        'message' => null,
+        'notification_type' => null,
+        'order_id' => null,
+        'customer_order_reference' => null,
+        'order_type' => null,
+        'order_status' => null,
+        'timestamp' => null,
+        'tn_group' => null,
+        'group_status' => null,
+        'tn_list' => null,
+        'tn_item' => null
     ];
 
     /**
@@ -135,24 +121,17 @@ class InlineObject144 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        'private_key' => 'privateKey',
-        'start_date' => 'startDate',
-        'end_date' => 'endDate',
-        'call_type' => 'callType',
-        'call_status' => 'callStatus',
-        'call_destination' => 'callDestination',
-        'call_provisioned' => 'callProvisioned',
-        'source_tn' => 'sourceTn',
-        'e911_contains' => 'e911Contains',
-        'name' => 'name',
-        'street_num' => 'streetNum',
-        'street_info' => 'streetInfo',
-        'location' => 'location',
-        'city' => 'city',
-        'state' => 'state',
-        'postal_code' => 'postalCode',
-        'time_zone' => 'timeZone',
-        'page_sort' => 'pageSort'
+        'message' => 'message',
+        'notification_type' => 'notificationType',
+        'order_id' => 'orderId',
+        'customer_order_reference' => 'customerOrderReference',
+        'order_type' => 'orderType',
+        'order_status' => 'orderStatus',
+        'timestamp' => 'timestamp',
+        'tn_group' => 'tnGroup',
+        'group_status' => 'groupStatus',
+        'tn_list' => 'tnList',
+        'tn_item' => 'tnItem'
     ];
 
     /**
@@ -161,24 +140,17 @@ class InlineObject144 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        'private_key' => 'setPrivateKey',
-        'start_date' => 'setStartDate',
-        'end_date' => 'setEndDate',
-        'call_type' => 'setCallType',
-        'call_status' => 'setCallStatus',
-        'call_destination' => 'setCallDestination',
-        'call_provisioned' => 'setCallProvisioned',
-        'source_tn' => 'setSourceTn',
-        'e911_contains' => 'setE911Contains',
-        'name' => 'setName',
-        'street_num' => 'setStreetNum',
-        'street_info' => 'setStreetInfo',
-        'location' => 'setLocation',
-        'city' => 'setCity',
-        'state' => 'setState',
-        'postal_code' => 'setPostalCode',
-        'time_zone' => 'setTimeZone',
-        'page_sort' => 'setPageSort'
+        'message' => 'setMessage',
+        'notification_type' => 'setNotificationType',
+        'order_id' => 'setOrderId',
+        'customer_order_reference' => 'setCustomerOrderReference',
+        'order_type' => 'setOrderType',
+        'order_status' => 'setOrderStatus',
+        'timestamp' => 'setTimestamp',
+        'tn_group' => 'setTnGroup',
+        'group_status' => 'setGroupStatus',
+        'tn_list' => 'setTnList',
+        'tn_item' => 'setTnItem'
     ];
 
     /**
@@ -187,24 +159,17 @@ class InlineObject144 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        'private_key' => 'getPrivateKey',
-        'start_date' => 'getStartDate',
-        'end_date' => 'getEndDate',
-        'call_type' => 'getCallType',
-        'call_status' => 'getCallStatus',
-        'call_destination' => 'getCallDestination',
-        'call_provisioned' => 'getCallProvisioned',
-        'source_tn' => 'getSourceTn',
-        'e911_contains' => 'getE911Contains',
-        'name' => 'getName',
-        'street_num' => 'getStreetNum',
-        'street_info' => 'getStreetInfo',
-        'location' => 'getLocation',
-        'city' => 'getCity',
-        'state' => 'getState',
-        'postal_code' => 'getPostalCode',
-        'time_zone' => 'getTimeZone',
-        'page_sort' => 'getPageSort'
+        'message' => 'getMessage',
+        'notification_type' => 'getNotificationType',
+        'order_id' => 'getOrderId',
+        'customer_order_reference' => 'getCustomerOrderReference',
+        'order_type' => 'getOrderType',
+        'order_status' => 'getOrderStatus',
+        'timestamp' => 'getTimestamp',
+        'tn_group' => 'getTnGroup',
+        'group_status' => 'getGroupStatus',
+        'tn_list' => 'getTnList',
+        'tn_item' => 'getTnItem'
     ];
 
     /**
@@ -264,24 +229,17 @@ class InlineObject144 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function __construct(array $data = null)
     {
-        $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['start_date'] = $data['start_date'] ?? null;
-        $this->container['end_date'] = $data['end_date'] ?? null;
-        $this->container['call_type'] = $data['call_type'] ?? null;
-        $this->container['call_status'] = $data['call_status'] ?? null;
-        $this->container['call_destination'] = $data['call_destination'] ?? null;
-        $this->container['call_provisioned'] = $data['call_provisioned'] ?? null;
-        $this->container['source_tn'] = $data['source_tn'] ?? null;
-        $this->container['e911_contains'] = $data['e911_contains'] ?? null;
-        $this->container['name'] = $data['name'] ?? null;
-        $this->container['street_num'] = $data['street_num'] ?? null;
-        $this->container['street_info'] = $data['street_info'] ?? null;
-        $this->container['location'] = $data['location'] ?? null;
-        $this->container['city'] = $data['city'] ?? null;
-        $this->container['state'] = $data['state'] ?? null;
-        $this->container['postal_code'] = $data['postal_code'] ?? null;
-        $this->container['time_zone'] = $data['time_zone'] ?? null;
-        $this->container['page_sort'] = $data['page_sort'] ?? null;
+        $this->container['message'] = $data['message'] ?? null;
+        $this->container['notification_type'] = $data['notification_type'] ?? null;
+        $this->container['order_id'] = $data['order_id'] ?? null;
+        $this->container['customer_order_reference'] = $data['customer_order_reference'] ?? null;
+        $this->container['order_type'] = $data['order_type'] ?? null;
+        $this->container['order_status'] = $data['order_status'] ?? null;
+        $this->container['timestamp'] = $data['timestamp'] ?? null;
+        $this->container['tn_group'] = $data['tn_group'] ?? null;
+        $this->container['group_status'] = $data['group_status'] ?? null;
+        $this->container['tn_list'] = $data['tn_list'] ?? null;
+        $this->container['tn_item'] = $data['tn_item'] ?? null;
     }
 
     /**
@@ -309,433 +267,265 @@ class InlineObject144 implements ModelInterface, ArrayAccess, \JsonSerializable
 
 
     /**
-     * Gets private_key
+     * Gets message
      *
      * @return string|null
      */
-    public function getPrivateKey()
+    public function getMessage()
     {
-        return $this->container['private_key'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets private_key
+     * Sets message
      *
-     * @param string|null $private_key API key required to validate your application
+     * @param string|null $message message
      *
      * @return self
      */
-    public function setPrivateKey($private_key)
+    public function setMessage($message)
     {
-        $this->container['private_key'] = $private_key;
+        $this->container['message'] = $message;
 
         return $this;
     }
 
     /**
-     * Gets start_date
+     * Gets notification_type
      *
      * @return string|null
      */
-    public function getStartDate()
+    public function getNotificationType()
     {
-        return $this->container['start_date'];
+        return $this->container['notification_type'];
     }
 
     /**
-     * Sets start_date
+     * Sets notification_type
      *
-     * @param string|null $start_date Start date for 911 call search; use format 2019-01-18 00:00:00
+     * @param string|null $notification_type notification_type
      *
      * @return self
      */
-    public function setStartDate($start_date)
+    public function setNotificationType($notification_type)
     {
-        $this->container['start_date'] = $start_date;
+        $this->container['notification_type'] = $notification_type;
 
         return $this;
     }
 
     /**
-     * Gets end_date
+     * Gets order_id
      *
-     * @return string|null
+     * @return int|null
      */
-    public function getEndDate()
+    public function getOrderId()
     {
-        return $this->container['end_date'];
+        return $this->container['order_id'];
     }
 
     /**
-     * Sets end_date
+     * Sets order_id
      *
-     * @param string|null $end_date End date for 911 call search; use format 2019-01-21 16:41:26
+     * @param int|null $order_id Order Id of the order.
      *
      * @return self
      */
-    public function setEndDate($end_date)
+    public function setOrderId($order_id)
     {
-        $this->container['end_date'] = $end_date;
+        $this->container['order_id'] = $order_id;
 
         return $this;
     }
 
     /**
-     * Gets call_type
+     * Gets customer_order_reference
      *
      * @return string|null
      */
-    public function getCallType()
+    public function getCustomerOrderReference()
     {
-        return $this->container['call_type'];
+        return $this->container['customer_order_reference'];
     }
 
     /**
-     * Sets call_type
+     * Sets customer_order_reference
      *
-     * @param string|null $call_type Call Type
+     * @param string|null $customer_order_reference Customer for whom the order is.
      *
      * @return self
      */
-    public function setCallType($call_type)
+    public function setCustomerOrderReference($customer_order_reference)
     {
-        $this->container['call_type'] = $call_type;
+        $this->container['customer_order_reference'] = $customer_order_reference;
 
         return $this;
     }
 
     /**
-     * Gets call_status
+     * Gets order_type
      *
      * @return string|null
      */
-    public function getCallStatus()
+    public function getOrderType()
     {
-        return $this->container['call_status'];
+        return $this->container['order_type'];
     }
 
     /**
-     * Sets call_status
+     * Sets order_type
      *
-     * @param string|null $call_status Call Status
+     * @param string|null $order_type Type of order submitted
      *
      * @return self
      */
-    public function setCallStatus($call_status)
+    public function setOrderType($order_type)
     {
-        $this->container['call_status'] = $call_status;
+        $this->container['order_type'] = $order_type;
 
         return $this;
     }
 
     /**
-     * Gets call_destination
+     * Gets order_status
      *
      * @return string|null
      */
-    public function getCallDestination()
+    public function getOrderStatus()
     {
-        return $this->container['call_destination'];
+        return $this->container['order_status'];
     }
 
     /**
-     * Sets call_destination
+     * Sets order_status
      *
-     * @param string|null $call_destination Call Destination
+     * @param string|null $order_status order_status
      *
      * @return self
      */
-    public function setCallDestination($call_destination)
+    public function setOrderStatus($order_status)
     {
-        $this->container['call_destination'] = $call_destination;
+        $this->container['order_status'] = $order_status;
 
         return $this;
     }
 
     /**
-     * Gets call_provisioned
+     * Gets timestamp
      *
      * @return string|null
      */
-    public function getCallProvisioned()
+    public function getTimestamp()
     {
-        return $this->container['call_provisioned'];
+        return $this->container['timestamp'];
     }
 
     /**
-     * Sets call_provisioned
+     * Sets timestamp
      *
-     * @param string|null $call_provisioned Call Provisioned
+     * @param string|null $timestamp The timestamp format should match \"7/31/2017 4:56:06.000000 AM -05:00\"
      *
      * @return self
      */
-    public function setCallProvisioned($call_provisioned)
+    public function setTimestamp($timestamp)
     {
-        $this->container['call_provisioned'] = $call_provisioned;
+        $this->container['timestamp'] = $timestamp;
 
         return $this;
     }
 
     /**
-     * Gets source_tn
+     * Gets tn_group
      *
      * @return string|null
      */
-    public function getSourceTn()
+    public function getTnGroup()
     {
-        return $this->container['source_tn'];
+        return $this->container['tn_group'];
     }
 
     /**
-     * Sets source_tn
+     * Sets tn_group
      *
-     * @param string|null $source_tn Calling number. Accepts 0-9, Aa-Zz, *, or ? (e.g. *Hello* or 312?Hi*7 ).
+     * @param string|null $tn_group tn_group
      *
      * @return self
      */
-    public function setSourceTn($source_tn)
+    public function setTnGroup($tn_group)
     {
-        $this->container['source_tn'] = $source_tn;
+        $this->container['tn_group'] = $tn_group;
 
         return $this;
     }
 
     /**
-     * Gets e911_contains
+     * Gets group_status
      *
      * @return string|null
      */
-    public function getE911Contains()
+    public function getGroupStatus()
     {
-        return $this->container['e911_contains'];
+        return $this->container['group_status'];
     }
 
     /**
-     * Sets e911_contains
+     * Sets group_status
      *
-     * @param string|null $e911_contains Search for specific string contained in any E911 field
+     * @param string|null $group_status group_status
      *
      * @return self
      */
-    public function setE911Contains($e911_contains)
+    public function setGroupStatus($group_status)
     {
-        $this->container['e911_contains'] = $e911_contains;
+        $this->container['group_status'] = $group_status;
 
         return $this;
     }
 
     /**
-     * Gets name
+     * Gets tn_list
      *
-     * @return string|null
+     * @return \OpenAPI\Client\Model\CustomerConfiguredWebhookURLForOrderUpdatesTnList|null
      */
-    public function getName()
+    public function getTnList()
     {
-        return $this->container['name'];
+        return $this->container['tn_list'];
     }
 
     /**
-     * Sets name
+     * Sets tn_list
      *
-     * @param string|null $name E911 address name
+     * @param \OpenAPI\Client\Model\CustomerConfiguredWebhookURLForOrderUpdatesTnList|null $tn_list tn_list
      *
      * @return self
      */
-    public function setName($name)
+    public function setTnList($tn_list)
     {
-        $this->container['name'] = $name;
+        $this->container['tn_list'] = $tn_list;
 
         return $this;
     }
 
     /**
-     * Gets street_num
+     * Gets tn_item
      *
-     * @return string|null
+     * @return \OpenAPI\Client\Model\CustomerConfiguredWebhookURLForOrderUpdatesTnItem|null
      */
-    public function getStreetNum()
+    public function getTnItem()
     {
-        return $this->container['street_num'];
+        return $this->container['tn_item'];
     }
 
     /**
-     * Sets street_num
+     * Sets tn_item
      *
-     * @param string|null $street_num E911 address street number (e.g. 100, 550)
+     * @param \OpenAPI\Client\Model\CustomerConfiguredWebhookURLForOrderUpdatesTnItem|null $tn_item tn_item
      *
      * @return self
      */
-    public function setStreetNum($street_num)
+    public function setTnItem($tn_item)
     {
-        $this->container['street_num'] = $street_num;
-
-        return $this;
-    }
-
-    /**
-     * Gets street_info
-     *
-     * @return string|null
-     */
-    public function getStreetInfo()
-    {
-        return $this->container['street_info'];
-    }
-
-    /**
-     * Sets street_info
-     *
-     * @param string|null $street_info E911 address street information (e.g. W Adams St)
-     *
-     * @return self
-     */
-    public function setStreetInfo($street_info)
-    {
-        $this->container['street_info'] = $street_info;
-
-        return $this;
-    }
-
-    /**
-     * Gets location
-     *
-     * @return string|null
-     */
-    public function getLocation()
-    {
-        return $this->container['location'];
-    }
-
-    /**
-     * Sets location
-     *
-     * @param string|null $location E911 address additional address infotmation
-     *
-     * @return self
-     */
-    public function setLocation($location)
-    {
-        $this->container['location'] = $location;
-
-        return $this;
-    }
-
-    /**
-     * Gets city
-     *
-     * @return string|null
-     */
-    public function getCity()
-    {
-        return $this->container['city'];
-    }
-
-    /**
-     * Sets city
-     *
-     * @param string|null $city E911 address city
-     *
-     * @return self
-     */
-    public function setCity($city)
-    {
-        $this->container['city'] = $city;
-
-        return $this;
-    }
-
-    /**
-     * Gets state
-     *
-     * @return string|null
-     */
-    public function getState()
-    {
-        return $this->container['state'];
-    }
-
-    /**
-     * Sets state
-     *
-     * @param string|null $state E911 address state
-     *
-     * @return self
-     */
-    public function setState($state)
-    {
-        $this->container['state'] = $state;
-
-        return $this;
-    }
-
-    /**
-     * Gets postal_code
-     *
-     * @return string|null
-     */
-    public function getPostalCode()
-    {
-        return $this->container['postal_code'];
-    }
-
-    /**
-     * Sets postal_code
-     *
-     * @param string|null $postal_code E911 address zip code
-     *
-     * @return self
-     */
-    public function setPostalCode($postal_code)
-    {
-        $this->container['postal_code'] = $postal_code;
-
-        return $this;
-    }
-
-    /**
-     * Gets time_zone
-     *
-     * @return string|null
-     */
-    public function getTimeZone()
-    {
-        return $this->container['time_zone'];
-    }
-
-    /**
-     * Sets time_zone
-     *
-     * @param string|null $time_zone Time Zone
-     *
-     * @return self
-     */
-    public function setTimeZone($time_zone)
-    {
-        $this->container['time_zone'] = $time_zone;
-
-        return $this;
-    }
-
-    /**
-     * Gets page_sort
-     *
-     * @return \OpenAPI\Client\Model\E911CallSearchPageSort|null
-     */
-    public function getPageSort()
-    {
-        return $this->container['page_sort'];
-    }
-
-    /**
-     * Sets page_sort
-     *
-     * @param \OpenAPI\Client\Model\E911CallSearchPageSort|null $page_sort page_sort
-     *
-     * @return self
-     */
-    public function setPageSort($page_sort)
-    {
-        $this->container['page_sort'] = $page_sort;
+        $this->container['tn_item'] = $tn_item;
 
         return $this;
     }

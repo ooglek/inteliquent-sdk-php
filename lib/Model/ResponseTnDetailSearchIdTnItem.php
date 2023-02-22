@@ -63,6 +63,8 @@ class ResponseTnDetailSearchIdTnItem implements ModelInterface, ArrayAccess, \Js
         'tn' => 'string',
         'rate_center' => 'string',
         'trunk_group' => 'string',
+        'routing_option' => 'string',
+        'customer_routing_option' => 'string',
         'province' => 'string',
         'tn_status' => 'string',
         'loc_name' => 'string',
@@ -84,7 +86,9 @@ class ResponseTnDetailSearchIdTnItem implements ModelInterface, ArrayAccess, \Js
         'allow_port_out_pin' => 'string',
         'portout_notification' => 'string',
         'wireless' => 'string',
-        'end_user' => '\OpenAPI\Client\Model\PortInOrderPortInOrderTnListEndUser',
+        'dno' => 'string',
+        'alt_spid' => 'string',
+        'end_user' => '\OpenAPI\Client\Model\PortInMessagingOrderPortInMessagingOrderTnListEndUser',
         'tn_feature' => '\OpenAPI\Client\Model\ResponseTnDetailSearchIdTnFeature'
     ];
 
@@ -99,6 +103,8 @@ class ResponseTnDetailSearchIdTnItem implements ModelInterface, ArrayAccess, \Js
         'tn' => null,
         'rate_center' => null,
         'trunk_group' => null,
+        'routing_option' => null,
+        'customer_routing_option' => null,
         'province' => null,
         'tn_status' => null,
         'loc_name' => null,
@@ -120,6 +126,8 @@ class ResponseTnDetailSearchIdTnItem implements ModelInterface, ArrayAccess, \Js
         'allow_port_out_pin' => null,
         'portout_notification' => null,
         'wireless' => null,
+        'dno' => null,
+        'alt_spid' => null,
         'end_user' => null,
         'tn_feature' => null
     ];
@@ -154,6 +162,8 @@ class ResponseTnDetailSearchIdTnItem implements ModelInterface, ArrayAccess, \Js
         'tn' => 'tn',
         'rate_center' => 'rateCenter',
         'trunk_group' => 'trunkGroup',
+        'routing_option' => 'routingOption',
+        'customer_routing_option' => 'customerRoutingOption',
         'province' => 'province',
         'tn_status' => 'tnStatus',
         'loc_name' => 'locName',
@@ -175,6 +185,8 @@ class ResponseTnDetailSearchIdTnItem implements ModelInterface, ArrayAccess, \Js
         'allow_port_out_pin' => 'allowPortOutPin',
         'portout_notification' => 'portoutNotification',
         'wireless' => 'wireless',
+        'dno' => 'dno',
+        'alt_spid' => 'altSpid',
         'end_user' => 'endUser',
         'tn_feature' => 'tnFeature'
     ];
@@ -188,6 +200,8 @@ class ResponseTnDetailSearchIdTnItem implements ModelInterface, ArrayAccess, \Js
         'tn' => 'setTn',
         'rate_center' => 'setRateCenter',
         'trunk_group' => 'setTrunkGroup',
+        'routing_option' => 'setRoutingOption',
+        'customer_routing_option' => 'setCustomerRoutingOption',
         'province' => 'setProvince',
         'tn_status' => 'setTnStatus',
         'loc_name' => 'setLocName',
@@ -209,6 +223,8 @@ class ResponseTnDetailSearchIdTnItem implements ModelInterface, ArrayAccess, \Js
         'allow_port_out_pin' => 'setAllowPortOutPin',
         'portout_notification' => 'setPortoutNotification',
         'wireless' => 'setWireless',
+        'dno' => 'setDno',
+        'alt_spid' => 'setAltSpid',
         'end_user' => 'setEndUser',
         'tn_feature' => 'setTnFeature'
     ];
@@ -222,6 +238,8 @@ class ResponseTnDetailSearchIdTnItem implements ModelInterface, ArrayAccess, \Js
         'tn' => 'getTn',
         'rate_center' => 'getRateCenter',
         'trunk_group' => 'getTrunkGroup',
+        'routing_option' => 'getRoutingOption',
+        'customer_routing_option' => 'getCustomerRoutingOption',
         'province' => 'getProvince',
         'tn_status' => 'getTnStatus',
         'loc_name' => 'getLocName',
@@ -243,6 +261,8 @@ class ResponseTnDetailSearchIdTnItem implements ModelInterface, ArrayAccess, \Js
         'allow_port_out_pin' => 'getAllowPortOutPin',
         'portout_notification' => 'getPortoutNotification',
         'wireless' => 'getWireless',
+        'dno' => 'getDno',
+        'alt_spid' => 'getAltSpid',
         'end_user' => 'getEndUser',
         'tn_feature' => 'getTnFeature'
     ];
@@ -307,6 +327,8 @@ class ResponseTnDetailSearchIdTnItem implements ModelInterface, ArrayAccess, \Js
         $this->container['tn'] = $data['tn'] ?? null;
         $this->container['rate_center'] = $data['rate_center'] ?? null;
         $this->container['trunk_group'] = $data['trunk_group'] ?? null;
+        $this->container['routing_option'] = $data['routing_option'] ?? null;
+        $this->container['customer_routing_option'] = $data['customer_routing_option'] ?? null;
         $this->container['province'] = $data['province'] ?? null;
         $this->container['tn_status'] = $data['tn_status'] ?? null;
         $this->container['loc_name'] = $data['loc_name'] ?? null;
@@ -328,6 +350,8 @@ class ResponseTnDetailSearchIdTnItem implements ModelInterface, ArrayAccess, \Js
         $this->container['allow_port_out_pin'] = $data['allow_port_out_pin'] ?? null;
         $this->container['portout_notification'] = $data['portout_notification'] ?? null;
         $this->container['wireless'] = $data['wireless'] ?? null;
+        $this->container['dno'] = $data['dno'] ?? null;
+        $this->container['alt_spid'] = $data['alt_spid'] ?? null;
         $this->container['end_user'] = $data['end_user'] ?? null;
         $this->container['tn_feature'] = $data['tn_feature'] ?? null;
     }
@@ -417,13 +441,61 @@ class ResponseTnDetailSearchIdTnItem implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets trunk_group
      *
-     * @param string|null $trunk_group trunk group number for the telephone number
+     * @param string|null $trunk_group trunk group for the telephone number
      *
      * @return self
      */
     public function setTrunkGroup($trunk_group)
     {
         $this->container['trunk_group'] = $trunk_group;
+
+        return $this;
+    }
+
+    /**
+     * Gets routing_option
+     *
+     * @return string|null
+     */
+    public function getRoutingOption()
+    {
+        return $this->container['routing_option'];
+    }
+
+    /**
+     * Sets routing_option
+     *
+     * @param string|null $routing_option routing option for the telephone number
+     *
+     * @return self
+     */
+    public function setRoutingOption($routing_option)
+    {
+        $this->container['routing_option'] = $routing_option;
+
+        return $this;
+    }
+
+    /**
+     * Gets customer_routing_option
+     *
+     * @return string|null
+     */
+    public function getCustomerRoutingOption()
+    {
+        return $this->container['customer_routing_option'];
+    }
+
+    /**
+     * Sets customer_routing_option
+     *
+     * @param string|null $customer_routing_option customer assigned routing option for the telephone number
+     *
+     * @return self
+     */
+    public function setCustomerRoutingOption($customer_routing_option)
+    {
+        $this->container['customer_routing_option'] = $customer_routing_option;
 
         return $this;
     }
@@ -933,9 +1005,57 @@ class ResponseTnDetailSearchIdTnItem implements ModelInterface, ArrayAccess, \Js
     }
 
     /**
+     * Gets dno
+     *
+     * @return string|null
+     */
+    public function getDno()
+    {
+        return $this->container['dno'];
+    }
+
+    /**
+     * Sets dno
+     *
+     * @param string|null $dno dno
+     *
+     * @return self
+     */
+    public function setDno($dno)
+    {
+        $this->container['dno'] = $dno;
+
+        return $this;
+    }
+
+    /**
+     * Gets alt_spid
+     *
+     * @return string|null
+     */
+    public function getAltSpid()
+    {
+        return $this->container['alt_spid'];
+    }
+
+    /**
+     * Sets alt_spid
+     *
+     * @param string|null $alt_spid alt_spid
+     *
+     * @return self
+     */
+    public function setAltSpid($alt_spid)
+    {
+        $this->container['alt_spid'] = $alt_spid;
+
+        return $this;
+    }
+
+    /**
      * Gets end_user
      *
-     * @return \OpenAPI\Client\Model\PortInOrderPortInOrderTnListEndUser|null
+     * @return \OpenAPI\Client\Model\PortInMessagingOrderPortInMessagingOrderTnListEndUser|null
      */
     public function getEndUser()
     {
@@ -945,7 +1065,7 @@ class ResponseTnDetailSearchIdTnItem implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets end_user
      *
-     * @param \OpenAPI\Client\Model\PortInOrderPortInOrderTnListEndUser|null $end_user end_user
+     * @param \OpenAPI\Client\Model\PortInMessagingOrderPortInMessagingOrderTnListEndUser|null $end_user end_user
      *
      * @return self
      */

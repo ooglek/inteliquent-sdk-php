@@ -61,7 +61,10 @@ class InlineObject68 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'tn_feature_order' => '\OpenAPI\Client\Model\TnFeatureOrderTnFeatureOrder'
+        'count_by' => 'string',
+        'rate_center' => 'string',
+        'province' => 'string',
+        'wireless' => 'string'
     ];
 
     /**
@@ -73,7 +76,10 @@ class InlineObject68 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'tn_feature_order' => null
+        'count_by' => null,
+        'rate_center' => null,
+        'province' => null,
+        'wireless' => null
     ];
 
     /**
@@ -104,7 +110,10 @@ class InlineObject68 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'tn_feature_order' => 'tnFeatureOrder'
+        'count_by' => 'countBy',
+        'rate_center' => 'rateCenter',
+        'province' => 'province',
+        'wireless' => 'wireless'
     ];
 
     /**
@@ -114,7 +123,10 @@ class InlineObject68 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'tn_feature_order' => 'setTnFeatureOrder'
+        'count_by' => 'setCountBy',
+        'rate_center' => 'setRateCenter',
+        'province' => 'setProvince',
+        'wireless' => 'setWireless'
     ];
 
     /**
@@ -124,7 +136,10 @@ class InlineObject68 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'tn_feature_order' => 'getTnFeatureOrder'
+        'count_by' => 'getCountBy',
+        'rate_center' => 'getRateCenter',
+        'province' => 'getProvince',
+        'wireless' => 'getWireless'
     ];
 
     /**
@@ -185,7 +200,10 @@ class InlineObject68 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['tn_feature_order'] = $data['tn_feature_order'] ?? null;
+        $this->container['count_by'] = $data['count_by'] ?? null;
+        $this->container['rate_center'] = $data['rate_center'] ?? null;
+        $this->container['province'] = $data['province'] ?? null;
+        $this->container['wireless'] = $data['wireless'] ?? null;
     }
 
     /**
@@ -199,9 +217,6 @@ class InlineObject68 implements ModelInterface, ArrayAccess, \JsonSerializable
 
         if ($this->container['private_key'] === null) {
             $invalidProperties[] = "'private_key' can't be null";
-        }
-        if ($this->container['tn_feature_order'] === null) {
-            $invalidProperties[] = "'tn_feature_order' can't be null";
         }
         return $invalidProperties;
     }
@@ -243,25 +258,97 @@ class InlineObject68 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets tn_feature_order
+     * Gets count_by
      *
-     * @return \OpenAPI\Client\Model\TnFeatureOrderTnFeatureOrder
+     * @return string|null
      */
-    public function getTnFeatureOrder()
+    public function getCountBy()
     {
-        return $this->container['tn_feature_order'];
+        return $this->container['count_by'];
     }
 
     /**
-     * Sets tn_feature_order
+     * Sets count_by
      *
-     * @param \OpenAPI\Client\Model\TnFeatureOrderTnFeatureOrder $tn_feature_order tn_feature_order
+     * @param string|null $count_by Attribute by which quantities will be aggregated; acceptable values are state, rateCenter, npaNxx, and block (seventh digit of telephone number). If countBy is not sent, results will be returned by NPA-NXX.
      *
      * @return self
      */
-    public function setTnFeatureOrder($tn_feature_order)
+    public function setCountBy($count_by)
     {
-        $this->container['tn_feature_order'] = $tn_feature_order;
+        $this->container['count_by'] = $count_by;
+
+        return $this;
+    }
+
+    /**
+     * Gets rate_center
+     *
+     * @return string|null
+     */
+    public function getRateCenter()
+    {
+        return $this->container['rate_center'];
+    }
+
+    /**
+     * Sets rate_center
+     *
+     * @param string|null $rate_center Search by specified rate center to filer out results
+     *
+     * @return self
+     */
+    public function setRateCenter($rate_center)
+    {
+        $this->container['rate_center'] = $rate_center;
+
+        return $this;
+    }
+
+    /**
+     * Gets province
+     *
+     * @return string|null
+     */
+    public function getProvince()
+    {
+        return $this->container['province'];
+    }
+
+    /**
+     * Sets province
+     *
+     * @param string|null $province Two-letter state or province abbreviation (e.g. IL, CA)
+     *
+     * @return self
+     */
+    public function setProvince($province)
+    {
+        $this->container['province'] = $province;
+
+        return $this;
+    }
+
+    /**
+     * Gets wireless
+     *
+     * @return string|null
+     */
+    public function getWireless()
+    {
+        return $this->container['wireless'];
+    }
+
+    /**
+     * Sets wireless
+     *
+     * @param string|null $wireless Enter Y to return wireless number inventory; N to return wireline number inventory
+     *
+     * @return self
+     */
+    public function setWireless($wireless)
+    {
+        $this->container['wireless'] = $wireless;
 
         return $this;
     }

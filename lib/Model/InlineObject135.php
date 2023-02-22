@@ -60,8 +60,7 @@ class InlineObject135 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'private_key' => 'string',
-        'order_id' => 'int'
+        'private_key' => 'string'
     ];
 
     /**
@@ -72,8 +71,7 @@ class InlineObject135 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'private_key' => null,
-        'order_id' => null
+        'private_key' => null
     ];
 
     /**
@@ -103,8 +101,7 @@ class InlineObject135 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        'private_key' => 'privateKey',
-        'order_id' => 'orderId'
+        'private_key' => 'privateKey'
     ];
 
     /**
@@ -113,8 +110,7 @@ class InlineObject135 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        'private_key' => 'setPrivateKey',
-        'order_id' => 'setOrderId'
+        'private_key' => 'setPrivateKey'
     ];
 
     /**
@@ -123,8 +119,7 @@ class InlineObject135 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        'private_key' => 'getPrivateKey',
-        'order_id' => 'getOrderId'
+        'private_key' => 'getPrivateKey'
     ];
 
     /**
@@ -185,7 +180,6 @@ class InlineObject135 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['order_id'] = $data['order_id'] ?? null;
     }
 
     /**
@@ -197,6 +191,9 @@ class InlineObject135 implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         $invalidProperties = [];
 
+        if ($this->container['private_key'] === null) {
+            $invalidProperties[] = "'private_key' can't be null";
+        }
         return $invalidProperties;
     }
 
@@ -215,7 +212,7 @@ class InlineObject135 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets private_key
      *
-     * @return string|null
+     * @return string
      */
     public function getPrivateKey()
     {
@@ -225,37 +222,13 @@ class InlineObject135 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets private_key
      *
-     * @param string|null $private_key private_key
+     * @param string $private_key API key required to validate your application
      *
      * @return self
      */
     public function setPrivateKey($private_key)
     {
         $this->container['private_key'] = $private_key;
-
-        return $this;
-    }
-
-    /**
-     * Gets order_id
-     *
-     * @return int|null
-     */
-    public function getOrderId()
-    {
-        return $this->container['order_id'];
-    }
-
-    /**
-     * Sets order_id
-     *
-     * @param int|null $order_id order_id
-     *
-     * @return self
-     */
-    public function setOrderId($order_id)
-    {
-        $this->container['order_id'] = $order_id;
 
         return $this;
     }

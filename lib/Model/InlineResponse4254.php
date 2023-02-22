@@ -61,7 +61,8 @@ class InlineResponse4254 implements ModelInterface, ArrayAccess, \JsonSerializab
       */
     protected static $openAPITypes = [
         'status_code' => 'string',
-        'status' => 'string'
+        'status' => 'string',
+        'result' => 'string[]'
     ];
 
     /**
@@ -73,7 +74,8 @@ class InlineResponse4254 implements ModelInterface, ArrayAccess, \JsonSerializab
       */
     protected static $openAPIFormats = [
         'status_code' => null,
-        'status' => null
+        'status' => null,
+        'result' => null
     ];
 
     /**
@@ -104,7 +106,8 @@ class InlineResponse4254 implements ModelInterface, ArrayAccess, \JsonSerializab
      */
     protected static $attributeMap = [
         'status_code' => 'statusCode',
-        'status' => 'status'
+        'status' => 'status',
+        'result' => 'result'
     ];
 
     /**
@@ -114,7 +117,8 @@ class InlineResponse4254 implements ModelInterface, ArrayAccess, \JsonSerializab
      */
     protected static $setters = [
         'status_code' => 'setStatusCode',
-        'status' => 'setStatus'
+        'status' => 'setStatus',
+        'result' => 'setResult'
     ];
 
     /**
@@ -124,7 +128,8 @@ class InlineResponse4254 implements ModelInterface, ArrayAccess, \JsonSerializab
      */
     protected static $getters = [
         'status_code' => 'getStatusCode',
-        'status' => 'getStatus'
+        'status' => 'getStatus',
+        'result' => 'getResult'
     ];
 
     /**
@@ -186,6 +191,7 @@ class InlineResponse4254 implements ModelInterface, ArrayAccess, \JsonSerializab
     {
         $this->container['status_code'] = $data['status_code'] ?? null;
         $this->container['status'] = $data['status'] ?? null;
+        $this->container['result'] = $data['result'] ?? null;
     }
 
     /**
@@ -249,13 +255,37 @@ class InlineResponse4254 implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets status
      *
-     * @param string|null $status Error Message:(String)
+     * @param string|null $status Partial Success
      *
      * @return self
      */
     public function setStatus($status)
     {
         $this->container['status'] = $status;
+
+        return $this;
+    }
+
+    /**
+     * Gets result
+     *
+     * @return string[]|null
+     */
+    public function getResult()
+    {
+        return $this->container['result'];
+    }
+
+    /**
+     * Sets result
+     *
+     * @param string[]|null $result result
+     *
+     * @return self
+     */
+    public function setResult($result)
+    {
+        $this->container['result'] = $result;
 
         return $this;
     }

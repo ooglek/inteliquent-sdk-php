@@ -61,7 +61,7 @@ class InlineObject108 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'routing_label' => 'string'
+        'trunk_group_name' => 'string'
     ];
 
     /**
@@ -73,7 +73,7 @@ class InlineObject108 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'routing_label' => null
+        'trunk_group_name' => null
     ];
 
     /**
@@ -104,7 +104,7 @@ class InlineObject108 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'routing_label' => 'routingLabel'
+        'trunk_group_name' => 'trunkGroupName'
     ];
 
     /**
@@ -114,7 +114,7 @@ class InlineObject108 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'routing_label' => 'setRoutingLabel'
+        'trunk_group_name' => 'setTrunkGroupName'
     ];
 
     /**
@@ -124,7 +124,7 @@ class InlineObject108 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'routing_label' => 'getRoutingLabel'
+        'trunk_group_name' => 'getTrunkGroupName'
     ];
 
     /**
@@ -185,7 +185,7 @@ class InlineObject108 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['routing_label'] = $data['routing_label'] ?? null;
+        $this->container['trunk_group_name'] = $data['trunk_group_name'] ?? null;
     }
 
     /**
@@ -240,25 +240,25 @@ class InlineObject108 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets routing_label
+     * Gets trunk_group_name
      *
      * @return string|null
      */
-    public function getRoutingLabel()
+    public function getTrunkGroupName()
     {
-        return $this->container['routing_label'];
+        return $this->container['trunk_group_name'];
     }
 
     /**
-     * Sets routing_label
+     * Sets trunk_group_name
      *
-     * @param string|null $routing_label Routing Label Name to be searched
+     * @param string|null $trunk_group_name Trunk group name
      *
      * @return self
      */
-    public function setRoutingLabel($routing_label)
+    public function setTrunkGroupName($trunk_group_name)
     {
-        $this->container['routing_label'] = $routing_label;
+        $this->container['trunk_group_name'] = $trunk_group_name;
 
         return $this;
     }

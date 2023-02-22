@@ -62,8 +62,7 @@ class InlineObject82 implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'private_key' => 'string',
         'order_id' => 'int',
-        'customer_order_reference' => 'string',
-        'tn_group' => 'string[]'
+        'customer_order_reference' => 'string'
     ];
 
     /**
@@ -76,8 +75,7 @@ class InlineObject82 implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPIFormats = [
         'private_key' => null,
         'order_id' => null,
-        'customer_order_reference' => null,
-        'tn_group' => null
+        'customer_order_reference' => null
     ];
 
     /**
@@ -109,8 +107,7 @@ class InlineObject82 implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $attributeMap = [
         'private_key' => 'privateKey',
         'order_id' => 'orderId',
-        'customer_order_reference' => 'customerOrderReference',
-        'tn_group' => 'tnGroup'
+        'customer_order_reference' => 'customerOrderReference'
     ];
 
     /**
@@ -121,8 +118,7 @@ class InlineObject82 implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $setters = [
         'private_key' => 'setPrivateKey',
         'order_id' => 'setOrderId',
-        'customer_order_reference' => 'setCustomerOrderReference',
-        'tn_group' => 'setTnGroup'
+        'customer_order_reference' => 'setCustomerOrderReference'
     ];
 
     /**
@@ -133,8 +129,7 @@ class InlineObject82 implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $getters = [
         'private_key' => 'getPrivateKey',
         'order_id' => 'getOrderId',
-        'customer_order_reference' => 'getCustomerOrderReference',
-        'tn_group' => 'getTnGroup'
+        'customer_order_reference' => 'getCustomerOrderReference'
     ];
 
     /**
@@ -197,7 +192,6 @@ class InlineObject82 implements ModelInterface, ArrayAccess, \JsonSerializable
         $this->container['private_key'] = $data['private_key'] ?? null;
         $this->container['order_id'] = $data['order_id'] ?? null;
         $this->container['customer_order_reference'] = $data['customer_order_reference'] ?? null;
-        $this->container['tn_group'] = $data['tn_group'] ?? null;
     }
 
     /**
@@ -292,30 +286,6 @@ class InlineObject82 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function setCustomerOrderReference($customer_order_reference)
     {
         $this->container['customer_order_reference'] = $customer_order_reference;
-
-        return $this;
-    }
-
-    /**
-     * Gets tn_group
-     *
-     * @return string[]|null
-     */
-    public function getTnGroup()
-    {
-        return $this->container['tn_group'];
-    }
-
-    /**
-     * Sets tn_group
-     *
-     * @param string[]|null $tn_group tn_group
-     *
-     * @return self
-     */
-    public function setTnGroup($tn_group)
-    {
-        $this->container['tn_group'] = $tn_group;
 
         return $this;
     }

@@ -61,22 +61,9 @@ class InlineObject62 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'tn_mask' => 'string',
-        'tn_wildcard' => 'string',
-        'lata' => 'string',
-        'rate_center' => 'string',
-        'rate_center_tier' => 'string',
-        'city' => 'string',
-        'province' => 'string',
-        'postal_code' => 'string',
-        'radius' => 'int',
-        'local_calling_area' => 'bool',
-        'quantity' => 'int',
-        'sequential' => 'bool',
-        'search_on_net_only' => 'string',
-        'wireless' => 'string',
-        'abc_search' => 'bool',
-        'page_sort' => '\OpenAPI\Client\Model\TnInventoryPageSort'
+        'customer_order_reference' => 'string',
+        'desired_due_date' => 'string',
+        'tn_list' => '\OpenAPI\Client\Model\TnDisconnectTnList'
     ];
 
     /**
@@ -88,22 +75,9 @@ class InlineObject62 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'tn_mask' => null,
-        'tn_wildcard' => null,
-        'lata' => null,
-        'rate_center' => null,
-        'rate_center_tier' => null,
-        'city' => null,
-        'province' => null,
-        'postal_code' => null,
-        'radius' => null,
-        'local_calling_area' => null,
-        'quantity' => null,
-        'sequential' => null,
-        'search_on_net_only' => null,
-        'wireless' => null,
-        'abc_search' => null,
-        'page_sort' => null
+        'customer_order_reference' => null,
+        'desired_due_date' => null,
+        'tn_list' => null
     ];
 
     /**
@@ -134,22 +108,9 @@ class InlineObject62 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'tn_mask' => 'tnMask',
-        'tn_wildcard' => 'tnWildcard',
-        'lata' => 'lata',
-        'rate_center' => 'rateCenter',
-        'rate_center_tier' => 'rateCenterTier',
-        'city' => 'city',
-        'province' => 'province',
-        'postal_code' => 'postalCode',
-        'radius' => 'radius',
-        'local_calling_area' => 'localCallingArea',
-        'quantity' => 'quantity',
-        'sequential' => 'sequential',
-        'search_on_net_only' => 'searchOnNetOnly',
-        'wireless' => 'wireless',
-        'abc_search' => 'abcSearch',
-        'page_sort' => 'pageSort'
+        'customer_order_reference' => 'customerOrderReference',
+        'desired_due_date' => 'desiredDueDate',
+        'tn_list' => 'tnList'
     ];
 
     /**
@@ -159,22 +120,9 @@ class InlineObject62 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'tn_mask' => 'setTnMask',
-        'tn_wildcard' => 'setTnWildcard',
-        'lata' => 'setLata',
-        'rate_center' => 'setRateCenter',
-        'rate_center_tier' => 'setRateCenterTier',
-        'city' => 'setCity',
-        'province' => 'setProvince',
-        'postal_code' => 'setPostalCode',
-        'radius' => 'setRadius',
-        'local_calling_area' => 'setLocalCallingArea',
-        'quantity' => 'setQuantity',
-        'sequential' => 'setSequential',
-        'search_on_net_only' => 'setSearchOnNetOnly',
-        'wireless' => 'setWireless',
-        'abc_search' => 'setAbcSearch',
-        'page_sort' => 'setPageSort'
+        'customer_order_reference' => 'setCustomerOrderReference',
+        'desired_due_date' => 'setDesiredDueDate',
+        'tn_list' => 'setTnList'
     ];
 
     /**
@@ -184,22 +132,9 @@ class InlineObject62 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'tn_mask' => 'getTnMask',
-        'tn_wildcard' => 'getTnWildcard',
-        'lata' => 'getLata',
-        'rate_center' => 'getRateCenter',
-        'rate_center_tier' => 'getRateCenterTier',
-        'city' => 'getCity',
-        'province' => 'getProvince',
-        'postal_code' => 'getPostalCode',
-        'radius' => 'getRadius',
-        'local_calling_area' => 'getLocalCallingArea',
-        'quantity' => 'getQuantity',
-        'sequential' => 'getSequential',
-        'search_on_net_only' => 'getSearchOnNetOnly',
-        'wireless' => 'getWireless',
-        'abc_search' => 'getAbcSearch',
-        'page_sort' => 'getPageSort'
+        'customer_order_reference' => 'getCustomerOrderReference',
+        'desired_due_date' => 'getDesiredDueDate',
+        'tn_list' => 'getTnList'
     ];
 
     /**
@@ -243,37 +178,6 @@ class InlineObject62 implements ModelInterface, ArrayAccess, \JsonSerializable
         return self::$openAPIModelName;
     }
 
-    const RATE_CENTER_TIER__0 = '0';
-    const RATE_CENTER_TIER__1 = '1';
-    const RATE_CENTER_TIER__2 = '2';
-    const RATE_CENTER_TIER_AK = 'AK';
-    const RATE_CENTER_TIER_HI = 'HI';
-    const RATE_CENTER_TIER_CAN = 'CAN';
-    const RATE_CENTER_TIER_PRI = 'PRI';
-    const RATE_CENTER_TIER_WS_A = 'WS-A';
-    const RATE_CENTER_TIER_WS_B = 'WS-B';
-    const RATE_CENTER_TIER_WS_C = 'WS-C';
-
-    /**
-     * Gets allowable values of the enum
-     *
-     * @return string[]
-     */
-    public function getRateCenterTierAllowableValues()
-    {
-        return [
-            self::RATE_CENTER_TIER__0,
-            self::RATE_CENTER_TIER__1,
-            self::RATE_CENTER_TIER__2,
-            self::RATE_CENTER_TIER_AK,
-            self::RATE_CENTER_TIER_HI,
-            self::RATE_CENTER_TIER_CAN,
-            self::RATE_CENTER_TIER_PRI,
-            self::RATE_CENTER_TIER_WS_A,
-            self::RATE_CENTER_TIER_WS_B,
-            self::RATE_CENTER_TIER_WS_C,
-        ];
-    }
 
     /**
      * Associative array for storing property values
@@ -291,22 +195,9 @@ class InlineObject62 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['tn_mask'] = $data['tn_mask'] ?? null;
-        $this->container['tn_wildcard'] = $data['tn_wildcard'] ?? null;
-        $this->container['lata'] = $data['lata'] ?? null;
-        $this->container['rate_center'] = $data['rate_center'] ?? null;
-        $this->container['rate_center_tier'] = $data['rate_center_tier'] ?? null;
-        $this->container['city'] = $data['city'] ?? null;
-        $this->container['province'] = $data['province'] ?? null;
-        $this->container['postal_code'] = $data['postal_code'] ?? null;
-        $this->container['radius'] = $data['radius'] ?? null;
-        $this->container['local_calling_area'] = $data['local_calling_area'] ?? null;
-        $this->container['quantity'] = $data['quantity'] ?? null;
-        $this->container['sequential'] = $data['sequential'] ?? null;
-        $this->container['search_on_net_only'] = $data['search_on_net_only'] ?? null;
-        $this->container['wireless'] = $data['wireless'] ?? null;
-        $this->container['abc_search'] = $data['abc_search'] ?? null;
-        $this->container['page_sort'] = $data['page_sort'] ?? null;
+        $this->container['customer_order_reference'] = $data['customer_order_reference'] ?? null;
+        $this->container['desired_due_date'] = $data['desired_due_date'] ?? null;
+        $this->container['tn_list'] = $data['tn_list'] ?? null;
     }
 
     /**
@@ -317,18 +208,6 @@ class InlineObject62 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function listInvalidProperties()
     {
         $invalidProperties = [];
-
-        if ($this->container['private_key'] === null) {
-            $invalidProperties[] = "'private_key' can't be null";
-        }
-        $allowedValues = $this->getRateCenterTierAllowableValues();
-        if (!is_null($this->container['rate_center_tier']) && !in_array($this->container['rate_center_tier'], $allowedValues, true)) {
-            $invalidProperties[] = sprintf(
-                "invalid value '%s' for 'rate_center_tier', must be one of '%s'",
-                $this->container['rate_center_tier'],
-                implode("', '", $allowedValues)
-            );
-        }
 
         return $invalidProperties;
     }
@@ -348,7 +227,7 @@ class InlineObject62 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets private_key
      *
-     * @return string
+     * @return string|null
      */
     public function getPrivateKey()
     {
@@ -358,7 +237,7 @@ class InlineObject62 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets private_key
      *
-     * @param string $private_key API key required to validate your application; can be retrieved from portal production and sandbox
+     * @param string|null $private_key API key required to validate your application
      *
      * @return self
      */
@@ -370,395 +249,73 @@ class InlineObject62 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets tn_mask
+     * Gets customer_order_reference
      *
      * @return string|null
      */
-    public function getTnMask()
+    public function getCustomerOrderReference()
     {
-        return $this->container['tn_mask'];
+        return $this->container['customer_order_reference'];
     }
 
     /**
-     * Sets tn_mask
+     * Sets customer_order_reference
      *
-     * @param string|null $tn_mask Ten-digit telephone number; Accepts 0-9, x, X, or space. x, X, or space are interpreted as any single digit.(Ex: 312xxx1x2x)
+     * @param string|null $customer_order_reference Alphanumeric order reference name
      *
      * @return self
      */
-    public function setTnMask($tn_mask)
+    public function setCustomerOrderReference($customer_order_reference)
     {
-        $this->container['tn_mask'] = $tn_mask;
+        $this->container['customer_order_reference'] = $customer_order_reference;
 
         return $this;
     }
 
     /**
-     * Gets tn_wildcard
+     * Gets desired_due_date
      *
      * @return string|null
      */
-    public function getTnWildcard()
+    public function getDesiredDueDate()
     {
-        return $this->container['tn_wildcard'];
+        return $this->container['desired_due_date'];
     }
 
     /**
-     * Sets tn_wildcard
+     * Sets desired_due_date
      *
-     * @param string|null $tn_wildcard Telephone number. Accepts 0-9, Aa-Zz, *, or ? (e.g. \"*Hello*\" or \"312?Hi*7\")
+     * @param string|null $desired_due_date desired_due_date
      *
      * @return self
      */
-    public function setTnWildcard($tn_wildcard)
+    public function setDesiredDueDate($desired_due_date)
     {
-        $this->container['tn_wildcard'] = $tn_wildcard;
+        $this->container['desired_due_date'] = $desired_due_date;
 
         return $this;
     }
 
     /**
-     * Gets lata
+     * Gets tn_list
      *
-     * @return string|null
+     * @return \OpenAPI\Client\Model\TnDisconnectTnList|null
      */
-    public function getLata()
+    public function getTnList()
     {
-        return $this->container['lata'];
+        return $this->container['tn_list'];
     }
 
     /**
-     * Sets lata
+     * Sets tn_list
      *
-     * @param string|null $lata Three-digit local access and transport area code
+     * @param \OpenAPI\Client\Model\TnDisconnectTnList|null $tn_list tn_list
      *
      * @return self
      */
-    public function setLata($lata)
+    public function setTnList($tn_list)
     {
-        $this->container['lata'] = $lata;
-
-        return $this;
-    }
-
-    /**
-     * Gets rate_center
-     *
-     * @return string|null
-     */
-    public function getRateCenter()
-    {
-        return $this->container['rate_center'];
-    }
-
-    /**
-     * Sets rate_center
-     *
-     * @param string|null $rate_center Rate center abbreviation (e.g. WSHNGTNZN1)
-     *
-     * @return self
-     */
-    public function setRateCenter($rate_center)
-    {
-        $this->container['rate_center'] = $rate_center;
-
-        return $this;
-    }
-
-    /**
-     * Gets rate_center_tier
-     *
-     * @return string|null
-     */
-    public function getRateCenterTier()
-    {
-        return $this->container['rate_center_tier'];
-    }
-
-    /**
-     * Sets rate_center_tier
-     *
-     * @param string|null $rate_center_tier Rate center tier
-     *
-     * @return self
-     */
-    public function setRateCenterTier($rate_center_tier)
-    {
-        $allowedValues = $this->getRateCenterTierAllowableValues();
-        if (!is_null($rate_center_tier) && !in_array($rate_center_tier, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'rate_center_tier', must be one of '%s'",
-                    $rate_center_tier,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }
-        $this->container['rate_center_tier'] = $rate_center_tier;
-
-        return $this;
-    }
-
-    /**
-     * Gets city
-     *
-     * @return string|null
-     */
-    public function getCity()
-    {
-        return $this->container['city'];
-    }
-
-    /**
-     * Sets city
-     *
-     * @param string|null $city Location Full Name filter for telephone numbers.
-     *
-     * @return self
-     */
-    public function setCity($city)
-    {
-        $this->container['city'] = $city;
-
-        return $this;
-    }
-
-    /**
-     * Gets province
-     *
-     * @return string|null
-     */
-    public function getProvince()
-    {
-        return $this->container['province'];
-    }
-
-    /**
-     * Sets province
-     *
-     * @param string|null $province Two-letter state or province abbreviation (e.g. IL, CA)
-     *
-     * @return self
-     */
-    public function setProvince($province)
-    {
-        $this->container['province'] = $province;
-
-        return $this;
-    }
-
-    /**
-     * Gets postal_code
-     *
-     * @return string|null
-     */
-    public function getPostalCode()
-    {
-        return $this->container['postal_code'];
-    }
-
-    /**
-     * Sets postal_code
-     *
-     * @param string|null $postal_code Zip code filter for telephone numbers.
-     *
-     * @return self
-     */
-    public function setPostalCode($postal_code)
-    {
-        $this->container['postal_code'] = $postal_code;
-
-        return $this;
-    }
-
-    /**
-     * Gets radius
-     *
-     * @return int|null
-     */
-    public function getRadius()
-    {
-        return $this->container['radius'];
-    }
-
-    /**
-     * Sets radius
-     *
-     * @param int|null $radius radius to return numbers within specified limit (up to 50 miles)
-     *
-     * @return self
-     */
-    public function setRadius($radius)
-    {
-        $this->container['radius'] = $radius;
-
-        return $this;
-    }
-
-    /**
-     * Gets local_calling_area
-     *
-     * @return bool|null
-     */
-    public function getLocalCallingArea()
-    {
-        return $this->container['local_calling_area'];
-    }
-
-    /**
-     * Sets local_calling_area
-     *
-     * @param bool|null $local_calling_area Enter true to return local calling area numbers
-     *
-     * @return self
-     */
-    public function setLocalCallingArea($local_calling_area)
-    {
-        $this->container['local_calling_area'] = $local_calling_area;
-
-        return $this;
-    }
-
-    /**
-     * Gets quantity
-     *
-     * @return int|null
-     */
-    public function getQuantity()
-    {
-        return $this->container['quantity'];
-    }
-
-    /**
-     * Sets quantity
-     *
-     * @param int|null $quantity Maximum number of results to return; partial quantity may be returned based on inventory
-     *
-     * @return self
-     */
-    public function setQuantity($quantity)
-    {
-        $this->container['quantity'] = $quantity;
-
-        return $this;
-    }
-
-    /**
-     * Gets sequential
-     *
-     * @return bool|null
-     */
-    public function getSequential()
-    {
-        return $this->container['sequential'];
-    }
-
-    /**
-     * Sets sequential
-     *
-     * @param bool|null $sequential Enter true to return sequential numbers (up to 99)
-     *
-     * @return self
-     */
-    public function setSequential($sequential)
-    {
-        $this->container['sequential'] = $sequential;
-
-        return $this;
-    }
-
-    /**
-     * Gets search_on_net_only
-     *
-     * @return string|null
-     */
-    public function getSearchOnNetOnly()
-    {
-        return $this->container['search_on_net_only'];
-    }
-
-    /**
-     * Sets search_on_net_only
-     *
-     * @param string|null $search_on_net_only Enter Y or N to include or exclude offnet numbers from search results; N be overridden if customer-level setting is Y in accountDefaultDetail response
-     *
-     * @return self
-     */
-    public function setSearchOnNetOnly($search_on_net_only)
-    {
-        $this->container['search_on_net_only'] = $search_on_net_only;
-
-        return $this;
-    }
-
-    /**
-     * Gets wireless
-     *
-     * @return string|null
-     */
-    public function getWireless()
-    {
-        return $this->container['wireless'];
-    }
-
-    /**
-     * Sets wireless
-     *
-     * @param string|null $wireless Enter Y to return wireless numbers; N to return wireline numbers
-     *
-     * @return self
-     */
-    public function setWireless($wireless)
-    {
-        $this->container['wireless'] = $wireless;
-
-        return $this;
-    }
-
-    /**
-     * Gets abc_search
-     *
-     * @return bool|null
-     */
-    public function getAbcSearch()
-    {
-        return $this->container['abc_search'];
-    }
-
-    /**
-     * Sets abc_search
-     *
-     * @param bool|null $abc_search If true, it will do searching based on alphabates as well. If its not sent or fase, it will do numeric & X based search. In case of abcSearch alphabates can be sent instead of numbers and X wont be trated as wildcard.
-     *
-     * @return self
-     */
-    public function setAbcSearch($abc_search)
-    {
-        $this->container['abc_search'] = $abc_search;
-
-        return $this;
-    }
-
-    /**
-     * Gets page_sort
-     *
-     * @return \OpenAPI\Client\Model\TnInventoryPageSort|null
-     */
-    public function getPageSort()
-    {
-        return $this->container['page_sort'];
-    }
-
-    /**
-     * Sets page_sort
-     *
-     * @param \OpenAPI\Client\Model\TnInventoryPageSort|null $page_sort page_sort
-     *
-     * @return self
-     */
-    public function setPageSort($page_sort)
-    {
-        $this->container['page_sort'] = $page_sort;
+        $this->container['tn_list'] = $tn_list;
 
         return $this;
     }

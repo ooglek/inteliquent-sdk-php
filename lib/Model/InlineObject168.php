@@ -61,8 +61,8 @@ class InlineObject168 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'order_id' => 'int',
-        'order_note' => 'string'
+        'order_id' => 'string',
+        'tn_note' => '\OpenAPI\Client\Model\IntlTnAddNoteTnNote'
     ];
 
     /**
@@ -75,7 +75,7 @@ class InlineObject168 implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPIFormats = [
         'private_key' => null,
         'order_id' => null,
-        'order_note' => null
+        'tn_note' => null
     ];
 
     /**
@@ -107,7 +107,7 @@ class InlineObject168 implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $attributeMap = [
         'private_key' => 'privateKey',
         'order_id' => 'orderId',
-        'order_note' => 'orderNote'
+        'tn_note' => 'tnNote'
     ];
 
     /**
@@ -118,7 +118,7 @@ class InlineObject168 implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $setters = [
         'private_key' => 'setPrivateKey',
         'order_id' => 'setOrderId',
-        'order_note' => 'setOrderNote'
+        'tn_note' => 'setTnNote'
     ];
 
     /**
@@ -129,7 +129,7 @@ class InlineObject168 implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $getters = [
         'private_key' => 'getPrivateKey',
         'order_id' => 'getOrderId',
-        'order_note' => 'getOrderNote'
+        'tn_note' => 'getTnNote'
     ];
 
     /**
@@ -191,7 +191,7 @@ class InlineObject168 implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
         $this->container['order_id'] = $data['order_id'] ?? null;
-        $this->container['order_note'] = $data['order_note'] ?? null;
+        $this->container['tn_note'] = $data['tn_note'] ?? null;
     }
 
     /**
@@ -245,7 +245,7 @@ class InlineObject168 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets order_id
      *
-     * @return int|null
+     * @return string|null
      */
     public function getOrderId()
     {
@@ -255,7 +255,7 @@ class InlineObject168 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets order_id
      *
-     * @param int|null $order_id order_id
+     * @param string|null $order_id order_id
      *
      * @return self
      */
@@ -267,25 +267,25 @@ class InlineObject168 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets order_note
+     * Gets tn_note
      *
-     * @return string|null
+     * @return \OpenAPI\Client\Model\IntlTnAddNoteTnNote|null
      */
-    public function getOrderNote()
+    public function getTnNote()
     {
-        return $this->container['order_note'];
+        return $this->container['tn_note'];
     }
 
     /**
-     * Sets order_note
+     * Sets tn_note
      *
-     * @param string|null $order_note order_note
+     * @param \OpenAPI\Client\Model\IntlTnAddNoteTnNote|null $tn_note tn_note
      *
      * @return self
      */
-    public function setOrderNote($order_note)
+    public function setTnNote($tn_note)
     {
-        $this->container['order_note'] = $order_note;
+        $this->container['tn_note'] = $tn_note;
 
         return $this;
     }

@@ -8,6 +8,7 @@ Method | HTTP request | Description
 [**tfDetailPost()**](TollFreeApi.md#tfDetailPost) | **POST** /tfDetail | Search Assigned Toll Free Number Detail
 [**tfDisconnectPost()**](TollFreeApi.md#tfDisconnectPost) | **POST** /tfDisconnect | Disconnect Toll Free Number
 [**tfDnisPost()**](TollFreeApi.md#tfDnisPost) | **POST** /tfDnis | Update dnis value for Toll free numbers
+[**tfDnoPost()**](TollFreeApi.md#tfDnoPost) | **POST** /tfDno | Update dno setting for Toll free numbers
 [**tfFeatureCNamListPost()**](TollFreeApi.md#tfFeatureCNamListPost) | **POST** /tfFeatureCNamList | Retrieve Assigned TF for feature Calling Name
 [**tfFeatureE911ListPost()**](TollFreeApi.md#tfFeatureE911ListPost) | **POST** /tfFeatureE911List | Retrieve E911 Toll Free Numbers
 [**tfFeatureMessageListPost()**](TollFreeApi.md#tfFeatureMessageListPost) | **POST** /tfFeatureMessageList | Retrieve Assigned TF for feature Message
@@ -51,7 +52,7 @@ $apiInstance = new OpenAPI\Client\Api\TollFreeApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject161(); // \OpenAPI\Client\Model\InlineObject161
+$payload = new \OpenAPI\Client\Model\InlineObject162(); // \OpenAPI\Client\Model\InlineObject162
 
 try {
     $result = $apiInstance->tfBtnPost($payload);
@@ -65,7 +66,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject161**](../Model/InlineObject161.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject162**](../Model/InlineObject162.md)|  |
 
 ### Return type
 
@@ -113,7 +114,7 @@ $apiInstance = new OpenAPI\Client\Api\TollFreeApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject95(); // \OpenAPI\Client\Model\InlineObject95
+$payload = new \OpenAPI\Client\Model\InlineObject96(); // \OpenAPI\Client\Model\InlineObject96
 
 try {
     $result = $apiInstance->tfDetailPost($payload);
@@ -127,7 +128,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject95**](../Model/InlineObject95.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject96**](../Model/InlineObject96.md)|  |
 
 ### Return type
 
@@ -175,7 +176,7 @@ $apiInstance = new OpenAPI\Client\Api\TollFreeApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject91(); // \OpenAPI\Client\Model\InlineObject91
+$payload = new \OpenAPI\Client\Model\InlineObject92(); // \OpenAPI\Client\Model\InlineObject92
 
 try {
     $result = $apiInstance->tfDisconnectPost($payload);
@@ -189,7 +190,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject91**](../Model/InlineObject91.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject92**](../Model/InlineObject92.md)|  |
 
 ### Return type
 
@@ -237,7 +238,7 @@ $apiInstance = new OpenAPI\Client\Api\TollFreeApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject160(); // \OpenAPI\Client\Model\InlineObject160
+$payload = new \OpenAPI\Client\Model\InlineObject161(); // \OpenAPI\Client\Model\InlineObject161
 
 try {
     $result = $apiInstance->tfDnisPost($payload);
@@ -251,11 +252,73 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject160**](../Model/InlineObject160.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject161**](../Model/InlineObject161.md)|  |
 
 ### Return type
 
 [**\OpenAPI\Client\Model\InlineResponse20033**](../Model/InlineResponse20033.md)
+
+### Authorization
+
+[api_key](../../README.md#api_key)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `tfDnoPost()`
+
+```php
+tfDnoPost($payload): \OpenAPI\Client\Model\InlineResponse20022
+```
+
+Update dno setting for Toll free numbers
+
+This endpoint allows you to update dno on your active (In Service) toll free numbers.
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+// Configure API key authorization: api_key
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
+
+$apiInstance = new OpenAPI\Client\Api\TollFreeApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$payload = new \OpenAPI\Client\Model\InlineObject163(); // \OpenAPI\Client\Model\InlineObject163
+
+try {
+    $result = $apiInstance->tfDnoPost($payload);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling TollFreeApi->tfDnoPost: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **payload** | [**\OpenAPI\Client\Model\InlineObject163**](../Model/InlineObject163.md)|  |
+
+### Return type
+
+[**\OpenAPI\Client\Model\InlineResponse20022**](../Model/InlineResponse20022.md)
 
 ### Authorization
 
@@ -299,7 +362,7 @@ $apiInstance = new OpenAPI\Client\Api\TollFreeApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject99(); // \OpenAPI\Client\Model\InlineObject99
+$payload = new \OpenAPI\Client\Model\InlineObject100(); // \OpenAPI\Client\Model\InlineObject100
 
 try {
     $result = $apiInstance->tfFeatureCNamListPost($payload);
@@ -313,7 +376,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject99**](../Model/InlineObject99.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject100**](../Model/InlineObject100.md)|  |
 
 ### Return type
 
@@ -361,7 +424,7 @@ $apiInstance = new OpenAPI\Client\Api\TollFreeApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject159(); // \OpenAPI\Client\Model\InlineObject159
+$payload = new \OpenAPI\Client\Model\InlineObject160(); // \OpenAPI\Client\Model\InlineObject160
 
 try {
     $result = $apiInstance->tfFeatureE911ListPost($payload);
@@ -375,7 +438,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject159**](../Model/InlineObject159.md)|  | [optional]
+ **payload** | [**\OpenAPI\Client\Model\InlineObject160**](../Model/InlineObject160.md)|  | [optional]
 
 ### Return type
 
@@ -423,7 +486,7 @@ $apiInstance = new OpenAPI\Client\Api\TollFreeApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject100(); // \OpenAPI\Client\Model\InlineObject100
+$payload = new \OpenAPI\Client\Model\InlineObject101(); // \OpenAPI\Client\Model\InlineObject101
 
 try {
     $result = $apiInstance->tfFeatureMessageListPost($payload);
@@ -437,7 +500,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject100**](../Model/InlineObject100.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject101**](../Model/InlineObject101.md)|  |
 
 ### Return type
 
@@ -485,7 +548,7 @@ $apiInstance = new OpenAPI\Client\Api\TollFreeApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject98(); // \OpenAPI\Client\Model\InlineObject98
+$payload = new \OpenAPI\Client\Model\InlineObject99(); // \OpenAPI\Client\Model\InlineObject99
 
 try {
     $result = $apiInstance->tfFeatureOrderPost($payload);
@@ -499,7 +562,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject98**](../Model/InlineObject98.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject99**](../Model/InlineObject99.md)|  |
 
 ### Return type
 
@@ -547,7 +610,7 @@ $apiInstance = new OpenAPI\Client\Api\TollFreeApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject75(); // \OpenAPI\Client\Model\InlineObject75
+$payload = new \OpenAPI\Client\Model\InlineObject76(); // \OpenAPI\Client\Model\InlineObject76
 
 try {
     $result = $apiInstance->tfForwardListPost($payload);
@@ -561,7 +624,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject75**](../Model/InlineObject75.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject76**](../Model/InlineObject76.md)|  |
 
 ### Return type
 
@@ -609,7 +672,7 @@ $apiInstance = new OpenAPI\Client\Api\TollFreeApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject74(); // \OpenAPI\Client\Model\InlineObject74
+$payload = new \OpenAPI\Client\Model\InlineObject75(); // \OpenAPI\Client\Model\InlineObject75
 
 try {
     $result = $apiInstance->tfForwardPost($payload);
@@ -623,7 +686,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject74**](../Model/InlineObject74.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject75**](../Model/InlineObject75.md)|  |
 
 ### Return type
 
@@ -671,7 +734,7 @@ $apiInstance = new OpenAPI\Client\Api\TollFreeApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject96(); // \OpenAPI\Client\Model\InlineObject96
+$payload = new \OpenAPI\Client\Model\InlineObject97(); // \OpenAPI\Client\Model\InlineObject97
 
 try {
     $result = $apiInstance->tfInventoryPost($payload);
@@ -685,7 +748,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject96**](../Model/InlineObject96.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject97**](../Model/InlineObject97.md)|  |
 
 ### Return type
 
@@ -731,7 +794,7 @@ $apiInstance = new OpenAPI\Client\Api\TollFreeApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject93(); // \OpenAPI\Client\Model\InlineObject93
+$payload = new \OpenAPI\Client\Model\InlineObject94(); // \OpenAPI\Client\Model\InlineObject94
 
 try {
     $result = $apiInstance->tfMovePost($payload);
@@ -745,7 +808,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject93**](../Model/InlineObject93.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject94**](../Model/InlineObject94.md)|  |
 
 ### Return type
 
@@ -793,7 +856,7 @@ $apiInstance = new OpenAPI\Client\Api\TollFreeApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject94(); // \OpenAPI\Client\Model\InlineObject94
+$payload = new \OpenAPI\Client\Model\InlineObject95(); // \OpenAPI\Client\Model\InlineObject95
 
 try {
     $result = $apiInstance->tfOrderPost($payload);
@@ -807,7 +870,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject94**](../Model/InlineObject94.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject95**](../Model/InlineObject95.md)|  |
 
 ### Return type
 
@@ -853,7 +916,7 @@ $apiInstance = new OpenAPI\Client\Api\TollFreeApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject101(); // \OpenAPI\Client\Model\InlineObject101
+$payload = new \OpenAPI\Client\Model\InlineObject102(); // \OpenAPI\Client\Model\InlineObject102
 
 try {
     $result = $apiInstance->tfRequestPost($payload);
@@ -867,7 +930,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject101**](../Model/InlineObject101.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject102**](../Model/InlineObject102.md)|  |
 
 ### Return type
 
@@ -915,7 +978,7 @@ $apiInstance = new OpenAPI\Client\Api\TollFreeApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject102(); // \OpenAPI\Client\Model\InlineObject102
+$payload = new \OpenAPI\Client\Model\InlineObject103(); // \OpenAPI\Client\Model\InlineObject103
 
 try {
     $result = $apiInstance->tfRespOrgPost($payload);
@@ -929,7 +992,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject102**](../Model/InlineObject102.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject103**](../Model/InlineObject103.md)|  |
 
 ### Return type
 
@@ -977,7 +1040,7 @@ $apiInstance = new OpenAPI\Client\Api\TollFreeApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject92(); // \OpenAPI\Client\Model\InlineObject92
+$payload = new \OpenAPI\Client\Model\InlineObject93(); // \OpenAPI\Client\Model\InlineObject93
 
 try {
     $result = $apiInstance->tfUpdatePost($payload);
@@ -991,7 +1054,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject92**](../Model/InlineObject92.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject93**](../Model/InlineObject93.md)|  |
 
 ### Return type
 

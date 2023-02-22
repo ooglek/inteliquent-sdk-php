@@ -61,8 +61,10 @@ class InlineObject120 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'tn_mask' => 'string',
-        'page_sort' => '\OpenAPI\Client\Model\TnDetailPageSort'
+        'order_id' => 'int',
+        'customer_order_reference' => 'string',
+        'tn' => 'string',
+        'country_code' => 'string'
     ];
 
     /**
@@ -74,8 +76,10 @@ class InlineObject120 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'tn_mask' => null,
-        'page_sort' => null
+        'order_id' => null,
+        'customer_order_reference' => null,
+        'tn' => null,
+        'country_code' => null
     ];
 
     /**
@@ -106,8 +110,10 @@ class InlineObject120 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'tn_mask' => 'tnMask',
-        'page_sort' => 'pageSort'
+        'order_id' => 'orderId',
+        'customer_order_reference' => 'customerOrderReference',
+        'tn' => 'tn',
+        'country_code' => 'countryCode'
     ];
 
     /**
@@ -117,8 +123,10 @@ class InlineObject120 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'tn_mask' => 'setTnMask',
-        'page_sort' => 'setPageSort'
+        'order_id' => 'setOrderId',
+        'customer_order_reference' => 'setCustomerOrderReference',
+        'tn' => 'setTn',
+        'country_code' => 'setCountryCode'
     ];
 
     /**
@@ -128,8 +136,10 @@ class InlineObject120 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'tn_mask' => 'getTnMask',
-        'page_sort' => 'getPageSort'
+        'order_id' => 'getOrderId',
+        'customer_order_reference' => 'getCustomerOrderReference',
+        'tn' => 'getTn',
+        'country_code' => 'getCountryCode'
     ];
 
     /**
@@ -190,8 +200,10 @@ class InlineObject120 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['tn_mask'] = $data['tn_mask'] ?? null;
-        $this->container['page_sort'] = $data['page_sort'] ?? null;
+        $this->container['order_id'] = $data['order_id'] ?? null;
+        $this->container['customer_order_reference'] = $data['customer_order_reference'] ?? null;
+        $this->container['tn'] = $data['tn'] ?? null;
+        $this->container['country_code'] = $data['country_code'] ?? null;
     }
 
     /**
@@ -246,49 +258,97 @@ class InlineObject120 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets tn_mask
+     * Gets order_id
      *
-     * @return string|null
+     * @return int|null
      */
-    public function getTnMask()
+    public function getOrderId()
     {
-        return $this->container['tn_mask'];
+        return $this->container['order_id'];
     }
 
     /**
-     * Sets tn_mask
+     * Sets order_id
      *
-     * @param string|null $tn_mask Telephone Number mask with X as a wild card to filter results on.  Accepted value is 10 character string with numbers and X.  For example, 312XXXXXXX, 312419XXXX.
+     * @param int|null $order_id Order number
      *
      * @return self
      */
-    public function setTnMask($tn_mask)
+    public function setOrderId($order_id)
     {
-        $this->container['tn_mask'] = $tn_mask;
+        $this->container['order_id'] = $order_id;
 
         return $this;
     }
 
     /**
-     * Gets page_sort
+     * Gets customer_order_reference
      *
-     * @return \OpenAPI\Client\Model\TnDetailPageSort|null
+     * @return string|null
      */
-    public function getPageSort()
+    public function getCustomerOrderReference()
     {
-        return $this->container['page_sort'];
+        return $this->container['customer_order_reference'];
     }
 
     /**
-     * Sets page_sort
+     * Sets customer_order_reference
      *
-     * @param \OpenAPI\Client\Model\TnDetailPageSort|null $page_sort page_sort
+     * @param string|null $customer_order_reference Customer for whom the order is.
      *
      * @return self
      */
-    public function setPageSort($page_sort)
+    public function setCustomerOrderReference($customer_order_reference)
     {
-        $this->container['page_sort'] = $page_sort;
+        $this->container['customer_order_reference'] = $customer_order_reference;
+
+        return $this;
+    }
+
+    /**
+     * Gets tn
+     *
+     * @return string|null
+     */
+    public function getTn()
+    {
+        return $this->container['tn'];
+    }
+
+    /**
+     * Sets tn
+     *
+     * @param string|null $tn Telephone number
+     *
+     * @return self
+     */
+    public function setTn($tn)
+    {
+        $this->container['tn'] = $tn;
+
+        return $this;
+    }
+
+    /**
+     * Gets country_code
+     *
+     * @return string|null
+     */
+    public function getCountryCode()
+    {
+        return $this->container['country_code'];
+    }
+
+    /**
+     * Sets country_code
+     *
+     * @param string|null $country_code country_code
+     *
+     * @return self
+     */
+    public function setCountryCode($country_code)
+    {
+        $this->container['country_code'] = $country_code;
 
         return $this;
     }

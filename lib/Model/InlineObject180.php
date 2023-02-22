@@ -61,7 +61,7 @@ class InlineObject180 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'tn_list' => '\OpenAPI\Client\Model\IntlTnDisconnectTnList'
+        'tn_search_list' => '\OpenAPI\Client\Model\IntlTnDetailTnSearchList'
     ];
 
     /**
@@ -73,7 +73,7 @@ class InlineObject180 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'tn_list' => null
+        'tn_search_list' => null
     ];
 
     /**
@@ -104,7 +104,7 @@ class InlineObject180 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'tn_list' => 'tnList'
+        'tn_search_list' => 'tnSearchList'
     ];
 
     /**
@@ -114,7 +114,7 @@ class InlineObject180 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'tn_list' => 'setTnList'
+        'tn_search_list' => 'setTnSearchList'
     ];
 
     /**
@@ -124,7 +124,7 @@ class InlineObject180 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'tn_list' => 'getTnList'
+        'tn_search_list' => 'getTnSearchList'
     ];
 
     /**
@@ -185,7 +185,7 @@ class InlineObject180 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['tn_list'] = $data['tn_list'] ?? null;
+        $this->container['tn_search_list'] = $data['tn_search_list'] ?? null;
     }
 
     /**
@@ -237,25 +237,25 @@ class InlineObject180 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets tn_list
+     * Gets tn_search_list
      *
-     * @return \OpenAPI\Client\Model\IntlTnDisconnectTnList|null
+     * @return \OpenAPI\Client\Model\IntlTnDetailTnSearchList|null
      */
-    public function getTnList()
+    public function getTnSearchList()
     {
-        return $this->container['tn_list'];
+        return $this->container['tn_search_list'];
     }
 
     /**
-     * Sets tn_list
+     * Sets tn_search_list
      *
-     * @param \OpenAPI\Client\Model\IntlTnDisconnectTnList|null $tn_list tn_list
+     * @param \OpenAPI\Client\Model\IntlTnDetailTnSearchList|null $tn_search_list tn_search_list
      *
      * @return self
      */
-    public function setTnList($tn_list)
+    public function setTnSearchList($tn_search_list)
     {
-        $this->container['tn_list'] = $tn_list;
+        $this->container['tn_search_list'] = $tn_search_list;
 
         return $this;
     }

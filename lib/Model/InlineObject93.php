@@ -61,7 +61,9 @@ class InlineObject93 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'tf_move' => '\OpenAPI\Client\Model\TfMoveTfMove'
+        'customer_order_reference' => 'string',
+        'desired_due_date' => 'string',
+        'tn_list' => '\OpenAPI\Client\Model\TfUpdateTnList'
     ];
 
     /**
@@ -73,7 +75,9 @@ class InlineObject93 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'tf_move' => null
+        'customer_order_reference' => null,
+        'desired_due_date' => null,
+        'tn_list' => null
     ];
 
     /**
@@ -104,7 +108,9 @@ class InlineObject93 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'tf_move' => 'tfMove'
+        'customer_order_reference' => 'customerOrderReference',
+        'desired_due_date' => 'desiredDueDate',
+        'tn_list' => 'tnList'
     ];
 
     /**
@@ -114,7 +120,9 @@ class InlineObject93 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'tf_move' => 'setTfMove'
+        'customer_order_reference' => 'setCustomerOrderReference',
+        'desired_due_date' => 'setDesiredDueDate',
+        'tn_list' => 'setTnList'
     ];
 
     /**
@@ -124,7 +132,9 @@ class InlineObject93 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'tf_move' => 'getTfMove'
+        'customer_order_reference' => 'getCustomerOrderReference',
+        'desired_due_date' => 'getDesiredDueDate',
+        'tn_list' => 'getTnList'
     ];
 
     /**
@@ -185,7 +195,9 @@ class InlineObject93 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['tf_move'] = $data['tf_move'] ?? null;
+        $this->container['customer_order_reference'] = $data['customer_order_reference'] ?? null;
+        $this->container['desired_due_date'] = $data['desired_due_date'] ?? null;
+        $this->container['tn_list'] = $data['tn_list'] ?? null;
     }
 
     /**
@@ -197,6 +209,9 @@ class InlineObject93 implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         $invalidProperties = [];
 
+        if ($this->container['private_key'] === null) {
+            $invalidProperties[] = "'private_key' can't be null";
+        }
         return $invalidProperties;
     }
 
@@ -215,7 +230,7 @@ class InlineObject93 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets private_key
      *
-     * @return string|null
+     * @return string
      */
     public function getPrivateKey()
     {
@@ -225,7 +240,7 @@ class InlineObject93 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets private_key
      *
-     * @param string|null $private_key Private Key
+     * @param string $private_key API key required to validate your application
      *
      * @return self
      */
@@ -237,25 +252,73 @@ class InlineObject93 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets tf_move
+     * Gets customer_order_reference
      *
-     * @return \OpenAPI\Client\Model\TfMoveTfMove|null
+     * @return string|null
      */
-    public function getTfMove()
+    public function getCustomerOrderReference()
     {
-        return $this->container['tf_move'];
+        return $this->container['customer_order_reference'];
     }
 
     /**
-     * Sets tf_move
+     * Sets customer_order_reference
      *
-     * @param \OpenAPI\Client\Model\TfMoveTfMove|null $tf_move tf_move
+     * @param string|null $customer_order_reference Alphanumeric order reference name
      *
      * @return self
      */
-    public function setTfMove($tf_move)
+    public function setCustomerOrderReference($customer_order_reference)
     {
-        $this->container['tf_move'] = $tf_move;
+        $this->container['customer_order_reference'] = $customer_order_reference;
+
+        return $this;
+    }
+
+    /**
+     * Gets desired_due_date
+     *
+     * @return string|null
+     */
+    public function getDesiredDueDate()
+    {
+        return $this->container['desired_due_date'];
+    }
+
+    /**
+     * Sets desired_due_date
+     *
+     * @param string|null $desired_due_date desired_due_date
+     *
+     * @return self
+     */
+    public function setDesiredDueDate($desired_due_date)
+    {
+        $this->container['desired_due_date'] = $desired_due_date;
+
+        return $this;
+    }
+
+    /**
+     * Gets tn_list
+     *
+     * @return \OpenAPI\Client\Model\TfUpdateTnList|null
+     */
+    public function getTnList()
+    {
+        return $this->container['tn_list'];
+    }
+
+    /**
+     * Sets tn_list
+     *
+     * @param \OpenAPI\Client\Model\TfUpdateTnList|null $tn_list tn_list
+     *
+     * @return self
+     */
+    public function setTnList($tn_list)
+    {
+        $this->container['tn_list'] = $tn_list;
 
         return $this;
     }

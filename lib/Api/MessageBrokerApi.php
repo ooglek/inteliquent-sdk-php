@@ -121,7 +121,7 @@ class MessageBrokerApi
      *
      * Configure Inbound Message Webhook
      *
-     * @param  \OpenAPI\Client\Model\InlineObject140 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject141 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -138,7 +138,7 @@ class MessageBrokerApi
      *
      * Configure Inbound Message Webhook
      *
-     * @param  \OpenAPI\Client\Model\InlineObject140 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject141 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -251,7 +251,7 @@ class MessageBrokerApi
      *
      * Configure Inbound Message Webhook
      *
-     * @param  \OpenAPI\Client\Model\InlineObject140 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject141 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -271,7 +271,7 @@ class MessageBrokerApi
      *
      * Configure Inbound Message Webhook
      *
-     * @param  \OpenAPI\Client\Model\InlineObject140 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject141 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -317,7 +317,7 @@ class MessageBrokerApi
     /**
      * Create request for operation 'configureAuthorizationPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject140 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject141 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -415,7 +415,7 @@ class MessageBrokerApi
      *
      * Receive Inbound Message Webhook
      *
-     * @param  \OpenAPI\Client\Model\InlineObject142 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject143 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -432,7 +432,7 @@ class MessageBrokerApi
      *
      * Receive Inbound Message Webhook
      *
-     * @param  \OpenAPI\Client\Model\InlineObject142 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject143 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -545,7 +545,7 @@ class MessageBrokerApi
      *
      * Receive Inbound Message Webhook
      *
-     * @param  \OpenAPI\Client\Model\InlineObject142 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject143 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -565,7 +565,7 @@ class MessageBrokerApi
      *
      * Receive Inbound Message Webhook
      *
-     * @param  \OpenAPI\Client\Model\InlineObject142 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject143 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -611,7 +611,7 @@ class MessageBrokerApi
     /**
      * Create request for operation 'customerConfiguredWebhookURLForInboundMessagingPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject142 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject143 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -709,7 +709,7 @@ class MessageBrokerApi
      *
      * Send Outbound Message
      *
-     * @param  \OpenAPI\Client\Model\InlineObject139 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject140 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -726,7 +726,7 @@ class MessageBrokerApi
      *
      * Send Outbound Message
      *
-     * @param  \OpenAPI\Client\Model\InlineObject139 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject140 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -839,7 +839,7 @@ class MessageBrokerApi
      *
      * Send Outbound Message
      *
-     * @param  \OpenAPI\Client\Model\InlineObject139 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject140 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -859,7 +859,7 @@ class MessageBrokerApi
      *
      * Send Outbound Message
      *
-     * @param  \OpenAPI\Client\Model\InlineObject139 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject140 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -905,7 +905,7 @@ class MessageBrokerApi
     /**
      * Create request for operation 'publishMessagesPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject139 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject140 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1003,7 +1003,7 @@ class MessageBrokerApi
      *
      * Remove API Key and Webhook Information
      *
-     * @param  \OpenAPI\Client\Model\InlineObject141 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject142 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1020,7 +1020,7 @@ class MessageBrokerApi
      *
      * Remove API Key and Webhook Information
      *
-     * @param  \OpenAPI\Client\Model\InlineObject141 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject142 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1133,7 +1133,7 @@ class MessageBrokerApi
      *
      * Remove API Key and Webhook Information
      *
-     * @param  \OpenAPI\Client\Model\InlineObject141 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject142 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1153,7 +1153,7 @@ class MessageBrokerApi
      *
      * Remove API Key and Webhook Information
      *
-     * @param  \OpenAPI\Client\Model\InlineObject141 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject142 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1199,7 +1199,7 @@ class MessageBrokerApi
     /**
      * Create request for operation 'removeAuthorizationPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject141 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject142 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

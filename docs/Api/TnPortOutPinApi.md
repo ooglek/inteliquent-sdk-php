@@ -36,7 +36,7 @@ $apiInstance = new OpenAPI\Client\Api\TnPortOutPinApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject136(); // \OpenAPI\Client\Model\InlineObject136
+$payload = new \OpenAPI\Client\Model\InlineObject137(); // \OpenAPI\Client\Model\InlineObject137
 
 try {
     $result = $apiInstance->tnPortOutPinDetailPost($payload);
@@ -50,7 +50,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject136**](../Model/InlineObject136.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject137**](../Model/InlineObject137.md)|  |
 
 ### Return type
 

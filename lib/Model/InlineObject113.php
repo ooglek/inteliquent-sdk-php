@@ -61,16 +61,17 @@ class InlineObject113 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'order_id' => 'int',
-        'customer_order_reference' => 'string',
-        'service_order_reference' => 'string',
-        'order_status' => 'string',
-        'product_id' => 'int',
-        'product_id_list' => 'string',
-        'created_date_start_range' => 'string',
-        'created_date_end_range' => 'string',
-        'tn' => 'string',
-        'page_sort' => '\OpenAPI\Client\Model\PortInOrderListPageSort'
+        'start_date' => '\DateTime',
+        'end_date' => '\DateTime',
+        'direction' => 'string',
+        'message_class' => 'string',
+        'message_type' => 'string',
+        'disposition' => 'string',
+        'region' => 'string',
+        'country' => 'string',
+        'operators' => 'string[]',
+        'source_tn' => 'string',
+        'destination_tn' => 'string'
     ];
 
     /**
@@ -82,16 +83,17 @@ class InlineObject113 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'order_id' => null,
-        'customer_order_reference' => null,
-        'service_order_reference' => null,
-        'order_status' => null,
-        'product_id' => null,
-        'product_id_list' => null,
-        'created_date_start_range' => 'dateTime',
-        'created_date_end_range' => 'dateTime',
-        'tn' => null,
-        'page_sort' => null
+        'start_date' => 'date',
+        'end_date' => 'date',
+        'direction' => null,
+        'message_class' => null,
+        'message_type' => null,
+        'disposition' => null,
+        'region' => null,
+        'country' => null,
+        'operators' => null,
+        'source_tn' => null,
+        'destination_tn' => null
     ];
 
     /**
@@ -122,16 +124,17 @@ class InlineObject113 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'order_id' => 'orderId',
-        'customer_order_reference' => 'customerOrderReference',
-        'service_order_reference' => 'serviceOrderReference',
-        'order_status' => 'orderStatus',
-        'product_id' => 'productId',
-        'product_id_list' => 'productIdList',
-        'created_date_start_range' => 'createdDateStartRange',
-        'created_date_end_range' => 'createdDateEndRange',
-        'tn' => 'tn',
-        'page_sort' => 'pageSort'
+        'start_date' => 'startDate',
+        'end_date' => 'endDate',
+        'direction' => 'direction',
+        'message_class' => 'messageClass',
+        'message_type' => 'messageType',
+        'disposition' => 'disposition',
+        'region' => 'region',
+        'country' => 'country',
+        'operators' => 'operators',
+        'source_tn' => 'sourceTn',
+        'destination_tn' => 'destinationTn;'
     ];
 
     /**
@@ -141,16 +144,17 @@ class InlineObject113 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'order_id' => 'setOrderId',
-        'customer_order_reference' => 'setCustomerOrderReference',
-        'service_order_reference' => 'setServiceOrderReference',
-        'order_status' => 'setOrderStatus',
-        'product_id' => 'setProductId',
-        'product_id_list' => 'setProductIdList',
-        'created_date_start_range' => 'setCreatedDateStartRange',
-        'created_date_end_range' => 'setCreatedDateEndRange',
-        'tn' => 'setTn',
-        'page_sort' => 'setPageSort'
+        'start_date' => 'setStartDate',
+        'end_date' => 'setEndDate',
+        'direction' => 'setDirection',
+        'message_class' => 'setMessageClass',
+        'message_type' => 'setMessageType',
+        'disposition' => 'setDisposition',
+        'region' => 'setRegion',
+        'country' => 'setCountry',
+        'operators' => 'setOperators',
+        'source_tn' => 'setSourceTn',
+        'destination_tn' => 'setDestinationTn'
     ];
 
     /**
@@ -160,16 +164,17 @@ class InlineObject113 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'order_id' => 'getOrderId',
-        'customer_order_reference' => 'getCustomerOrderReference',
-        'service_order_reference' => 'getServiceOrderReference',
-        'order_status' => 'getOrderStatus',
-        'product_id' => 'getProductId',
-        'product_id_list' => 'getProductIdList',
-        'created_date_start_range' => 'getCreatedDateStartRange',
-        'created_date_end_range' => 'getCreatedDateEndRange',
-        'tn' => 'getTn',
-        'page_sort' => 'getPageSort'
+        'start_date' => 'getStartDate',
+        'end_date' => 'getEndDate',
+        'direction' => 'getDirection',
+        'message_class' => 'getMessageClass',
+        'message_type' => 'getMessageType',
+        'disposition' => 'getDisposition',
+        'region' => 'getRegion',
+        'country' => 'getCountry',
+        'operators' => 'getOperators',
+        'source_tn' => 'getSourceTn',
+        'destination_tn' => 'getDestinationTn'
     ];
 
     /**
@@ -213,6 +218,82 @@ class InlineObject113 implements ModelInterface, ArrayAccess, \JsonSerializable
         return self::$openAPIModelName;
     }
 
+    const DIRECTION_INBOUND = 'Inbound';
+    const DIRECTION_OUTBOUND = 'Outbound';
+    const MESSAGE_CLASS_P2_P = 'P2P';
+    const MESSAGE_CLASS_A2_PLC = 'A2PLC';
+    const MESSAGE_CLASS_A2_P8_XX = 'A2P8XX';
+    const MESSAGE_TYPE_SMS = 'SMS';
+    const MESSAGE_TYPE_MMS = 'MMS';
+    const MESSAGE_TYPE_SMSMMS = 'SMSMMS';
+    const MESSAGE_TYPE_SMS_ALT = 'SMS_ALT';
+    const MESSAGE_TYPE_MMS_ALT = 'MMS_ALT';
+    const MESSAGE_TYPE_SMSMMS_ALT = 'SMSMMS_ALT';
+    const REGION_AFRICA_AND_MIDDLE_EAST = 'Africa and Middle East';
+    const REGION_ASIA_AND_PACIFIC = 'Asia and Pacific';
+    const REGION_EUROPE = 'Europe';
+    const REGION_GLOBAL___SATELLITE = 'Global / Satellite';
+    const REGION_LATIN = 'Latin';
+
+    /**
+     * Gets allowable values of the enum
+     *
+     * @return string[]
+     */
+    public function getDirectionAllowableValues()
+    {
+        return [
+            self::DIRECTION_INBOUND,
+            self::DIRECTION_OUTBOUND,
+        ];
+    }
+
+    /**
+     * Gets allowable values of the enum
+     *
+     * @return string[]
+     */
+    public function getMessageClassAllowableValues()
+    {
+        return [
+            self::MESSAGE_CLASS_P2_P,
+            self::MESSAGE_CLASS_A2_PLC,
+            self::MESSAGE_CLASS_A2_P8_XX,
+        ];
+    }
+
+    /**
+     * Gets allowable values of the enum
+     *
+     * @return string[]
+     */
+    public function getMessageTypeAllowableValues()
+    {
+        return [
+            self::MESSAGE_TYPE_SMS,
+            self::MESSAGE_TYPE_MMS,
+            self::MESSAGE_TYPE_SMSMMS,
+            self::MESSAGE_TYPE_SMS_ALT,
+            self::MESSAGE_TYPE_MMS_ALT,
+            self::MESSAGE_TYPE_SMSMMS_ALT,
+        ];
+    }
+
+    /**
+     * Gets allowable values of the enum
+     *
+     * @return string[]
+     */
+    public function getRegionAllowableValues()
+    {
+        return [
+            self::REGION_AFRICA_AND_MIDDLE_EAST,
+            self::REGION_ASIA_AND_PACIFIC,
+            self::REGION_EUROPE,
+            self::REGION_GLOBAL___SATELLITE,
+            self::REGION_LATIN,
+        ];
+    }
 
     /**
      * Associative array for storing property values
@@ -230,16 +311,17 @@ class InlineObject113 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['order_id'] = $data['order_id'] ?? null;
-        $this->container['customer_order_reference'] = $data['customer_order_reference'] ?? null;
-        $this->container['service_order_reference'] = $data['service_order_reference'] ?? null;
-        $this->container['order_status'] = $data['order_status'] ?? null;
-        $this->container['product_id'] = $data['product_id'] ?? null;
-        $this->container['product_id_list'] = $data['product_id_list'] ?? null;
-        $this->container['created_date_start_range'] = $data['created_date_start_range'] ?? null;
-        $this->container['created_date_end_range'] = $data['created_date_end_range'] ?? null;
-        $this->container['tn'] = $data['tn'] ?? null;
-        $this->container['page_sort'] = $data['page_sort'] ?? null;
+        $this->container['start_date'] = $data['start_date'] ?? null;
+        $this->container['end_date'] = $data['end_date'] ?? null;
+        $this->container['direction'] = $data['direction'] ?? null;
+        $this->container['message_class'] = $data['message_class'] ?? null;
+        $this->container['message_type'] = $data['message_type'] ?? null;
+        $this->container['disposition'] = $data['disposition'] ?? null;
+        $this->container['region'] = $data['region'] ?? null;
+        $this->container['country'] = $data['country'] ?? null;
+        $this->container['operators'] = $data['operators'] ?? null;
+        $this->container['source_tn'] = $data['source_tn'] ?? null;
+        $this->container['destination_tn'] = $data['destination_tn'] ?? null;
     }
 
     /**
@@ -251,9 +333,42 @@ class InlineObject113 implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         $invalidProperties = [];
 
-        if ($this->container['private_key'] === null) {
-            $invalidProperties[] = "'private_key' can't be null";
+        $allowedValues = $this->getDirectionAllowableValues();
+        if (!is_null($this->container['direction']) && !in_array($this->container['direction'], $allowedValues, true)) {
+            $invalidProperties[] = sprintf(
+                "invalid value '%s' for 'direction', must be one of '%s'",
+                $this->container['direction'],
+                implode("', '", $allowedValues)
+            );
         }
+
+        $allowedValues = $this->getMessageClassAllowableValues();
+        if (!is_null($this->container['message_class']) && !in_array($this->container['message_class'], $allowedValues, true)) {
+            $invalidProperties[] = sprintf(
+                "invalid value '%s' for 'message_class', must be one of '%s'",
+                $this->container['message_class'],
+                implode("', '", $allowedValues)
+            );
+        }
+
+        $allowedValues = $this->getMessageTypeAllowableValues();
+        if (!is_null($this->container['message_type']) && !in_array($this->container['message_type'], $allowedValues, true)) {
+            $invalidProperties[] = sprintf(
+                "invalid value '%s' for 'message_type', must be one of '%s'",
+                $this->container['message_type'],
+                implode("', '", $allowedValues)
+            );
+        }
+
+        $allowedValues = $this->getRegionAllowableValues();
+        if (!is_null($this->container['region']) && !in_array($this->container['region'], $allowedValues, true)) {
+            $invalidProperties[] = sprintf(
+                "invalid value '%s' for 'region', must be one of '%s'",
+                $this->container['region'],
+                implode("', '", $allowedValues)
+            );
+        }
+
         return $invalidProperties;
     }
 
@@ -272,7 +387,7 @@ class InlineObject113 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets private_key
      *
-     * @return string
+     * @return string|null
      */
     public function getPrivateKey()
     {
@@ -282,7 +397,7 @@ class InlineObject113 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets private_key
      *
-     * @param string $private_key API key required to validate your application
+     * @param string|null $private_key API key required to validate your application
      *
      * @return self
      */
@@ -294,241 +409,305 @@ class InlineObject113 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets order_id
+     * Gets start_date
      *
-     * @return int|null
+     * @return \DateTime|null
      */
-    public function getOrderId()
+    public function getStartDate()
     {
-        return $this->container['order_id'];
+        return $this->container['start_date'];
     }
 
     /**
-     * Sets order_id
+     * Sets start_date
      *
-     * @param int|null $order_id Existing order number
+     * @param \DateTime|null $start_date Start of date range (e.g. 2015-12-15T00:00:00.000Z)
      *
      * @return self
      */
-    public function setOrderId($order_id)
+    public function setStartDate($start_date)
     {
-        $this->container['order_id'] = $order_id;
+        $this->container['start_date'] = $start_date;
 
         return $this;
     }
 
     /**
-     * Gets customer_order_reference
+     * Gets end_date
+     *
+     * @return \DateTime|null
+     */
+    public function getEndDate()
+    {
+        return $this->container['end_date'];
+    }
+
+    /**
+     * Sets end_date
+     *
+     * @param \DateTime|null $end_date End of date range (e.g. 2015-12-15T00:00:00.000Z)
+     *
+     * @return self
+     */
+    public function setEndDate($end_date)
+    {
+        $this->container['end_date'] = $end_date;
+
+        return $this;
+    }
+
+    /**
+     * Gets direction
      *
      * @return string|null
      */
-    public function getCustomerOrderReference()
+    public function getDirection()
     {
-        return $this->container['customer_order_reference'];
+        return $this->container['direction'];
     }
 
     /**
-     * Sets customer_order_reference
+     * Sets direction
      *
-     * @param string|null $customer_order_reference Alphanumeric order reference name
+     * @param string|null $direction Message direction; acceptable values are Outbound and Inbound
      *
      * @return self
      */
-    public function setCustomerOrderReference($customer_order_reference)
+    public function setDirection($direction)
     {
-        $this->container['customer_order_reference'] = $customer_order_reference;
+        $allowedValues = $this->getDirectionAllowableValues();
+        if (!is_null($direction) && !in_array($direction, $allowedValues, true)) {
+            throw new \InvalidArgumentException(
+                sprintf(
+                    "Invalid value '%s' for 'direction', must be one of '%s'",
+                    $direction,
+                    implode("', '", $allowedValues)
+                )
+            );
+        }
+        $this->container['direction'] = $direction;
 
         return $this;
     }
 
     /**
-     * Gets service_order_reference
+     * Gets message_class
      *
      * @return string|null
      */
-    public function getServiceOrderReference()
+    public function getMessageClass()
     {
-        return $this->container['service_order_reference'];
+        return $this->container['message_class'];
     }
 
     /**
-     * Sets service_order_reference
+     * Sets message_class
      *
-     * @param string|null $service_order_reference Order type
+     * @param string|null $message_class Acceptable values are P2P, A2PLC, and A2P8XX
      *
      * @return self
      */
-    public function setServiceOrderReference($service_order_reference)
+    public function setMessageClass($message_class)
     {
-        $this->container['service_order_reference'] = $service_order_reference;
+        $allowedValues = $this->getMessageClassAllowableValues();
+        if (!is_null($message_class) && !in_array($message_class, $allowedValues, true)) {
+            throw new \InvalidArgumentException(
+                sprintf(
+                    "Invalid value '%s' for 'message_class', must be one of '%s'",
+                    $message_class,
+                    implode("', '", $allowedValues)
+                )
+            );
+        }
+        $this->container['message_class'] = $message_class;
 
         return $this;
     }
 
     /**
-     * Gets order_status
+     * Gets message_type
      *
      * @return string|null
      */
-    public function getOrderStatus()
+    public function getMessageType()
     {
-        return $this->container['order_status'];
+        return $this->container['message_type'];
     }
 
     /**
-     * Sets order_status
+     * Sets message_type
      *
-     * @param string|null $order_status Order status
+     * @param string|null $message_type Acceptable values are SMS, MMS, SMSMMS, SMS_ALT, MMS_ALT, and SMSMMS_ALT
      *
      * @return self
      */
-    public function setOrderStatus($order_status)
+    public function setMessageType($message_type)
     {
-        $this->container['order_status'] = $order_status;
+        $allowedValues = $this->getMessageTypeAllowableValues();
+        if (!is_null($message_type) && !in_array($message_type, $allowedValues, true)) {
+            throw new \InvalidArgumentException(
+                sprintf(
+                    "Invalid value '%s' for 'message_type', must be one of '%s'",
+                    $message_type,
+                    implode("', '", $allowedValues)
+                )
+            );
+        }
+        $this->container['message_type'] = $message_type;
 
         return $this;
     }
 
     /**
-     * Gets product_id
-     *
-     * @return int|null
-     */
-    public function getProductId()
-    {
-        return $this->container['product_id'];
-    }
-
-    /**
-     * Sets product_id
-     *
-     * @param int|null $product_id Product identifier; acceptable values include
-     *
-     * @return self
-     */
-    public function setProductId($product_id)
-    {
-        $this->container['product_id'] = $product_id;
-
-        return $this;
-    }
-
-    /**
-     * Gets product_id_list
+     * Gets disposition
      *
      * @return string|null
      */
-    public function getProductIdList()
+    public function getDisposition()
     {
-        return $this->container['product_id_list'];
+        return $this->container['disposition'];
     }
 
     /**
-     * Sets product_id_list
+     * Sets disposition
      *
-     * @param string|null $product_id_list List of productIds can be sent with ',' separated (e.g. 103,128,129 )
+     * @param string|null $disposition Message disposition; acceptable values are Enroute, Successful, Unknown, Blocked, and Failed
      *
      * @return self
      */
-    public function setProductIdList($product_id_list)
+    public function setDisposition($disposition)
     {
-        $this->container['product_id_list'] = $product_id_list;
+        $this->container['disposition'] = $disposition;
 
         return $this;
     }
 
     /**
-     * Gets created_date_start_range
+     * Gets region
      *
      * @return string|null
      */
-    public function getCreatedDateStartRange()
+    public function getRegion()
     {
-        return $this->container['created_date_start_range'];
+        return $this->container['region'];
     }
 
     /**
-     * Sets created_date_start_range
+     * Sets region
      *
-     * @param string|null $created_date_start_range Earliest order creation date to return (e.g. 2015-12-20)
+     * @param string|null $region Message region
      *
      * @return self
      */
-    public function setCreatedDateStartRange($created_date_start_range)
+    public function setRegion($region)
     {
-        $this->container['created_date_start_range'] = $created_date_start_range;
+        $allowedValues = $this->getRegionAllowableValues();
+        if (!is_null($region) && !in_array($region, $allowedValues, true)) {
+            throw new \InvalidArgumentException(
+                sprintf(
+                    "Invalid value '%s' for 'region', must be one of '%s'",
+                    $region,
+                    implode("', '", $allowedValues)
+                )
+            );
+        }
+        $this->container['region'] = $region;
 
         return $this;
     }
 
     /**
-     * Gets created_date_end_range
+     * Gets country
      *
      * @return string|null
      */
-    public function getCreatedDateEndRange()
+    public function getCountry()
     {
-        return $this->container['created_date_end_range'];
+        return $this->container['country'];
     }
 
     /**
-     * Sets created_date_end_range
+     * Sets country
      *
-     * @param string|null $created_date_end_range Latest order creation date to return (e.g. 2015-12-20)
+     * @param string|null $country Message origin or destination (based on direction value sent) country
      *
      * @return self
      */
-    public function setCreatedDateEndRange($created_date_end_range)
+    public function setCountry($country)
     {
-        $this->container['created_date_end_range'] = $created_date_end_range;
+        $this->container['country'] = $country;
 
         return $this;
     }
 
     /**
-     * Gets tn
+     * Gets operators
+     *
+     * @return string[]|null
+     */
+    public function getOperators()
+    {
+        return $this->container['operators'];
+    }
+
+    /**
+     * Sets operators
+     *
+     * @param string[]|null $operators Message origin or destination (based on direction value sent) operator(s)
+     *
+     * @return self
+     */
+    public function setOperators($operators)
+    {
+        $this->container['operators'] = $operators;
+
+        return $this;
+    }
+
+    /**
+     * Gets source_tn
      *
      * @return string|null
      */
-    public function getTn()
+    public function getSourceTn()
     {
-        return $this->container['tn'];
+        return $this->container['source_tn'];
     }
 
     /**
-     * Sets tn
+     * Sets source_tn
      *
-     * @param string|null $tn Ten-digit telephone number (e.g. 8156680000)
+     * @param string|null $source_tn 10-digit or E.164 message sent from number (e.g. 3121231234 or 13121231234)
      *
      * @return self
      */
-    public function setTn($tn)
+    public function setSourceTn($source_tn)
     {
-        $this->container['tn'] = $tn;
+        $this->container['source_tn'] = $source_tn;
 
         return $this;
     }
 
     /**
-     * Gets page_sort
+     * Gets destination_tn
      *
-     * @return \OpenAPI\Client\Model\PortInOrderListPageSort|null
+     * @return string|null
      */
-    public function getPageSort()
+    public function getDestinationTn()
     {
-        return $this->container['page_sort'];
+        return $this->container['destination_tn'];
     }
 
     /**
-     * Sets page_sort
+     * Sets destination_tn
      *
-     * @param \OpenAPI\Client\Model\PortInOrderListPageSort|null $page_sort page_sort
+     * @param string|null $destination_tn 10-digit or E.164 message sent to number (e.g. 3121231234 or 13121231234)
      *
      * @return self
      */
-    public function setPageSort($page_sort)
+    public function setDestinationTn($destination_tn)
     {
-        $this->container['page_sort'] = $page_sort;
+        $this->container['destination_tn'] = $destination_tn;
 
         return $this;
     }

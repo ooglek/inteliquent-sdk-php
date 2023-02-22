@@ -61,17 +61,10 @@ class InlineObject112 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'start_date' => '\DateTime',
-        'end_date' => '\DateTime',
-        'direction' => 'string',
-        'message_class' => 'string',
-        'message_type' => 'string',
-        'disposition' => 'string',
-        'region' => 'string',
-        'country' => 'string',
-        'operators' => 'string[]',
-        'source_tn' => 'string',
-        'destination_tn' => 'string'
+        'start_date' => 'string',
+        'end_date' => 'string',
+        'trunk_group_name' => 'string',
+        'super_group_name' => 'string'
     ];
 
     /**
@@ -83,17 +76,10 @@ class InlineObject112 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'start_date' => 'date',
-        'end_date' => 'date',
-        'direction' => null,
-        'message_class' => null,
-        'message_type' => null,
-        'disposition' => null,
-        'region' => null,
-        'country' => null,
-        'operators' => null,
-        'source_tn' => null,
-        'destination_tn' => null
+        'start_date' => null,
+        'end_date' => null,
+        'trunk_group_name' => null,
+        'super_group_name' => null
     ];
 
     /**
@@ -126,15 +112,8 @@ class InlineObject112 implements ModelInterface, ArrayAccess, \JsonSerializable
         'private_key' => 'privateKey',
         'start_date' => 'startDate',
         'end_date' => 'endDate',
-        'direction' => 'direction',
-        'message_class' => 'messageClass',
-        'message_type' => 'messageType',
-        'disposition' => 'disposition',
-        'region' => 'region',
-        'country' => 'country',
-        'operators' => 'operators',
-        'source_tn' => 'sourceTn',
-        'destination_tn' => 'destinationTn;'
+        'trunk_group_name' => 'trunkGroupName',
+        'super_group_name' => 'superGroupName'
     ];
 
     /**
@@ -146,15 +125,8 @@ class InlineObject112 implements ModelInterface, ArrayAccess, \JsonSerializable
         'private_key' => 'setPrivateKey',
         'start_date' => 'setStartDate',
         'end_date' => 'setEndDate',
-        'direction' => 'setDirection',
-        'message_class' => 'setMessageClass',
-        'message_type' => 'setMessageType',
-        'disposition' => 'setDisposition',
-        'region' => 'setRegion',
-        'country' => 'setCountry',
-        'operators' => 'setOperators',
-        'source_tn' => 'setSourceTn',
-        'destination_tn' => 'setDestinationTn'
+        'trunk_group_name' => 'setTrunkGroupName',
+        'super_group_name' => 'setSuperGroupName'
     ];
 
     /**
@@ -166,15 +138,8 @@ class InlineObject112 implements ModelInterface, ArrayAccess, \JsonSerializable
         'private_key' => 'getPrivateKey',
         'start_date' => 'getStartDate',
         'end_date' => 'getEndDate',
-        'direction' => 'getDirection',
-        'message_class' => 'getMessageClass',
-        'message_type' => 'getMessageType',
-        'disposition' => 'getDisposition',
-        'region' => 'getRegion',
-        'country' => 'getCountry',
-        'operators' => 'getOperators',
-        'source_tn' => 'getSourceTn',
-        'destination_tn' => 'getDestinationTn'
+        'trunk_group_name' => 'getTrunkGroupName',
+        'super_group_name' => 'getSuperGroupName'
     ];
 
     /**
@@ -218,82 +183,6 @@ class InlineObject112 implements ModelInterface, ArrayAccess, \JsonSerializable
         return self::$openAPIModelName;
     }
 
-    const DIRECTION_INBOUND = 'Inbound';
-    const DIRECTION_OUTBOUND = 'Outbound';
-    const MESSAGE_CLASS_P2_P = 'P2P';
-    const MESSAGE_CLASS_A2_PLC = 'A2PLC';
-    const MESSAGE_CLASS_A2_P8_XX = 'A2P8XX';
-    const MESSAGE_TYPE_SMS = 'SMS';
-    const MESSAGE_TYPE_MMS = 'MMS';
-    const MESSAGE_TYPE_SMSMMS = 'SMSMMS';
-    const MESSAGE_TYPE_SMS_ALT = 'SMS_ALT';
-    const MESSAGE_TYPE_MMS_ALT = 'MMS_ALT';
-    const MESSAGE_TYPE_SMSMMS_ALT = 'SMSMMS_ALT';
-    const REGION_AFRICA_AND_MIDDLE_EAST = 'Africa and Middle East';
-    const REGION_ASIA_AND_PACIFIC = 'Asia and Pacific';
-    const REGION_EUROPE = 'Europe';
-    const REGION_GLOBAL___SATELLITE = 'Global / Satellite';
-    const REGION_LATIN = 'Latin';
-
-    /**
-     * Gets allowable values of the enum
-     *
-     * @return string[]
-     */
-    public function getDirectionAllowableValues()
-    {
-        return [
-            self::DIRECTION_INBOUND,
-            self::DIRECTION_OUTBOUND,
-        ];
-    }
-
-    /**
-     * Gets allowable values of the enum
-     *
-     * @return string[]
-     */
-    public function getMessageClassAllowableValues()
-    {
-        return [
-            self::MESSAGE_CLASS_P2_P,
-            self::MESSAGE_CLASS_A2_PLC,
-            self::MESSAGE_CLASS_A2_P8_XX,
-        ];
-    }
-
-    /**
-     * Gets allowable values of the enum
-     *
-     * @return string[]
-     */
-    public function getMessageTypeAllowableValues()
-    {
-        return [
-            self::MESSAGE_TYPE_SMS,
-            self::MESSAGE_TYPE_MMS,
-            self::MESSAGE_TYPE_SMSMMS,
-            self::MESSAGE_TYPE_SMS_ALT,
-            self::MESSAGE_TYPE_MMS_ALT,
-            self::MESSAGE_TYPE_SMSMMS_ALT,
-        ];
-    }
-
-    /**
-     * Gets allowable values of the enum
-     *
-     * @return string[]
-     */
-    public function getRegionAllowableValues()
-    {
-        return [
-            self::REGION_AFRICA_AND_MIDDLE_EAST,
-            self::REGION_ASIA_AND_PACIFIC,
-            self::REGION_EUROPE,
-            self::REGION_GLOBAL___SATELLITE,
-            self::REGION_LATIN,
-        ];
-    }
 
     /**
      * Associative array for storing property values
@@ -313,15 +202,8 @@ class InlineObject112 implements ModelInterface, ArrayAccess, \JsonSerializable
         $this->container['private_key'] = $data['private_key'] ?? null;
         $this->container['start_date'] = $data['start_date'] ?? null;
         $this->container['end_date'] = $data['end_date'] ?? null;
-        $this->container['direction'] = $data['direction'] ?? null;
-        $this->container['message_class'] = $data['message_class'] ?? null;
-        $this->container['message_type'] = $data['message_type'] ?? null;
-        $this->container['disposition'] = $data['disposition'] ?? null;
-        $this->container['region'] = $data['region'] ?? null;
-        $this->container['country'] = $data['country'] ?? null;
-        $this->container['operators'] = $data['operators'] ?? null;
-        $this->container['source_tn'] = $data['source_tn'] ?? null;
-        $this->container['destination_tn'] = $data['destination_tn'] ?? null;
+        $this->container['trunk_group_name'] = $data['trunk_group_name'] ?? null;
+        $this->container['super_group_name'] = $data['super_group_name'] ?? null;
     }
 
     /**
@@ -333,42 +215,18 @@ class InlineObject112 implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         $invalidProperties = [];
 
-        $allowedValues = $this->getDirectionAllowableValues();
-        if (!is_null($this->container['direction']) && !in_array($this->container['direction'], $allowedValues, true)) {
-            $invalidProperties[] = sprintf(
-                "invalid value '%s' for 'direction', must be one of '%s'",
-                $this->container['direction'],
-                implode("', '", $allowedValues)
-            );
+        if ($this->container['private_key'] === null) {
+            $invalidProperties[] = "'private_key' can't be null";
         }
-
-        $allowedValues = $this->getMessageClassAllowableValues();
-        if (!is_null($this->container['message_class']) && !in_array($this->container['message_class'], $allowedValues, true)) {
-            $invalidProperties[] = sprintf(
-                "invalid value '%s' for 'message_class', must be one of '%s'",
-                $this->container['message_class'],
-                implode("', '", $allowedValues)
-            );
+        if ($this->container['start_date'] === null) {
+            $invalidProperties[] = "'start_date' can't be null";
         }
-
-        $allowedValues = $this->getMessageTypeAllowableValues();
-        if (!is_null($this->container['message_type']) && !in_array($this->container['message_type'], $allowedValues, true)) {
-            $invalidProperties[] = sprintf(
-                "invalid value '%s' for 'message_type', must be one of '%s'",
-                $this->container['message_type'],
-                implode("', '", $allowedValues)
-            );
+        if ($this->container['end_date'] === null) {
+            $invalidProperties[] = "'end_date' can't be null";
         }
-
-        $allowedValues = $this->getRegionAllowableValues();
-        if (!is_null($this->container['region']) && !in_array($this->container['region'], $allowedValues, true)) {
-            $invalidProperties[] = sprintf(
-                "invalid value '%s' for 'region', must be one of '%s'",
-                $this->container['region'],
-                implode("', '", $allowedValues)
-            );
+        if ($this->container['trunk_group_name'] === null) {
+            $invalidProperties[] = "'trunk_group_name' can't be null";
         }
-
         return $invalidProperties;
     }
 
@@ -387,7 +245,7 @@ class InlineObject112 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets private_key
      *
-     * @return string|null
+     * @return string
      */
     public function getPrivateKey()
     {
@@ -397,7 +255,7 @@ class InlineObject112 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets private_key
      *
-     * @param string|null $private_key API key required to validate your application
+     * @param string $private_key API key required to validate your application
      *
      * @return self
      */
@@ -411,7 +269,7 @@ class InlineObject112 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets start_date
      *
-     * @return \DateTime|null
+     * @return string
      */
     public function getStartDate()
     {
@@ -421,7 +279,7 @@ class InlineObject112 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets start_date
      *
-     * @param \DateTime|null $start_date Start of date range (e.g. 2015-12-15T00:00:00.000Z)
+     * @param string $start_date Start of date range (e.g. 2015-12-15)
      *
      * @return self
      */
@@ -435,7 +293,7 @@ class InlineObject112 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets end_date
      *
-     * @return \DateTime|null
+     * @return string
      */
     public function getEndDate()
     {
@@ -445,7 +303,7 @@ class InlineObject112 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets end_date
      *
-     * @param \DateTime|null $end_date End of date range (e.g. 2015-12-15T00:00:00.000Z)
+     * @param string $end_date End of date range (e.g. 2015-12-15)
      *
      * @return self
      */
@@ -457,257 +315,49 @@ class InlineObject112 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets direction
+     * Gets trunk_group_name
      *
-     * @return string|null
+     * @return string
      */
-    public function getDirection()
+    public function getTrunkGroupName()
     {
-        return $this->container['direction'];
+        return $this->container['trunk_group_name'];
     }
 
     /**
-     * Sets direction
+     * Sets trunk_group_name
      *
-     * @param string|null $direction Message direction; acceptable values are Outbound and Inbound
+     * @param string $trunk_group_name Name of trunk group to search utilization
      *
      * @return self
      */
-    public function setDirection($direction)
+    public function setTrunkGroupName($trunk_group_name)
     {
-        $allowedValues = $this->getDirectionAllowableValues();
-        if (!is_null($direction) && !in_array($direction, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'direction', must be one of '%s'",
-                    $direction,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }
-        $this->container['direction'] = $direction;
+        $this->container['trunk_group_name'] = $trunk_group_name;
 
         return $this;
     }
 
     /**
-     * Gets message_class
+     * Gets super_group_name
      *
      * @return string|null
      */
-    public function getMessageClass()
+    public function getSuperGroupName()
     {
-        return $this->container['message_class'];
+        return $this->container['super_group_name'];
     }
 
     /**
-     * Sets message_class
+     * Sets super_group_name
      *
-     * @param string|null $message_class Acceptable values are P2P, A2PLC, and A2P8XX
+     * @param string|null $super_group_name super_group_name
      *
      * @return self
      */
-    public function setMessageClass($message_class)
+    public function setSuperGroupName($super_group_name)
     {
-        $allowedValues = $this->getMessageClassAllowableValues();
-        if (!is_null($message_class) && !in_array($message_class, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'message_class', must be one of '%s'",
-                    $message_class,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }
-        $this->container['message_class'] = $message_class;
-
-        return $this;
-    }
-
-    /**
-     * Gets message_type
-     *
-     * @return string|null
-     */
-    public function getMessageType()
-    {
-        return $this->container['message_type'];
-    }
-
-    /**
-     * Sets message_type
-     *
-     * @param string|null $message_type Acceptable values are SMS, MMS, SMSMMS, SMS_ALT, MMS_ALT, and SMSMMS_ALT
-     *
-     * @return self
-     */
-    public function setMessageType($message_type)
-    {
-        $allowedValues = $this->getMessageTypeAllowableValues();
-        if (!is_null($message_type) && !in_array($message_type, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'message_type', must be one of '%s'",
-                    $message_type,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }
-        $this->container['message_type'] = $message_type;
-
-        return $this;
-    }
-
-    /**
-     * Gets disposition
-     *
-     * @return string|null
-     */
-    public function getDisposition()
-    {
-        return $this->container['disposition'];
-    }
-
-    /**
-     * Sets disposition
-     *
-     * @param string|null $disposition Message disposition; acceptable values are Enroute, Successful, Unknown, Blocked, and Failed
-     *
-     * @return self
-     */
-    public function setDisposition($disposition)
-    {
-        $this->container['disposition'] = $disposition;
-
-        return $this;
-    }
-
-    /**
-     * Gets region
-     *
-     * @return string|null
-     */
-    public function getRegion()
-    {
-        return $this->container['region'];
-    }
-
-    /**
-     * Sets region
-     *
-     * @param string|null $region Message region
-     *
-     * @return self
-     */
-    public function setRegion($region)
-    {
-        $allowedValues = $this->getRegionAllowableValues();
-        if (!is_null($region) && !in_array($region, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'region', must be one of '%s'",
-                    $region,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }
-        $this->container['region'] = $region;
-
-        return $this;
-    }
-
-    /**
-     * Gets country
-     *
-     * @return string|null
-     */
-    public function getCountry()
-    {
-        return $this->container['country'];
-    }
-
-    /**
-     * Sets country
-     *
-     * @param string|null $country Message origin or destination (based on direction value sent) country
-     *
-     * @return self
-     */
-    public function setCountry($country)
-    {
-        $this->container['country'] = $country;
-
-        return $this;
-    }
-
-    /**
-     * Gets operators
-     *
-     * @return string[]|null
-     */
-    public function getOperators()
-    {
-        return $this->container['operators'];
-    }
-
-    /**
-     * Sets operators
-     *
-     * @param string[]|null $operators Message origin or destination (based on direction value sent) operator(s)
-     *
-     * @return self
-     */
-    public function setOperators($operators)
-    {
-        $this->container['operators'] = $operators;
-
-        return $this;
-    }
-
-    /**
-     * Gets source_tn
-     *
-     * @return string|null
-     */
-    public function getSourceTn()
-    {
-        return $this->container['source_tn'];
-    }
-
-    /**
-     * Sets source_tn
-     *
-     * @param string|null $source_tn 10-digit or E.164 message sent from number (e.g. 3121231234 or 13121231234)
-     *
-     * @return self
-     */
-    public function setSourceTn($source_tn)
-    {
-        $this->container['source_tn'] = $source_tn;
-
-        return $this;
-    }
-
-    /**
-     * Gets destination_tn
-     *
-     * @return string|null
-     */
-    public function getDestinationTn()
-    {
-        return $this->container['destination_tn'];
-    }
-
-    /**
-     * Sets destination_tn
-     *
-     * @param string|null $destination_tn 10-digit or E.164 message sent to number (e.g. 3121231234 or 13121231234)
-     *
-     * @return self
-     */
-    public function setDestinationTn($destination_tn)
-    {
-        $this->container['destination_tn'] = $destination_tn;
+        $this->container['super_group_name'] = $super_group_name;
 
         return $this;
     }

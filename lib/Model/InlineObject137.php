@@ -60,7 +60,9 @@ class InlineObject137 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'private_key' => 'string'
+        'private_key' => 'string',
+        'tn_mask' => 'string',
+        'port_out_pin' => 'string'
     ];
 
     /**
@@ -71,7 +73,9 @@ class InlineObject137 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'private_key' => null
+        'private_key' => null,
+        'tn_mask' => null,
+        'port_out_pin' => null
     ];
 
     /**
@@ -101,7 +105,9 @@ class InlineObject137 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        'private_key' => 'privateKey'
+        'private_key' => 'privateKey',
+        'tn_mask' => 'tnMask',
+        'port_out_pin' => 'portOutPin'
     ];
 
     /**
@@ -110,7 +116,9 @@ class InlineObject137 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        'private_key' => 'setPrivateKey'
+        'private_key' => 'setPrivateKey',
+        'tn_mask' => 'setTnMask',
+        'port_out_pin' => 'setPortOutPin'
     ];
 
     /**
@@ -119,7 +127,9 @@ class InlineObject137 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        'private_key' => 'getPrivateKey'
+        'private_key' => 'getPrivateKey',
+        'tn_mask' => 'getTnMask',
+        'port_out_pin' => 'getPortOutPin'
     ];
 
     /**
@@ -180,6 +190,8 @@ class InlineObject137 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
+        $this->container['tn_mask'] = $data['tn_mask'] ?? null;
+        $this->container['port_out_pin'] = $data['port_out_pin'] ?? null;
     }
 
     /**
@@ -226,6 +238,54 @@ class InlineObject137 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function setPrivateKey($private_key)
     {
         $this->container['private_key'] = $private_key;
+
+        return $this;
+    }
+
+    /**
+     * Gets tn_mask
+     *
+     * @return string|null
+     */
+    public function getTnMask()
+    {
+        return $this->container['tn_mask'];
+    }
+
+    /**
+     * Sets tn_mask
+     *
+     * @param string|null $tn_mask tn_mask
+     *
+     * @return self
+     */
+    public function setTnMask($tn_mask)
+    {
+        $this->container['tn_mask'] = $tn_mask;
+
+        return $this;
+    }
+
+    /**
+     * Gets port_out_pin
+     *
+     * @return string|null
+     */
+    public function getPortOutPin()
+    {
+        return $this->container['port_out_pin'];
+    }
+
+    /**
+     * Sets port_out_pin
+     *
+     * @param string|null $port_out_pin port_out_pin
+     *
+     * @return self
+     */
+    public function setPortOutPin($port_out_pin)
+    {
+        $this->container['port_out_pin'] = $port_out_pin;
 
         return $this;
     }

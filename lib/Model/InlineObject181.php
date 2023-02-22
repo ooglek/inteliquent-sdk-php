@@ -61,7 +61,7 @@ class InlineObject181 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'document_id' => 'string'
+        'tn_list' => '\OpenAPI\Client\Model\IntlTnAddDocumentTnList'
     ];
 
     /**
@@ -73,7 +73,7 @@ class InlineObject181 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'document_id' => null
+        'tn_list' => null
     ];
 
     /**
@@ -104,7 +104,7 @@ class InlineObject181 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'document_id' => 'documentId'
+        'tn_list' => 'tnList'
     ];
 
     /**
@@ -114,7 +114,7 @@ class InlineObject181 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'document_id' => 'setDocumentId'
+        'tn_list' => 'setTnList'
     ];
 
     /**
@@ -124,7 +124,7 @@ class InlineObject181 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'document_id' => 'getDocumentId'
+        'tn_list' => 'getTnList'
     ];
 
     /**
@@ -185,7 +185,7 @@ class InlineObject181 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['document_id'] = $data['document_id'] ?? null;
+        $this->container['tn_list'] = $data['tn_list'] ?? null;
     }
 
     /**
@@ -237,25 +237,25 @@ class InlineObject181 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets document_id
+     * Gets tn_list
      *
-     * @return string|null
+     * @return \OpenAPI\Client\Model\IntlTnAddDocumentTnList|null
      */
-    public function getDocumentId()
+    public function getTnList()
     {
-        return $this->container['document_id'];
+        return $this->container['tn_list'];
     }
 
     /**
-     * Sets document_id
+     * Sets tn_list
      *
-     * @param string|null $document_id document_id
+     * @param \OpenAPI\Client\Model\IntlTnAddDocumentTnList|null $tn_list tn_list
      *
      * @return self
      */
-    public function setDocumentId($document_id)
+    public function setTnList($tn_list)
     {
-        $this->container['document_id'] = $document_id;
+        $this->container['tn_list'] = $tn_list;
 
         return $this;
     }

@@ -65,7 +65,7 @@ $apiInstance = new OpenAPI\Client\Api\InternationalVoiceServicesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject163(); // \OpenAPI\Client\Model\InlineObject163
+$payload = new \OpenAPI\Client\Model\InlineObject165(); // \OpenAPI\Client\Model\InlineObject165
 
 try {
     $result = $apiInstance->intlAreaCodeInfoPost($payload);
@@ -79,7 +79,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject163**](../Model/InlineObject163.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject165**](../Model/InlineObject165.md)|  |
 
 ### Return type
 
@@ -127,7 +127,7 @@ $apiInstance = new OpenAPI\Client\Api\InternationalVoiceServicesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject191(); // \OpenAPI\Client\Model\InlineObject191
+$payload = new \OpenAPI\Client\Model\InlineObject193(); // \OpenAPI\Client\Model\InlineObject193
 
 try {
     $result = $apiInstance->intlConditionListPost($payload);
@@ -141,7 +141,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject191**](../Model/InlineObject191.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject193**](../Model/InlineObject193.md)|  |
 
 ### Return type
 
@@ -189,7 +189,7 @@ $apiInstance = new OpenAPI\Client\Api\InternationalVoiceServicesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject162(); // \OpenAPI\Client\Model\InlineObject162
+$payload = new \OpenAPI\Client\Model\InlineObject164(); // \OpenAPI\Client\Model\InlineObject164
 
 try {
     $result = $apiInstance->intlCountryListPost($payload);
@@ -203,7 +203,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject162**](../Model/InlineObject162.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject164**](../Model/InlineObject164.md)|  |
 
 ### Return type
 
@@ -251,7 +251,7 @@ $apiInstance = new OpenAPI\Client\Api\InternationalVoiceServicesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject165(); // \OpenAPI\Client\Model\InlineObject165
+$payload = new \OpenAPI\Client\Model\InlineObject167(); // \OpenAPI\Client\Model\InlineObject167
 
 try {
     $result = $apiInstance->intlExcludedTnListPost($payload);
@@ -265,7 +265,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject165**](../Model/InlineObject165.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject167**](../Model/InlineObject167.md)|  |
 
 ### Return type
 
@@ -313,7 +313,7 @@ $apiInstance = new OpenAPI\Client\Api\InternationalVoiceServicesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject167(); // \OpenAPI\Client\Model\InlineObject167
+$payload = new \OpenAPI\Client\Model\InlineObject169(); // \OpenAPI\Client\Model\InlineObject169
 
 try {
     $result = $apiInstance->intlNumberTypesPost($payload);
@@ -327,7 +327,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject167**](../Model/InlineObject167.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject169**](../Model/InlineObject169.md)|  |
 
 ### Return type
 
@@ -375,7 +375,7 @@ $apiInstance = new OpenAPI\Client\Api\InternationalVoiceServicesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject168(); // \OpenAPI\Client\Model\InlineObject168
+$payload = new \OpenAPI\Client\Model\InlineObject170(); // \OpenAPI\Client\Model\InlineObject170
 
 try {
     $result = $apiInstance->intlOrderAddContactNotePost($payload);
@@ -389,7 +389,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject168**](../Model/InlineObject168.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject170**](../Model/InlineObject170.md)|  |
 
 ### Return type
 
@@ -437,7 +437,7 @@ $apiInstance = new OpenAPI\Client\Api\InternationalVoiceServicesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject170(); // \OpenAPI\Client\Model\InlineObject170
+$payload = new \OpenAPI\Client\Model\InlineObject172(); // \OpenAPI\Client\Model\InlineObject172
 
 try {
     $result = $apiInstance->intlOrderAddDocumentPost($payload);
@@ -451,7 +451,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject170**](../Model/InlineObject170.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject172**](../Model/InlineObject172.md)|  |
 
 ### Return type
 
@@ -499,7 +499,7 @@ $apiInstance = new OpenAPI\Client\Api\InternationalVoiceServicesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject169(); // \OpenAPI\Client\Model\InlineObject169
+$payload = new \OpenAPI\Client\Model\InlineObject171(); // \OpenAPI\Client\Model\InlineObject171
 
 try {
     $result = $apiInstance->intlOrderAddNotePost($payload);
@@ -513,7 +513,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject169**](../Model/InlineObject169.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject171**](../Model/InlineObject171.md)|  |
 
 ### Return type
 
@@ -561,7 +561,7 @@ $apiInstance = new OpenAPI\Client\Api\InternationalVoiceServicesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject171(); // \OpenAPI\Client\Model\InlineObject171
+$payload = new \OpenAPI\Client\Model\InlineObject173(); // \OpenAPI\Client\Model\InlineObject173
 
 try {
     $result = $apiInstance->intlOrderCancelPost($payload);
@@ -575,7 +575,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject171**](../Model/InlineObject171.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject173**](../Model/InlineObject173.md)|  |
 
 ### Return type
 
@@ -623,7 +623,7 @@ $apiInstance = new OpenAPI\Client\Api\InternationalVoiceServicesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject186(); // \OpenAPI\Client\Model\InlineObject186
+$payload = new \OpenAPI\Client\Model\InlineObject188(); // \OpenAPI\Client\Model\InlineObject188
 
 try {
     $result = $apiInstance->intlOrderDetailPost($payload);
@@ -637,7 +637,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject186**](../Model/InlineObject186.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject188**](../Model/InlineObject188.md)|  |
 
 ### Return type
 
@@ -685,7 +685,7 @@ $apiInstance = new OpenAPI\Client\Api\InternationalVoiceServicesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject173(); // \OpenAPI\Client\Model\InlineObject173
+$payload = new \OpenAPI\Client\Model\InlineObject175(); // \OpenAPI\Client\Model\InlineObject175
 
 try {
     $result = $apiInstance->intlOrderDocumentDownloadPost($payload);
@@ -699,7 +699,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject173**](../Model/InlineObject173.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject175**](../Model/InlineObject175.md)|  |
 
 ### Return type
 
@@ -747,7 +747,7 @@ $apiInstance = new OpenAPI\Client\Api\InternationalVoiceServicesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject172(); // \OpenAPI\Client\Model\InlineObject172
+$payload = new \OpenAPI\Client\Model\InlineObject174(); // \OpenAPI\Client\Model\InlineObject174
 
 try {
     $result = $apiInstance->intlOrderDocumentPost($payload);
@@ -761,7 +761,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject172**](../Model/InlineObject172.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject174**](../Model/InlineObject174.md)|  |
 
 ### Return type
 
@@ -809,7 +809,7 @@ $apiInstance = new OpenAPI\Client\Api\InternationalVoiceServicesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject175(); // \OpenAPI\Client\Model\InlineObject175
+$payload = new \OpenAPI\Client\Model\InlineObject177(); // \OpenAPI\Client\Model\InlineObject177
 
 try {
     $result = $apiInstance->intlOrderListPost($payload);
@@ -823,7 +823,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject175**](../Model/InlineObject175.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject177**](../Model/InlineObject177.md)|  |
 
 ### Return type
 
@@ -871,7 +871,7 @@ $apiInstance = new OpenAPI\Client\Api\InternationalVoiceServicesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject177(); // \OpenAPI\Client\Model\InlineObject177
+$payload = new \OpenAPI\Client\Model\InlineObject179(); // \OpenAPI\Client\Model\InlineObject179
 
 try {
     $result = $apiInstance->intlPortInOrderListPost($payload);
@@ -885,7 +885,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject177**](../Model/InlineObject177.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject179**](../Model/InlineObject179.md)|  |
 
 ### Return type
 
@@ -933,7 +933,7 @@ $apiInstance = new OpenAPI\Client\Api\InternationalVoiceServicesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject176(); // \OpenAPI\Client\Model\InlineObject176
+$payload = new \OpenAPI\Client\Model\InlineObject178(); // \OpenAPI\Client\Model\InlineObject178
 
 try {
     $result = $apiInstance->intlPortInOrderPost($payload);
@@ -947,7 +947,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject176**](../Model/InlineObject176.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject178**](../Model/InlineObject178.md)|  |
 
 ### Return type
 
@@ -995,7 +995,7 @@ $apiInstance = new OpenAPI\Client\Api\InternationalVoiceServicesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject164(); // \OpenAPI\Client\Model\InlineObject164
+$payload = new \OpenAPI\Client\Model\InlineObject166(); // \OpenAPI\Client\Model\InlineObject166
 
 try {
     $result = $apiInstance->intlRoutingOptionListPost($payload);
@@ -1009,7 +1009,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject164**](../Model/InlineObject164.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject166**](../Model/InlineObject166.md)|  |
 
 ### Return type
 
@@ -1057,7 +1057,7 @@ $apiInstance = new OpenAPI\Client\Api\InternationalVoiceServicesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject179(); // \OpenAPI\Client\Model\InlineObject179
+$payload = new \OpenAPI\Client\Model\InlineObject181(); // \OpenAPI\Client\Model\InlineObject181
 
 try {
     $result = $apiInstance->intlTnAddDocumentPost($payload);
@@ -1071,7 +1071,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject179**](../Model/InlineObject179.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject181**](../Model/InlineObject181.md)|  |
 
 ### Return type
 
@@ -1119,7 +1119,7 @@ $apiInstance = new OpenAPI\Client\Api\InternationalVoiceServicesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject166(); // \OpenAPI\Client\Model\InlineObject166
+$payload = new \OpenAPI\Client\Model\InlineObject168(); // \OpenAPI\Client\Model\InlineObject168
 
 try {
     $result = $apiInstance->intlTnAddNotePost($payload);
@@ -1133,7 +1133,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject166**](../Model/InlineObject166.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject168**](../Model/InlineObject168.md)|  |
 
 ### Return type
 
@@ -1181,7 +1181,7 @@ $apiInstance = new OpenAPI\Client\Api\InternationalVoiceServicesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject178(); // \OpenAPI\Client\Model\InlineObject178
+$payload = new \OpenAPI\Client\Model\InlineObject180(); // \OpenAPI\Client\Model\InlineObject180
 
 try {
     $result = $apiInstance->intlTnDetailPost($payload);
@@ -1195,7 +1195,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject178**](../Model/InlineObject178.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject180**](../Model/InlineObject180.md)|  |
 
 ### Return type
 
@@ -1243,7 +1243,7 @@ $apiInstance = new OpenAPI\Client\Api\InternationalVoiceServicesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject180(); // \OpenAPI\Client\Model\InlineObject180
+$payload = new \OpenAPI\Client\Model\InlineObject182(); // \OpenAPI\Client\Model\InlineObject182
 
 try {
     $result = $apiInstance->intlTnDisconnectPost($payload);
@@ -1257,7 +1257,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject180**](../Model/InlineObject180.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject182**](../Model/InlineObject182.md)|  |
 
 ### Return type
 
@@ -1305,7 +1305,7 @@ $apiInstance = new OpenAPI\Client\Api\InternationalVoiceServicesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject181(); // \OpenAPI\Client\Model\InlineObject181
+$payload = new \OpenAPI\Client\Model\InlineObject183(); // \OpenAPI\Client\Model\InlineObject183
 
 try {
     $result = $apiInstance->intlTnDocumentDownloadPost($payload);
@@ -1319,7 +1319,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject181**](../Model/InlineObject181.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject183**](../Model/InlineObject183.md)|  |
 
 ### Return type
 
@@ -1367,7 +1367,7 @@ $apiInstance = new OpenAPI\Client\Api\InternationalVoiceServicesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject182(); // \OpenAPI\Client\Model\InlineObject182
+$payload = new \OpenAPI\Client\Model\InlineObject184(); // \OpenAPI\Client\Model\InlineObject184
 
 try {
     $result = $apiInstance->intlTnEndUserPost($payload);
@@ -1381,7 +1381,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject182**](../Model/InlineObject182.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject184**](../Model/InlineObject184.md)|  |
 
 ### Return type
 
@@ -1429,7 +1429,7 @@ $apiInstance = new OpenAPI\Client\Api\InternationalVoiceServicesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject183(); // \OpenAPI\Client\Model\InlineObject183
+$payload = new \OpenAPI\Client\Model\InlineObject185(); // \OpenAPI\Client\Model\InlineObject185
 
 try {
     $result = $apiInstance->intlTnInventoryPost($payload);
@@ -1443,7 +1443,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject183**](../Model/InlineObject183.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject185**](../Model/InlineObject185.md)|  |
 
 ### Return type
 
@@ -1491,7 +1491,7 @@ $apiInstance = new OpenAPI\Client\Api\InternationalVoiceServicesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject184(); // \OpenAPI\Client\Model\InlineObject184
+$payload = new \OpenAPI\Client\Model\InlineObject186(); // \OpenAPI\Client\Model\InlineObject186
 
 try {
     $result = $apiInstance->intlTnNoteUpdatePost($payload);
@@ -1505,7 +1505,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject184**](../Model/InlineObject184.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject186**](../Model/InlineObject186.md)|  |
 
 ### Return type
 
@@ -1553,7 +1553,7 @@ $apiInstance = new OpenAPI\Client\Api\InternationalVoiceServicesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject185(); // \OpenAPI\Client\Model\InlineObject185
+$payload = new \OpenAPI\Client\Model\InlineObject187(); // \OpenAPI\Client\Model\InlineObject187
 
 try {
     $result = $apiInstance->intlTnOrderPost($payload);
@@ -1567,7 +1567,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject185**](../Model/InlineObject185.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject187**](../Model/InlineObject187.md)|  |
 
 ### Return type
 
@@ -1615,7 +1615,7 @@ $apiInstance = new OpenAPI\Client\Api\InternationalVoiceServicesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject187(); // \OpenAPI\Client\Model\InlineObject187
+$payload = new \OpenAPI\Client\Model\InlineObject189(); // \OpenAPI\Client\Model\InlineObject189
 
 try {
     $result = $apiInstance->intlTnRequestPost($payload);
@@ -1629,7 +1629,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject187**](../Model/InlineObject187.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject189**](../Model/InlineObject189.md)|  |
 
 ### Return type
 
@@ -1677,7 +1677,7 @@ $apiInstance = new OpenAPI\Client\Api\InternationalVoiceServicesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject174(); // \OpenAPI\Client\Model\InlineObject174
+$payload = new \OpenAPI\Client\Model\InlineObject176(); // \OpenAPI\Client\Model\InlineObject176
 
 try {
     $result = $apiInstance->intlTnReservePost($payload);
@@ -1691,7 +1691,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject174**](../Model/InlineObject174.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject176**](../Model/InlineObject176.md)|  |
 
 ### Return type
 
@@ -1739,7 +1739,7 @@ $apiInstance = new OpenAPI\Client\Api\InternationalVoiceServicesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject188(); // \OpenAPI\Client\Model\InlineObject188
+$payload = new \OpenAPI\Client\Model\InlineObject190(); // \OpenAPI\Client\Model\InlineObject190
 
 try {
     $result = $apiInstance->intlTnReservedListPost($payload);
@@ -1753,7 +1753,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject188**](../Model/InlineObject188.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject190**](../Model/InlineObject190.md)|  |
 
 ### Return type
 
@@ -1801,7 +1801,7 @@ $apiInstance = new OpenAPI\Client\Api\InternationalVoiceServicesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject189(); // \OpenAPI\Client\Model\InlineObject189
+$payload = new \OpenAPI\Client\Model\InlineObject191(); // \OpenAPI\Client\Model\InlineObject191
 
 try {
     $result = $apiInstance->intlTnRoutingUpdatePost($payload);
@@ -1815,7 +1815,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject189**](../Model/InlineObject189.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject191**](../Model/InlineObject191.md)|  |
 
 ### Return type
 
@@ -1863,7 +1863,7 @@ $apiInstance = new OpenAPI\Client\Api\InternationalVoiceServicesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject190(); // \OpenAPI\Client\Model\InlineObject190
+$payload = new \OpenAPI\Client\Model\InlineObject192(); // \OpenAPI\Client\Model\InlineObject192
 
 try {
     $result = $apiInstance->intlTnUpdatePost($payload);
@@ -1877,7 +1877,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject190**](../Model/InlineObject190.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject192**](../Model/InlineObject192.md)|  |
 
 ### Return type
 

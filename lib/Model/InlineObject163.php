@@ -61,7 +61,7 @@ class InlineObject163 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'country_ref' => 'string'
+        'tn_list' => '\OpenAPI\Client\Model\TfDnoTnList'
     ];
 
     /**
@@ -73,7 +73,7 @@ class InlineObject163 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'country_ref' => null
+        'tn_list' => null
     ];
 
     /**
@@ -104,7 +104,7 @@ class InlineObject163 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'country_ref' => 'countryRef'
+        'tn_list' => 'tnList'
     ];
 
     /**
@@ -114,7 +114,7 @@ class InlineObject163 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'country_ref' => 'setCountryRef'
+        'tn_list' => 'setTnList'
     ];
 
     /**
@@ -124,7 +124,7 @@ class InlineObject163 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'country_ref' => 'getCountryRef'
+        'tn_list' => 'getTnList'
     ];
 
     /**
@@ -185,7 +185,7 @@ class InlineObject163 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['country_ref'] = $data['country_ref'] ?? null;
+        $this->container['tn_list'] = $data['tn_list'] ?? null;
     }
 
     /**
@@ -197,6 +197,12 @@ class InlineObject163 implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         $invalidProperties = [];
 
+        if ($this->container['private_key'] === null) {
+            $invalidProperties[] = "'private_key' can't be null";
+        }
+        if ($this->container['tn_list'] === null) {
+            $invalidProperties[] = "'tn_list' can't be null";
+        }
         return $invalidProperties;
     }
 
@@ -215,7 +221,7 @@ class InlineObject163 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets private_key
      *
-     * @return string|null
+     * @return string
      */
     public function getPrivateKey()
     {
@@ -225,7 +231,7 @@ class InlineObject163 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets private_key
      *
-     * @param string|null $private_key private_key
+     * @param string $private_key API key required to validate your application
      *
      * @return self
      */
@@ -237,25 +243,25 @@ class InlineObject163 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets country_ref
+     * Gets tn_list
      *
-     * @return string|null
+     * @return \OpenAPI\Client\Model\TfDnoTnList
      */
-    public function getCountryRef()
+    public function getTnList()
     {
-        return $this->container['country_ref'];
+        return $this->container['tn_list'];
     }
 
     /**
-     * Sets country_ref
+     * Sets tn_list
      *
-     * @param string|null $country_ref country_ref
+     * @param \OpenAPI\Client\Model\TfDnoTnList $tn_list tn_list
      *
      * @return self
      */
-    public function setCountryRef($country_ref)
+    public function setTnList($tn_list)
     {
-        $this->container['country_ref'] = $country_ref;
+        $this->container['tn_list'] = $tn_list;
 
         return $this;
     }

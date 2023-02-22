@@ -36,7 +36,7 @@ $apiInstance = new OpenAPI\Client\Api\WebhooksApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject143(); // \OpenAPI\Client\Model\InlineObject143
+$payload = new \OpenAPI\Client\Model\InlineObject144(); // \OpenAPI\Client\Model\InlineObject144
 
 try {
     $result = $apiInstance->customerConfiguredWebhookURLForOrderUpdatesPost($payload);
@@ -50,7 +50,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject143**](../Model/InlineObject143.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject144**](../Model/InlineObject144.md)|  |
 
 ### Return type
 

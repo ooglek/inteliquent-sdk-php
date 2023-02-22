@@ -117,619 +117,11 @@ class OrderApi
     }
 
     /**
-     * Operation addOrderContactNotePost
-     *
-     * Order Add Contact Note to an existing order
-     *
-     * @param  \OpenAPI\Client\Model\InlineObject53 $payload payload (required)
-     *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
-     * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\InlineResponse20013|\OpenAPI\Client\Model\InlineResponse4082
-     */
-    public function addOrderContactNotePost($payload)
-    {
-        list($response) = $this->addOrderContactNotePostWithHttpInfo($payload);
-        return $response;
-    }
-
-    /**
-     * Operation addOrderContactNotePostWithHttpInfo
-     *
-     * Order Add Contact Note to an existing order
-     *
-     * @param  \OpenAPI\Client\Model\InlineObject53 $payload (required)
-     *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
-     * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\InlineResponse20013|\OpenAPI\Client\Model\InlineResponse4082, HTTP status code, HTTP response headers (array of strings)
-     */
-    public function addOrderContactNotePostWithHttpInfo($payload)
-    {
-        $request = $this->addOrderContactNotePostRequest($payload);
-
-        try {
-            $options = $this->createHttpClientOption();
-            try {
-                $response = $this->client->send($request, $options);
-            } catch (RequestException $e) {
-                throw new ApiException(
-                    "[{$e->getCode()}] {$e->getMessage()}",
-                    (int) $e->getCode(),
-                    $e->getResponse() ? $e->getResponse()->getHeaders() : null,
-                    $e->getResponse() ? (string) $e->getResponse()->getBody() : null
-                );
-            } catch (ConnectException $e) {
-                throw new ApiException(
-                    "[{$e->getCode()}] {$e->getMessage()}",
-                    (int) $e->getCode(),
-                    null,
-                    null
-                );
-            }
-
-            $statusCode = $response->getStatusCode();
-
-            if ($statusCode < 200 || $statusCode > 299) {
-                throw new ApiException(
-                    sprintf(
-                        '[%d] Error connecting to the API (%s)',
-                        $statusCode,
-                        (string) $request->getUri()
-                    ),
-                    $statusCode,
-                    $response->getHeaders(),
-                    (string) $response->getBody()
-                );
-            }
-
-            switch($statusCode) {
-                case 200:
-                    if ('\OpenAPI\Client\Model\InlineResponse20013' === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                    }
-
-                    return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse20013', []),
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
-                case 408:
-                    if ('\OpenAPI\Client\Model\InlineResponse4082' === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                    }
-
-                    return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse4082', []),
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
-            }
-
-            $returnType = '\OpenAPI\Client\Model\InlineResponse20013';
-            if ($returnType === '\SplFileObject') {
-                $content = $response->getBody(); //stream goes to serializer
-            } else {
-                $content = (string) $response->getBody();
-            }
-
-            return [
-                ObjectSerializer::deserialize($content, $returnType, []),
-                $response->getStatusCode(),
-                $response->getHeaders()
-            ];
-
-        } catch (ApiException $e) {
-            switch ($e->getCode()) {
-                case 200:
-                    $data = ObjectSerializer::deserialize(
-                        $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse20013',
-                        $e->getResponseHeaders()
-                    );
-                    $e->setResponseObject($data);
-                    break;
-                case 408:
-                    $data = ObjectSerializer::deserialize(
-                        $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse4082',
-                        $e->getResponseHeaders()
-                    );
-                    $e->setResponseObject($data);
-                    break;
-            }
-            throw $e;
-        }
-    }
-
-    /**
-     * Operation addOrderContactNotePostAsync
-     *
-     * Order Add Contact Note to an existing order
-     *
-     * @param  \OpenAPI\Client\Model\InlineObject53 $payload (required)
-     *
-     * @throws \InvalidArgumentException
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function addOrderContactNotePostAsync($payload)
-    {
-        return $this->addOrderContactNotePostAsyncWithHttpInfo($payload)
-            ->then(
-                function ($response) {
-                    return $response[0];
-                }
-            );
-    }
-
-    /**
-     * Operation addOrderContactNotePostAsyncWithHttpInfo
-     *
-     * Order Add Contact Note to an existing order
-     *
-     * @param  \OpenAPI\Client\Model\InlineObject53 $payload (required)
-     *
-     * @throws \InvalidArgumentException
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function addOrderContactNotePostAsyncWithHttpInfo($payload)
-    {
-        $returnType = '\OpenAPI\Client\Model\InlineResponse20013';
-        $request = $this->addOrderContactNotePostRequest($payload);
-
-        return $this->client
-            ->sendAsync($request, $this->createHttpClientOption())
-            ->then(
-                function ($response) use ($returnType) {
-                    if ($returnType === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                    }
-
-                    return [
-                        ObjectSerializer::deserialize($content, $returnType, []),
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
-                },
-                function ($exception) {
-                    $response = $exception->getResponse();
-                    $statusCode = $response->getStatusCode();
-                    throw new ApiException(
-                        sprintf(
-                            '[%d] Error connecting to the API (%s)',
-                            $statusCode,
-                            $exception->getRequest()->getUri()
-                        ),
-                        $statusCode,
-                        $response->getHeaders(),
-                        (string) $response->getBody()
-                    );
-                }
-            );
-    }
-
-    /**
-     * Create request for operation 'addOrderContactNotePost'
-     *
-     * @param  \OpenAPI\Client\Model\InlineObject53 $payload (required)
-     *
-     * @throws \InvalidArgumentException
-     * @return \GuzzleHttp\Psr7\Request
-     */
-    public function addOrderContactNotePostRequest($payload)
-    {
-        // verify the required parameter 'payload' is set
-        if ($payload === null || (is_array($payload) && count($payload) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $payload when calling addOrderContactNotePost'
-            );
-        }
-
-        $resourcePath = '/addOrderContactNote';
-        $formParams = [];
-        $queryParams = [];
-        $headerParams = [];
-        $httpBody = '';
-        $multipart = false;
-
-
-
-
-
-        if ($multipart) {
-            $headers = $this->headerSelector->selectHeadersForMultipart(
-                ['application/json']
-            );
-        } else {
-            $headers = $this->headerSelector->selectHeaders(
-                ['application/json'],
-                []
-            );
-        }
-
-        // for model (json/xml)
-        if (isset($payload)) {
-            if ($headers['Content-Type'] === 'application/json') {
-                $httpBody = \GuzzleHttp\json_encode(ObjectSerializer::sanitizeForSerialization($payload));
-            } else {
-                $httpBody = $payload;
-            }
-        } elseif (count($formParams) > 0) {
-            if ($multipart) {
-                $multipartContents = [];
-                foreach ($formParams as $formParamName => $formParamValue) {
-                    $formParamValueItems = is_array($formParamValue) ? $formParamValue : [$formParamValue];
-                    foreach ($formParamValueItems as $formParamValueItem) {
-                        $multipartContents[] = [
-                            'name' => $formParamName,
-                            'contents' => $formParamValueItem
-                        ];
-                    }
-                }
-                // for HTTP post (form)
-                $httpBody = new MultipartStream($multipartContents);
-
-            } elseif ($headers['Content-Type'] === 'application/json') {
-                $httpBody = \GuzzleHttp\json_encode($formParams);
-
-            } else {
-                // for HTTP post (form)
-                $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
-            }
-        }
-
-        // this endpoint requires API key authentication
-        $apiKey = $this->config->getApiKeyWithPrefix('Authorization');
-        if ($apiKey !== null) {
-            $headers['Authorization'] = $apiKey;
-        }
-
-        $defaultHeaders = [];
-        if ($this->config->getUserAgent()) {
-            $defaultHeaders['User-Agent'] = $this->config->getUserAgent();
-        }
-
-        $headers = array_merge(
-            $defaultHeaders,
-            $headerParams,
-            $headers
-        );
-
-        $query = \GuzzleHttp\Psr7\Query::build($queryParams);
-        return new Request(
-            'POST',
-            $this->config->getHost() . $resourcePath . ($query ? "?{$query}" : ''),
-            $headers,
-            $httpBody
-        );
-    }
-
-    /**
-     * Operation customerOcnPost
-     *
-     * Retrieve list of OCN
-     *
-     * @param  \OpenAPI\Client\Model\InlineObject199 $payload payload (required)
-     *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
-     * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\InlineResponse20048|\OpenAPI\Client\Model\InlineResponse41444|\OpenAPI\Client\Model\InlineResponse4311
-     */
-    public function customerOcnPost($payload)
-    {
-        list($response) = $this->customerOcnPostWithHttpInfo($payload);
-        return $response;
-    }
-
-    /**
-     * Operation customerOcnPostWithHttpInfo
-     *
-     * Retrieve list of OCN
-     *
-     * @param  \OpenAPI\Client\Model\InlineObject199 $payload (required)
-     *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
-     * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\InlineResponse20048|\OpenAPI\Client\Model\InlineResponse41444|\OpenAPI\Client\Model\InlineResponse4311, HTTP status code, HTTP response headers (array of strings)
-     */
-    public function customerOcnPostWithHttpInfo($payload)
-    {
-        $request = $this->customerOcnPostRequest($payload);
-
-        try {
-            $options = $this->createHttpClientOption();
-            try {
-                $response = $this->client->send($request, $options);
-            } catch (RequestException $e) {
-                throw new ApiException(
-                    "[{$e->getCode()}] {$e->getMessage()}",
-                    (int) $e->getCode(),
-                    $e->getResponse() ? $e->getResponse()->getHeaders() : null,
-                    $e->getResponse() ? (string) $e->getResponse()->getBody() : null
-                );
-            } catch (ConnectException $e) {
-                throw new ApiException(
-                    "[{$e->getCode()}] {$e->getMessage()}",
-                    (int) $e->getCode(),
-                    null,
-                    null
-                );
-            }
-
-            $statusCode = $response->getStatusCode();
-
-            if ($statusCode < 200 || $statusCode > 299) {
-                throw new ApiException(
-                    sprintf(
-                        '[%d] Error connecting to the API (%s)',
-                        $statusCode,
-                        (string) $request->getUri()
-                    ),
-                    $statusCode,
-                    $response->getHeaders(),
-                    (string) $response->getBody()
-                );
-            }
-
-            switch($statusCode) {
-                case 200:
-                    if ('\OpenAPI\Client\Model\InlineResponse20048' === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                    }
-
-                    return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse20048', []),
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
-                case 414:
-                    if ('\OpenAPI\Client\Model\InlineResponse41444' === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                    }
-
-                    return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse41444', []),
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
-                case 431:
-                    if ('\OpenAPI\Client\Model\InlineResponse4311' === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                    }
-
-                    return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse4311', []),
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
-            }
-
-            $returnType = '\OpenAPI\Client\Model\InlineResponse20048';
-            if ($returnType === '\SplFileObject') {
-                $content = $response->getBody(); //stream goes to serializer
-            } else {
-                $content = (string) $response->getBody();
-            }
-
-            return [
-                ObjectSerializer::deserialize($content, $returnType, []),
-                $response->getStatusCode(),
-                $response->getHeaders()
-            ];
-
-        } catch (ApiException $e) {
-            switch ($e->getCode()) {
-                case 200:
-                    $data = ObjectSerializer::deserialize(
-                        $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse20048',
-                        $e->getResponseHeaders()
-                    );
-                    $e->setResponseObject($data);
-                    break;
-                case 414:
-                    $data = ObjectSerializer::deserialize(
-                        $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse41444',
-                        $e->getResponseHeaders()
-                    );
-                    $e->setResponseObject($data);
-                    break;
-                case 431:
-                    $data = ObjectSerializer::deserialize(
-                        $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse4311',
-                        $e->getResponseHeaders()
-                    );
-                    $e->setResponseObject($data);
-                    break;
-            }
-            throw $e;
-        }
-    }
-
-    /**
-     * Operation customerOcnPostAsync
-     *
-     * Retrieve list of OCN
-     *
-     * @param  \OpenAPI\Client\Model\InlineObject199 $payload (required)
-     *
-     * @throws \InvalidArgumentException
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function customerOcnPostAsync($payload)
-    {
-        return $this->customerOcnPostAsyncWithHttpInfo($payload)
-            ->then(
-                function ($response) {
-                    return $response[0];
-                }
-            );
-    }
-
-    /**
-     * Operation customerOcnPostAsyncWithHttpInfo
-     *
-     * Retrieve list of OCN
-     *
-     * @param  \OpenAPI\Client\Model\InlineObject199 $payload (required)
-     *
-     * @throws \InvalidArgumentException
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function customerOcnPostAsyncWithHttpInfo($payload)
-    {
-        $returnType = '\OpenAPI\Client\Model\InlineResponse20048';
-        $request = $this->customerOcnPostRequest($payload);
-
-        return $this->client
-            ->sendAsync($request, $this->createHttpClientOption())
-            ->then(
-                function ($response) use ($returnType) {
-                    if ($returnType === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                    }
-
-                    return [
-                        ObjectSerializer::deserialize($content, $returnType, []),
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
-                },
-                function ($exception) {
-                    $response = $exception->getResponse();
-                    $statusCode = $response->getStatusCode();
-                    throw new ApiException(
-                        sprintf(
-                            '[%d] Error connecting to the API (%s)',
-                            $statusCode,
-                            $exception->getRequest()->getUri()
-                        ),
-                        $statusCode,
-                        $response->getHeaders(),
-                        (string) $response->getBody()
-                    );
-                }
-            );
-    }
-
-    /**
-     * Create request for operation 'customerOcnPost'
-     *
-     * @param  \OpenAPI\Client\Model\InlineObject199 $payload (required)
-     *
-     * @throws \InvalidArgumentException
-     * @return \GuzzleHttp\Psr7\Request
-     */
-    public function customerOcnPostRequest($payload)
-    {
-        // verify the required parameter 'payload' is set
-        if ($payload === null || (is_array($payload) && count($payload) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $payload when calling customerOcnPost'
-            );
-        }
-
-        $resourcePath = '/customerOcn';
-        $formParams = [];
-        $queryParams = [];
-        $headerParams = [];
-        $httpBody = '';
-        $multipart = false;
-
-
-
-
-
-        if ($multipart) {
-            $headers = $this->headerSelector->selectHeadersForMultipart(
-                ['application/json']
-            );
-        } else {
-            $headers = $this->headerSelector->selectHeaders(
-                ['application/json'],
-                []
-            );
-        }
-
-        // for model (json/xml)
-        if (isset($payload)) {
-            if ($headers['Content-Type'] === 'application/json') {
-                $httpBody = \GuzzleHttp\json_encode(ObjectSerializer::sanitizeForSerialization($payload));
-            } else {
-                $httpBody = $payload;
-            }
-        } elseif (count($formParams) > 0) {
-            if ($multipart) {
-                $multipartContents = [];
-                foreach ($formParams as $formParamName => $formParamValue) {
-                    $formParamValueItems = is_array($formParamValue) ? $formParamValue : [$formParamValue];
-                    foreach ($formParamValueItems as $formParamValueItem) {
-                        $multipartContents[] = [
-                            'name' => $formParamName,
-                            'contents' => $formParamValueItem
-                        ];
-                    }
-                }
-                // for HTTP post (form)
-                $httpBody = new MultipartStream($multipartContents);
-
-            } elseif ($headers['Content-Type'] === 'application/json') {
-                $httpBody = \GuzzleHttp\json_encode($formParams);
-
-            } else {
-                // for HTTP post (form)
-                $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
-            }
-        }
-
-        // this endpoint requires API key authentication
-        $apiKey = $this->config->getApiKeyWithPrefix('Authorization');
-        if ($apiKey !== null) {
-            $headers['Authorization'] = $apiKey;
-        }
-
-        $defaultHeaders = [];
-        if ($this->config->getUserAgent()) {
-            $defaultHeaders['User-Agent'] = $this->config->getUserAgent();
-        }
-
-        $headers = array_merge(
-            $defaultHeaders,
-            $headerParams,
-            $headers
-        );
-
-        $query = \GuzzleHttp\Psr7\Query::build($queryParams);
-        return new Request(
-            'POST',
-            $this->config->getHost() . $resourcePath . ($query ? "?{$query}" : ''),
-            $headers,
-            $httpBody
-        );
-    }
-
-    /**
      * Operation excludedE911DetailPost
      *
      * Retrieve Excluded E911 Detail
      *
-     * @param  \OpenAPI\Client\Model\InlineObject151 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject152 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -746,7 +138,7 @@ class OrderApi
      *
      * Retrieve Excluded E911 Detail
      *
-     * @param  \OpenAPI\Client\Model\InlineObject151 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject152 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -939,7 +331,7 @@ class OrderApi
      *
      * Retrieve Excluded E911 Detail
      *
-     * @param  \OpenAPI\Client\Model\InlineObject151 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject152 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -959,7 +351,7 @@ class OrderApi
      *
      * Retrieve Excluded E911 Detail
      *
-     * @param  \OpenAPI\Client\Model\InlineObject151 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject152 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1005,7 +397,7 @@ class OrderApi
     /**
      * Create request for operation 'excludedE911DetailPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject151 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject152 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1103,7 +495,7 @@ class OrderApi
      *
      * Retrieve Excluded Feature List
      *
-     * @param  \OpenAPI\Client\Model\InlineObject115 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject119 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1120,7 +512,7 @@ class OrderApi
      *
      * Retrieve Excluded Feature List
      *
-     * @param  \OpenAPI\Client\Model\InlineObject115 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject119 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1293,7 +685,7 @@ class OrderApi
      *
      * Retrieve Excluded Feature List
      *
-     * @param  \OpenAPI\Client\Model\InlineObject115 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject119 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1313,7 +705,7 @@ class OrderApi
      *
      * Retrieve Excluded Feature List
      *
-     * @param  \OpenAPI\Client\Model\InlineObject115 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject119 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1359,7 +751,7 @@ class OrderApi
     /**
      * Create request for operation 'excludedFeatureListPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject115 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject119 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1453,385 +845,11 @@ class OrderApi
     }
 
     /**
-     * Operation excludedTnFromTnOrderListPost
-     *
-     * Retrieve Excluded Telephone Number List
-     *
-     * @param  \OpenAPI\Client\Model\InlineObject117 $payload payload (required)
-     *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
-     * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ResponseExcludedTnList|\OpenAPI\Client\Model\InlineResponse4085|\OpenAPI\Client\Model\InlineResponse40938|\OpenAPI\Client\Model\InlineResponse414|\OpenAPI\Client\Model\InlineResponse430|\OpenAPI\Client\Model\InlineResponse4311
-     */
-    public function excludedTnFromTnOrderListPost($payload)
-    {
-        list($response) = $this->excludedTnFromTnOrderListPostWithHttpInfo($payload);
-        return $response;
-    }
-
-    /**
-     * Operation excludedTnFromTnOrderListPostWithHttpInfo
-     *
-     * Retrieve Excluded Telephone Number List
-     *
-     * @param  \OpenAPI\Client\Model\InlineObject117 $payload (required)
-     *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
-     * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ResponseExcludedTnList|\OpenAPI\Client\Model\InlineResponse4085|\OpenAPI\Client\Model\InlineResponse40938|\OpenAPI\Client\Model\InlineResponse414|\OpenAPI\Client\Model\InlineResponse430|\OpenAPI\Client\Model\InlineResponse4311, HTTP status code, HTTP response headers (array of strings)
-     */
-    public function excludedTnFromTnOrderListPostWithHttpInfo($payload)
-    {
-        $request = $this->excludedTnFromTnOrderListPostRequest($payload);
-
-        try {
-            $options = $this->createHttpClientOption();
-            try {
-                $response = $this->client->send($request, $options);
-            } catch (RequestException $e) {
-                throw new ApiException(
-                    "[{$e->getCode()}] {$e->getMessage()}",
-                    (int) $e->getCode(),
-                    $e->getResponse() ? $e->getResponse()->getHeaders() : null,
-                    $e->getResponse() ? (string) $e->getResponse()->getBody() : null
-                );
-            } catch (ConnectException $e) {
-                throw new ApiException(
-                    "[{$e->getCode()}] {$e->getMessage()}",
-                    (int) $e->getCode(),
-                    null,
-                    null
-                );
-            }
-
-            $statusCode = $response->getStatusCode();
-
-            if ($statusCode < 200 || $statusCode > 299) {
-                throw new ApiException(
-                    sprintf(
-                        '[%d] Error connecting to the API (%s)',
-                        $statusCode,
-                        (string) $request->getUri()
-                    ),
-                    $statusCode,
-                    $response->getHeaders(),
-                    (string) $response->getBody()
-                );
-            }
-
-            switch($statusCode) {
-                case 200:
-                    if ('\OpenAPI\Client\Model\ResponseExcludedTnList' === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                    }
-
-                    return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ResponseExcludedTnList', []),
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
-                case 408:
-                    if ('\OpenAPI\Client\Model\InlineResponse4085' === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                    }
-
-                    return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse4085', []),
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
-                case 409:
-                    if ('\OpenAPI\Client\Model\InlineResponse40938' === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                    }
-
-                    return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse40938', []),
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
-                case 414:
-                    if ('\OpenAPI\Client\Model\InlineResponse414' === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                    }
-
-                    return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse414', []),
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
-                case 430:
-                    if ('\OpenAPI\Client\Model\InlineResponse430' === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                    }
-
-                    return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse430', []),
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
-                case 431:
-                    if ('\OpenAPI\Client\Model\InlineResponse4311' === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                    }
-
-                    return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse4311', []),
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
-            }
-
-            $returnType = '\OpenAPI\Client\Model\ResponseExcludedTnList';
-            if ($returnType === '\SplFileObject') {
-                $content = $response->getBody(); //stream goes to serializer
-            } else {
-                $content = (string) $response->getBody();
-            }
-
-            return [
-                ObjectSerializer::deserialize($content, $returnType, []),
-                $response->getStatusCode(),
-                $response->getHeaders()
-            ];
-
-        } catch (ApiException $e) {
-            switch ($e->getCode()) {
-                case 200:
-                    $data = ObjectSerializer::deserialize(
-                        $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ResponseExcludedTnList',
-                        $e->getResponseHeaders()
-                    );
-                    $e->setResponseObject($data);
-                    break;
-                case 408:
-                    $data = ObjectSerializer::deserialize(
-                        $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse4085',
-                        $e->getResponseHeaders()
-                    );
-                    $e->setResponseObject($data);
-                    break;
-                case 409:
-                    $data = ObjectSerializer::deserialize(
-                        $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse40938',
-                        $e->getResponseHeaders()
-                    );
-                    $e->setResponseObject($data);
-                    break;
-                case 414:
-                    $data = ObjectSerializer::deserialize(
-                        $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse414',
-                        $e->getResponseHeaders()
-                    );
-                    $e->setResponseObject($data);
-                    break;
-                case 430:
-                    $data = ObjectSerializer::deserialize(
-                        $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse430',
-                        $e->getResponseHeaders()
-                    );
-                    $e->setResponseObject($data);
-                    break;
-                case 431:
-                    $data = ObjectSerializer::deserialize(
-                        $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse4311',
-                        $e->getResponseHeaders()
-                    );
-                    $e->setResponseObject($data);
-                    break;
-            }
-            throw $e;
-        }
-    }
-
-    /**
-     * Operation excludedTnFromTnOrderListPostAsync
-     *
-     * Retrieve Excluded Telephone Number List
-     *
-     * @param  \OpenAPI\Client\Model\InlineObject117 $payload (required)
-     *
-     * @throws \InvalidArgumentException
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function excludedTnFromTnOrderListPostAsync($payload)
-    {
-        return $this->excludedTnFromTnOrderListPostAsyncWithHttpInfo($payload)
-            ->then(
-                function ($response) {
-                    return $response[0];
-                }
-            );
-    }
-
-    /**
-     * Operation excludedTnFromTnOrderListPostAsyncWithHttpInfo
-     *
-     * Retrieve Excluded Telephone Number List
-     *
-     * @param  \OpenAPI\Client\Model\InlineObject117 $payload (required)
-     *
-     * @throws \InvalidArgumentException
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function excludedTnFromTnOrderListPostAsyncWithHttpInfo($payload)
-    {
-        $returnType = '\OpenAPI\Client\Model\ResponseExcludedTnList';
-        $request = $this->excludedTnFromTnOrderListPostRequest($payload);
-
-        return $this->client
-            ->sendAsync($request, $this->createHttpClientOption())
-            ->then(
-                function ($response) use ($returnType) {
-                    if ($returnType === '\SplFileObject') {
-                        $content = $response->getBody(); //stream goes to serializer
-                    } else {
-                        $content = (string) $response->getBody();
-                    }
-
-                    return [
-                        ObjectSerializer::deserialize($content, $returnType, []),
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
-                },
-                function ($exception) {
-                    $response = $exception->getResponse();
-                    $statusCode = $response->getStatusCode();
-                    throw new ApiException(
-                        sprintf(
-                            '[%d] Error connecting to the API (%s)',
-                            $statusCode,
-                            $exception->getRequest()->getUri()
-                        ),
-                        $statusCode,
-                        $response->getHeaders(),
-                        (string) $response->getBody()
-                    );
-                }
-            );
-    }
-
-    /**
-     * Create request for operation 'excludedTnFromTnOrderListPost'
-     *
-     * @param  \OpenAPI\Client\Model\InlineObject117 $payload (required)
-     *
-     * @throws \InvalidArgumentException
-     * @return \GuzzleHttp\Psr7\Request
-     */
-    public function excludedTnFromTnOrderListPostRequest($payload)
-    {
-        // verify the required parameter 'payload' is set
-        if ($payload === null || (is_array($payload) && count($payload) === 0)) {
-            throw new \InvalidArgumentException(
-                'Missing the required parameter $payload when calling excludedTnFromTnOrderListPost'
-            );
-        }
-
-        $resourcePath = '/excludedTnFromTnOrderList';
-        $formParams = [];
-        $queryParams = [];
-        $headerParams = [];
-        $httpBody = '';
-        $multipart = false;
-
-
-
-
-
-        if ($multipart) {
-            $headers = $this->headerSelector->selectHeadersForMultipart(
-                ['application/json']
-            );
-        } else {
-            $headers = $this->headerSelector->selectHeaders(
-                ['application/json'],
-                []
-            );
-        }
-
-        // for model (json/xml)
-        if (isset($payload)) {
-            if ($headers['Content-Type'] === 'application/json') {
-                $httpBody = \GuzzleHttp\json_encode(ObjectSerializer::sanitizeForSerialization($payload));
-            } else {
-                $httpBody = $payload;
-            }
-        } elseif (count($formParams) > 0) {
-            if ($multipart) {
-                $multipartContents = [];
-                foreach ($formParams as $formParamName => $formParamValue) {
-                    $formParamValueItems = is_array($formParamValue) ? $formParamValue : [$formParamValue];
-                    foreach ($formParamValueItems as $formParamValueItem) {
-                        $multipartContents[] = [
-                            'name' => $formParamName,
-                            'contents' => $formParamValueItem
-                        ];
-                    }
-                }
-                // for HTTP post (form)
-                $httpBody = new MultipartStream($multipartContents);
-
-            } elseif ($headers['Content-Type'] === 'application/json') {
-                $httpBody = \GuzzleHttp\json_encode($formParams);
-
-            } else {
-                // for HTTP post (form)
-                $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
-            }
-        }
-
-        // this endpoint requires API key authentication
-        $apiKey = $this->config->getApiKeyWithPrefix('Authorization');
-        if ($apiKey !== null) {
-            $headers['Authorization'] = $apiKey;
-        }
-
-        $defaultHeaders = [];
-        if ($this->config->getUserAgent()) {
-            $defaultHeaders['User-Agent'] = $this->config->getUserAgent();
-        }
-
-        $headers = array_merge(
-            $defaultHeaders,
-            $headerParams,
-            $headers
-        );
-
-        $query = \GuzzleHttp\Psr7\Query::build($queryParams);
-        return new Request(
-            'POST',
-            $this->config->getHost() . $resourcePath . ($query ? "?{$query}" : ''),
-            $headers,
-            $httpBody
-        );
-    }
-
-    /**
      * Operation excludedTnListPost
      *
      * Retrieve Excluded Telephone Number List
      *
-     * @param  \OpenAPI\Client\Model\InlineObject116 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject120 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1848,7 +866,7 @@ class OrderApi
      *
      * Retrieve Excluded Telephone Number List
      *
-     * @param  \OpenAPI\Client\Model\InlineObject116 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject120 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -2041,7 +1059,7 @@ class OrderApi
      *
      * Retrieve Excluded Telephone Number List
      *
-     * @param  \OpenAPI\Client\Model\InlineObject116 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject120 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2061,7 +1079,7 @@ class OrderApi
      *
      * Retrieve Excluded Telephone Number List
      *
-     * @param  \OpenAPI\Client\Model\InlineObject116 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject120 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2107,7 +1125,7 @@ class OrderApi
     /**
      * Create request for operation 'excludedTnListPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject116 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject120 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -3013,7 +2031,7 @@ class OrderApi
      *
      * Cancel Pending Order
      *
-     * @param  \OpenAPI\Client\Model\InlineObject56 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject55 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -3030,7 +2048,7 @@ class OrderApi
      *
      * Cancel Pending Order
      *
-     * @param  \OpenAPI\Client\Model\InlineObject56 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject55 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -3243,7 +2261,7 @@ class OrderApi
      *
      * Cancel Pending Order
      *
-     * @param  \OpenAPI\Client\Model\InlineObject56 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject55 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3263,7 +2281,7 @@ class OrderApi
      *
      * Cancel Pending Order
      *
-     * @param  \OpenAPI\Client\Model\InlineObject56 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject55 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3309,7 +2327,7 @@ class OrderApi
     /**
      * Create request for operation 'orderCancelPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject56 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject55 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -3407,7 +2425,7 @@ class OrderApi
      *
      * View Order Detail
      *
-     * @param  \OpenAPI\Client\Model\InlineObject54 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject53 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -3424,7 +2442,7 @@ class OrderApi
      *
      * View Order Detail
      *
-     * @param  \OpenAPI\Client\Model\InlineObject54 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject53 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -3637,7 +2655,7 @@ class OrderApi
      *
      * View Order Detail
      *
-     * @param  \OpenAPI\Client\Model\InlineObject54 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject53 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3657,7 +2675,7 @@ class OrderApi
      *
      * View Order Detail
      *
-     * @param  \OpenAPI\Client\Model\InlineObject54 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject53 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3703,7 +2721,7 @@ class OrderApi
     /**
      * Create request for operation 'orderDetailPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject54 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject53 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -3801,7 +2819,7 @@ class OrderApi
      *
      * Retrieve Order Document
      *
-     * @param  \OpenAPI\Client\Model\InlineObject57 $payload payload (optional)
+     * @param  \OpenAPI\Client\Model\InlineObject56 $payload payload (optional)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -3818,7 +2836,7 @@ class OrderApi
      *
      * Retrieve Order Document
      *
-     * @param  \OpenAPI\Client\Model\InlineObject57 $payload (optional)
+     * @param  \OpenAPI\Client\Model\InlineObject56 $payload (optional)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -4011,7 +3029,7 @@ class OrderApi
      *
      * Retrieve Order Document
      *
-     * @param  \OpenAPI\Client\Model\InlineObject57 $payload (optional)
+     * @param  \OpenAPI\Client\Model\InlineObject56 $payload (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4031,7 +3049,7 @@ class OrderApi
      *
      * Retrieve Order Document
      *
-     * @param  \OpenAPI\Client\Model\InlineObject57 $payload (optional)
+     * @param  \OpenAPI\Client\Model\InlineObject56 $payload (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4077,7 +3095,7 @@ class OrderApi
     /**
      * Create request for operation 'orderDocumentPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject57 $payload (optional)
+     * @param  \OpenAPI\Client\Model\InlineObject56 $payload (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -4169,7 +3187,7 @@ class OrderApi
      *
      * View Order List
      *
-     * @param  \OpenAPI\Client\Model\InlineObject113 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject117 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -4186,7 +3204,7 @@ class OrderApi
      *
      * View Order List
      *
-     * @param  \OpenAPI\Client\Model\InlineObject113 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject117 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -4399,7 +3417,7 @@ class OrderApi
      *
      * View Order List
      *
-     * @param  \OpenAPI\Client\Model\InlineObject113 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject117 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4419,7 +3437,7 @@ class OrderApi
      *
      * View Order List
      *
-     * @param  \OpenAPI\Client\Model\InlineObject113 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject117 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4465,7 +3483,7 @@ class OrderApi
     /**
      * Create request for operation 'orderListPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject113 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject117 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -4563,7 +3581,7 @@ class OrderApi
      *
      * View Order Note
      *
-     * @param  \OpenAPI\Client\Model\InlineObject58 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject57 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -4580,7 +3598,7 @@ class OrderApi
      *
      * View Order Note
      *
-     * @param  \OpenAPI\Client\Model\InlineObject58 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject57 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -4813,7 +3831,7 @@ class OrderApi
      *
      * View Order Note
      *
-     * @param  \OpenAPI\Client\Model\InlineObject58 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject57 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4833,7 +3851,7 @@ class OrderApi
      *
      * View Order Note
      *
-     * @param  \OpenAPI\Client\Model\InlineObject58 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject57 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4879,7 +3897,7 @@ class OrderApi
     /**
      * Create request for operation 'orderNotePost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject58 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject57 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -4977,7 +3995,7 @@ class OrderApi
      *
      * Update Pending Order
      *
-     * @param  \OpenAPI\Client\Model\InlineObject55 $payload payload (optional)
+     * @param  \OpenAPI\Client\Model\InlineObject54 $payload payload (optional)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -4994,7 +4012,7 @@ class OrderApi
      *
      * Update Pending Order
      *
-     * @param  \OpenAPI\Client\Model\InlineObject55 $payload (optional)
+     * @param  \OpenAPI\Client\Model\InlineObject54 $payload (optional)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -5247,7 +4265,7 @@ class OrderApi
      *
      * Update Pending Order
      *
-     * @param  \OpenAPI\Client\Model\InlineObject55 $payload (optional)
+     * @param  \OpenAPI\Client\Model\InlineObject54 $payload (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -5267,7 +4285,7 @@ class OrderApi
      *
      * Update Pending Order
      *
-     * @param  \OpenAPI\Client\Model\InlineObject55 $payload (optional)
+     * @param  \OpenAPI\Client\Model\InlineObject54 $payload (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -5313,7 +4331,7 @@ class OrderApi
     /**
      * Create request for operation 'orderUpdatePost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject55 $payload (optional)
+     * @param  \OpenAPI\Client\Model\InlineObject54 $payload (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -5759,7 +4777,7 @@ class OrderApi
      *
      * Reject Number - Port Out
      *
-     * @param  \OpenAPI\Client\Model\InlineObject114 $payload payload (optional)
+     * @param  \OpenAPI\Client\Model\InlineObject118 $payload payload (optional)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -5776,7 +4794,7 @@ class OrderApi
      *
      * Reject Number - Port Out
      *
-     * @param  \OpenAPI\Client\Model\InlineObject114 $payload (optional)
+     * @param  \OpenAPI\Client\Model\InlineObject118 $payload (optional)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -6009,7 +5027,7 @@ class OrderApi
      *
      * Reject Number - Port Out
      *
-     * @param  \OpenAPI\Client\Model\InlineObject114 $payload (optional)
+     * @param  \OpenAPI\Client\Model\InlineObject118 $payload (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -6029,7 +5047,7 @@ class OrderApi
      *
      * Reject Number - Port Out
      *
-     * @param  \OpenAPI\Client\Model\InlineObject114 $payload (optional)
+     * @param  \OpenAPI\Client\Model\InlineObject118 $payload (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -6075,7 +5093,7 @@ class OrderApi
     /**
      * Create request for operation 'tnPortOutRejectPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject114 $payload (optional)
+     * @param  \OpenAPI\Client\Model\InlineObject118 $payload (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -6167,7 +5185,7 @@ class OrderApi
      *
      * Request TN
      *
-     * @param  \OpenAPI\Client\Model\InlineObject90 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject91 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -6184,7 +5202,7 @@ class OrderApi
      *
      * Request TN
      *
-     * @param  \OpenAPI\Client\Model\InlineObject90 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject91 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -6457,7 +5475,7 @@ class OrderApi
      *
      * Request TN
      *
-     * @param  \OpenAPI\Client\Model\InlineObject90 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject91 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -6477,7 +5495,7 @@ class OrderApi
      *
      * Request TN
      *
-     * @param  \OpenAPI\Client\Model\InlineObject90 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject91 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -6523,7 +5541,7 @@ class OrderApi
     /**
      * Create request for operation 'tnRequestPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject90 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject91 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

@@ -61,7 +61,8 @@ class InlineObject152 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'trunk_group_order' => '\OpenAPI\Client\Model\TrunkGroupOrderTrunkGroupOrder'
+        'order_id' => 'int',
+        'customer_order_reference' => 'string'
     ];
 
     /**
@@ -73,7 +74,8 @@ class InlineObject152 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'trunk_group_order' => null
+        'order_id' => null,
+        'customer_order_reference' => null
     ];
 
     /**
@@ -104,7 +106,8 @@ class InlineObject152 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'trunk_group_order' => 'trunkGroupOrder'
+        'order_id' => 'orderId',
+        'customer_order_reference' => 'customerOrderReference'
     ];
 
     /**
@@ -114,7 +117,8 @@ class InlineObject152 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'trunk_group_order' => 'setTrunkGroupOrder'
+        'order_id' => 'setOrderId',
+        'customer_order_reference' => 'setCustomerOrderReference'
     ];
 
     /**
@@ -124,7 +128,8 @@ class InlineObject152 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'trunk_group_order' => 'getTrunkGroupOrder'
+        'order_id' => 'getOrderId',
+        'customer_order_reference' => 'getCustomerOrderReference'
     ];
 
     /**
@@ -185,7 +190,8 @@ class InlineObject152 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['trunk_group_order'] = $data['trunk_group_order'] ?? null;
+        $this->container['order_id'] = $data['order_id'] ?? null;
+        $this->container['customer_order_reference'] = $data['customer_order_reference'] ?? null;
     }
 
     /**
@@ -197,12 +203,6 @@ class InlineObject152 implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         $invalidProperties = [];
 
-        if ($this->container['private_key'] === null) {
-            $invalidProperties[] = "'private_key' can't be null";
-        }
-        if ($this->container['trunk_group_order'] === null) {
-            $invalidProperties[] = "'trunk_group_order' can't be null";
-        }
         return $invalidProperties;
     }
 
@@ -221,7 +221,7 @@ class InlineObject152 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets private_key
      *
-     * @return string
+     * @return string|null
      */
     public function getPrivateKey()
     {
@@ -231,7 +231,7 @@ class InlineObject152 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets private_key
      *
-     * @param string $private_key API key required to validate your application
+     * @param string|null $private_key private_key
      *
      * @return self
      */
@@ -243,25 +243,49 @@ class InlineObject152 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets trunk_group_order
+     * Gets order_id
      *
-     * @return \OpenAPI\Client\Model\TrunkGroupOrderTrunkGroupOrder
+     * @return int|null
      */
-    public function getTrunkGroupOrder()
+    public function getOrderId()
     {
-        return $this->container['trunk_group_order'];
+        return $this->container['order_id'];
     }
 
     /**
-     * Sets trunk_group_order
+     * Sets order_id
      *
-     * @param \OpenAPI\Client\Model\TrunkGroupOrderTrunkGroupOrder $trunk_group_order trunk_group_order
+     * @param int|null $order_id order_id
      *
      * @return self
      */
-    public function setTrunkGroupOrder($trunk_group_order)
+    public function setOrderId($order_id)
     {
-        $this->container['trunk_group_order'] = $trunk_group_order;
+        $this->container['order_id'] = $order_id;
+
+        return $this;
+    }
+
+    /**
+     * Gets customer_order_reference
+     *
+     * @return string|null
+     */
+    public function getCustomerOrderReference()
+    {
+        return $this->container['customer_order_reference'];
+    }
+
+    /**
+     * Sets customer_order_reference
+     *
+     * @param string|null $customer_order_reference Customer for whom the order is.
+     *
+     * @return self
+     */
+    public function setCustomerOrderReference($customer_order_reference)
+    {
+        $this->container['customer_order_reference'] = $customer_order_reference;
 
         return $this;
     }

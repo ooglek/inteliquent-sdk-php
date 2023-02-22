@@ -60,18 +60,7 @@ class InlineObject89 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'private_key' => 'string',
-        'tn' => 'string',
-        'account_num' => 'string',
-        'atn' => 'string',
-        'address_line1' => 'string',
-        'city' => 'string',
-        'state' => 'string',
-        'zip_code' => 'string',
-        'auth_name' => 'string',
-        'pin' => 'string',
-        'password' => 'string',
-        'cust_code' => 'string'
+        'private_key' => 'string'
     ];
 
     /**
@@ -82,18 +71,7 @@ class InlineObject89 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'private_key' => null,
-        'tn' => null,
-        'account_num' => null,
-        'atn' => null,
-        'address_line1' => null,
-        'city' => null,
-        'state' => null,
-        'zip_code' => null,
-        'auth_name' => null,
-        'pin' => null,
-        'password' => null,
-        'cust_code' => null
+        'private_key' => null
     ];
 
     /**
@@ -123,18 +101,7 @@ class InlineObject89 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        'private_key' => 'privateKey',
-        'tn' => 'tn',
-        'account_num' => 'accountNum',
-        'atn' => 'atn',
-        'address_line1' => 'addressLine1',
-        'city' => 'city',
-        'state' => 'state',
-        'zip_code' => 'zipCode',
-        'auth_name' => 'authName',
-        'pin' => 'pin',
-        'password' => 'password',
-        'cust_code' => 'custCode'
+        'private_key' => 'privateKey'
     ];
 
     /**
@@ -143,18 +110,7 @@ class InlineObject89 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        'private_key' => 'setPrivateKey',
-        'tn' => 'setTn',
-        'account_num' => 'setAccountNum',
-        'atn' => 'setAtn',
-        'address_line1' => 'setAddressLine1',
-        'city' => 'setCity',
-        'state' => 'setState',
-        'zip_code' => 'setZipCode',
-        'auth_name' => 'setAuthName',
-        'pin' => 'setPin',
-        'password' => 'setPassword',
-        'cust_code' => 'setCustCode'
+        'private_key' => 'setPrivateKey'
     ];
 
     /**
@@ -163,18 +119,7 @@ class InlineObject89 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        'private_key' => 'getPrivateKey',
-        'tn' => 'getTn',
-        'account_num' => 'getAccountNum',
-        'atn' => 'getAtn',
-        'address_line1' => 'getAddressLine1',
-        'city' => 'getCity',
-        'state' => 'getState',
-        'zip_code' => 'getZipCode',
-        'auth_name' => 'getAuthName',
-        'pin' => 'getPin',
-        'password' => 'getPassword',
-        'cust_code' => 'getCustCode'
+        'private_key' => 'getPrivateKey'
     ];
 
     /**
@@ -235,17 +180,6 @@ class InlineObject89 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['tn'] = $data['tn'] ?? null;
-        $this->container['account_num'] = $data['account_num'] ?? null;
-        $this->container['atn'] = $data['atn'] ?? null;
-        $this->container['address_line1'] = $data['address_line1'] ?? null;
-        $this->container['city'] = $data['city'] ?? null;
-        $this->container['state'] = $data['state'] ?? null;
-        $this->container['zip_code'] = $data['zip_code'] ?? null;
-        $this->container['auth_name'] = $data['auth_name'] ?? null;
-        $this->container['pin'] = $data['pin'] ?? null;
-        $this->container['password'] = $data['password'] ?? null;
-        $this->container['cust_code'] = $data['cust_code'] ?? null;
     }
 
     /**
@@ -295,270 +229,6 @@ class InlineObject89 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function setPrivateKey($private_key)
     {
         $this->container['private_key'] = $private_key;
-
-        return $this;
-    }
-
-    /**
-     * Gets tn
-     *
-     * @return string|null
-     */
-    public function getTn()
-    {
-        return $this->container['tn'];
-    }
-
-    /**
-     * Sets tn
-     *
-     * @param string|null $tn Telephone Number
-     *
-     * @return self
-     */
-    public function setTn($tn)
-    {
-        $this->container['tn'] = $tn;
-
-        return $this;
-    }
-
-    /**
-     * Gets account_num
-     *
-     * @return string|null
-     */
-    public function getAccountNum()
-    {
-        return $this->container['account_num'];
-    }
-
-    /**
-     * Sets account_num
-     *
-     * @param string|null $account_num Account Number
-     *
-     * @return self
-     */
-    public function setAccountNum($account_num)
-    {
-        $this->container['account_num'] = $account_num;
-
-        return $this;
-    }
-
-    /**
-     * Gets atn
-     *
-     * @return string|null
-     */
-    public function getAtn()
-    {
-        return $this->container['atn'];
-    }
-
-    /**
-     * Sets atn
-     *
-     * @param string|null $atn Account Telephone Number
-     *
-     * @return self
-     */
-    public function setAtn($atn)
-    {
-        $this->container['atn'] = $atn;
-
-        return $this;
-    }
-
-    /**
-     * Gets address_line1
-     *
-     * @return string|null
-     */
-    public function getAddressLine1()
-    {
-        return $this->container['address_line1'];
-    }
-
-    /**
-     * Sets address_line1
-     *
-     * @param string|null $address_line1 TN address line1 information
-     *
-     * @return self
-     */
-    public function setAddressLine1($address_line1)
-    {
-        $this->container['address_line1'] = $address_line1;
-
-        return $this;
-    }
-
-    /**
-     * Gets city
-     *
-     * @return string|null
-     */
-    public function getCity()
-    {
-        return $this->container['city'];
-    }
-
-    /**
-     * Sets city
-     *
-     * @param string|null $city TN address city
-     *
-     * @return self
-     */
-    public function setCity($city)
-    {
-        $this->container['city'] = $city;
-
-        return $this;
-    }
-
-    /**
-     * Gets state
-     *
-     * @return string|null
-     */
-    public function getState()
-    {
-        return $this->container['state'];
-    }
-
-    /**
-     * Sets state
-     *
-     * @param string|null $state TN address state
-     *
-     * @return self
-     */
-    public function setState($state)
-    {
-        $this->container['state'] = $state;
-
-        return $this;
-    }
-
-    /**
-     * Gets zip_code
-     *
-     * @return string|null
-     */
-    public function getZipCode()
-    {
-        return $this->container['zip_code'];
-    }
-
-    /**
-     * Sets zip_code
-     *
-     * @param string|null $zip_code TN address zip code
-     *
-     * @return self
-     */
-    public function setZipCode($zip_code)
-    {
-        $this->container['zip_code'] = $zip_code;
-
-        return $this;
-    }
-
-    /**
-     * Gets auth_name
-     *
-     * @return string|null
-     */
-    public function getAuthName()
-    {
-        return $this->container['auth_name'];
-    }
-
-    /**
-     * Sets auth_name
-     *
-     * @param string|null $auth_name Authorized User Name
-     *
-     * @return self
-     */
-    public function setAuthName($auth_name)
-    {
-        $this->container['auth_name'] = $auth_name;
-
-        return $this;
-    }
-
-    /**
-     * Gets pin
-     *
-     * @return string|null
-     */
-    public function getPin()
-    {
-        return $this->container['pin'];
-    }
-
-    /**
-     * Sets pin
-     *
-     * @param string|null $pin Account PIN
-     *
-     * @return self
-     */
-    public function setPin($pin)
-    {
-        $this->container['pin'] = $pin;
-
-        return $this;
-    }
-
-    /**
-     * Gets password
-     *
-     * @return string|null
-     */
-    public function getPassword()
-    {
-        return $this->container['password'];
-    }
-
-    /**
-     * Sets password
-     *
-     * @param string|null $password Account Password
-     *
-     * @return self
-     */
-    public function setPassword($password)
-    {
-        $this->container['password'] = $password;
-
-        return $this;
-    }
-
-    /**
-     * Gets cust_code
-     *
-     * @return string|null
-     */
-    public function getCustCode()
-    {
-        return $this->container['cust_code'];
-    }
-
-    /**
-     * Sets cust_code
-     *
-     * @param string|null $cust_code Customer Code
-     *
-     * @return self
-     */
-    public function setCustCode($cust_code)
-    {
-        $this->container['cust_code'] = $cust_code;
 
         return $this;
     }

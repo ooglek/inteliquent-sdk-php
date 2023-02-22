@@ -9,11 +9,12 @@ Method | HTTP request | Description
 [**dtmfRelayListPost()**](NetworkApi.md#dtmfRelayListPost) | **POST** /dtmfRelayList | DTMF Relay List
 [**e911CallSearchPost()**](NetworkApi.md#e911CallSearchPost) | **POST** /e911CallSearch | Retrieve 911 Call Detail Records
 [**messageDetailSearchPost()**](NetworkApi.md#messageDetailSearchPost) | **POST** /messageDetailSearch | Retrieve Message Detail Record
-[**networkStatsPost()**](NetworkApi.md#networkStatsPost) | **POST** /networkStats | Retrieve network stats
-[**peerIPsPost()**](NetworkApi.md#peerIPsPost) | **POST** /peerIPs | Retrieve a list of Peer IP addresses
 [**routingLabelDetailPost()**](NetworkApi.md#routingLabelDetailPost) | **POST** /routingLabelDetail | Retrieve Toll Free Routing Label Detail
 [**routingLabelSearchAssignedPost()**](NetworkApi.md#routingLabelSearchAssignedPost) | **POST** /routingLabelSearchAssigned | Search Assigned Toll Free Routing Label
 [**routingLabelUpdatePost()**](NetworkApi.md#routingLabelUpdatePost) | **POST** /routingLabelUpdate | Change Toll Free Routing Label Name
+[**routingOptionDetailPost()**](NetworkApi.md#routingOptionDetailPost) | **POST** /routingOptionDetail | Routing Option Details
+[**routingOptionListPost()**](NetworkApi.md#routingOptionListPost) | **POST** /routingOptionList | Routing Option List
+[**routingOptionPost()**](NetworkApi.md#routingOptionPost) | **POST** /routingOption | Change Routing Option Name
 [**switchLocationListPost()**](NetworkApi.md#switchLocationListPost) | **POST** /switchLocationList | Inteliquent Switch Locations
 [**testTrunkGroupPost()**](NetworkApi.md#testTrunkGroupPost) | **POST** /testTrunkGroup | Test a Trunk group
 [**trunkGroupDetailPost()**](NetworkApi.md#trunkGroupDetailPost) | **POST** /trunkGroupDetail | Trunk Group Details
@@ -56,7 +57,7 @@ $apiInstance = new OpenAPI\Client\Api\NetworkApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject153(); // \OpenAPI\Client\Model\InlineObject153
+$payload = new \OpenAPI\Client\Model\InlineObject154(); // \OpenAPI\Client\Model\InlineObject154
 
 try {
     $result = $apiInstance->changeTrunkGroupOrderPost($payload);
@@ -70,7 +71,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject153**](../Model/InlineObject153.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject154**](../Model/InlineObject154.md)|  |
 
 ### Return type
 
@@ -118,7 +119,7 @@ $apiInstance = new OpenAPI\Client\Api\NetworkApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject158(); // \OpenAPI\Client\Model\InlineObject158
+$payload = new \OpenAPI\Client\Model\InlineObject159(); // \OpenAPI\Client\Model\InlineObject159
 
 try {
     $result = $apiInstance->customerLocationListPost($payload);
@@ -132,7 +133,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject158**](../Model/InlineObject158.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject159**](../Model/InlineObject159.md)|  |
 
 ### Return type
 
@@ -180,7 +181,7 @@ $apiInstance = new OpenAPI\Client\Api\NetworkApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject157(); // \OpenAPI\Client\Model\InlineObject157
+$payload = new \OpenAPI\Client\Model\InlineObject158(); // \OpenAPI\Client\Model\InlineObject158
 
 try {
     $result = $apiInstance->dtmfRelayListPost($payload);
@@ -194,7 +195,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject157**](../Model/InlineObject157.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject158**](../Model/InlineObject158.md)|  |
 
 ### Return type
 
@@ -242,7 +243,7 @@ $apiInstance = new OpenAPI\Client\Api\NetworkApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject144(); // \OpenAPI\Client\Model\InlineObject144
+$payload = new \OpenAPI\Client\Model\InlineObject145(); // \OpenAPI\Client\Model\InlineObject145
 
 try {
     $result = $apiInstance->e911CallSearchPost($payload);
@@ -256,7 +257,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject144**](../Model/InlineObject144.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject145**](../Model/InlineObject145.md)|  |
 
 ### Return type
 
@@ -304,7 +305,7 @@ $apiInstance = new OpenAPI\Client\Api\NetworkApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject112(); // \OpenAPI\Client\Model\InlineObject112
+$payload = new \OpenAPI\Client\Model\InlineObject113(); // \OpenAPI\Client\Model\InlineObject113
 
 try {
     $result = $apiInstance->messageDetailSearchPost($payload);
@@ -318,135 +319,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject112**](../Model/InlineObject112.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject113**](../Model/InlineObject113.md)|  |
 
 ### Return type
 
 [**\OpenAPI\Client\Model\ResponseMessageDetailSearch**](../Model/ResponseMessageDetailSearch.md)
-
-### Authorization
-
-[api_key](../../README.md#api_key)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: `application/json`
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
-## `networkStatsPost()`
-
-```php
-networkStatsPost($payload): \OpenAPI\Client\Model\InlineResponse20046
-```
-
-Retrieve network stats
-
-This operations retrieves network stats
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: api_key
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new OpenAPI\Client\Api\NetworkApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$payload = new \OpenAPI\Client\Model\InlineObject197(); // \OpenAPI\Client\Model\InlineObject197
-
-try {
-    $result = $apiInstance->networkStatsPost($payload);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling NetworkApi->networkStatsPost: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject197**](../Model/InlineObject197.md)|  |
-
-### Return type
-
-[**\OpenAPI\Client\Model\InlineResponse20046**](../Model/InlineResponse20046.md)
-
-### Authorization
-
-[api_key](../../README.md#api_key)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: `application/json`
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
-## `peerIPsPost()`
-
-```php
-peerIPsPost($payload): \OpenAPI\Client\Model\InlineResponse20047
-```
-
-Retrieve a list of Peer IP addresses
-
-This operations retrieves list of Peer IPs
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: api_key
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new OpenAPI\Client\Api\NetworkApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$payload = new \OpenAPI\Client\Model\InlineObject198(); // \OpenAPI\Client\Model\InlineObject198
-
-try {
-    $result = $apiInstance->peerIPsPost($payload);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling NetworkApi->peerIPsPost: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject198**](../Model/InlineObject198.md)|  |
-
-### Return type
-
-[**\OpenAPI\Client\Model\InlineResponse20047**](../Model/InlineResponse20047.md)
 
 ### Authorization
 
@@ -490,7 +367,7 @@ $apiInstance = new OpenAPI\Client\Api\NetworkApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject109(); // \OpenAPI\Client\Model\InlineObject109
+$payload = new \OpenAPI\Client\Model\InlineObject110(); // \OpenAPI\Client\Model\InlineObject110
 
 try {
     $result = $apiInstance->routingLabelDetailPost($payload);
@@ -504,7 +381,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject109**](../Model/InlineObject109.md)|  | [optional]
+ **payload** | [**\OpenAPI\Client\Model\InlineObject110**](../Model/InlineObject110.md)|  | [optional]
 
 ### Return type
 
@@ -552,7 +429,7 @@ $apiInstance = new OpenAPI\Client\Api\NetworkApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject108(); // \OpenAPI\Client\Model\InlineObject108
+$payload = new \OpenAPI\Client\Model\InlineObject109(); // \OpenAPI\Client\Model\InlineObject109
 
 try {
     $result = $apiInstance->routingLabelSearchAssignedPost($payload);
@@ -566,7 +443,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject108**](../Model/InlineObject108.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject109**](../Model/InlineObject109.md)|  |
 
 ### Return type
 
@@ -614,7 +491,7 @@ $apiInstance = new OpenAPI\Client\Api\NetworkApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject110(); // \OpenAPI\Client\Model\InlineObject110
+$payload = new \OpenAPI\Client\Model\InlineObject111(); // \OpenAPI\Client\Model\InlineObject111
 
 try {
     $result = $apiInstance->routingLabelUpdatePost($payload);
@@ -628,11 +505,197 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject110**](../Model/InlineObject110.md)|  | [optional]
+ **payload** | [**\OpenAPI\Client\Model\InlineObject111**](../Model/InlineObject111.md)|  | [optional]
 
 ### Return type
 
 [**\OpenAPI\Client\Model\InlineResponse20012**](../Model/InlineResponse20012.md)
+
+### Authorization
+
+[api_key](../../README.md#api_key)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `routingOptionDetailPost()`
+
+```php
+routingOptionDetailPost($payload): \OpenAPI\Client\Model\ResponseRoutingOptionDetail
+```
+
+Routing Option Details
+
+This endpoint allows you to retrieve detail information for specificied routing option with Inteliquent.
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+// Configure API key authorization: api_key
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
+
+$apiInstance = new OpenAPI\Client\Api\NetworkApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$payload = new \OpenAPI\Client\Model\InlineObject115(); // \OpenAPI\Client\Model\InlineObject115
+
+try {
+    $result = $apiInstance->routingOptionDetailPost($payload);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling NetworkApi->routingOptionDetailPost: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **payload** | [**\OpenAPI\Client\Model\InlineObject115**](../Model/InlineObject115.md)|  |
+
+### Return type
+
+[**\OpenAPI\Client\Model\ResponseRoutingOptionDetail**](../Model/ResponseRoutingOptionDetail.md)
+
+### Authorization
+
+[api_key](../../README.md#api_key)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `routingOptionListPost()`
+
+```php
+routingOptionListPost($payload): \OpenAPI\Client\Model\ResponseRoutingOptionList
+```
+
+Routing Option List
+
+This endpoint allows you to retrieve list of your routing options with Inteliquent.
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+// Configure API key authorization: api_key
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
+
+$apiInstance = new OpenAPI\Client\Api\NetworkApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$payload = new \OpenAPI\Client\Model\InlineObject114(); // \OpenAPI\Client\Model\InlineObject114
+
+try {
+    $result = $apiInstance->routingOptionListPost($payload);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling NetworkApi->routingOptionListPost: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **payload** | [**\OpenAPI\Client\Model\InlineObject114**](../Model/InlineObject114.md)|  |
+
+### Return type
+
+[**\OpenAPI\Client\Model\ResponseRoutingOptionList**](../Model/ResponseRoutingOptionList.md)
+
+### Authorization
+
+[api_key](../../README.md#api_key)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `routingOptionPost()`
+
+```php
+routingOptionPost($payload): \OpenAPI\Client\Model\InlineResponse20013
+```
+
+Change Routing Option Name
+
+This endpoint allows you to add or update the name of your company’s assigned routing option. Note:- Use the updated routing option name when placing a new telephone number, telephone number update etc.
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+// Configure API key authorization: api_key
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
+
+$apiInstance = new OpenAPI\Client\Api\NetworkApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$payload = new \OpenAPI\Client\Model\InlineObject116(); // \OpenAPI\Client\Model\InlineObject116
+
+try {
+    $result = $apiInstance->routingOptionPost($payload);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling NetworkApi->routingOptionPost: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **payload** | [**\OpenAPI\Client\Model\InlineObject116**](../Model/InlineObject116.md)|  |
+
+### Return type
+
+[**\OpenAPI\Client\Model\InlineResponse20013**](../Model/InlineResponse20013.md)
 
 ### Authorization
 
@@ -676,7 +739,7 @@ $apiInstance = new OpenAPI\Client\Api\NetworkApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject156(); // \OpenAPI\Client\Model\InlineObject156
+$payload = new \OpenAPI\Client\Model\InlineObject157(); // \OpenAPI\Client\Model\InlineObject157
 
 try {
     $result = $apiInstance->switchLocationListPost($payload);
@@ -690,7 +753,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject156**](../Model/InlineObject156.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject157**](../Model/InlineObject157.md)|  |
 
 ### Return type
 
@@ -738,7 +801,7 @@ $apiInstance = new OpenAPI\Client\Api\NetworkApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject192(); // \OpenAPI\Client\Model\InlineObject192
+$payload = new \OpenAPI\Client\Model\InlineObject194(); // \OpenAPI\Client\Model\InlineObject194
 
 try {
     $result = $apiInstance->testTrunkGroupPost($payload);
@@ -752,7 +815,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject192**](../Model/InlineObject192.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject194**](../Model/InlineObject194.md)|  |
 
 ### Return type
 
@@ -800,7 +863,7 @@ $apiInstance = new OpenAPI\Client\Api\NetworkApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject107(); // \OpenAPI\Client\Model\InlineObject107
+$payload = new \OpenAPI\Client\Model\InlineObject108(); // \OpenAPI\Client\Model\InlineObject108
 
 try {
     $result = $apiInstance->trunkGroupDetailPost($payload);
@@ -814,7 +877,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject107**](../Model/InlineObject107.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject108**](../Model/InlineObject108.md)|  |
 
 ### Return type
 
@@ -862,7 +925,7 @@ $apiInstance = new OpenAPI\Client\Api\NetworkApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject106(); // \OpenAPI\Client\Model\InlineObject106
+$payload = new \OpenAPI\Client\Model\InlineObject107(); // \OpenAPI\Client\Model\InlineObject107
 
 try {
     $result = $apiInstance->trunkGroupListPost($payload);
@@ -876,7 +939,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject106**](../Model/InlineObject106.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject107**](../Model/InlineObject107.md)|  |
 
 ### Return type
 
@@ -924,7 +987,7 @@ $apiInstance = new OpenAPI\Client\Api\NetworkApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject155(); // \OpenAPI\Client\Model\InlineObject155
+$payload = new \OpenAPI\Client\Model\InlineObject156(); // \OpenAPI\Client\Model\InlineObject156
 
 try {
     $result = $apiInstance->trunkGroupOrderDetailPost($payload);
@@ -938,7 +1001,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject155**](../Model/InlineObject155.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject156**](../Model/InlineObject156.md)|  |
 
 ### Return type
 
@@ -986,7 +1049,7 @@ $apiInstance = new OpenAPI\Client\Api\NetworkApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject154(); // \OpenAPI\Client\Model\InlineObject154
+$payload = new \OpenAPI\Client\Model\InlineObject155(); // \OpenAPI\Client\Model\InlineObject155
 
 try {
     $result = $apiInstance->trunkGroupOrderListPost($payload);
@@ -1000,7 +1063,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject154**](../Model/InlineObject154.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject155**](../Model/InlineObject155.md)|  |
 
 ### Return type
 
@@ -1048,7 +1111,7 @@ $apiInstance = new OpenAPI\Client\Api\NetworkApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject152(); // \OpenAPI\Client\Model\InlineObject152
+$payload = new \OpenAPI\Client\Model\InlineObject153(); // \OpenAPI\Client\Model\InlineObject153
 
 try {
     $result = $apiInstance->trunkGroupOrderPost($payload);
@@ -1062,7 +1125,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject152**](../Model/InlineObject152.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject153**](../Model/InlineObject153.md)|  |
 
 ### Return type
 
@@ -1110,7 +1173,7 @@ $apiInstance = new OpenAPI\Client\Api\NetworkApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject104(); // \OpenAPI\Client\Model\InlineObject104
+$payload = new \OpenAPI\Client\Model\InlineObject105(); // \OpenAPI\Client\Model\InlineObject105
 
 try {
     $result = $apiInstance->trunkGroupSearchAssignedPost($payload);
@@ -1124,7 +1187,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject104**](../Model/InlineObject104.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject105**](../Model/InlineObject105.md)|  |
 
 ### Return type
 
@@ -1172,7 +1235,7 @@ $apiInstance = new OpenAPI\Client\Api\NetworkApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject150(); // \OpenAPI\Client\Model\InlineObject150
+$payload = new \OpenAPI\Client\Model\InlineObject151(); // \OpenAPI\Client\Model\InlineObject151
 
 try {
     $result = $apiInstance->trunkGroupSessionUpdatePost($payload);
@@ -1186,7 +1249,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject150**](../Model/InlineObject150.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject151**](../Model/InlineObject151.md)|  |
 
 ### Return type
 
@@ -1234,7 +1297,7 @@ $apiInstance = new OpenAPI\Client\Api\NetworkApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject105(); // \OpenAPI\Client\Model\InlineObject105
+$payload = new \OpenAPI\Client\Model\InlineObject106(); // \OpenAPI\Client\Model\InlineObject106
 
 try {
     $result = $apiInstance->trunkGroupUpdatePost($payload);
@@ -1248,7 +1311,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject105**](../Model/InlineObject105.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject106**](../Model/InlineObject106.md)|  |
 
 ### Return type
 
@@ -1296,7 +1359,7 @@ $apiInstance = new OpenAPI\Client\Api\NetworkApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject111(); // \OpenAPI\Client\Model\InlineObject111
+$payload = new \OpenAPI\Client\Model\InlineObject112(); // \OpenAPI\Client\Model\InlineObject112
 
 try {
     $result = $apiInstance->trunkGroupUtilizationPost($payload);
@@ -1310,7 +1373,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject111**](../Model/InlineObject111.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject112**](../Model/InlineObject112.md)|  |
 
 ### Return type
 

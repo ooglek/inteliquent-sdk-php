@@ -62,7 +62,7 @@ class InlineObject53 implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'private_key' => 'string',
         'order_id' => 'int',
-        'order_note' => 'string'
+        'customer_order_reference' => 'string'
     ];
 
     /**
@@ -75,7 +75,7 @@ class InlineObject53 implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPIFormats = [
         'private_key' => null,
         'order_id' => null,
-        'order_note' => null
+        'customer_order_reference' => null
     ];
 
     /**
@@ -107,7 +107,7 @@ class InlineObject53 implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $attributeMap = [
         'private_key' => 'privateKey',
         'order_id' => 'orderId',
-        'order_note' => 'orderNote'
+        'customer_order_reference' => 'customerOrderReference'
     ];
 
     /**
@@ -118,7 +118,7 @@ class InlineObject53 implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $setters = [
         'private_key' => 'setPrivateKey',
         'order_id' => 'setOrderId',
-        'order_note' => 'setOrderNote'
+        'customer_order_reference' => 'setCustomerOrderReference'
     ];
 
     /**
@@ -129,7 +129,7 @@ class InlineObject53 implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $getters = [
         'private_key' => 'getPrivateKey',
         'order_id' => 'getOrderId',
-        'order_note' => 'getOrderNote'
+        'customer_order_reference' => 'getCustomerOrderReference'
     ];
 
     /**
@@ -191,7 +191,7 @@ class InlineObject53 implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
         $this->container['order_id'] = $data['order_id'] ?? null;
-        $this->container['order_note'] = $data['order_note'] ?? null;
+        $this->container['customer_order_reference'] = $data['customer_order_reference'] ?? null;
     }
 
     /**
@@ -205,9 +205,6 @@ class InlineObject53 implements ModelInterface, ArrayAccess, \JsonSerializable
 
         if ($this->container['private_key'] === null) {
             $invalidProperties[] = "'private_key' can't be null";
-        }
-        if ($this->container['order_id'] === null) {
-            $invalidProperties[] = "'order_id' can't be null";
         }
         return $invalidProperties;
     }
@@ -237,7 +234,7 @@ class InlineObject53 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets private_key
      *
-     * @param string $private_key Private Key
+     * @param string $private_key API key required to validate your application
      *
      * @return self
      */
@@ -251,7 +248,7 @@ class InlineObject53 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets order_id
      *
-     * @return int
+     * @return int|null
      */
     public function getOrderId()
     {
@@ -261,7 +258,7 @@ class InlineObject53 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets order_id
      *
-     * @param int $order_id Order Id to which note needs to be added.
+     * @param int|null $order_id Existing order number
      *
      * @return self
      */
@@ -273,25 +270,25 @@ class InlineObject53 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets order_note
+     * Gets customer_order_reference
      *
      * @return string|null
      */
-    public function getOrderNote()
+    public function getCustomerOrderReference()
     {
-        return $this->container['order_note'];
+        return $this->container['customer_order_reference'];
     }
 
     /**
-     * Sets order_note
+     * Sets customer_order_reference
      *
-     * @param string|null $order_note Note text that needs to be added to the order.
+     * @param string|null $customer_order_reference Customer for whom the order is.
      *
      * @return self
      */
-    public function setOrderNote($order_note)
+    public function setCustomerOrderReference($customer_order_reference)
     {
-        $this->container['order_note'] = $order_note;
+        $this->container['customer_order_reference'] = $customer_order_reference;
 
         return $this;
     }

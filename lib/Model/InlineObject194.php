@@ -60,7 +60,9 @@ class InlineObject194 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'private_key' => 'string'
+        'private_key' => 'string',
+        'trunk_group_name' => 'string',
+        'test_tn' => 'string'
     ];
 
     /**
@@ -71,7 +73,9 @@ class InlineObject194 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'private_key' => null
+        'private_key' => null,
+        'trunk_group_name' => null,
+        'test_tn' => null
     ];
 
     /**
@@ -101,7 +105,9 @@ class InlineObject194 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        'private_key' => 'privateKey'
+        'private_key' => 'privateKey',
+        'trunk_group_name' => 'trunkGroupName',
+        'test_tn' => 'testTn'
     ];
 
     /**
@@ -110,7 +116,9 @@ class InlineObject194 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        'private_key' => 'setPrivateKey'
+        'private_key' => 'setPrivateKey',
+        'trunk_group_name' => 'setTrunkGroupName',
+        'test_tn' => 'setTestTn'
     ];
 
     /**
@@ -119,7 +127,9 @@ class InlineObject194 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        'private_key' => 'getPrivateKey'
+        'private_key' => 'getPrivateKey',
+        'trunk_group_name' => 'getTrunkGroupName',
+        'test_tn' => 'getTestTn'
     ];
 
     /**
@@ -180,6 +190,8 @@ class InlineObject194 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
+        $this->container['trunk_group_name'] = $data['trunk_group_name'] ?? null;
+        $this->container['test_tn'] = $data['test_tn'] ?? null;
     }
 
     /**
@@ -226,6 +238,54 @@ class InlineObject194 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function setPrivateKey($private_key)
     {
         $this->container['private_key'] = $private_key;
+
+        return $this;
+    }
+
+    /**
+     * Gets trunk_group_name
+     *
+     * @return string|null
+     */
+    public function getTrunkGroupName()
+    {
+        return $this->container['trunk_group_name'];
+    }
+
+    /**
+     * Sets trunk_group_name
+     *
+     * @param string|null $trunk_group_name trunk_group_name
+     *
+     * @return self
+     */
+    public function setTrunkGroupName($trunk_group_name)
+    {
+        $this->container['trunk_group_name'] = $trunk_group_name;
+
+        return $this;
+    }
+
+    /**
+     * Gets test_tn
+     *
+     * @return string|null
+     */
+    public function getTestTn()
+    {
+        return $this->container['test_tn'];
+    }
+
+    /**
+     * Sets test_tn
+     *
+     * @param string|null $test_tn test_tn
+     *
+     * @return self
+     */
+    public function setTestTn($test_tn)
+    {
+        $this->container['test_tn'] = $test_tn;
 
         return $this;
     }

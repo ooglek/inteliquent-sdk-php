@@ -61,7 +61,10 @@ class InlineObject97 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'tf_messaging_order' => '\OpenAPI\Client\Model\TfMessagingOrderTfMessagingOrder'
+        'tn_mask' => 'string',
+        'tn_wildcard' => 'string',
+        'sequential' => 'bool',
+        'quantity' => 'int'
     ];
 
     /**
@@ -73,7 +76,10 @@ class InlineObject97 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'tf_messaging_order' => null
+        'tn_mask' => null,
+        'tn_wildcard' => null,
+        'sequential' => null,
+        'quantity' => null
     ];
 
     /**
@@ -104,7 +110,10 @@ class InlineObject97 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'tf_messaging_order' => 'tfMessagingOrder'
+        'tn_mask' => 'tnMask',
+        'tn_wildcard' => 'tnWildcard',
+        'sequential' => 'sequential',
+        'quantity' => 'quantity'
     ];
 
     /**
@@ -114,7 +123,10 @@ class InlineObject97 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'tf_messaging_order' => 'setTfMessagingOrder'
+        'tn_mask' => 'setTnMask',
+        'tn_wildcard' => 'setTnWildcard',
+        'sequential' => 'setSequential',
+        'quantity' => 'setQuantity'
     ];
 
     /**
@@ -124,7 +136,10 @@ class InlineObject97 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'tf_messaging_order' => 'getTfMessagingOrder'
+        'tn_mask' => 'getTnMask',
+        'tn_wildcard' => 'getTnWildcard',
+        'sequential' => 'getSequential',
+        'quantity' => 'getQuantity'
     ];
 
     /**
@@ -185,7 +200,10 @@ class InlineObject97 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['tf_messaging_order'] = $data['tf_messaging_order'] ?? null;
+        $this->container['tn_mask'] = $data['tn_mask'] ?? null;
+        $this->container['tn_wildcard'] = $data['tn_wildcard'] ?? null;
+        $this->container['sequential'] = $data['sequential'] ?? null;
+        $this->container['quantity'] = $data['quantity'] ?? null;
     }
 
     /**
@@ -197,6 +215,15 @@ class InlineObject97 implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         $invalidProperties = [];
 
+        if ($this->container['private_key'] === null) {
+            $invalidProperties[] = "'private_key' can't be null";
+        }
+        if ($this->container['tn_mask'] === null) {
+            $invalidProperties[] = "'tn_mask' can't be null";
+        }
+        if ($this->container['quantity'] === null) {
+            $invalidProperties[] = "'quantity' can't be null";
+        }
         return $invalidProperties;
     }
 
@@ -215,7 +242,7 @@ class InlineObject97 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets private_key
      *
-     * @return string|null
+     * @return string
      */
     public function getPrivateKey()
     {
@@ -225,7 +252,7 @@ class InlineObject97 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets private_key
      *
-     * @param string|null $private_key private_key
+     * @param string $private_key API key required to validate your application
      *
      * @return self
      */
@@ -237,25 +264,97 @@ class InlineObject97 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets tf_messaging_order
+     * Gets tn_mask
      *
-     * @return \OpenAPI\Client\Model\TfMessagingOrderTfMessagingOrder|null
+     * @return string
      */
-    public function getTfMessagingOrder()
+    public function getTnMask()
     {
-        return $this->container['tf_messaging_order'];
+        return $this->container['tn_mask'];
     }
 
     /**
-     * Sets tf_messaging_order
+     * Sets tn_mask
      *
-     * @param \OpenAPI\Client\Model\TfMessagingOrderTfMessagingOrder|null $tf_messaging_order tf_messaging_order
+     * @param string $tn_mask Ten-digit toll free number; enter x as wildcard (e.g. 877xxxxxxx, xxx4xxxxx1, xxxxxxxxxx)
      *
      * @return self
      */
-    public function setTfMessagingOrder($tf_messaging_order)
+    public function setTnMask($tn_mask)
     {
-        $this->container['tf_messaging_order'] = $tf_messaging_order;
+        $this->container['tn_mask'] = $tn_mask;
+
+        return $this;
+    }
+
+    /**
+     * Gets tn_wildcard
+     *
+     * @return string|null
+     */
+    public function getTnWildcard()
+    {
+        return $this->container['tn_wildcard'];
+    }
+
+    /**
+     * Sets tn_wildcard
+     *
+     * @param string|null $tn_wildcard tn for wildcard search
+     *
+     * @return self
+     */
+    public function setTnWildcard($tn_wildcard)
+    {
+        $this->container['tn_wildcard'] = $tn_wildcard;
+
+        return $this;
+    }
+
+    /**
+     * Gets sequential
+     *
+     * @return bool|null
+     */
+    public function getSequential()
+    {
+        return $this->container['sequential'];
+    }
+
+    /**
+     * Sets sequential
+     *
+     * @param bool|null $sequential Enter 'true' to return sequential numbers
+     *
+     * @return self
+     */
+    public function setSequential($sequential)
+    {
+        $this->container['sequential'] = $sequential;
+
+        return $this;
+    }
+
+    /**
+     * Gets quantity
+     *
+     * @return int
+     */
+    public function getQuantity()
+    {
+        return $this->container['quantity'];
+    }
+
+    /**
+     * Sets quantity
+     *
+     * @param int $quantity Maximum number of results to return; partial quantity may be returned based on inventory
+     *
+     * @return self
+     */
+    public function setQuantity($quantity)
+    {
+        $this->container['quantity'] = $quantity;
 
         return $this;
     }

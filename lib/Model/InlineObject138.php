@@ -60,7 +60,7 @@ class InlineObject138 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'company_class_id' => 'int'
+        'private_key' => 'string'
     ];
 
     /**
@@ -71,7 +71,7 @@ class InlineObject138 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'company_class_id' => null
+        'private_key' => null
     ];
 
     /**
@@ -101,7 +101,7 @@ class InlineObject138 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        'company_class_id' => 'companyClassId'
+        'private_key' => 'privateKey'
     ];
 
     /**
@@ -110,7 +110,7 @@ class InlineObject138 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        'company_class_id' => 'setCompanyClassId'
+        'private_key' => 'setPrivateKey'
     ];
 
     /**
@@ -119,7 +119,7 @@ class InlineObject138 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        'company_class_id' => 'getCompanyClassId'
+        'private_key' => 'getPrivateKey'
     ];
 
     /**
@@ -179,7 +179,7 @@ class InlineObject138 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function __construct(array $data = null)
     {
-        $this->container['company_class_id'] = $data['company_class_id'] ?? null;
+        $this->container['private_key'] = $data['private_key'] ?? null;
     }
 
     /**
@@ -207,25 +207,25 @@ class InlineObject138 implements ModelInterface, ArrayAccess, \JsonSerializable
 
 
     /**
-     * Gets company_class_id
+     * Gets private_key
      *
-     * @return int|null
+     * @return string|null
      */
-    public function getCompanyClassId()
+    public function getPrivateKey()
     {
-        return $this->container['company_class_id'];
+        return $this->container['private_key'];
     }
 
     /**
-     * Sets company_class_id
+     * Sets private_key
      *
-     * @param int|null $company_class_id company_class_id
+     * @param string|null $private_key private_key
      *
      * @return self
      */
-    public function setCompanyClassId($company_class_id)
+    public function setPrivateKey($private_key)
     {
-        $this->container['company_class_id'] = $company_class_id;
+        $this->container['private_key'] = $private_key;
 
         return $this;
     }

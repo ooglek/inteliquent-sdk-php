@@ -61,14 +61,7 @@ class InlineObject130 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'tn' => 'string',
-        'name' => 'string',
-        'street_num' => 'string',
-        'street_info' => 'string',
-        'location' => 'string',
-        'city' => 'string',
-        'state' => 'string',
-        'postal_code' => 'string'
+        'page_sort' => '\OpenAPI\Client\Model\TnDetailPageSort'
     ];
 
     /**
@@ -80,14 +73,7 @@ class InlineObject130 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'tn' => null,
-        'name' => null,
-        'street_num' => null,
-        'street_info' => null,
-        'location' => null,
-        'city' => null,
-        'state' => null,
-        'postal_code' => null
+        'page_sort' => null
     ];
 
     /**
@@ -118,14 +104,7 @@ class InlineObject130 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'tn' => 'tn',
-        'name' => 'name',
-        'street_num' => 'streetNum',
-        'street_info' => 'streetInfo',
-        'location' => 'location',
-        'city' => 'city',
-        'state' => 'state',
-        'postal_code' => 'postalCode'
+        'page_sort' => 'pageSort'
     ];
 
     /**
@@ -135,14 +114,7 @@ class InlineObject130 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'tn' => 'setTn',
-        'name' => 'setName',
-        'street_num' => 'setStreetNum',
-        'street_info' => 'setStreetInfo',
-        'location' => 'setLocation',
-        'city' => 'setCity',
-        'state' => 'setState',
-        'postal_code' => 'setPostalCode'
+        'page_sort' => 'setPageSort'
     ];
 
     /**
@@ -152,14 +124,7 @@ class InlineObject130 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'tn' => 'getTn',
-        'name' => 'getName',
-        'street_num' => 'getStreetNum',
-        'street_info' => 'getStreetInfo',
-        'location' => 'getLocation',
-        'city' => 'getCity',
-        'state' => 'getState',
-        'postal_code' => 'getPostalCode'
+        'page_sort' => 'getPageSort'
     ];
 
     /**
@@ -220,14 +185,7 @@ class InlineObject130 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['tn'] = $data['tn'] ?? null;
-        $this->container['name'] = $data['name'] ?? null;
-        $this->container['street_num'] = $data['street_num'] ?? null;
-        $this->container['street_info'] = $data['street_info'] ?? null;
-        $this->container['location'] = $data['location'] ?? null;
-        $this->container['city'] = $data['city'] ?? null;
-        $this->container['state'] = $data['state'] ?? null;
-        $this->container['postal_code'] = $data['postal_code'] ?? null;
+        $this->container['page_sort'] = $data['page_sort'] ?? null;
     }
 
     /**
@@ -241,27 +199,6 @@ class InlineObject130 implements ModelInterface, ArrayAccess, \JsonSerializable
 
         if ($this->container['private_key'] === null) {
             $invalidProperties[] = "'private_key' can't be null";
-        }
-        if ($this->container['tn'] === null) {
-            $invalidProperties[] = "'tn' can't be null";
-        }
-        if ($this->container['name'] === null) {
-            $invalidProperties[] = "'name' can't be null";
-        }
-        if ($this->container['street_num'] === null) {
-            $invalidProperties[] = "'street_num' can't be null";
-        }
-        if ($this->container['street_info'] === null) {
-            $invalidProperties[] = "'street_info' can't be null";
-        }
-        if ($this->container['city'] === null) {
-            $invalidProperties[] = "'city' can't be null";
-        }
-        if ($this->container['state'] === null) {
-            $invalidProperties[] = "'state' can't be null";
-        }
-        if ($this->container['postal_code'] === null) {
-            $invalidProperties[] = "'postal_code' can't be null";
         }
         return $invalidProperties;
     }
@@ -291,7 +228,7 @@ class InlineObject130 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets private_key
      *
-     * @param string $private_key API key required to validate your application; can be retrieved from Admin page of customer portal
+     * @param string $private_key API key required to validate your application
      *
      * @return self
      */
@@ -303,193 +240,25 @@ class InlineObject130 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets tn
+     * Gets page_sort
      *
-     * @return string
+     * @return \OpenAPI\Client\Model\TnDetailPageSort|null
      */
-    public function getTn()
+    public function getPageSort()
     {
-        return $this->container['tn'];
+        return $this->container['page_sort'];
     }
 
     /**
-     * Sets tn
+     * Sets page_sort
      *
-     * @param string $tn Telephone Number
+     * @param \OpenAPI\Client\Model\TnDetailPageSort|null $page_sort page_sort
      *
      * @return self
      */
-    public function setTn($tn)
+    public function setPageSort($page_sort)
     {
-        $this->container['tn'] = $tn;
-
-        return $this;
-    }
-
-    /**
-     * Gets name
-     *
-     * @return string
-     */
-    public function getName()
-    {
-        return $this->container['name'];
-    }
-
-    /**
-     * Sets name
-     *
-     * @param string $name E911 address name
-     *
-     * @return self
-     */
-    public function setName($name)
-    {
-        $this->container['name'] = $name;
-
-        return $this;
-    }
-
-    /**
-     * Gets street_num
-     *
-     * @return string
-     */
-    public function getStreetNum()
-    {
-        return $this->container['street_num'];
-    }
-
-    /**
-     * Sets street_num
-     *
-     * @param string $street_num E911 address street number (e.g. 100, 550)
-     *
-     * @return self
-     */
-    public function setStreetNum($street_num)
-    {
-        $this->container['street_num'] = $street_num;
-
-        return $this;
-    }
-
-    /**
-     * Gets street_info
-     *
-     * @return string
-     */
-    public function getStreetInfo()
-    {
-        return $this->container['street_info'];
-    }
-
-    /**
-     * Sets street_info
-     *
-     * @param string $street_info E911 address street information (e.g. W Adams St)
-     *
-     * @return self
-     */
-    public function setStreetInfo($street_info)
-    {
-        $this->container['street_info'] = $street_info;
-
-        return $this;
-    }
-
-    /**
-     * Gets location
-     *
-     * @return string|null
-     */
-    public function getLocation()
-    {
-        return $this->container['location'];
-    }
-
-    /**
-     * Sets location
-     *
-     * @param string|null $location E911 address additional address infotmation
-     *
-     * @return self
-     */
-    public function setLocation($location)
-    {
-        $this->container['location'] = $location;
-
-        return $this;
-    }
-
-    /**
-     * Gets city
-     *
-     * @return string
-     */
-    public function getCity()
-    {
-        return $this->container['city'];
-    }
-
-    /**
-     * Sets city
-     *
-     * @param string $city E911 address city
-     *
-     * @return self
-     */
-    public function setCity($city)
-    {
-        $this->container['city'] = $city;
-
-        return $this;
-    }
-
-    /**
-     * Gets state
-     *
-     * @return string
-     */
-    public function getState()
-    {
-        return $this->container['state'];
-    }
-
-    /**
-     * Sets state
-     *
-     * @param string $state E911 address state
-     *
-     * @return self
-     */
-    public function setState($state)
-    {
-        $this->container['state'] = $state;
-
-        return $this;
-    }
-
-    /**
-     * Gets postal_code
-     *
-     * @return string
-     */
-    public function getPostalCode()
-    {
-        return $this->container['postal_code'];
-    }
-
-    /**
-     * Sets postal_code
-     *
-     * @param string $postal_code E911 address zip code
-     *
-     * @return self
-     */
-    public function setPostalCode($postal_code)
-    {
-        $this->container['postal_code'] = $postal_code;
+        $this->container['page_sort'] = $page_sort;
 
         return $this;
     }

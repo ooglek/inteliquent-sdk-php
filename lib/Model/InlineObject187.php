@@ -61,13 +61,7 @@ class InlineObject187 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'quantity' => 'int',
-        'customer_order_reference' => 'string',
-        'routing_option' => 'string',
-        'country_ref' => 'string',
-        'desired_due_date' => 'string',
-        'number_type_ref' => 'string',
-        'prefix' => 'string'
+        'tn_order' => '\OpenAPI\Client\Model\IntlTnOrderTnOrder'
     ];
 
     /**
@@ -79,13 +73,7 @@ class InlineObject187 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'quantity' => null,
-        'customer_order_reference' => null,
-        'routing_option' => null,
-        'country_ref' => null,
-        'desired_due_date' => null,
-        'number_type_ref' => null,
-        'prefix' => null
+        'tn_order' => null
     ];
 
     /**
@@ -116,13 +104,7 @@ class InlineObject187 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'quantity' => 'quantity',
-        'customer_order_reference' => 'customerOrderReference',
-        'routing_option' => 'routingOption',
-        'country_ref' => 'countryRef',
-        'desired_due_date' => 'desiredDueDate',
-        'number_type_ref' => 'numberTypeRef',
-        'prefix' => 'prefix'
+        'tn_order' => 'tnOrder'
     ];
 
     /**
@@ -132,13 +114,7 @@ class InlineObject187 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'quantity' => 'setQuantity',
-        'customer_order_reference' => 'setCustomerOrderReference',
-        'routing_option' => 'setRoutingOption',
-        'country_ref' => 'setCountryRef',
-        'desired_due_date' => 'setDesiredDueDate',
-        'number_type_ref' => 'setNumberTypeRef',
-        'prefix' => 'setPrefix'
+        'tn_order' => 'setTnOrder'
     ];
 
     /**
@@ -148,13 +124,7 @@ class InlineObject187 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'quantity' => 'getQuantity',
-        'customer_order_reference' => 'getCustomerOrderReference',
-        'routing_option' => 'getRoutingOption',
-        'country_ref' => 'getCountryRef',
-        'desired_due_date' => 'getDesiredDueDate',
-        'number_type_ref' => 'getNumberTypeRef',
-        'prefix' => 'getPrefix'
+        'tn_order' => 'getTnOrder'
     ];
 
     /**
@@ -215,13 +185,7 @@ class InlineObject187 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['quantity'] = $data['quantity'] ?? null;
-        $this->container['customer_order_reference'] = $data['customer_order_reference'] ?? null;
-        $this->container['routing_option'] = $data['routing_option'] ?? null;
-        $this->container['country_ref'] = $data['country_ref'] ?? null;
-        $this->container['desired_due_date'] = $data['desired_due_date'] ?? null;
-        $this->container['number_type_ref'] = $data['number_type_ref'] ?? null;
-        $this->container['prefix'] = $data['prefix'] ?? null;
+        $this->container['tn_order'] = $data['tn_order'] ?? null;
     }
 
     /**
@@ -273,169 +237,25 @@ class InlineObject187 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets quantity
+     * Gets tn_order
      *
-     * @return int|null
+     * @return \OpenAPI\Client\Model\IntlTnOrderTnOrder|null
      */
-    public function getQuantity()
+    public function getTnOrder()
     {
-        return $this->container['quantity'];
+        return $this->container['tn_order'];
     }
 
     /**
-     * Sets quantity
+     * Sets tn_order
      *
-     * @param int|null $quantity quantity
+     * @param \OpenAPI\Client\Model\IntlTnOrderTnOrder|null $tn_order tn_order
      *
      * @return self
      */
-    public function setQuantity($quantity)
+    public function setTnOrder($tn_order)
     {
-        $this->container['quantity'] = $quantity;
-
-        return $this;
-    }
-
-    /**
-     * Gets customer_order_reference
-     *
-     * @return string|null
-     */
-    public function getCustomerOrderReference()
-    {
-        return $this->container['customer_order_reference'];
-    }
-
-    /**
-     * Sets customer_order_reference
-     *
-     * @param string|null $customer_order_reference customer_order_reference
-     *
-     * @return self
-     */
-    public function setCustomerOrderReference($customer_order_reference)
-    {
-        $this->container['customer_order_reference'] = $customer_order_reference;
-
-        return $this;
-    }
-
-    /**
-     * Gets routing_option
-     *
-     * @return string|null
-     */
-    public function getRoutingOption()
-    {
-        return $this->container['routing_option'];
-    }
-
-    /**
-     * Sets routing_option
-     *
-     * @param string|null $routing_option routing_option
-     *
-     * @return self
-     */
-    public function setRoutingOption($routing_option)
-    {
-        $this->container['routing_option'] = $routing_option;
-
-        return $this;
-    }
-
-    /**
-     * Gets country_ref
-     *
-     * @return string|null
-     */
-    public function getCountryRef()
-    {
-        return $this->container['country_ref'];
-    }
-
-    /**
-     * Sets country_ref
-     *
-     * @param string|null $country_ref country_ref
-     *
-     * @return self
-     */
-    public function setCountryRef($country_ref)
-    {
-        $this->container['country_ref'] = $country_ref;
-
-        return $this;
-    }
-
-    /**
-     * Gets desired_due_date
-     *
-     * @return string|null
-     */
-    public function getDesiredDueDate()
-    {
-        return $this->container['desired_due_date'];
-    }
-
-    /**
-     * Sets desired_due_date
-     *
-     * @param string|null $desired_due_date desired_due_date
-     *
-     * @return self
-     */
-    public function setDesiredDueDate($desired_due_date)
-    {
-        $this->container['desired_due_date'] = $desired_due_date;
-
-        return $this;
-    }
-
-    /**
-     * Gets number_type_ref
-     *
-     * @return string|null
-     */
-    public function getNumberTypeRef()
-    {
-        return $this->container['number_type_ref'];
-    }
-
-    /**
-     * Sets number_type_ref
-     *
-     * @param string|null $number_type_ref number_type_ref
-     *
-     * @return self
-     */
-    public function setNumberTypeRef($number_type_ref)
-    {
-        $this->container['number_type_ref'] = $number_type_ref;
-
-        return $this;
-    }
-
-    /**
-     * Gets prefix
-     *
-     * @return string|null
-     */
-    public function getPrefix()
-    {
-        return $this->container['prefix'];
-    }
-
-    /**
-     * Sets prefix
-     *
-     * @param string|null $prefix prefix
-     *
-     * @return self
-     */
-    public function setPrefix($prefix)
-    {
-        $this->container['prefix'] = $prefix;
+        $this->container['tn_order'] = $tn_order;
 
         return $this;
     }

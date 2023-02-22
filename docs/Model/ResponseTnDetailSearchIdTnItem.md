@@ -6,7 +6,9 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **tn** | **string** | telephone number requested | [optional]
 **rate_center** | **string** |  | [optional]
-**trunk_group** | **string** | trunk group number for the telephone number | [optional]
+**trunk_group** | **string** | trunk group for the telephone number | [optional]
+**routing_option** | **string** | routing option for the telephone number | [optional]
+**customer_routing_option** | **string** | customer assigned routing option for the telephone number | [optional]
 **province** | **string** |  | [optional]
 **tn_status** | **string** |  | [optional]
 **loc_name** | **string** |  | [optional]
@@ -28,7 +30,9 @@ Name | Type | Description | Notes
 **allow_port_out_pin** | **string** |  | [optional]
 **portout_notification** | **string** |  | [optional]
 **wireless** | **string** |  | [optional]
-**end_user** | [**\OpenAPI\Client\Model\PortInOrderPortInOrderTnListEndUser**](PortInOrderPortInOrderTnListEndUser.md) |  | [optional]
+**dno** | **string** |  | [optional]
+**alt_spid** | **string** |  | [optional]
+**end_user** | [**\OpenAPI\Client\Model\PortInMessagingOrderPortInMessagingOrderTnListEndUser**](PortInMessagingOrderPortInMessagingOrderTnListEndUser.md) |  | [optional]
 **tn_feature** | [**\OpenAPI\Client\Model\ResponseTnDetailSearchIdTnFeature**](ResponseTnDetailSearchIdTnFeature.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

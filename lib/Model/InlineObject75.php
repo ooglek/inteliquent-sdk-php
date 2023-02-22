@@ -60,7 +60,8 @@ class InlineObject75 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'private_key' => 'string'
+        'private_key' => 'string',
+        'tf_forward' => '\OpenAPI\Client\Model\TfForwardTfForward'
     ];
 
     /**
@@ -71,7 +72,8 @@ class InlineObject75 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'private_key' => null
+        'private_key' => null,
+        'tf_forward' => null
     ];
 
     /**
@@ -101,7 +103,8 @@ class InlineObject75 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        'private_key' => 'privateKey'
+        'private_key' => 'privateKey',
+        'tf_forward' => 'tfForward'
     ];
 
     /**
@@ -110,7 +113,8 @@ class InlineObject75 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        'private_key' => 'setPrivateKey'
+        'private_key' => 'setPrivateKey',
+        'tf_forward' => 'setTfForward'
     ];
 
     /**
@@ -119,7 +123,8 @@ class InlineObject75 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        'private_key' => 'getPrivateKey'
+        'private_key' => 'getPrivateKey',
+        'tf_forward' => 'getTfForward'
     ];
 
     /**
@@ -180,6 +185,7 @@ class InlineObject75 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
+        $this->container['tf_forward'] = $data['tf_forward'] ?? null;
     }
 
     /**
@@ -193,6 +199,9 @@ class InlineObject75 implements ModelInterface, ArrayAccess, \JsonSerializable
 
         if ($this->container['private_key'] === null) {
             $invalidProperties[] = "'private_key' can't be null";
+        }
+        if ($this->container['tf_forward'] === null) {
+            $invalidProperties[] = "'tf_forward' can't be null";
         }
         return $invalidProperties;
     }
@@ -229,6 +238,30 @@ class InlineObject75 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function setPrivateKey($private_key)
     {
         $this->container['private_key'] = $private_key;
+
+        return $this;
+    }
+
+    /**
+     * Gets tf_forward
+     *
+     * @return \OpenAPI\Client\Model\TfForwardTfForward
+     */
+    public function getTfForward()
+    {
+        return $this->container['tf_forward'];
+    }
+
+    /**
+     * Sets tf_forward
+     *
+     * @param \OpenAPI\Client\Model\TfForwardTfForward $tf_forward tf_forward
+     *
+     * @return self
+     */
+    public function setTfForward($tf_forward)
+    {
+        $this->container['tf_forward'] = $tf_forward;
 
         return $this;
     }

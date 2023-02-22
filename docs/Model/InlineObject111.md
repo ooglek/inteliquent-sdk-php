@@ -5,9 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **private_key** | **string** | API key required to validate your application |
-**start_date** | **string** | Start of date range (e.g. 2015-12-15) |
-**end_date** | **string** | End of date range (e.g. 2015-12-15) |
-**trunk_group_name** | **string** | Name of trunk group to search utilization |
-**super_group_name** | **string** |  | [optional]
+**routing_label** | **string** | routingLabel or customerAssignedName as retrieved in the /routingLabelSearchAssigned operation |
+**new_routing_label** | **string** | New routing label name |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

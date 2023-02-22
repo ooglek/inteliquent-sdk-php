@@ -60,7 +60,9 @@ class InlineObject193 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'private_key' => 'string'
+        'private_key' => 'string',
+        'country_ref' => 'string',
+        'number_type_ref' => 'string'
     ];
 
     /**
@@ -71,7 +73,9 @@ class InlineObject193 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'private_key' => null
+        'private_key' => null,
+        'country_ref' => null,
+        'number_type_ref' => null
     ];
 
     /**
@@ -101,7 +105,9 @@ class InlineObject193 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        'private_key' => 'privateKey'
+        'private_key' => 'privateKey',
+        'country_ref' => 'countryRef',
+        'number_type_ref' => 'numberTypeRef'
     ];
 
     /**
@@ -110,7 +116,9 @@ class InlineObject193 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        'private_key' => 'setPrivateKey'
+        'private_key' => 'setPrivateKey',
+        'country_ref' => 'setCountryRef',
+        'number_type_ref' => 'setNumberTypeRef'
     ];
 
     /**
@@ -119,7 +127,9 @@ class InlineObject193 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        'private_key' => 'getPrivateKey'
+        'private_key' => 'getPrivateKey',
+        'country_ref' => 'getCountryRef',
+        'number_type_ref' => 'getNumberTypeRef'
     ];
 
     /**
@@ -180,6 +190,8 @@ class InlineObject193 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
+        $this->container['country_ref'] = $data['country_ref'] ?? null;
+        $this->container['number_type_ref'] = $data['number_type_ref'] ?? null;
     }
 
     /**
@@ -226,6 +238,54 @@ class InlineObject193 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function setPrivateKey($private_key)
     {
         $this->container['private_key'] = $private_key;
+
+        return $this;
+    }
+
+    /**
+     * Gets country_ref
+     *
+     * @return string|null
+     */
+    public function getCountryRef()
+    {
+        return $this->container['country_ref'];
+    }
+
+    /**
+     * Sets country_ref
+     *
+     * @param string|null $country_ref country_ref
+     *
+     * @return self
+     */
+    public function setCountryRef($country_ref)
+    {
+        $this->container['country_ref'] = $country_ref;
+
+        return $this;
+    }
+
+    /**
+     * Gets number_type_ref
+     *
+     * @return string|null
+     */
+    public function getNumberTypeRef()
+    {
+        return $this->container['number_type_ref'];
+    }
+
+    /**
+     * Sets number_type_ref
+     *
+     * @param string|null $number_type_ref number_type_ref
+     *
+     * @return self
+     */
+    public function setNumberTypeRef($number_type_ref)
+    {
+        $this->container['number_type_ref'] = $number_type_ref;
 
         return $this;
     }

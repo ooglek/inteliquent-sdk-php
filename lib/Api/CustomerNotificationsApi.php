@@ -121,7 +121,7 @@ class CustomerNotificationsApi
      *
      * List of configured notifications
      *
-     * @param  \OpenAPI\Client\Model\InlineObject195 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject197 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -138,7 +138,7 @@ class CustomerNotificationsApi
      *
      * List of configured notifications
      *
-     * @param  \OpenAPI\Client\Model\InlineObject195 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject197 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -311,7 +311,7 @@ class CustomerNotificationsApi
      *
      * List of configured notifications
      *
-     * @param  \OpenAPI\Client\Model\InlineObject195 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject197 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -331,7 +331,7 @@ class CustomerNotificationsApi
      *
      * List of configured notifications
      *
-     * @param  \OpenAPI\Client\Model\InlineObject195 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject197 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -377,7 +377,7 @@ class CustomerNotificationsApi
     /**
      * Create request for operation 'customerNotificationListPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject195 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject197 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -475,7 +475,7 @@ class CustomerNotificationsApi
      *
      * Update configuration for customer notification
      *
-     * @param  \OpenAPI\Client\Model\InlineObject196 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject198 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -492,7 +492,7 @@ class CustomerNotificationsApi
      *
      * Update configuration for customer notification
      *
-     * @param  \OpenAPI\Client\Model\InlineObject196 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject198 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -725,7 +725,7 @@ class CustomerNotificationsApi
      *
      * Update configuration for customer notification
      *
-     * @param  \OpenAPI\Client\Model\InlineObject196 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject198 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -745,7 +745,7 @@ class CustomerNotificationsApi
      *
      * Update configuration for customer notification
      *
-     * @param  \OpenAPI\Client\Model\InlineObject196 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject198 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -791,7 +791,7 @@ class CustomerNotificationsApi
     /**
      * Create request for operation 'customerNotificationPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject196 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject198 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -889,7 +889,7 @@ class CustomerNotificationsApi
      *
      * Supported Notification Types
      *
-     * @param  \OpenAPI\Client\Model\InlineObject193 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject195 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -906,7 +906,7 @@ class CustomerNotificationsApi
      *
      * Supported Notification Types
      *
-     * @param  \OpenAPI\Client\Model\InlineObject193 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject195 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1079,7 +1079,7 @@ class CustomerNotificationsApi
      *
      * Supported Notification Types
      *
-     * @param  \OpenAPI\Client\Model\InlineObject193 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject195 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1099,7 +1099,7 @@ class CustomerNotificationsApi
      *
      * Supported Notification Types
      *
-     * @param  \OpenAPI\Client\Model\InlineObject193 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject195 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1145,7 +1145,7 @@ class CustomerNotificationsApi
     /**
      * Create request for operation 'notificationTypesPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject193 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject195 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1243,7 +1243,7 @@ class CustomerNotificationsApi
      *
      * Supported Webhook Types
      *
-     * @param  \OpenAPI\Client\Model\InlineObject194 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject196 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1260,7 +1260,7 @@ class CustomerNotificationsApi
      *
      * Supported Webhook Types
      *
-     * @param  \OpenAPI\Client\Model\InlineObject194 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject196 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1433,7 +1433,7 @@ class CustomerNotificationsApi
      *
      * Supported Webhook Types
      *
-     * @param  \OpenAPI\Client\Model\InlineObject194 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject196 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1453,7 +1453,7 @@ class CustomerNotificationsApi
      *
      * Supported Webhook Types
      *
-     * @param  \OpenAPI\Client\Model\InlineObject194 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject196 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1499,7 +1499,7 @@ class CustomerNotificationsApi
     /**
      * Create request for operation 'webhookTypesPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject194 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject196 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

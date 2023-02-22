@@ -61,7 +61,7 @@ class InlineObject178 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'tn_search_list' => '\OpenAPI\Client\Model\IntlTnDetailTnSearchList'
+        'port_in_order' => '\OpenAPI\Client\Model\IntlPortInOrderPortInOrder'
     ];
 
     /**
@@ -73,7 +73,7 @@ class InlineObject178 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'tn_search_list' => null
+        'port_in_order' => null
     ];
 
     /**
@@ -104,7 +104,7 @@ class InlineObject178 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'tn_search_list' => 'tnSearchList'
+        'port_in_order' => 'portInOrder'
     ];
 
     /**
@@ -114,7 +114,7 @@ class InlineObject178 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'tn_search_list' => 'setTnSearchList'
+        'port_in_order' => 'setPortInOrder'
     ];
 
     /**
@@ -124,7 +124,7 @@ class InlineObject178 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'tn_search_list' => 'getTnSearchList'
+        'port_in_order' => 'getPortInOrder'
     ];
 
     /**
@@ -185,7 +185,7 @@ class InlineObject178 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['tn_search_list'] = $data['tn_search_list'] ?? null;
+        $this->container['port_in_order'] = $data['port_in_order'] ?? null;
     }
 
     /**
@@ -237,25 +237,25 @@ class InlineObject178 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets tn_search_list
+     * Gets port_in_order
      *
-     * @return \OpenAPI\Client\Model\IntlTnDetailTnSearchList|null
+     * @return \OpenAPI\Client\Model\IntlPortInOrderPortInOrder|null
      */
-    public function getTnSearchList()
+    public function getPortInOrder()
     {
-        return $this->container['tn_search_list'];
+        return $this->container['port_in_order'];
     }
 
     /**
-     * Sets tn_search_list
+     * Sets port_in_order
      *
-     * @param \OpenAPI\Client\Model\IntlTnDetailTnSearchList|null $tn_search_list tn_search_list
+     * @param \OpenAPI\Client\Model\IntlPortInOrderPortInOrder|null $port_in_order port_in_order
      *
      * @return self
      */
-    public function setTnSearchList($tn_search_list)
+    public function setPortInOrder($port_in_order)
     {
-        $this->container['tn_search_list'] = $tn_search_list;
+        $this->container['port_in_order'] = $port_in_order;
 
         return $this;
     }

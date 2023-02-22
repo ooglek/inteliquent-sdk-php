@@ -61,8 +61,7 @@ class InlineObject115 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'order_id' => 'int',
-        'customer_order_reference' => 'string'
+        'routing_option' => 'string'
     ];
 
     /**
@@ -74,8 +73,7 @@ class InlineObject115 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'order_id' => null,
-        'customer_order_reference' => null
+        'routing_option' => null
     ];
 
     /**
@@ -106,8 +104,7 @@ class InlineObject115 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'order_id' => 'orderId',
-        'customer_order_reference' => 'customerOrderReference'
+        'routing_option' => 'routingOption'
     ];
 
     /**
@@ -117,8 +114,7 @@ class InlineObject115 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'order_id' => 'setOrderId',
-        'customer_order_reference' => 'setCustomerOrderReference'
+        'routing_option' => 'setRoutingOption'
     ];
 
     /**
@@ -128,8 +124,7 @@ class InlineObject115 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'order_id' => 'getOrderId',
-        'customer_order_reference' => 'getCustomerOrderReference'
+        'routing_option' => 'getRoutingOption'
     ];
 
     /**
@@ -190,8 +185,7 @@ class InlineObject115 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['order_id'] = $data['order_id'] ?? null;
-        $this->container['customer_order_reference'] = $data['customer_order_reference'] ?? null;
+        $this->container['routing_option'] = $data['routing_option'] ?? null;
     }
 
     /**
@@ -203,6 +197,9 @@ class InlineObject115 implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         $invalidProperties = [];
 
+        if ($this->container['private_key'] === null) {
+            $invalidProperties[] = "'private_key' can't be null";
+        }
         return $invalidProperties;
     }
 
@@ -221,7 +218,7 @@ class InlineObject115 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets private_key
      *
-     * @return string|null
+     * @return string
      */
     public function getPrivateKey()
     {
@@ -231,7 +228,7 @@ class InlineObject115 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets private_key
      *
-     * @param string|null $private_key private_key
+     * @param string $private_key API key required to validate your application
      *
      * @return self
      */
@@ -243,49 +240,25 @@ class InlineObject115 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets order_id
-     *
-     * @return int|null
-     */
-    public function getOrderId()
-    {
-        return $this->container['order_id'];
-    }
-
-    /**
-     * Sets order_id
-     *
-     * @param int|null $order_id order_id
-     *
-     * @return self
-     */
-    public function setOrderId($order_id)
-    {
-        $this->container['order_id'] = $order_id;
-
-        return $this;
-    }
-
-    /**
-     * Gets customer_order_reference
+     * Gets routing_option
      *
      * @return string|null
      */
-    public function getCustomerOrderReference()
+    public function getRoutingOption()
     {
-        return $this->container['customer_order_reference'];
+        return $this->container['routing_option'];
     }
 
     /**
-     * Sets customer_order_reference
+     * Sets routing_option
      *
-     * @param string|null $customer_order_reference Customer for whom the order is.
+     * @param string|null $routing_option Routing Option name
      *
      * @return self
      */
-    public function setCustomerOrderReference($customer_order_reference)
+    public function setRoutingOption($routing_option)
     {
-        $this->container['customer_order_reference'] = $customer_order_reference;
+        $this->container['routing_option'] = $routing_option;
 
         return $this;
     }

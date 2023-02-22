@@ -60,7 +60,8 @@ class InlineObject88 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'private_key' => 'string'
+        'private_key' => 'string',
+        'customer_notification' => '\OpenAPI\Client\Model\CustomerE911NotificationCustomerNotification'
     ];
 
     /**
@@ -71,7 +72,8 @@ class InlineObject88 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'private_key' => null
+        'private_key' => null,
+        'customer_notification' => null
     ];
 
     /**
@@ -101,7 +103,8 @@ class InlineObject88 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        'private_key' => 'privateKey'
+        'private_key' => 'privateKey',
+        'customer_notification' => 'customerNotification'
     ];
 
     /**
@@ -110,7 +113,8 @@ class InlineObject88 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        'private_key' => 'setPrivateKey'
+        'private_key' => 'setPrivateKey',
+        'customer_notification' => 'setCustomerNotification'
     ];
 
     /**
@@ -119,7 +123,8 @@ class InlineObject88 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        'private_key' => 'getPrivateKey'
+        'private_key' => 'getPrivateKey',
+        'customer_notification' => 'getCustomerNotification'
     ];
 
     /**
@@ -180,6 +185,7 @@ class InlineObject88 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
+        $this->container['customer_notification'] = $data['customer_notification'] ?? null;
     }
 
     /**
@@ -193,6 +199,9 @@ class InlineObject88 implements ModelInterface, ArrayAccess, \JsonSerializable
 
         if ($this->container['private_key'] === null) {
             $invalidProperties[] = "'private_key' can't be null";
+        }
+        if ($this->container['customer_notification'] === null) {
+            $invalidProperties[] = "'customer_notification' can't be null";
         }
         return $invalidProperties;
     }
@@ -229,6 +238,30 @@ class InlineObject88 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function setPrivateKey($private_key)
     {
         $this->container['private_key'] = $private_key;
+
+        return $this;
+    }
+
+    /**
+     * Gets customer_notification
+     *
+     * @return \OpenAPI\Client\Model\CustomerE911NotificationCustomerNotification
+     */
+    public function getCustomerNotification()
+    {
+        return $this->container['customer_notification'];
+    }
+
+    /**
+     * Sets customer_notification
+     *
+     * @param \OpenAPI\Client\Model\CustomerE911NotificationCustomerNotification $customer_notification customer_notification
+     *
+     * @return self
+     */
+    public function setCustomerNotification($customer_notification)
+    {
+        $this->container['customer_notification'] = $customer_notification;
 
         return $this;
     }

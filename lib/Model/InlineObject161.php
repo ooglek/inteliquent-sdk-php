@@ -62,7 +62,7 @@ class InlineObject161 implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'private_key' => 'string',
         'customer_order_reference' => 'string',
-        'tn_list' => '\OpenAPI\Client\Model\TfBtnTnList'
+        'tn_list' => '\OpenAPI\Client\Model\TfDnisTnList'
     ];
 
     /**
@@ -275,7 +275,7 @@ class InlineObject161 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets tn_list
      *
-     * @return \OpenAPI\Client\Model\TfBtnTnList
+     * @return \OpenAPI\Client\Model\TfDnisTnList
      */
     public function getTnList()
     {
@@ -285,7 +285,7 @@ class InlineObject161 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets tn_list
      *
-     * @param \OpenAPI\Client\Model\TfBtnTnList $tn_list tn_list
+     * @param \OpenAPI\Client\Model\TfDnisTnList $tn_list tn_list
      *
      * @return self
      */

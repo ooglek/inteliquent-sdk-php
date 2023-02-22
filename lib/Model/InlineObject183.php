@@ -61,8 +61,7 @@ class InlineObject183 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'country_ref' => 'string',
-        'quantity' => 'int'
+        'document_id' => 'string'
     ];
 
     /**
@@ -74,8 +73,7 @@ class InlineObject183 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'country_ref' => null,
-        'quantity' => null
+        'document_id' => null
     ];
 
     /**
@@ -106,8 +104,7 @@ class InlineObject183 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'country_ref' => 'countryRef',
-        'quantity' => 'quantity'
+        'document_id' => 'documentId'
     ];
 
     /**
@@ -117,8 +114,7 @@ class InlineObject183 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'country_ref' => 'setCountryRef',
-        'quantity' => 'setQuantity'
+        'document_id' => 'setDocumentId'
     ];
 
     /**
@@ -128,8 +124,7 @@ class InlineObject183 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'country_ref' => 'getCountryRef',
-        'quantity' => 'getQuantity'
+        'document_id' => 'getDocumentId'
     ];
 
     /**
@@ -190,8 +185,7 @@ class InlineObject183 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['country_ref'] = $data['country_ref'] ?? null;
-        $this->container['quantity'] = $data['quantity'] ?? null;
+        $this->container['document_id'] = $data['document_id'] ?? null;
     }
 
     /**
@@ -243,49 +237,25 @@ class InlineObject183 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets country_ref
+     * Gets document_id
      *
      * @return string|null
      */
-    public function getCountryRef()
+    public function getDocumentId()
     {
-        return $this->container['country_ref'];
+        return $this->container['document_id'];
     }
 
     /**
-     * Sets country_ref
+     * Sets document_id
      *
-     * @param string|null $country_ref country_ref
+     * @param string|null $document_id document_id
      *
      * @return self
      */
-    public function setCountryRef($country_ref)
+    public function setDocumentId($document_id)
     {
-        $this->container['country_ref'] = $country_ref;
-
-        return $this;
-    }
-
-    /**
-     * Gets quantity
-     *
-     * @return int|null
-     */
-    public function getQuantity()
-    {
-        return $this->container['quantity'];
-    }
-
-    /**
-     * Sets quantity
-     *
-     * @param int|null $quantity quantity
-     *
-     * @return self
-     */
-    public function setQuantity($quantity)
-    {
-        $this->container['quantity'] = $quantity;
+        $this->container['document_id'] = $document_id;
 
         return $this;
     }

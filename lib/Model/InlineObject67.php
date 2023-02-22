@@ -61,10 +61,8 @@ class InlineObject67 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'count_by' => 'string',
-        'rate_center' => 'string',
-        'province' => 'string',
-        'wireless' => 'string'
+        'tn_search_list' => '\OpenAPI\Client\Model\TnSearchAssignedTnSearchList',
+        'page_sort' => '\OpenAPI\Client\Model\TnInventoryPageSort'
     ];
 
     /**
@@ -76,10 +74,8 @@ class InlineObject67 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'count_by' => null,
-        'rate_center' => null,
-        'province' => null,
-        'wireless' => null
+        'tn_search_list' => null,
+        'page_sort' => null
     ];
 
     /**
@@ -110,10 +106,8 @@ class InlineObject67 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'count_by' => 'countBy',
-        'rate_center' => 'rateCenter',
-        'province' => 'province',
-        'wireless' => 'wireless'
+        'tn_search_list' => 'tnSearchList',
+        'page_sort' => 'pageSort'
     ];
 
     /**
@@ -123,10 +117,8 @@ class InlineObject67 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'count_by' => 'setCountBy',
-        'rate_center' => 'setRateCenter',
-        'province' => 'setProvince',
-        'wireless' => 'setWireless'
+        'tn_search_list' => 'setTnSearchList',
+        'page_sort' => 'setPageSort'
     ];
 
     /**
@@ -136,10 +128,8 @@ class InlineObject67 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'count_by' => 'getCountBy',
-        'rate_center' => 'getRateCenter',
-        'province' => 'getProvince',
-        'wireless' => 'getWireless'
+        'tn_search_list' => 'getTnSearchList',
+        'page_sort' => 'getPageSort'
     ];
 
     /**
@@ -200,10 +190,8 @@ class InlineObject67 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['count_by'] = $data['count_by'] ?? null;
-        $this->container['rate_center'] = $data['rate_center'] ?? null;
-        $this->container['province'] = $data['province'] ?? null;
-        $this->container['wireless'] = $data['wireless'] ?? null;
+        $this->container['tn_search_list'] = $data['tn_search_list'] ?? null;
+        $this->container['page_sort'] = $data['page_sort'] ?? null;
     }
 
     /**
@@ -217,6 +205,9 @@ class InlineObject67 implements ModelInterface, ArrayAccess, \JsonSerializable
 
         if ($this->container['private_key'] === null) {
             $invalidProperties[] = "'private_key' can't be null";
+        }
+        if ($this->container['tn_search_list'] === null) {
+            $invalidProperties[] = "'tn_search_list' can't be null";
         }
         return $invalidProperties;
     }
@@ -258,97 +249,49 @@ class InlineObject67 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets count_by
+     * Gets tn_search_list
      *
-     * @return string|null
+     * @return \OpenAPI\Client\Model\TnSearchAssignedTnSearchList
      */
-    public function getCountBy()
+    public function getTnSearchList()
     {
-        return $this->container['count_by'];
+        return $this->container['tn_search_list'];
     }
 
     /**
-     * Sets count_by
+     * Sets tn_search_list
      *
-     * @param string|null $count_by Attribute by which quantities will be aggregated; acceptable values are state, rateCenter, npaNxx, and block (seventh digit of telephone number). If countBy is not sent, results will be returned by NPA-NXX.
+     * @param \OpenAPI\Client\Model\TnSearchAssignedTnSearchList $tn_search_list tn_search_list
      *
      * @return self
      */
-    public function setCountBy($count_by)
+    public function setTnSearchList($tn_search_list)
     {
-        $this->container['count_by'] = $count_by;
+        $this->container['tn_search_list'] = $tn_search_list;
 
         return $this;
     }
 
     /**
-     * Gets rate_center
+     * Gets page_sort
      *
-     * @return string|null
+     * @return \OpenAPI\Client\Model\TnInventoryPageSort|null
      */
-    public function getRateCenter()
+    public function getPageSort()
     {
-        return $this->container['rate_center'];
+        return $this->container['page_sort'];
     }
 
     /**
-     * Sets rate_center
+     * Sets page_sort
      *
-     * @param string|null $rate_center Search by specified rate center to filer out results
+     * @param \OpenAPI\Client\Model\TnInventoryPageSort|null $page_sort page_sort
      *
      * @return self
      */
-    public function setRateCenter($rate_center)
+    public function setPageSort($page_sort)
     {
-        $this->container['rate_center'] = $rate_center;
-
-        return $this;
-    }
-
-    /**
-     * Gets province
-     *
-     * @return string|null
-     */
-    public function getProvince()
-    {
-        return $this->container['province'];
-    }
-
-    /**
-     * Sets province
-     *
-     * @param string|null $province Two-letter state or province abbreviation (e.g. IL, CA)
-     *
-     * @return self
-     */
-    public function setProvince($province)
-    {
-        $this->container['province'] = $province;
-
-        return $this;
-    }
-
-    /**
-     * Gets wireless
-     *
-     * @return string|null
-     */
-    public function getWireless()
-    {
-        return $this->container['wireless'];
-    }
-
-    /**
-     * Sets wireless
-     *
-     * @param string|null $wireless Enter Y to return wireless number inventory; N to return wireline number inventory
-     *
-     * @return self
-     */
-    public function setWireless($wireless)
-    {
-        $this->container['wireless'] = $wireless;
+        $this->container['page_sort'] = $page_sort;
 
         return $this;
     }

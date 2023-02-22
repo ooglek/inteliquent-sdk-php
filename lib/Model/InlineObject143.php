@@ -60,17 +60,12 @@ class InlineObject143 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'message' => 'string',
-        'notification_type' => 'string',
-        'order_id' => 'int',
-        'customer_order_reference' => 'string',
-        'order_type' => 'string',
-        'order_status' => 'string',
-        'timestamp' => 'string',
-        'tn_group' => 'string',
-        'group_status' => 'string',
-        'tn_list' => '\OpenAPI\Client\Model\CustomerConfiguredWebhookURLForOrderUpdatesTnList',
-        'tn_item' => '\OpenAPI\Client\Model\CustomerConfiguredWebhookURLForOrderUpdatesTnItem'
+        'reference_id' => 'string',
+        'from' => 'string',
+        'text' => 'string',
+        'delivery_receipt' => 'bool',
+        'to' => 'string[]',
+        'media_urls' => 'string[]'
     ];
 
     /**
@@ -81,17 +76,12 @@ class InlineObject143 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'message' => null,
-        'notification_type' => null,
-        'order_id' => null,
-        'customer_order_reference' => null,
-        'order_type' => null,
-        'order_status' => null,
-        'timestamp' => null,
-        'tn_group' => null,
-        'group_status' => null,
-        'tn_list' => null,
-        'tn_item' => null
+        'reference_id' => null,
+        'from' => null,
+        'text' => null,
+        'delivery_receipt' => null,
+        'to' => null,
+        'media_urls' => null
     ];
 
     /**
@@ -121,17 +111,12 @@ class InlineObject143 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        'message' => 'message',
-        'notification_type' => 'notificationType',
-        'order_id' => 'orderId',
-        'customer_order_reference' => 'customerOrderReference',
-        'order_type' => 'orderType',
-        'order_status' => 'orderStatus',
-        'timestamp' => 'timestamp',
-        'tn_group' => 'tnGroup',
-        'group_status' => 'groupStatus',
-        'tn_list' => 'tnList',
-        'tn_item' => 'tnItem'
+        'reference_id' => 'referenceId',
+        'from' => 'from',
+        'text' => 'text',
+        'delivery_receipt' => 'deliveryReceipt',
+        'to' => 'to',
+        'media_urls' => 'mediaUrls'
     ];
 
     /**
@@ -140,17 +125,12 @@ class InlineObject143 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        'message' => 'setMessage',
-        'notification_type' => 'setNotificationType',
-        'order_id' => 'setOrderId',
-        'customer_order_reference' => 'setCustomerOrderReference',
-        'order_type' => 'setOrderType',
-        'order_status' => 'setOrderStatus',
-        'timestamp' => 'setTimestamp',
-        'tn_group' => 'setTnGroup',
-        'group_status' => 'setGroupStatus',
-        'tn_list' => 'setTnList',
-        'tn_item' => 'setTnItem'
+        'reference_id' => 'setReferenceId',
+        'from' => 'setFrom',
+        'text' => 'setText',
+        'delivery_receipt' => 'setDeliveryReceipt',
+        'to' => 'setTo',
+        'media_urls' => 'setMediaUrls'
     ];
 
     /**
@@ -159,17 +139,12 @@ class InlineObject143 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        'message' => 'getMessage',
-        'notification_type' => 'getNotificationType',
-        'order_id' => 'getOrderId',
-        'customer_order_reference' => 'getCustomerOrderReference',
-        'order_type' => 'getOrderType',
-        'order_status' => 'getOrderStatus',
-        'timestamp' => 'getTimestamp',
-        'tn_group' => 'getTnGroup',
-        'group_status' => 'getGroupStatus',
-        'tn_list' => 'getTnList',
-        'tn_item' => 'getTnItem'
+        'reference_id' => 'getReferenceId',
+        'from' => 'getFrom',
+        'text' => 'getText',
+        'delivery_receipt' => 'getDeliveryReceipt',
+        'to' => 'getTo',
+        'media_urls' => 'getMediaUrls'
     ];
 
     /**
@@ -229,17 +204,12 @@ class InlineObject143 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function __construct(array $data = null)
     {
-        $this->container['message'] = $data['message'] ?? null;
-        $this->container['notification_type'] = $data['notification_type'] ?? null;
-        $this->container['order_id'] = $data['order_id'] ?? null;
-        $this->container['customer_order_reference'] = $data['customer_order_reference'] ?? null;
-        $this->container['order_type'] = $data['order_type'] ?? null;
-        $this->container['order_status'] = $data['order_status'] ?? null;
-        $this->container['timestamp'] = $data['timestamp'] ?? null;
-        $this->container['tn_group'] = $data['tn_group'] ?? null;
-        $this->container['group_status'] = $data['group_status'] ?? null;
-        $this->container['tn_list'] = $data['tn_list'] ?? null;
-        $this->container['tn_item'] = $data['tn_item'] ?? null;
+        $this->container['reference_id'] = $data['reference_id'] ?? null;
+        $this->container['from'] = $data['from'] ?? null;
+        $this->container['text'] = $data['text'] ?? null;
+        $this->container['delivery_receipt'] = $data['delivery_receipt'] ?? null;
+        $this->container['to'] = $data['to'] ?? null;
+        $this->container['media_urls'] = $data['media_urls'] ?? null;
     }
 
     /**
@@ -251,6 +221,9 @@ class InlineObject143 implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         $invalidProperties = [];
 
+        if ($this->container['reference_id'] === null) {
+            $invalidProperties[] = "'reference_id' can't be null";
+        }
         return $invalidProperties;
     }
 
@@ -267,265 +240,145 @@ class InlineObject143 implements ModelInterface, ArrayAccess, \JsonSerializable
 
 
     /**
-     * Gets message
+     * Gets reference_id
+     *
+     * @return string
+     */
+    public function getReferenceId()
+    {
+        return $this->container['reference_id'];
+    }
+
+    /**
+     * Sets reference_id
+     *
+     * @param string $reference_id Cross reference for the message Id
+     *
+     * @return self
+     */
+    public function setReferenceId($reference_id)
+    {
+        $this->container['reference_id'] = $reference_id;
+
+        return $this;
+    }
+
+    /**
+     * Gets from
      *
      * @return string|null
      */
-    public function getMessage()
+    public function getFrom()
     {
-        return $this->container['message'];
+        return $this->container['from'];
     }
 
     /**
-     * Sets message
+     * Sets from
      *
-     * @param string|null $message message
+     * @param string|null $from TN of the sender
      *
      * @return self
      */
-    public function setMessage($message)
+    public function setFrom($from)
     {
-        $this->container['message'] = $message;
+        $this->container['from'] = $from;
 
         return $this;
     }
 
     /**
-     * Gets notification_type
+     * Gets text
      *
      * @return string|null
      */
-    public function getNotificationType()
+    public function getText()
     {
-        return $this->container['notification_type'];
+        return $this->container['text'];
     }
 
     /**
-     * Sets notification_type
+     * Sets text
      *
-     * @param string|null $notification_type notification_type
+     * @param string|null $text Text message included as part of the MMS call
      *
      * @return self
      */
-    public function setNotificationType($notification_type)
+    public function setText($text)
     {
-        $this->container['notification_type'] = $notification_type;
+        $this->container['text'] = $text;
 
         return $this;
     }
 
     /**
-     * Gets order_id
+     * Gets delivery_receipt
      *
-     * @return int|null
+     * @return bool|null
      */
-    public function getOrderId()
+    public function getDeliveryReceipt()
     {
-        return $this->container['order_id'];
+        return $this->container['delivery_receipt'];
     }
 
     /**
-     * Sets order_id
+     * Sets delivery_receipt
      *
-     * @param int|null $order_id Order Id of the order.
+     * @param bool|null $delivery_receipt If this message is a delivery receipt, then the value is set to true.
      *
      * @return self
      */
-    public function setOrderId($order_id)
+    public function setDeliveryReceipt($delivery_receipt)
     {
-        $this->container['order_id'] = $order_id;
+        $this->container['delivery_receipt'] = $delivery_receipt;
 
         return $this;
     }
 
     /**
-     * Gets customer_order_reference
+     * Gets to
      *
-     * @return string|null
+     * @return string[]|null
      */
-    public function getCustomerOrderReference()
+    public function getTo()
     {
-        return $this->container['customer_order_reference'];
+        return $this->container['to'];
     }
 
     /**
-     * Sets customer_order_reference
+     * Sets to
      *
-     * @param string|null $customer_order_reference Customer for whom the order is.
+     * @param string[]|null $to Array of multiple TNs to whom the message was sent
      *
      * @return self
      */
-    public function setCustomerOrderReference($customer_order_reference)
+    public function setTo($to)
     {
-        $this->container['customer_order_reference'] = $customer_order_reference;
+        $this->container['to'] = $to;
 
         return $this;
     }
 
     /**
-     * Gets order_type
+     * Gets media_urls
      *
-     * @return string|null
+     * @return string[]|null
      */
-    public function getOrderType()
+    public function getMediaUrls()
     {
-        return $this->container['order_type'];
+        return $this->container['media_urls'];
     }
 
     /**
-     * Sets order_type
+     * Sets media_urls
      *
-     * @param string|null $order_type Type of order submitted
+     * @param string[]|null $media_urls Optional field with an array of media assets retrievable via URL
      *
      * @return self
      */
-    public function setOrderType($order_type)
+    public function setMediaUrls($media_urls)
     {
-        $this->container['order_type'] = $order_type;
-
-        return $this;
-    }
-
-    /**
-     * Gets order_status
-     *
-     * @return string|null
-     */
-    public function getOrderStatus()
-    {
-        return $this->container['order_status'];
-    }
-
-    /**
-     * Sets order_status
-     *
-     * @param string|null $order_status order_status
-     *
-     * @return self
-     */
-    public function setOrderStatus($order_status)
-    {
-        $this->container['order_status'] = $order_status;
-
-        return $this;
-    }
-
-    /**
-     * Gets timestamp
-     *
-     * @return string|null
-     */
-    public function getTimestamp()
-    {
-        return $this->container['timestamp'];
-    }
-
-    /**
-     * Sets timestamp
-     *
-     * @param string|null $timestamp The timestamp format should match \"7/31/2017 4:56:06.000000 AM -05:00\"
-     *
-     * @return self
-     */
-    public function setTimestamp($timestamp)
-    {
-        $this->container['timestamp'] = $timestamp;
-
-        return $this;
-    }
-
-    /**
-     * Gets tn_group
-     *
-     * @return string|null
-     */
-    public function getTnGroup()
-    {
-        return $this->container['tn_group'];
-    }
-
-    /**
-     * Sets tn_group
-     *
-     * @param string|null $tn_group tn_group
-     *
-     * @return self
-     */
-    public function setTnGroup($tn_group)
-    {
-        $this->container['tn_group'] = $tn_group;
-
-        return $this;
-    }
-
-    /**
-     * Gets group_status
-     *
-     * @return string|null
-     */
-    public function getGroupStatus()
-    {
-        return $this->container['group_status'];
-    }
-
-    /**
-     * Sets group_status
-     *
-     * @param string|null $group_status group_status
-     *
-     * @return self
-     */
-    public function setGroupStatus($group_status)
-    {
-        $this->container['group_status'] = $group_status;
-
-        return $this;
-    }
-
-    /**
-     * Gets tn_list
-     *
-     * @return \OpenAPI\Client\Model\CustomerConfiguredWebhookURLForOrderUpdatesTnList|null
-     */
-    public function getTnList()
-    {
-        return $this->container['tn_list'];
-    }
-
-    /**
-     * Sets tn_list
-     *
-     * @param \OpenAPI\Client\Model\CustomerConfiguredWebhookURLForOrderUpdatesTnList|null $tn_list tn_list
-     *
-     * @return self
-     */
-    public function setTnList($tn_list)
-    {
-        $this->container['tn_list'] = $tn_list;
-
-        return $this;
-    }
-
-    /**
-     * Gets tn_item
-     *
-     * @return \OpenAPI\Client\Model\CustomerConfiguredWebhookURLForOrderUpdatesTnItem|null
-     */
-    public function getTnItem()
-    {
-        return $this->container['tn_item'];
-    }
-
-    /**
-     * Sets tn_item
-     *
-     * @param \OpenAPI\Client\Model\CustomerConfiguredWebhookURLForOrderUpdatesTnItem|null $tn_item tn_item
-     *
-     * @return self
-     */
-    public function setTnItem($tn_item)
-    {
-        $this->container['tn_item'] = $tn_item;
+        $this->container['media_urls'] = $media_urls;
 
         return $this;
     }

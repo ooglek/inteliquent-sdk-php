@@ -60,7 +60,8 @@ class InlineObject99 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'private_key' => 'string'
+        'private_key' => 'string',
+        'tf_feature_order' => '\OpenAPI\Client\Model\TfFeatureOrderTfFeatureOrder'
     ];
 
     /**
@@ -71,7 +72,8 @@ class InlineObject99 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'private_key' => null
+        'private_key' => null,
+        'tf_feature_order' => null
     ];
 
     /**
@@ -101,7 +103,8 @@ class InlineObject99 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        'private_key' => 'privateKey'
+        'private_key' => 'privateKey',
+        'tf_feature_order' => 'tfFeatureOrder'
     ];
 
     /**
@@ -110,7 +113,8 @@ class InlineObject99 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        'private_key' => 'setPrivateKey'
+        'private_key' => 'setPrivateKey',
+        'tf_feature_order' => 'setTfFeatureOrder'
     ];
 
     /**
@@ -119,7 +123,8 @@ class InlineObject99 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        'private_key' => 'getPrivateKey'
+        'private_key' => 'getPrivateKey',
+        'tf_feature_order' => 'getTfFeatureOrder'
     ];
 
     /**
@@ -180,6 +185,7 @@ class InlineObject99 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
+        $this->container['tf_feature_order'] = $data['tf_feature_order'] ?? null;
     }
 
     /**
@@ -226,6 +232,30 @@ class InlineObject99 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function setPrivateKey($private_key)
     {
         $this->container['private_key'] = $private_key;
+
+        return $this;
+    }
+
+    /**
+     * Gets tf_feature_order
+     *
+     * @return \OpenAPI\Client\Model\TfFeatureOrderTfFeatureOrder|null
+     */
+    public function getTfFeatureOrder()
+    {
+        return $this->container['tf_feature_order'];
+    }
+
+    /**
+     * Sets tf_feature_order
+     *
+     * @param \OpenAPI\Client\Model\TfFeatureOrderTfFeatureOrder|null $tf_feature_order tf_feature_order
+     *
+     * @return self
+     */
+    public function setTfFeatureOrder($tf_feature_order)
+    {
+        $this->container['tf_feature_order'] = $tf_feature_order;
 
         return $this;
     }

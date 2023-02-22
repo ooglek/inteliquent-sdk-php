@@ -239,6 +239,12 @@ class PortInOrderPortInOrder implements ModelInterface, ArrayAccess, \JsonSerial
     {
         $invalidProperties = [];
 
+        if ($this->container['desired_due_date'] === null) {
+            $invalidProperties[] = "'desired_due_date' can't be null";
+        }
+        if ($this->container['tn_list'] === null) {
+            $invalidProperties[] = "'tn_list' can't be null";
+        }
         return $invalidProperties;
     }
 
@@ -281,7 +287,7 @@ class PortInOrderPortInOrder implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets desired_due_date
      *
-     * @return string|null
+     * @return string
      */
     public function getDesiredDueDate()
     {
@@ -291,7 +297,7 @@ class PortInOrderPortInOrder implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets desired_due_date
      *
-     * @param string|null $desired_due_date desired_due_date
+     * @param string $desired_due_date desired_due_date
      *
      * @return self
      */
@@ -449,7 +455,7 @@ class PortInOrderPortInOrder implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets tn_list
      *
-     * @return \OpenAPI\Client\Model\PortInOrderPortInOrderTnList|null
+     * @return \OpenAPI\Client\Model\PortInOrderPortInOrderTnList
      */
     public function getTnList()
     {
@@ -459,7 +465,7 @@ class PortInOrderPortInOrder implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets tn_list
      *
-     * @param \OpenAPI\Client\Model\PortInOrderPortInOrderTnList|null $tn_list tn_list
+     * @param \OpenAPI\Client\Model\PortInOrderPortInOrderTnList $tn_list tn_list
      *
      * @return self
      */

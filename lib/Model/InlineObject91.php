@@ -62,8 +62,16 @@ class InlineObject91 implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'private_key' => 'string',
         'customer_order_reference' => 'string',
-        'desired_due_date' => 'string',
-        'tn_list' => '\OpenAPI\Client\Model\TfDisconnectTnList'
+        'state' => 'string',
+        'lata' => 'string',
+        'rate_center' => 'string',
+        'npa' => 'string',
+        'nxx' => 'string',
+        'quantity' => 'int',
+        'trunk_group' => 'string',
+        'routing_option' => 'string',
+        'activate' => 'string',
+        'customer_ocn' => 'string'
     ];
 
     /**
@@ -76,8 +84,16 @@ class InlineObject91 implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPIFormats = [
         'private_key' => null,
         'customer_order_reference' => null,
-        'desired_due_date' => null,
-        'tn_list' => null
+        'state' => null,
+        'lata' => null,
+        'rate_center' => null,
+        'npa' => null,
+        'nxx' => null,
+        'quantity' => null,
+        'trunk_group' => null,
+        'routing_option' => null,
+        'activate' => null,
+        'customer_ocn' => null
     ];
 
     /**
@@ -109,8 +125,16 @@ class InlineObject91 implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $attributeMap = [
         'private_key' => 'privateKey',
         'customer_order_reference' => 'customerOrderReference',
-        'desired_due_date' => 'desiredDueDate',
-        'tn_list' => 'tnList'
+        'state' => 'state',
+        'lata' => 'lata',
+        'rate_center' => 'rateCenter',
+        'npa' => 'npa',
+        'nxx' => 'nxx',
+        'quantity' => 'quantity',
+        'trunk_group' => 'trunkGroup',
+        'routing_option' => 'routingOption',
+        'activate' => 'activate',
+        'customer_ocn' => 'customerOcn'
     ];
 
     /**
@@ -121,8 +145,16 @@ class InlineObject91 implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $setters = [
         'private_key' => 'setPrivateKey',
         'customer_order_reference' => 'setCustomerOrderReference',
-        'desired_due_date' => 'setDesiredDueDate',
-        'tn_list' => 'setTnList'
+        'state' => 'setState',
+        'lata' => 'setLata',
+        'rate_center' => 'setRateCenter',
+        'npa' => 'setNpa',
+        'nxx' => 'setNxx',
+        'quantity' => 'setQuantity',
+        'trunk_group' => 'setTrunkGroup',
+        'routing_option' => 'setRoutingOption',
+        'activate' => 'setActivate',
+        'customer_ocn' => 'setCustomerOcn'
     ];
 
     /**
@@ -133,8 +165,16 @@ class InlineObject91 implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $getters = [
         'private_key' => 'getPrivateKey',
         'customer_order_reference' => 'getCustomerOrderReference',
-        'desired_due_date' => 'getDesiredDueDate',
-        'tn_list' => 'getTnList'
+        'state' => 'getState',
+        'lata' => 'getLata',
+        'rate_center' => 'getRateCenter',
+        'npa' => 'getNpa',
+        'nxx' => 'getNxx',
+        'quantity' => 'getQuantity',
+        'trunk_group' => 'getTrunkGroup',
+        'routing_option' => 'getRoutingOption',
+        'activate' => 'getActivate',
+        'customer_ocn' => 'getCustomerOcn'
     ];
 
     /**
@@ -196,8 +236,16 @@ class InlineObject91 implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
         $this->container['customer_order_reference'] = $data['customer_order_reference'] ?? null;
-        $this->container['desired_due_date'] = $data['desired_due_date'] ?? null;
-        $this->container['tn_list'] = $data['tn_list'] ?? null;
+        $this->container['state'] = $data['state'] ?? null;
+        $this->container['lata'] = $data['lata'] ?? null;
+        $this->container['rate_center'] = $data['rate_center'] ?? null;
+        $this->container['npa'] = $data['npa'] ?? null;
+        $this->container['nxx'] = $data['nxx'] ?? null;
+        $this->container['quantity'] = $data['quantity'] ?? null;
+        $this->container['trunk_group'] = $data['trunk_group'] ?? null;
+        $this->container['routing_option'] = $data['routing_option'] ?? null;
+        $this->container['activate'] = $data['activate'] ?? null;
+        $this->container['customer_ocn'] = $data['customer_ocn'] ?? null;
     }
 
     /**
@@ -211,6 +259,9 @@ class InlineObject91 implements ModelInterface, ArrayAccess, \JsonSerializable
 
         if ($this->container['private_key'] === null) {
             $invalidProperties[] = "'private_key' can't be null";
+        }
+        if ($this->container['quantity'] === null) {
+            $invalidProperties[] = "'quantity' can't be null";
         }
         return $invalidProperties;
     }
@@ -240,7 +291,7 @@ class InlineObject91 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets private_key
      *
-     * @param string $private_key API key required to validate your application
+     * @param string $private_key API key required to validate your application; can be retrieved from Admin page of customer portal
      *
      * @return self
      */
@@ -264,7 +315,7 @@ class InlineObject91 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets customer_order_reference
      *
-     * @param string|null $customer_order_reference Alphanumeric order reference name
+     * @param string|null $customer_order_reference Customer for whom the order is.
      *
      * @return self
      */
@@ -276,49 +327,241 @@ class InlineObject91 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets desired_due_date
+     * Gets state
      *
      * @return string|null
      */
-    public function getDesiredDueDate()
+    public function getState()
     {
-        return $this->container['desired_due_date'];
+        return $this->container['state'];
     }
 
     /**
-     * Sets desired_due_date
+     * Sets state
      *
-     * @param string|null $desired_due_date desired_due_date
+     * @param string|null $state Two-letter state or province abbreviation (e.g. IL, CA)
      *
      * @return self
      */
-    public function setDesiredDueDate($desired_due_date)
+    public function setState($state)
     {
-        $this->container['desired_due_date'] = $desired_due_date;
+        $this->container['state'] = $state;
 
         return $this;
     }
 
     /**
-     * Gets tn_list
+     * Gets lata
      *
-     * @return \OpenAPI\Client\Model\TfDisconnectTnList|null
+     * @return string|null
      */
-    public function getTnList()
+    public function getLata()
     {
-        return $this->container['tn_list'];
+        return $this->container['lata'];
     }
 
     /**
-     * Sets tn_list
+     * Sets lata
      *
-     * @param \OpenAPI\Client\Model\TfDisconnectTnList|null $tn_list tn_list
+     * @param string|null $lata Three-digit local access and transport area code
      *
      * @return self
      */
-    public function setTnList($tn_list)
+    public function setLata($lata)
     {
-        $this->container['tn_list'] = $tn_list;
+        $this->container['lata'] = $lata;
+
+        return $this;
+    }
+
+    /**
+     * Gets rate_center
+     *
+     * @return string|null
+     */
+    public function getRateCenter()
+    {
+        return $this->container['rate_center'];
+    }
+
+    /**
+     * Sets rate_center
+     *
+     * @param string|null $rate_center Rate center abbreviation (e.g. WSHNGTNZN1)
+     *
+     * @return self
+     */
+    public function setRateCenter($rate_center)
+    {
+        $this->container['rate_center'] = $rate_center;
+
+        return $this;
+    }
+
+    /**
+     * Gets npa
+     *
+     * @return string|null
+     */
+    public function getNpa()
+    {
+        return $this->container['npa'];
+    }
+
+    /**
+     * Sets npa
+     *
+     * @param string|null $npa Three-digit NPA
+     *
+     * @return self
+     */
+    public function setNpa($npa)
+    {
+        $this->container['npa'] = $npa;
+
+        return $this;
+    }
+
+    /**
+     * Gets nxx
+     *
+     * @return string|null
+     */
+    public function getNxx()
+    {
+        return $this->container['nxx'];
+    }
+
+    /**
+     * Sets nxx
+     *
+     * @param string|null $nxx Three-digit NXX
+     *
+     * @return self
+     */
+    public function setNxx($nxx)
+    {
+        $this->container['nxx'] = $nxx;
+
+        return $this;
+    }
+
+    /**
+     * Gets quantity
+     *
+     * @return int
+     */
+    public function getQuantity()
+    {
+        return $this->container['quantity'];
+    }
+
+    /**
+     * Sets quantity
+     *
+     * @param int $quantity Quantity of numbers to request
+     *
+     * @return self
+     */
+    public function setQuantity($quantity)
+    {
+        $this->container['quantity'] = $quantity;
+
+        return $this;
+    }
+
+    /**
+     * Gets trunk_group
+     *
+     * @return string|null
+     */
+    public function getTrunkGroup()
+    {
+        return $this->container['trunk_group'];
+    }
+
+    /**
+     * Sets trunk_group
+     *
+     * @param string|null $trunk_group Desired trunk group for the telephone number
+     *
+     * @return self
+     */
+    public function setTrunkGroup($trunk_group)
+    {
+        $this->container['trunk_group'] = $trunk_group;
+
+        return $this;
+    }
+
+    /**
+     * Gets routing_option
+     *
+     * @return string|null
+     */
+    public function getRoutingOption()
+    {
+        return $this->container['routing_option'];
+    }
+
+    /**
+     * Sets routing_option
+     *
+     * @param string|null $routing_option Desired routing option for the telephone number
+     *
+     * @return self
+     */
+    public function setRoutingOption($routing_option)
+    {
+        $this->container['routing_option'] = $routing_option;
+
+        return $this;
+    }
+
+    /**
+     * Gets activate
+     *
+     * @return string|null
+     */
+    public function getActivate()
+    {
+        return $this->container['activate'];
+    }
+
+    /**
+     * Sets activate
+     *
+     * @param string|null $activate Activate flag (Yes/No)
+     *
+     * @return self
+     */
+    public function setActivate($activate)
+    {
+        $this->container['activate'] = $activate;
+
+        return $this;
+    }
+
+    /**
+     * Gets customer_ocn
+     *
+     * @return string|null
+     */
+    public function getCustomerOcn()
+    {
+        return $this->container['customer_ocn'];
+    }
+
+    /**
+     * Sets customer_ocn
+     *
+     * @param string|null $customer_ocn OCN
+     *
+     * @return self
+     */
+    public function setCustomerOcn($customer_ocn)
+    {
+        $this->container['customer_ocn'] = $customer_ocn;
 
         return $this;
     }

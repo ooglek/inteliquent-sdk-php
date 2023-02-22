@@ -4,11 +4,8 @@ All URIs are relative to https://services.inteliquent.com/Services/2.0.0.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**addOrderContactNotePost()**](OrderApi.md#addOrderContactNotePost) | **POST** /addOrderContactNote | Order Add Contact Note to an existing order
-[**customerOcnPost()**](OrderApi.md#customerOcnPost) | **POST** /customerOcn | Retrieve list of OCN
 [**excludedE911DetailPost()**](OrderApi.md#excludedE911DetailPost) | **POST** /excludedE911Detail | Retrieve Excluded E911 Detail
 [**excludedFeatureListPost()**](OrderApi.md#excludedFeatureListPost) | **POST** /excludedFeatureList | Retrieve Excluded Feature List
-[**excludedTnFromTnOrderListPost()**](OrderApi.md#excludedTnFromTnOrderListPost) | **POST** /excludedTnFromTnOrderList | Retrieve Excluded Telephone Number List
 [**excludedTnListPost()**](OrderApi.md#excludedTnListPost) | **POST** /excludedTnList | Retrieve Excluded Telephone Number List
 [**orderAddDocumentPost()**](OrderApi.md#orderAddDocumentPost) | **POST** /orderAddDocument | Add Order Document
 [**orderAddNotePost()**](OrderApi.md#orderAddNotePost) | **POST** /orderAddNote | Add Order Note
@@ -22,130 +19,6 @@ Method | HTTP request | Description
 [**tnPortOutRejectPost()**](OrderApi.md#tnPortOutRejectPost) | **POST** /tnPortOutReject | Reject Number - Port Out
 [**tnRequestPost()**](OrderApi.md#tnRequestPost) | **POST** /tnRequest | Request TN
 
-
-## `addOrderContactNotePost()`
-
-```php
-addOrderContactNotePost($payload): \OpenAPI\Client\Model\InlineResponse20013
-```
-
-Order Add Contact Note to an existing order
-
-This endpoint is used to add a note to an existing order.
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: api_key
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new OpenAPI\Client\Api\OrderApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$payload = new \OpenAPI\Client\Model\InlineObject53(); // \OpenAPI\Client\Model\InlineObject53
-
-try {
-    $result = $apiInstance->addOrderContactNotePost($payload);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling OrderApi->addOrderContactNotePost: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject53**](../Model/InlineObject53.md)|  |
-
-### Return type
-
-[**\OpenAPI\Client\Model\InlineResponse20013**](../Model/InlineResponse20013.md)
-
-### Authorization
-
-[api_key](../../README.md#api_key)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: `application/json`
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
-## `customerOcnPost()`
-
-```php
-customerOcnPost($payload): \OpenAPI\Client\Model\InlineResponse20048
-```
-
-Retrieve list of OCN
-
-This operations retrieves a list of OCNs
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: api_key
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new OpenAPI\Client\Api\OrderApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$payload = new \OpenAPI\Client\Model\InlineObject199(); // \OpenAPI\Client\Model\InlineObject199
-
-try {
-    $result = $apiInstance->customerOcnPost($payload);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling OrderApi->customerOcnPost: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject199**](../Model/InlineObject199.md)|  |
-
-### Return type
-
-[**\OpenAPI\Client\Model\InlineResponse20048**](../Model/InlineResponse20048.md)
-
-### Authorization
-
-[api_key](../../README.md#api_key)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: `application/json`
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
 
 ## `excludedE911DetailPost()`
 
@@ -176,7 +49,7 @@ $apiInstance = new OpenAPI\Client\Api\OrderApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject151(); // \OpenAPI\Client\Model\InlineObject151
+$payload = new \OpenAPI\Client\Model\InlineObject152(); // \OpenAPI\Client\Model\InlineObject152
 
 try {
     $result = $apiInstance->excludedE911DetailPost($payload);
@@ -190,7 +63,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject151**](../Model/InlineObject151.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject152**](../Model/InlineObject152.md)|  |
 
 ### Return type
 
@@ -238,7 +111,7 @@ $apiInstance = new OpenAPI\Client\Api\OrderApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject115(); // \OpenAPI\Client\Model\InlineObject115
+$payload = new \OpenAPI\Client\Model\InlineObject119(); // \OpenAPI\Client\Model\InlineObject119
 
 try {
     $result = $apiInstance->excludedFeatureListPost($payload);
@@ -252,73 +125,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject115**](../Model/InlineObject115.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject119**](../Model/InlineObject119.md)|  |
 
 ### Return type
 
 [**\OpenAPI\Client\Model\ExcludedFeatureListResponse**](../Model/ExcludedFeatureListResponse.md)
-
-### Authorization
-
-[api_key](../../README.md#api_key)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: `application/json`
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
-## `excludedTnFromTnOrderListPost()`
-
-```php
-excludedTnFromTnOrderListPost($payload): \OpenAPI\Client\Model\ResponseExcludedTnList
-```
-
-Retrieve Excluded Telephone Number List
-
-This endpoint allows you to view an order’s list of excluded numbers and reasons.
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: api_key
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new OpenAPI\Client\Api\OrderApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$payload = new \OpenAPI\Client\Model\InlineObject117(); // \OpenAPI\Client\Model\InlineObject117
-
-try {
-    $result = $apiInstance->excludedTnFromTnOrderListPost($payload);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling OrderApi->excludedTnFromTnOrderListPost: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject117**](../Model/InlineObject117.md)|  |
-
-### Return type
-
-[**\OpenAPI\Client\Model\ResponseExcludedTnList**](../Model/ResponseExcludedTnList.md)
 
 ### Authorization
 
@@ -362,7 +173,7 @@ $apiInstance = new OpenAPI\Client\Api\OrderApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject116(); // \OpenAPI\Client\Model\InlineObject116
+$payload = new \OpenAPI\Client\Model\InlineObject120(); // \OpenAPI\Client\Model\InlineObject120
 
 try {
     $result = $apiInstance->excludedTnListPost($payload);
@@ -376,7 +187,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject116**](../Model/InlineObject116.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject120**](../Model/InlineObject120.md)|  |
 
 ### Return type
 
@@ -548,7 +359,7 @@ $apiInstance = new OpenAPI\Client\Api\OrderApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject56(); // \OpenAPI\Client\Model\InlineObject56
+$payload = new \OpenAPI\Client\Model\InlineObject55(); // \OpenAPI\Client\Model\InlineObject55
 
 try {
     $result = $apiInstance->orderCancelPost($payload);
@@ -562,7 +373,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject56**](../Model/InlineObject56.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject55**](../Model/InlineObject55.md)|  |
 
 ### Return type
 
@@ -610,7 +421,7 @@ $apiInstance = new OpenAPI\Client\Api\OrderApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject54(); // \OpenAPI\Client\Model\InlineObject54
+$payload = new \OpenAPI\Client\Model\InlineObject53(); // \OpenAPI\Client\Model\InlineObject53
 
 try {
     $result = $apiInstance->orderDetailPost($payload);
@@ -624,7 +435,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject54**](../Model/InlineObject54.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject53**](../Model/InlineObject53.md)|  |
 
 ### Return type
 
@@ -672,7 +483,7 @@ $apiInstance = new OpenAPI\Client\Api\OrderApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject57(); // \OpenAPI\Client\Model\InlineObject57
+$payload = new \OpenAPI\Client\Model\InlineObject56(); // \OpenAPI\Client\Model\InlineObject56
 
 try {
     $result = $apiInstance->orderDocumentPost($payload);
@@ -686,7 +497,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject57**](../Model/InlineObject57.md)|  | [optional]
+ **payload** | [**\OpenAPI\Client\Model\InlineObject56**](../Model/InlineObject56.md)|  | [optional]
 
 ### Return type
 
@@ -734,7 +545,7 @@ $apiInstance = new OpenAPI\Client\Api\OrderApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject113(); // \OpenAPI\Client\Model\InlineObject113
+$payload = new \OpenAPI\Client\Model\InlineObject117(); // \OpenAPI\Client\Model\InlineObject117
 
 try {
     $result = $apiInstance->orderListPost($payload);
@@ -748,7 +559,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject113**](../Model/InlineObject113.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject117**](../Model/InlineObject117.md)|  |
 
 ### Return type
 
@@ -796,7 +607,7 @@ $apiInstance = new OpenAPI\Client\Api\OrderApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject58(); // \OpenAPI\Client\Model\InlineObject58
+$payload = new \OpenAPI\Client\Model\InlineObject57(); // \OpenAPI\Client\Model\InlineObject57
 
 try {
     $result = $apiInstance->orderNotePost($payload);
@@ -810,7 +621,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject58**](../Model/InlineObject58.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject57**](../Model/InlineObject57.md)|  |
 
 ### Return type
 
@@ -858,7 +669,7 @@ $apiInstance = new OpenAPI\Client\Api\OrderApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject55(); // \OpenAPI\Client\Model\InlineObject55
+$payload = new \OpenAPI\Client\Model\InlineObject54(); // \OpenAPI\Client\Model\InlineObject54
 
 try {
     $result = $apiInstance->orderUpdatePost($payload);
@@ -872,7 +683,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject55**](../Model/InlineObject55.md)|  | [optional]
+ **payload** | [**\OpenAPI\Client\Model\InlineObject54**](../Model/InlineObject54.md)|  | [optional]
 
 ### Return type
 
@@ -982,7 +793,7 @@ $apiInstance = new OpenAPI\Client\Api\OrderApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject114(); // \OpenAPI\Client\Model\InlineObject114
+$payload = new \OpenAPI\Client\Model\InlineObject118(); // \OpenAPI\Client\Model\InlineObject118
 
 try {
     $result = $apiInstance->tnPortOutRejectPost($payload);
@@ -996,7 +807,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject114**](../Model/InlineObject114.md)|  | [optional]
+ **payload** | [**\OpenAPI\Client\Model\InlineObject118**](../Model/InlineObject118.md)|  | [optional]
 
 ### Return type
 
@@ -1044,7 +855,7 @@ $apiInstance = new OpenAPI\Client\Api\OrderApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject90(); // \OpenAPI\Client\Model\InlineObject90
+$payload = new \OpenAPI\Client\Model\InlineObject91(); // \OpenAPI\Client\Model\InlineObject91
 
 try {
     $result = $apiInstance->tnRequestPost($payload);
@@ -1058,7 +869,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject90**](../Model/InlineObject90.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject91**](../Model/InlineObject91.md)|  |
 
 ### Return type
 

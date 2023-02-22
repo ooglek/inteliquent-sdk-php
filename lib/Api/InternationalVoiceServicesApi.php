@@ -121,7 +121,7 @@ class InternationalVoiceServicesApi
      *
      * Supported Area Codes
      *
-     * @param  \OpenAPI\Client\Model\InlineObject163 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject165 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -138,7 +138,7 @@ class InternationalVoiceServicesApi
      *
      * Supported Area Codes
      *
-     * @param  \OpenAPI\Client\Model\InlineObject163 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject165 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -351,7 +351,7 @@ class InternationalVoiceServicesApi
      *
      * Supported Area Codes
      *
-     * @param  \OpenAPI\Client\Model\InlineObject163 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject165 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -371,7 +371,7 @@ class InternationalVoiceServicesApi
      *
      * Supported Area Codes
      *
-     * @param  \OpenAPI\Client\Model\InlineObject163 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject165 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -417,7 +417,7 @@ class InternationalVoiceServicesApi
     /**
      * Create request for operation 'intlAreaCodeInfoPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject163 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject165 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -515,7 +515,7 @@ class InternationalVoiceServicesApi
      *
      * Retrieve list of conditions for Telephone Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject191 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject193 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -532,7 +532,7 @@ class InternationalVoiceServicesApi
      *
      * Retrieve list of conditions for Telephone Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject191 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject193 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -745,7 +745,7 @@ class InternationalVoiceServicesApi
      *
      * Retrieve list of conditions for Telephone Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject191 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject193 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -765,7 +765,7 @@ class InternationalVoiceServicesApi
      *
      * Retrieve list of conditions for Telephone Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject191 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject193 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -811,7 +811,7 @@ class InternationalVoiceServicesApi
     /**
      * Create request for operation 'intlConditionListPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject191 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject193 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -909,7 +909,7 @@ class InternationalVoiceServicesApi
      *
      * Supported Country List
      *
-     * @param  \OpenAPI\Client\Model\InlineObject162 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject164 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -926,7 +926,7 @@ class InternationalVoiceServicesApi
      *
      * Supported Country List
      *
-     * @param  \OpenAPI\Client\Model\InlineObject162 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject164 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1139,7 +1139,7 @@ class InternationalVoiceServicesApi
      *
      * Supported Country List
      *
-     * @param  \OpenAPI\Client\Model\InlineObject162 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject164 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1159,7 +1159,7 @@ class InternationalVoiceServicesApi
      *
      * Supported Country List
      *
-     * @param  \OpenAPI\Client\Model\InlineObject162 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject164 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1205,7 +1205,7 @@ class InternationalVoiceServicesApi
     /**
      * Create request for operation 'intlCountryListPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject162 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject164 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1303,7 +1303,7 @@ class InternationalVoiceServicesApi
      *
      * Excluded TN List for an International Order
      *
-     * @param  \OpenAPI\Client\Model\InlineObject165 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject167 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1320,7 +1320,7 @@ class InternationalVoiceServicesApi
      *
      * Excluded TN List for an International Order
      *
-     * @param  \OpenAPI\Client\Model\InlineObject165 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject167 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1533,7 +1533,7 @@ class InternationalVoiceServicesApi
      *
      * Excluded TN List for an International Order
      *
-     * @param  \OpenAPI\Client\Model\InlineObject165 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject167 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1553,7 +1553,7 @@ class InternationalVoiceServicesApi
      *
      * Excluded TN List for an International Order
      *
-     * @param  \OpenAPI\Client\Model\InlineObject165 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject167 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1599,7 +1599,7 @@ class InternationalVoiceServicesApi
     /**
      * Create request for operation 'intlExcludedTnListPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject165 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject167 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1697,7 +1697,7 @@ class InternationalVoiceServicesApi
      *
      * Supported Number Types
      *
-     * @param  \OpenAPI\Client\Model\InlineObject167 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject169 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1714,7 +1714,7 @@ class InternationalVoiceServicesApi
      *
      * Supported Number Types
      *
-     * @param  \OpenAPI\Client\Model\InlineObject167 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject169 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1927,7 +1927,7 @@ class InternationalVoiceServicesApi
      *
      * Supported Number Types
      *
-     * @param  \OpenAPI\Client\Model\InlineObject167 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject169 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1947,7 +1947,7 @@ class InternationalVoiceServicesApi
      *
      * Supported Number Types
      *
-     * @param  \OpenAPI\Client\Model\InlineObject167 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject169 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1993,7 +1993,7 @@ class InternationalVoiceServicesApi
     /**
      * Create request for operation 'intlNumberTypesPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject167 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject169 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -2091,7 +2091,7 @@ class InternationalVoiceServicesApi
      *
      * Add Order Level Contact As a Note
      *
-     * @param  \OpenAPI\Client\Model\InlineObject168 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject170 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -2108,7 +2108,7 @@ class InternationalVoiceServicesApi
      *
      * Add Order Level Contact As a Note
      *
-     * @param  \OpenAPI\Client\Model\InlineObject168 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject170 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -2301,7 +2301,7 @@ class InternationalVoiceServicesApi
      *
      * Add Order Level Contact As a Note
      *
-     * @param  \OpenAPI\Client\Model\InlineObject168 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject170 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2321,7 +2321,7 @@ class InternationalVoiceServicesApi
      *
      * Add Order Level Contact As a Note
      *
-     * @param  \OpenAPI\Client\Model\InlineObject168 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject170 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2367,7 +2367,7 @@ class InternationalVoiceServicesApi
     /**
      * Create request for operation 'intlOrderAddContactNotePost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject168 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject170 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -2465,7 +2465,7 @@ class InternationalVoiceServicesApi
      *
      * Add Order Level Documents
      *
-     * @param  \OpenAPI\Client\Model\InlineObject170 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject172 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -2482,7 +2482,7 @@ class InternationalVoiceServicesApi
      *
      * Add Order Level Documents
      *
-     * @param  \OpenAPI\Client\Model\InlineObject170 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject172 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -2695,7 +2695,7 @@ class InternationalVoiceServicesApi
      *
      * Add Order Level Documents
      *
-     * @param  \OpenAPI\Client\Model\InlineObject170 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject172 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2715,7 +2715,7 @@ class InternationalVoiceServicesApi
      *
      * Add Order Level Documents
      *
-     * @param  \OpenAPI\Client\Model\InlineObject170 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject172 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2761,7 +2761,7 @@ class InternationalVoiceServicesApi
     /**
      * Create request for operation 'intlOrderAddDocumentPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject170 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject172 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -2859,7 +2859,7 @@ class InternationalVoiceServicesApi
      *
      * Add Order Level Notes
      *
-     * @param  \OpenAPI\Client\Model\InlineObject169 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject171 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -2876,7 +2876,7 @@ class InternationalVoiceServicesApi
      *
      * Add Order Level Notes
      *
-     * @param  \OpenAPI\Client\Model\InlineObject169 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject171 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -3069,7 +3069,7 @@ class InternationalVoiceServicesApi
      *
      * Add Order Level Notes
      *
-     * @param  \OpenAPI\Client\Model\InlineObject169 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject171 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3089,7 +3089,7 @@ class InternationalVoiceServicesApi
      *
      * Add Order Level Notes
      *
-     * @param  \OpenAPI\Client\Model\InlineObject169 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject171 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3135,7 +3135,7 @@ class InternationalVoiceServicesApi
     /**
      * Create request for operation 'intlOrderAddNotePost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject169 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject171 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -3233,7 +3233,7 @@ class InternationalVoiceServicesApi
      *
      * Cancel Order
      *
-     * @param  \OpenAPI\Client\Model\InlineObject171 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject173 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -3250,7 +3250,7 @@ class InternationalVoiceServicesApi
      *
      * Cancel Order
      *
-     * @param  \OpenAPI\Client\Model\InlineObject171 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject173 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -3483,7 +3483,7 @@ class InternationalVoiceServicesApi
      *
      * Cancel Order
      *
-     * @param  \OpenAPI\Client\Model\InlineObject171 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject173 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3503,7 +3503,7 @@ class InternationalVoiceServicesApi
      *
      * Cancel Order
      *
-     * @param  \OpenAPI\Client\Model\InlineObject171 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject173 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3549,7 +3549,7 @@ class InternationalVoiceServicesApi
     /**
      * Create request for operation 'intlOrderCancelPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject171 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject173 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -3647,7 +3647,7 @@ class InternationalVoiceServicesApi
      *
      * Retrieve Order Details
      *
-     * @param  \OpenAPI\Client\Model\InlineObject186 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject188 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -3664,7 +3664,7 @@ class InternationalVoiceServicesApi
      *
      * Retrieve Order Details
      *
-     * @param  \OpenAPI\Client\Model\InlineObject186 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject188 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -3877,7 +3877,7 @@ class InternationalVoiceServicesApi
      *
      * Retrieve Order Details
      *
-     * @param  \OpenAPI\Client\Model\InlineObject186 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject188 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3897,7 +3897,7 @@ class InternationalVoiceServicesApi
      *
      * Retrieve Order Details
      *
-     * @param  \OpenAPI\Client\Model\InlineObject186 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject188 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3943,7 +3943,7 @@ class InternationalVoiceServicesApi
     /**
      * Create request for operation 'intlOrderDetailPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject186 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject188 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -4041,7 +4041,7 @@ class InternationalVoiceServicesApi
      *
      * Download Order Document
      *
-     * @param  \OpenAPI\Client\Model\InlineObject173 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject175 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -4058,7 +4058,7 @@ class InternationalVoiceServicesApi
      *
      * Download Order Document
      *
-     * @param  \OpenAPI\Client\Model\InlineObject173 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject175 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -4311,7 +4311,7 @@ class InternationalVoiceServicesApi
      *
      * Download Order Document
      *
-     * @param  \OpenAPI\Client\Model\InlineObject173 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject175 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4331,7 +4331,7 @@ class InternationalVoiceServicesApi
      *
      * Download Order Document
      *
-     * @param  \OpenAPI\Client\Model\InlineObject173 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject175 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4377,7 +4377,7 @@ class InternationalVoiceServicesApi
     /**
      * Create request for operation 'intlOrderDocumentDownloadPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject173 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject175 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -4475,7 +4475,7 @@ class InternationalVoiceServicesApi
      *
      * Retrieve Order Document List
      *
-     * @param  \OpenAPI\Client\Model\InlineObject172 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject174 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -4492,7 +4492,7 @@ class InternationalVoiceServicesApi
      *
      * Retrieve Order Document List
      *
-     * @param  \OpenAPI\Client\Model\InlineObject172 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject174 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -4725,7 +4725,7 @@ class InternationalVoiceServicesApi
      *
      * Retrieve Order Document List
      *
-     * @param  \OpenAPI\Client\Model\InlineObject172 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject174 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4745,7 +4745,7 @@ class InternationalVoiceServicesApi
      *
      * Retrieve Order Document List
      *
-     * @param  \OpenAPI\Client\Model\InlineObject172 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject174 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4791,7 +4791,7 @@ class InternationalVoiceServicesApi
     /**
      * Create request for operation 'intlOrderDocumentPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject172 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject174 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -4889,7 +4889,7 @@ class InternationalVoiceServicesApi
      *
      * Retrieve International Order List
      *
-     * @param  \OpenAPI\Client\Model\InlineObject175 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject177 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -4906,7 +4906,7 @@ class InternationalVoiceServicesApi
      *
      * Retrieve International Order List
      *
-     * @param  \OpenAPI\Client\Model\InlineObject175 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject177 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -5119,7 +5119,7 @@ class InternationalVoiceServicesApi
      *
      * Retrieve International Order List
      *
-     * @param  \OpenAPI\Client\Model\InlineObject175 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject177 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -5139,7 +5139,7 @@ class InternationalVoiceServicesApi
      *
      * Retrieve International Order List
      *
-     * @param  \OpenAPI\Client\Model\InlineObject175 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject177 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -5185,7 +5185,7 @@ class InternationalVoiceServicesApi
     /**
      * Create request for operation 'intlOrderListPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject175 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject177 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -5283,7 +5283,7 @@ class InternationalVoiceServicesApi
      *
      * Retrieve International Port-In Order List
      *
-     * @param  \OpenAPI\Client\Model\InlineObject177 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject179 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -5300,7 +5300,7 @@ class InternationalVoiceServicesApi
      *
      * Retrieve International Port-In Order List
      *
-     * @param  \OpenAPI\Client\Model\InlineObject177 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject179 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -5513,7 +5513,7 @@ class InternationalVoiceServicesApi
      *
      * Retrieve International Port-In Order List
      *
-     * @param  \OpenAPI\Client\Model\InlineObject177 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject179 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -5533,7 +5533,7 @@ class InternationalVoiceServicesApi
      *
      * Retrieve International Port-In Order List
      *
-     * @param  \OpenAPI\Client\Model\InlineObject177 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject179 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -5579,7 +5579,7 @@ class InternationalVoiceServicesApi
     /**
      * Create request for operation 'intlPortInOrderListPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject177 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject179 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -5677,7 +5677,7 @@ class InternationalVoiceServicesApi
      *
      * Order International Port-In Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject176 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject178 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -5694,7 +5694,7 @@ class InternationalVoiceServicesApi
      *
      * Order International Port-In Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject176 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject178 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -5947,7 +5947,7 @@ class InternationalVoiceServicesApi
      *
      * Order International Port-In Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject176 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject178 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -5967,7 +5967,7 @@ class InternationalVoiceServicesApi
      *
      * Order International Port-In Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject176 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject178 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -6013,7 +6013,7 @@ class InternationalVoiceServicesApi
     /**
      * Create request for operation 'intlPortInOrderPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject176 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject178 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -6111,7 +6111,7 @@ class InternationalVoiceServicesApi
      *
      * Supported Routing Options List
      *
-     * @param  \OpenAPI\Client\Model\InlineObject164 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject166 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -6128,7 +6128,7 @@ class InternationalVoiceServicesApi
      *
      * Supported Routing Options List
      *
-     * @param  \OpenAPI\Client\Model\InlineObject164 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject166 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -6341,7 +6341,7 @@ class InternationalVoiceServicesApi
      *
      * Supported Routing Options List
      *
-     * @param  \OpenAPI\Client\Model\InlineObject164 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject166 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -6361,7 +6361,7 @@ class InternationalVoiceServicesApi
      *
      * Supported Routing Options List
      *
-     * @param  \OpenAPI\Client\Model\InlineObject164 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject166 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -6407,7 +6407,7 @@ class InternationalVoiceServicesApi
     /**
      * Create request for operation 'intlRoutingOptionListPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject164 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject166 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -6505,7 +6505,7 @@ class InternationalVoiceServicesApi
      *
      * Add International Telephone Number Documents
      *
-     * @param  \OpenAPI\Client\Model\InlineObject179 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject181 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -6522,7 +6522,7 @@ class InternationalVoiceServicesApi
      *
      * Add International Telephone Number Documents
      *
-     * @param  \OpenAPI\Client\Model\InlineObject179 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject181 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -6735,7 +6735,7 @@ class InternationalVoiceServicesApi
      *
      * Add International Telephone Number Documents
      *
-     * @param  \OpenAPI\Client\Model\InlineObject179 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject181 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -6755,7 +6755,7 @@ class InternationalVoiceServicesApi
      *
      * Add International Telephone Number Documents
      *
-     * @param  \OpenAPI\Client\Model\InlineObject179 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject181 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -6801,7 +6801,7 @@ class InternationalVoiceServicesApi
     /**
      * Create request for operation 'intlTnAddDocumentPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject179 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject181 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -6899,7 +6899,7 @@ class InternationalVoiceServicesApi
      *
      * Add TN Notes
      *
-     * @param  \OpenAPI\Client\Model\InlineObject166 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject168 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -6916,7 +6916,7 @@ class InternationalVoiceServicesApi
      *
      * Add TN Notes
      *
-     * @param  \OpenAPI\Client\Model\InlineObject166 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject168 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -7129,7 +7129,7 @@ class InternationalVoiceServicesApi
      *
      * Add TN Notes
      *
-     * @param  \OpenAPI\Client\Model\InlineObject166 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject168 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -7149,7 +7149,7 @@ class InternationalVoiceServicesApi
      *
      * Add TN Notes
      *
-     * @param  \OpenAPI\Client\Model\InlineObject166 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject168 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -7195,7 +7195,7 @@ class InternationalVoiceServicesApi
     /**
      * Create request for operation 'intlTnAddNotePost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject166 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject168 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -7293,7 +7293,7 @@ class InternationalVoiceServicesApi
      *
      * Retrieve International Telephone Number Detail
      *
-     * @param  \OpenAPI\Client\Model\InlineObject178 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject180 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -7310,7 +7310,7 @@ class InternationalVoiceServicesApi
      *
      * Retrieve International Telephone Number Detail
      *
-     * @param  \OpenAPI\Client\Model\InlineObject178 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject180 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -7463,7 +7463,7 @@ class InternationalVoiceServicesApi
      *
      * Retrieve International Telephone Number Detail
      *
-     * @param  \OpenAPI\Client\Model\InlineObject178 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject180 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -7483,7 +7483,7 @@ class InternationalVoiceServicesApi
      *
      * Retrieve International Telephone Number Detail
      *
-     * @param  \OpenAPI\Client\Model\InlineObject178 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject180 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -7529,7 +7529,7 @@ class InternationalVoiceServicesApi
     /**
      * Create request for operation 'intlTnDetailPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject178 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject180 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -7627,7 +7627,7 @@ class InternationalVoiceServicesApi
      *
      * Disconnect Active International Telephone Number
      *
-     * @param  \OpenAPI\Client\Model\InlineObject180 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject182 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -7644,7 +7644,7 @@ class InternationalVoiceServicesApi
      *
      * Disconnect Active International Telephone Number
      *
-     * @param  \OpenAPI\Client\Model\InlineObject180 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject182 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -7897,7 +7897,7 @@ class InternationalVoiceServicesApi
      *
      * Disconnect Active International Telephone Number
      *
-     * @param  \OpenAPI\Client\Model\InlineObject180 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject182 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -7917,7 +7917,7 @@ class InternationalVoiceServicesApi
      *
      * Disconnect Active International Telephone Number
      *
-     * @param  \OpenAPI\Client\Model\InlineObject180 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject182 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -7963,7 +7963,7 @@ class InternationalVoiceServicesApi
     /**
      * Create request for operation 'intlTnDisconnectPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject180 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject182 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -8061,7 +8061,7 @@ class InternationalVoiceServicesApi
      *
      * Download International Telephone Number Documents
      *
-     * @param  \OpenAPI\Client\Model\InlineObject181 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject183 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -8078,7 +8078,7 @@ class InternationalVoiceServicesApi
      *
      * Download International Telephone Number Documents
      *
-     * @param  \OpenAPI\Client\Model\InlineObject181 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject183 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -8291,7 +8291,7 @@ class InternationalVoiceServicesApi
      *
      * Download International Telephone Number Documents
      *
-     * @param  \OpenAPI\Client\Model\InlineObject181 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject183 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -8311,7 +8311,7 @@ class InternationalVoiceServicesApi
      *
      * Download International Telephone Number Documents
      *
-     * @param  \OpenAPI\Client\Model\InlineObject181 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject183 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -8357,7 +8357,7 @@ class InternationalVoiceServicesApi
     /**
      * Create request for operation 'intlTnDocumentDownloadPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject181 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject183 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -8455,7 +8455,7 @@ class InternationalVoiceServicesApi
      *
      * End User Details for International Telephone Number
      *
-     * @param  \OpenAPI\Client\Model\InlineObject182 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject184 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -8472,7 +8472,7 @@ class InternationalVoiceServicesApi
      *
      * End User Details for International Telephone Number
      *
-     * @param  \OpenAPI\Client\Model\InlineObject182 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject184 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -8685,7 +8685,7 @@ class InternationalVoiceServicesApi
      *
      * End User Details for International Telephone Number
      *
-     * @param  \OpenAPI\Client\Model\InlineObject182 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject184 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -8705,7 +8705,7 @@ class InternationalVoiceServicesApi
      *
      * End User Details for International Telephone Number
      *
-     * @param  \OpenAPI\Client\Model\InlineObject182 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject184 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -8751,7 +8751,7 @@ class InternationalVoiceServicesApi
     /**
      * Create request for operation 'intlTnEndUserPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject182 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject184 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -8849,7 +8849,7 @@ class InternationalVoiceServicesApi
      *
      * Search International Telephone Number Inventory
      *
-     * @param  \OpenAPI\Client\Model\InlineObject183 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject185 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -8866,7 +8866,7 @@ class InternationalVoiceServicesApi
      *
      * Search International Telephone Number Inventory
      *
-     * @param  \OpenAPI\Client\Model\InlineObject183 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject185 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -9079,7 +9079,7 @@ class InternationalVoiceServicesApi
      *
      * Search International Telephone Number Inventory
      *
-     * @param  \OpenAPI\Client\Model\InlineObject183 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject185 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -9099,7 +9099,7 @@ class InternationalVoiceServicesApi
      *
      * Search International Telephone Number Inventory
      *
-     * @param  \OpenAPI\Client\Model\InlineObject183 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject185 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -9145,7 +9145,7 @@ class InternationalVoiceServicesApi
     /**
      * Create request for operation 'intlTnInventoryPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject183 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject185 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -9243,11 +9243,11 @@ class InternationalVoiceServicesApi
      *
      * Update Note for Active International Telephone Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject184 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject186 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\InlineResponse20039|\OpenAPI\Client\Model\InlineResponse40827|\OpenAPI\Client\Model\InlineResponse40944|\OpenAPI\Client\Model\InlineResponse410|\OpenAPI\Client\Model\InlineResponse411|\OpenAPI\Client\Model\InlineResponse41441|\OpenAPI\Client\Model\InlineResponse4258|\OpenAPI\Client\Model\InlineResponse4311|\OpenAPI\Client\Model\InlineResponse4325
+     * @return \OpenAPI\Client\Model\InlineResponse20039|\OpenAPI\Client\Model\InlineResponse40827|\OpenAPI\Client\Model\InlineResponse40944|\OpenAPI\Client\Model\InlineResponse410|\OpenAPI\Client\Model\InlineResponse411|\OpenAPI\Client\Model\InlineResponse41441|\OpenAPI\Client\Model\InlineResponse42510|\OpenAPI\Client\Model\InlineResponse4311|\OpenAPI\Client\Model\InlineResponse4325
      */
     public function intlTnNoteUpdatePost($payload)
     {
@@ -9260,11 +9260,11 @@ class InternationalVoiceServicesApi
      *
      * Update Note for Active International Telephone Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject184 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject186 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\InlineResponse20039|\OpenAPI\Client\Model\InlineResponse40827|\OpenAPI\Client\Model\InlineResponse40944|\OpenAPI\Client\Model\InlineResponse410|\OpenAPI\Client\Model\InlineResponse411|\OpenAPI\Client\Model\InlineResponse41441|\OpenAPI\Client\Model\InlineResponse4258|\OpenAPI\Client\Model\InlineResponse4311|\OpenAPI\Client\Model\InlineResponse4325, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \OpenAPI\Client\Model\InlineResponse20039|\OpenAPI\Client\Model\InlineResponse40827|\OpenAPI\Client\Model\InlineResponse40944|\OpenAPI\Client\Model\InlineResponse410|\OpenAPI\Client\Model\InlineResponse411|\OpenAPI\Client\Model\InlineResponse41441|\OpenAPI\Client\Model\InlineResponse42510|\OpenAPI\Client\Model\InlineResponse4311|\OpenAPI\Client\Model\InlineResponse4325, HTTP status code, HTTP response headers (array of strings)
      */
     public function intlTnNoteUpdatePostWithHttpInfo($payload)
     {
@@ -9379,14 +9379,14 @@ class InternationalVoiceServicesApi
                         $response->getHeaders()
                     ];
                 case 425:
-                    if ('\OpenAPI\Client\Model\InlineResponse4258' === '\SplFileObject') {
+                    if ('\OpenAPI\Client\Model\InlineResponse42510' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse4258', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse42510', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -9482,7 +9482,7 @@ class InternationalVoiceServicesApi
                 case 425:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse4258',
+                        '\OpenAPI\Client\Model\InlineResponse42510',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9513,7 +9513,7 @@ class InternationalVoiceServicesApi
      *
      * Update Note for Active International Telephone Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject184 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject186 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -9533,7 +9533,7 @@ class InternationalVoiceServicesApi
      *
      * Update Note for Active International Telephone Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject184 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject186 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -9579,7 +9579,7 @@ class InternationalVoiceServicesApi
     /**
      * Create request for operation 'intlTnNoteUpdatePost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject184 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject186 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -9677,7 +9677,7 @@ class InternationalVoiceServicesApi
      *
      * Order International Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject185 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject187 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -9694,7 +9694,7 @@ class InternationalVoiceServicesApi
      *
      * Order International Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject185 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject187 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -9927,7 +9927,7 @@ class InternationalVoiceServicesApi
      *
      * Order International Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject185 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject187 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -9947,7 +9947,7 @@ class InternationalVoiceServicesApi
      *
      * Order International Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject185 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject187 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -9993,7 +9993,7 @@ class InternationalVoiceServicesApi
     /**
      * Create request for operation 'intlTnOrderPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject185 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject187 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -10091,7 +10091,7 @@ class InternationalVoiceServicesApi
      *
      * Request Telephone Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject187 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject189 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -10108,7 +10108,7 @@ class InternationalVoiceServicesApi
      *
      * Request Telephone Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject187 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject189 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -10321,7 +10321,7 @@ class InternationalVoiceServicesApi
      *
      * Request Telephone Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject187 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject189 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -10341,7 +10341,7 @@ class InternationalVoiceServicesApi
      *
      * Request Telephone Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject187 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject189 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -10387,7 +10387,7 @@ class InternationalVoiceServicesApi
     /**
      * Create request for operation 'intlTnRequestPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject187 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject189 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -10485,7 +10485,7 @@ class InternationalVoiceServicesApi
      *
      * Reserve International Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject174 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject176 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -10502,7 +10502,7 @@ class InternationalVoiceServicesApi
      *
      * Reserve International Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject174 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject176 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -10715,7 +10715,7 @@ class InternationalVoiceServicesApi
      *
      * Reserve International Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject174 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject176 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -10735,7 +10735,7 @@ class InternationalVoiceServicesApi
      *
      * Reserve International Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject174 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject176 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -10781,7 +10781,7 @@ class InternationalVoiceServicesApi
     /**
      * Create request for operation 'intlTnReservePost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject174 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject176 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -10879,7 +10879,7 @@ class InternationalVoiceServicesApi
      *
      * Retrieve Telephone Number Reserved List
      *
-     * @param  \OpenAPI\Client\Model\InlineObject188 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject190 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -10896,7 +10896,7 @@ class InternationalVoiceServicesApi
      *
      * Retrieve Telephone Number Reserved List
      *
-     * @param  \OpenAPI\Client\Model\InlineObject188 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject190 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -11109,7 +11109,7 @@ class InternationalVoiceServicesApi
      *
      * Retrieve Telephone Number Reserved List
      *
-     * @param  \OpenAPI\Client\Model\InlineObject188 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject190 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -11129,7 +11129,7 @@ class InternationalVoiceServicesApi
      *
      * Retrieve Telephone Number Reserved List
      *
-     * @param  \OpenAPI\Client\Model\InlineObject188 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject190 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -11175,7 +11175,7 @@ class InternationalVoiceServicesApi
     /**
      * Create request for operation 'intlTnReservedListPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject188 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject190 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -11273,7 +11273,7 @@ class InternationalVoiceServicesApi
      *
      * Update Telephone Number Routing
      *
-     * @param  \OpenAPI\Client\Model\InlineObject189 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject191 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -11290,7 +11290,7 @@ class InternationalVoiceServicesApi
      *
      * Update Telephone Number Routing
      *
-     * @param  \OpenAPI\Client\Model\InlineObject189 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject191 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -11523,7 +11523,7 @@ class InternationalVoiceServicesApi
      *
      * Update Telephone Number Routing
      *
-     * @param  \OpenAPI\Client\Model\InlineObject189 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject191 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -11543,7 +11543,7 @@ class InternationalVoiceServicesApi
      *
      * Update Telephone Number Routing
      *
-     * @param  \OpenAPI\Client\Model\InlineObject189 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject191 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -11589,7 +11589,7 @@ class InternationalVoiceServicesApi
     /**
      * Create request for operation 'intlTnRoutingUpdatePost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject189 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject191 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -11687,7 +11687,7 @@ class InternationalVoiceServicesApi
      *
      * Update In Service Telephone Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject190 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject192 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -11704,7 +11704,7 @@ class InternationalVoiceServicesApi
      *
      * Update In Service Telephone Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject190 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject192 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -11917,7 +11917,7 @@ class InternationalVoiceServicesApi
      *
      * Update In Service Telephone Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject190 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject192 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -11937,7 +11937,7 @@ class InternationalVoiceServicesApi
      *
      * Update In Service Telephone Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject190 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject192 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -11983,7 +11983,7 @@ class InternationalVoiceServicesApi
     /**
      * Create request for operation 'intlTnUpdatePost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject190 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject192 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

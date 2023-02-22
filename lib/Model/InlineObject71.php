@@ -61,7 +61,8 @@ class InlineObject71 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'voice_script' => '\OpenAPI\Client\Model\VoiceScriptDetailVoiceScript[]'
+        'voice_script' => '\OpenAPI\Client\Model\VoiceScriptVoiceScript[]',
+        'remove_script' => 'string'
     ];
 
     /**
@@ -73,7 +74,8 @@ class InlineObject71 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'voice_script' => null
+        'voice_script' => null,
+        'remove_script' => null
     ];
 
     /**
@@ -104,7 +106,8 @@ class InlineObject71 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'voice_script' => 'voiceScript'
+        'voice_script' => 'voiceScript',
+        'remove_script' => 'removeScript'
     ];
 
     /**
@@ -114,7 +117,8 @@ class InlineObject71 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'voice_script' => 'setVoiceScript'
+        'voice_script' => 'setVoiceScript',
+        'remove_script' => 'setRemoveScript'
     ];
 
     /**
@@ -124,7 +128,8 @@ class InlineObject71 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'voice_script' => 'getVoiceScript'
+        'voice_script' => 'getVoiceScript',
+        'remove_script' => 'getRemoveScript'
     ];
 
     /**
@@ -186,6 +191,7 @@ class InlineObject71 implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
         $this->container['voice_script'] = $data['voice_script'] ?? null;
+        $this->container['remove_script'] = $data['remove_script'] ?? null;
     }
 
     /**
@@ -242,7 +248,7 @@ class InlineObject71 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets voice_script
      *
-     * @return \OpenAPI\Client\Model\VoiceScriptDetailVoiceScript[]|null
+     * @return \OpenAPI\Client\Model\VoiceScriptVoiceScript[]|null
      */
     public function getVoiceScript()
     {
@@ -252,13 +258,37 @@ class InlineObject71 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets voice_script
      *
-     * @param \OpenAPI\Client\Model\VoiceScriptDetailVoiceScript[]|null $voice_script Contains requested voice script settings, only 1 domain can be sent, but if TN then, multiple TNs can be sent as part of the list
+     * @param \OpenAPI\Client\Model\VoiceScriptVoiceScript[]|null $voice_script List containing TN or domain information. If “removeScript” is not set (implying adding a script), only 1 domain or 1 TN must be included in the list. If “removeScript” is set to “Y”, then multiple TNs can be sent as part of the list
      *
      * @return self
      */
     public function setVoiceScript($voice_script)
     {
         $this->container['voice_script'] = $voice_script;
+
+        return $this;
+    }
+
+    /**
+     * Gets remove_script
+     *
+     * @return string|null
+     */
+    public function getRemoveScript()
+    {
+        return $this->container['remove_script'];
+    }
+
+    /**
+     * Sets remove_script
+     *
+     * @param string|null $remove_script If you want to remove the script associated with the given TNs, then pass this flag with the value of Y
+     *
+     * @return self
+     */
+    public function setRemoveScript($remove_script)
+    {
+        $this->container['remove_script'] = $remove_script;
 
         return $this;
     }

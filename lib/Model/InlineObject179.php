@@ -61,7 +61,10 @@ class InlineObject179 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'tn_list' => '\OpenAPI\Client\Model\IntlTnAddDocumentTnList'
+        'created_date_start_range' => 'string',
+        'created_date_end_range' => 'string',
+        'service_order_reference' => 'string',
+        'page_sort' => '\OpenAPI\Client\Model\IntlOrderListPageSort'
     ];
 
     /**
@@ -73,7 +76,10 @@ class InlineObject179 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'tn_list' => null
+        'created_date_start_range' => null,
+        'created_date_end_range' => null,
+        'service_order_reference' => null,
+        'page_sort' => null
     ];
 
     /**
@@ -104,7 +110,10 @@ class InlineObject179 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'tn_list' => 'tnList'
+        'created_date_start_range' => 'createdDateStartRange',
+        'created_date_end_range' => 'createdDateEndRange',
+        'service_order_reference' => 'serviceOrderReference',
+        'page_sort' => 'pageSort'
     ];
 
     /**
@@ -114,7 +123,10 @@ class InlineObject179 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'tn_list' => 'setTnList'
+        'created_date_start_range' => 'setCreatedDateStartRange',
+        'created_date_end_range' => 'setCreatedDateEndRange',
+        'service_order_reference' => 'setServiceOrderReference',
+        'page_sort' => 'setPageSort'
     ];
 
     /**
@@ -124,7 +136,10 @@ class InlineObject179 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'tn_list' => 'getTnList'
+        'created_date_start_range' => 'getCreatedDateStartRange',
+        'created_date_end_range' => 'getCreatedDateEndRange',
+        'service_order_reference' => 'getServiceOrderReference',
+        'page_sort' => 'getPageSort'
     ];
 
     /**
@@ -185,7 +200,10 @@ class InlineObject179 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['tn_list'] = $data['tn_list'] ?? null;
+        $this->container['created_date_start_range'] = $data['created_date_start_range'] ?? null;
+        $this->container['created_date_end_range'] = $data['created_date_end_range'] ?? null;
+        $this->container['service_order_reference'] = $data['service_order_reference'] ?? null;
+        $this->container['page_sort'] = $data['page_sort'] ?? null;
     }
 
     /**
@@ -237,25 +255,97 @@ class InlineObject179 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets tn_list
+     * Gets created_date_start_range
      *
-     * @return \OpenAPI\Client\Model\IntlTnAddDocumentTnList|null
+     * @return string|null
      */
-    public function getTnList()
+    public function getCreatedDateStartRange()
     {
-        return $this->container['tn_list'];
+        return $this->container['created_date_start_range'];
     }
 
     /**
-     * Sets tn_list
+     * Sets created_date_start_range
      *
-     * @param \OpenAPI\Client\Model\IntlTnAddDocumentTnList|null $tn_list tn_list
+     * @param string|null $created_date_start_range created_date_start_range
      *
      * @return self
      */
-    public function setTnList($tn_list)
+    public function setCreatedDateStartRange($created_date_start_range)
     {
-        $this->container['tn_list'] = $tn_list;
+        $this->container['created_date_start_range'] = $created_date_start_range;
+
+        return $this;
+    }
+
+    /**
+     * Gets created_date_end_range
+     *
+     * @return string|null
+     */
+    public function getCreatedDateEndRange()
+    {
+        return $this->container['created_date_end_range'];
+    }
+
+    /**
+     * Sets created_date_end_range
+     *
+     * @param string|null $created_date_end_range created_date_end_range
+     *
+     * @return self
+     */
+    public function setCreatedDateEndRange($created_date_end_range)
+    {
+        $this->container['created_date_end_range'] = $created_date_end_range;
+
+        return $this;
+    }
+
+    /**
+     * Gets service_order_reference
+     *
+     * @return string|null
+     */
+    public function getServiceOrderReference()
+    {
+        return $this->container['service_order_reference'];
+    }
+
+    /**
+     * Sets service_order_reference
+     *
+     * @param string|null $service_order_reference service_order_reference
+     *
+     * @return self
+     */
+    public function setServiceOrderReference($service_order_reference)
+    {
+        $this->container['service_order_reference'] = $service_order_reference;
+
+        return $this;
+    }
+
+    /**
+     * Gets page_sort
+     *
+     * @return \OpenAPI\Client\Model\IntlOrderListPageSort|null
+     */
+    public function getPageSort()
+    {
+        return $this->container['page_sort'];
+    }
+
+    /**
+     * Sets page_sort
+     *
+     * @param \OpenAPI\Client\Model\IntlOrderListPageSort|null $page_sort page_sort
+     *
+     * @return self
+     */
+    public function setPageSort($page_sort)
+    {
+        $this->container['page_sort'] = $page_sort;
 
         return $this;
     }

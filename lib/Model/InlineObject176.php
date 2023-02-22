@@ -61,7 +61,7 @@ class InlineObject176 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'port_in_order' => '\OpenAPI\Client\Model\IntlPortInOrderPortInOrder'
+        'tn_reserve' => '\OpenAPI\Client\Model\IntlTnReserveTnReserve'
     ];
 
     /**
@@ -73,7 +73,7 @@ class InlineObject176 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'port_in_order' => null
+        'tn_reserve' => null
     ];
 
     /**
@@ -104,7 +104,7 @@ class InlineObject176 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'port_in_order' => 'portInOrder'
+        'tn_reserve' => 'tnReserve'
     ];
 
     /**
@@ -114,7 +114,7 @@ class InlineObject176 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'port_in_order' => 'setPortInOrder'
+        'tn_reserve' => 'setTnReserve'
     ];
 
     /**
@@ -124,7 +124,7 @@ class InlineObject176 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'port_in_order' => 'getPortInOrder'
+        'tn_reserve' => 'getTnReserve'
     ];
 
     /**
@@ -185,7 +185,7 @@ class InlineObject176 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['port_in_order'] = $data['port_in_order'] ?? null;
+        $this->container['tn_reserve'] = $data['tn_reserve'] ?? null;
     }
 
     /**
@@ -237,25 +237,25 @@ class InlineObject176 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets port_in_order
+     * Gets tn_reserve
      *
-     * @return \OpenAPI\Client\Model\IntlPortInOrderPortInOrder|null
+     * @return \OpenAPI\Client\Model\IntlTnReserveTnReserve|null
      */
-    public function getPortInOrder()
+    public function getTnReserve()
     {
-        return $this->container['port_in_order'];
+        return $this->container['tn_reserve'];
     }
 
     /**
-     * Sets port_in_order
+     * Sets tn_reserve
      *
-     * @param \OpenAPI\Client\Model\IntlPortInOrderPortInOrder|null $port_in_order port_in_order
+     * @param \OpenAPI\Client\Model\IntlTnReserveTnReserve|null $tn_reserve tn_reserve
      *
      * @return self
      */
-    public function setPortInOrder($port_in_order)
+    public function setTnReserve($tn_reserve)
     {
-        $this->container['port_in_order'] = $port_in_order;
+        $this->container['tn_reserve'] = $tn_reserve;
 
         return $this;
     }

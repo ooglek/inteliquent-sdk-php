@@ -61,7 +61,23 @@ class InlineObject145 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'tn_reserve' => '\OpenAPI\Client\Model\TnReserveTnReserve'
+        'start_date' => 'string',
+        'end_date' => 'string',
+        'call_type' => 'string',
+        'call_status' => 'string',
+        'call_destination' => 'string',
+        'call_provisioned' => 'string',
+        'source_tn' => 'string',
+        'e911_contains' => 'string',
+        'name' => 'string',
+        'street_num' => 'string',
+        'street_info' => 'string',
+        'location' => 'string',
+        'city' => 'string',
+        'state' => 'string',
+        'postal_code' => 'string',
+        'time_zone' => 'string',
+        'page_sort' => '\OpenAPI\Client\Model\E911CallSearchPageSort'
     ];
 
     /**
@@ -73,7 +89,23 @@ class InlineObject145 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'tn_reserve' => null
+        'start_date' => null,
+        'end_date' => null,
+        'call_type' => null,
+        'call_status' => null,
+        'call_destination' => null,
+        'call_provisioned' => null,
+        'source_tn' => null,
+        'e911_contains' => null,
+        'name' => null,
+        'street_num' => null,
+        'street_info' => null,
+        'location' => null,
+        'city' => null,
+        'state' => null,
+        'postal_code' => null,
+        'time_zone' => null,
+        'page_sort' => null
     ];
 
     /**
@@ -104,7 +136,23 @@ class InlineObject145 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'tn_reserve' => 'tnReserve'
+        'start_date' => 'startDate',
+        'end_date' => 'endDate',
+        'call_type' => 'callType',
+        'call_status' => 'callStatus',
+        'call_destination' => 'callDestination',
+        'call_provisioned' => 'callProvisioned',
+        'source_tn' => 'sourceTn',
+        'e911_contains' => 'e911Contains',
+        'name' => 'name',
+        'street_num' => 'streetNum',
+        'street_info' => 'streetInfo',
+        'location' => 'location',
+        'city' => 'city',
+        'state' => 'state',
+        'postal_code' => 'postalCode',
+        'time_zone' => 'timeZone',
+        'page_sort' => 'pageSort'
     ];
 
     /**
@@ -114,7 +162,23 @@ class InlineObject145 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'tn_reserve' => 'setTnReserve'
+        'start_date' => 'setStartDate',
+        'end_date' => 'setEndDate',
+        'call_type' => 'setCallType',
+        'call_status' => 'setCallStatus',
+        'call_destination' => 'setCallDestination',
+        'call_provisioned' => 'setCallProvisioned',
+        'source_tn' => 'setSourceTn',
+        'e911_contains' => 'setE911Contains',
+        'name' => 'setName',
+        'street_num' => 'setStreetNum',
+        'street_info' => 'setStreetInfo',
+        'location' => 'setLocation',
+        'city' => 'setCity',
+        'state' => 'setState',
+        'postal_code' => 'setPostalCode',
+        'time_zone' => 'setTimeZone',
+        'page_sort' => 'setPageSort'
     ];
 
     /**
@@ -124,7 +188,23 @@ class InlineObject145 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'tn_reserve' => 'getTnReserve'
+        'start_date' => 'getStartDate',
+        'end_date' => 'getEndDate',
+        'call_type' => 'getCallType',
+        'call_status' => 'getCallStatus',
+        'call_destination' => 'getCallDestination',
+        'call_provisioned' => 'getCallProvisioned',
+        'source_tn' => 'getSourceTn',
+        'e911_contains' => 'getE911Contains',
+        'name' => 'getName',
+        'street_num' => 'getStreetNum',
+        'street_info' => 'getStreetInfo',
+        'location' => 'getLocation',
+        'city' => 'getCity',
+        'state' => 'getState',
+        'postal_code' => 'getPostalCode',
+        'time_zone' => 'getTimeZone',
+        'page_sort' => 'getPageSort'
     ];
 
     /**
@@ -185,7 +265,23 @@ class InlineObject145 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['tn_reserve'] = $data['tn_reserve'] ?? null;
+        $this->container['start_date'] = $data['start_date'] ?? null;
+        $this->container['end_date'] = $data['end_date'] ?? null;
+        $this->container['call_type'] = $data['call_type'] ?? null;
+        $this->container['call_status'] = $data['call_status'] ?? null;
+        $this->container['call_destination'] = $data['call_destination'] ?? null;
+        $this->container['call_provisioned'] = $data['call_provisioned'] ?? null;
+        $this->container['source_tn'] = $data['source_tn'] ?? null;
+        $this->container['e911_contains'] = $data['e911_contains'] ?? null;
+        $this->container['name'] = $data['name'] ?? null;
+        $this->container['street_num'] = $data['street_num'] ?? null;
+        $this->container['street_info'] = $data['street_info'] ?? null;
+        $this->container['location'] = $data['location'] ?? null;
+        $this->container['city'] = $data['city'] ?? null;
+        $this->container['state'] = $data['state'] ?? null;
+        $this->container['postal_code'] = $data['postal_code'] ?? null;
+        $this->container['time_zone'] = $data['time_zone'] ?? null;
+        $this->container['page_sort'] = $data['page_sort'] ?? null;
     }
 
     /**
@@ -197,12 +293,6 @@ class InlineObject145 implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         $invalidProperties = [];
 
-        if ($this->container['private_key'] === null) {
-            $invalidProperties[] = "'private_key' can't be null";
-        }
-        if ($this->container['tn_reserve'] === null) {
-            $invalidProperties[] = "'tn_reserve' can't be null";
-        }
         return $invalidProperties;
     }
 
@@ -221,7 +311,7 @@ class InlineObject145 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets private_key
      *
-     * @return string
+     * @return string|null
      */
     public function getPrivateKey()
     {
@@ -231,7 +321,7 @@ class InlineObject145 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets private_key
      *
-     * @param string $private_key API key required to validate your application
+     * @param string|null $private_key API key required to validate your application
      *
      * @return self
      */
@@ -243,25 +333,409 @@ class InlineObject145 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets tn_reserve
+     * Gets start_date
      *
-     * @return \OpenAPI\Client\Model\TnReserveTnReserve
+     * @return string|null
      */
-    public function getTnReserve()
+    public function getStartDate()
     {
-        return $this->container['tn_reserve'];
+        return $this->container['start_date'];
     }
 
     /**
-     * Sets tn_reserve
+     * Sets start_date
      *
-     * @param \OpenAPI\Client\Model\TnReserveTnReserve $tn_reserve tn_reserve
+     * @param string|null $start_date Start date for 911 call search; use format 2019-01-18 00:00:00
      *
      * @return self
      */
-    public function setTnReserve($tn_reserve)
+    public function setStartDate($start_date)
     {
-        $this->container['tn_reserve'] = $tn_reserve;
+        $this->container['start_date'] = $start_date;
+
+        return $this;
+    }
+
+    /**
+     * Gets end_date
+     *
+     * @return string|null
+     */
+    public function getEndDate()
+    {
+        return $this->container['end_date'];
+    }
+
+    /**
+     * Sets end_date
+     *
+     * @param string|null $end_date End date for 911 call search; use format 2019-01-21 16:41:26
+     *
+     * @return self
+     */
+    public function setEndDate($end_date)
+    {
+        $this->container['end_date'] = $end_date;
+
+        return $this;
+    }
+
+    /**
+     * Gets call_type
+     *
+     * @return string|null
+     */
+    public function getCallType()
+    {
+        return $this->container['call_type'];
+    }
+
+    /**
+     * Sets call_type
+     *
+     * @param string|null $call_type Call Type
+     *
+     * @return self
+     */
+    public function setCallType($call_type)
+    {
+        $this->container['call_type'] = $call_type;
+
+        return $this;
+    }
+
+    /**
+     * Gets call_status
+     *
+     * @return string|null
+     */
+    public function getCallStatus()
+    {
+        return $this->container['call_status'];
+    }
+
+    /**
+     * Sets call_status
+     *
+     * @param string|null $call_status Call Status
+     *
+     * @return self
+     */
+    public function setCallStatus($call_status)
+    {
+        $this->container['call_status'] = $call_status;
+
+        return $this;
+    }
+
+    /**
+     * Gets call_destination
+     *
+     * @return string|null
+     */
+    public function getCallDestination()
+    {
+        return $this->container['call_destination'];
+    }
+
+    /**
+     * Sets call_destination
+     *
+     * @param string|null $call_destination Call Destination
+     *
+     * @return self
+     */
+    public function setCallDestination($call_destination)
+    {
+        $this->container['call_destination'] = $call_destination;
+
+        return $this;
+    }
+
+    /**
+     * Gets call_provisioned
+     *
+     * @return string|null
+     */
+    public function getCallProvisioned()
+    {
+        return $this->container['call_provisioned'];
+    }
+
+    /**
+     * Sets call_provisioned
+     *
+     * @param string|null $call_provisioned Call Provisioned
+     *
+     * @return self
+     */
+    public function setCallProvisioned($call_provisioned)
+    {
+        $this->container['call_provisioned'] = $call_provisioned;
+
+        return $this;
+    }
+
+    /**
+     * Gets source_tn
+     *
+     * @return string|null
+     */
+    public function getSourceTn()
+    {
+        return $this->container['source_tn'];
+    }
+
+    /**
+     * Sets source_tn
+     *
+     * @param string|null $source_tn Calling number. Accepts 0-9, Aa-Zz, *, or ? (e.g. *Hello* or 312?Hi*7 ).
+     *
+     * @return self
+     */
+    public function setSourceTn($source_tn)
+    {
+        $this->container['source_tn'] = $source_tn;
+
+        return $this;
+    }
+
+    /**
+     * Gets e911_contains
+     *
+     * @return string|null
+     */
+    public function getE911Contains()
+    {
+        return $this->container['e911_contains'];
+    }
+
+    /**
+     * Sets e911_contains
+     *
+     * @param string|null $e911_contains Search for specific string contained in any E911 field
+     *
+     * @return self
+     */
+    public function setE911Contains($e911_contains)
+    {
+        $this->container['e911_contains'] = $e911_contains;
+
+        return $this;
+    }
+
+    /**
+     * Gets name
+     *
+     * @return string|null
+     */
+    public function getName()
+    {
+        return $this->container['name'];
+    }
+
+    /**
+     * Sets name
+     *
+     * @param string|null $name E911 address name
+     *
+     * @return self
+     */
+    public function setName($name)
+    {
+        $this->container['name'] = $name;
+
+        return $this;
+    }
+
+    /**
+     * Gets street_num
+     *
+     * @return string|null
+     */
+    public function getStreetNum()
+    {
+        return $this->container['street_num'];
+    }
+
+    /**
+     * Sets street_num
+     *
+     * @param string|null $street_num E911 address street number (e.g. 100, 550)
+     *
+     * @return self
+     */
+    public function setStreetNum($street_num)
+    {
+        $this->container['street_num'] = $street_num;
+
+        return $this;
+    }
+
+    /**
+     * Gets street_info
+     *
+     * @return string|null
+     */
+    public function getStreetInfo()
+    {
+        return $this->container['street_info'];
+    }
+
+    /**
+     * Sets street_info
+     *
+     * @param string|null $street_info E911 address street information (e.g. W Adams St)
+     *
+     * @return self
+     */
+    public function setStreetInfo($street_info)
+    {
+        $this->container['street_info'] = $street_info;
+
+        return $this;
+    }
+
+    /**
+     * Gets location
+     *
+     * @return string|null
+     */
+    public function getLocation()
+    {
+        return $this->container['location'];
+    }
+
+    /**
+     * Sets location
+     *
+     * @param string|null $location E911 address additional address infotmation
+     *
+     * @return self
+     */
+    public function setLocation($location)
+    {
+        $this->container['location'] = $location;
+
+        return $this;
+    }
+
+    /**
+     * Gets city
+     *
+     * @return string|null
+     */
+    public function getCity()
+    {
+        return $this->container['city'];
+    }
+
+    /**
+     * Sets city
+     *
+     * @param string|null $city E911 address city
+     *
+     * @return self
+     */
+    public function setCity($city)
+    {
+        $this->container['city'] = $city;
+
+        return $this;
+    }
+
+    /**
+     * Gets state
+     *
+     * @return string|null
+     */
+    public function getState()
+    {
+        return $this->container['state'];
+    }
+
+    /**
+     * Sets state
+     *
+     * @param string|null $state E911 address state
+     *
+     * @return self
+     */
+    public function setState($state)
+    {
+        $this->container['state'] = $state;
+
+        return $this;
+    }
+
+    /**
+     * Gets postal_code
+     *
+     * @return string|null
+     */
+    public function getPostalCode()
+    {
+        return $this->container['postal_code'];
+    }
+
+    /**
+     * Sets postal_code
+     *
+     * @param string|null $postal_code E911 address zip code
+     *
+     * @return self
+     */
+    public function setPostalCode($postal_code)
+    {
+        $this->container['postal_code'] = $postal_code;
+
+        return $this;
+    }
+
+    /**
+     * Gets time_zone
+     *
+     * @return string|null
+     */
+    public function getTimeZone()
+    {
+        return $this->container['time_zone'];
+    }
+
+    /**
+     * Sets time_zone
+     *
+     * @param string|null $time_zone Time Zone
+     *
+     * @return self
+     */
+    public function setTimeZone($time_zone)
+    {
+        $this->container['time_zone'] = $time_zone;
+
+        return $this;
+    }
+
+    /**
+     * Gets page_sort
+     *
+     * @return \OpenAPI\Client\Model\E911CallSearchPageSort|null
+     */
+    public function getPageSort()
+    {
+        return $this->container['page_sort'];
+    }
+
+    /**
+     * Sets page_sort
+     *
+     * @param \OpenAPI\Client\Model\E911CallSearchPageSort|null $page_sort page_sort
+     *
+     * @return self
+     */
+    public function setPageSort($page_sort)
+    {
+        $this->container['page_sort'] = $page_sort;
 
         return $this;
     }

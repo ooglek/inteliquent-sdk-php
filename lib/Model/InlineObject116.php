@@ -61,10 +61,8 @@ class InlineObject116 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'order_id' => 'int',
-        'customer_order_reference' => 'string',
-        'tn' => 'string',
-        'country_code' => 'string'
+        'routing_option' => 'string',
+        'customer_routing_option' => 'string'
     ];
 
     /**
@@ -76,10 +74,8 @@ class InlineObject116 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'order_id' => null,
-        'customer_order_reference' => null,
-        'tn' => null,
-        'country_code' => null
+        'routing_option' => null,
+        'customer_routing_option' => null
     ];
 
     /**
@@ -110,10 +106,8 @@ class InlineObject116 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'order_id' => 'orderId',
-        'customer_order_reference' => 'customerOrderReference',
-        'tn' => 'tn',
-        'country_code' => 'countryCode'
+        'routing_option' => 'routingOption',
+        'customer_routing_option' => 'customerRoutingOption'
     ];
 
     /**
@@ -123,10 +117,8 @@ class InlineObject116 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'order_id' => 'setOrderId',
-        'customer_order_reference' => 'setCustomerOrderReference',
-        'tn' => 'setTn',
-        'country_code' => 'setCountryCode'
+        'routing_option' => 'setRoutingOption',
+        'customer_routing_option' => 'setCustomerRoutingOption'
     ];
 
     /**
@@ -136,10 +128,8 @@ class InlineObject116 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'order_id' => 'getOrderId',
-        'customer_order_reference' => 'getCustomerOrderReference',
-        'tn' => 'getTn',
-        'country_code' => 'getCountryCode'
+        'routing_option' => 'getRoutingOption',
+        'customer_routing_option' => 'getCustomerRoutingOption'
     ];
 
     /**
@@ -200,10 +190,8 @@ class InlineObject116 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['order_id'] = $data['order_id'] ?? null;
-        $this->container['customer_order_reference'] = $data['customer_order_reference'] ?? null;
-        $this->container['tn'] = $data['tn'] ?? null;
-        $this->container['country_code'] = $data['country_code'] ?? null;
+        $this->container['routing_option'] = $data['routing_option'] ?? null;
+        $this->container['customer_routing_option'] = $data['customer_routing_option'] ?? null;
     }
 
     /**
@@ -217,6 +205,9 @@ class InlineObject116 implements ModelInterface, ArrayAccess, \JsonSerializable
 
         if ($this->container['private_key'] === null) {
             $invalidProperties[] = "'private_key' can't be null";
+        }
+        if ($this->container['routing_option'] === null) {
+            $invalidProperties[] = "'routing_option' can't be null";
         }
         return $invalidProperties;
     }
@@ -258,97 +249,49 @@ class InlineObject116 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets order_id
+     * Gets routing_option
      *
-     * @return int|null
+     * @return string
      */
-    public function getOrderId()
+    public function getRoutingOption()
     {
-        return $this->container['order_id'];
+        return $this->container['routing_option'];
     }
 
     /**
-     * Sets order_id
+     * Sets routing_option
      *
-     * @param int|null $order_id Order number
+     * @param string $routing_option Current name of routing option to be updated.
      *
      * @return self
      */
-    public function setOrderId($order_id)
+    public function setRoutingOption($routing_option)
     {
-        $this->container['order_id'] = $order_id;
+        $this->container['routing_option'] = $routing_option;
 
         return $this;
     }
 
     /**
-     * Gets customer_order_reference
+     * Gets customer_routing_option
      *
      * @return string|null
      */
-    public function getCustomerOrderReference()
+    public function getCustomerRoutingOption()
     {
-        return $this->container['customer_order_reference'];
+        return $this->container['customer_routing_option'];
     }
 
     /**
-     * Sets customer_order_reference
+     * Sets customer_routing_option
      *
-     * @param string|null $customer_order_reference Customer for whom the order is.
+     * @param string|null $customer_routing_option New name of routing option
      *
      * @return self
      */
-    public function setCustomerOrderReference($customer_order_reference)
+    public function setCustomerRoutingOption($customer_routing_option)
     {
-        $this->container['customer_order_reference'] = $customer_order_reference;
-
-        return $this;
-    }
-
-    /**
-     * Gets tn
-     *
-     * @return string|null
-     */
-    public function getTn()
-    {
-        return $this->container['tn'];
-    }
-
-    /**
-     * Sets tn
-     *
-     * @param string|null $tn Telephone number
-     *
-     * @return self
-     */
-    public function setTn($tn)
-    {
-        $this->container['tn'] = $tn;
-
-        return $this;
-    }
-
-    /**
-     * Gets country_code
-     *
-     * @return string|null
-     */
-    public function getCountryCode()
-    {
-        return $this->container['country_code'];
-    }
-
-    /**
-     * Sets country_code
-     *
-     * @param string|null $country_code country_code
-     *
-     * @return self
-     */
-    public function setCountryCode($country_code)
-    {
-        $this->container['country_code'] = $country_code;
+        $this->container['customer_routing_option'] = $customer_routing_option;
 
         return $this;
     }

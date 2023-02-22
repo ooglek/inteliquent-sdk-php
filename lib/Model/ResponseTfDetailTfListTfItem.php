@@ -70,6 +70,8 @@ class ResponseTfDetailTfListTfItem implements ModelInterface, ArrayAccess, \Json
         'cic_company_name' => 'string',
         'activate_display_name' => 'string',
         'activate_date' => 'string',
+        'tn_note' => 'string',
+        'dno' => 'string',
         'tn_feature' => '\OpenAPI\Client\Model\ResponseTfDetailTfListTnFeature',
         'dnis' => 'string',
         'billing_tn' => 'string',
@@ -94,6 +96,8 @@ class ResponseTfDetailTfListTfItem implements ModelInterface, ArrayAccess, \Json
         'cic_company_name' => null,
         'activate_display_name' => null,
         'activate_date' => null,
+        'tn_note' => null,
+        'dno' => null,
         'tn_feature' => null,
         'dnis' => null,
         'billing_tn' => null,
@@ -137,6 +141,8 @@ class ResponseTfDetailTfListTfItem implements ModelInterface, ArrayAccess, \Json
         'cic_company_name' => 'cicCompanyName',
         'activate_display_name' => 'activateDisplayName',
         'activate_date' => 'activateDate',
+        'tn_note' => 'tnNote',
+        'dno' => 'dno',
         'tn_feature' => 'tnFeature',
         'dnis' => 'dnis',
         'billing_tn' => 'billingTn',
@@ -159,6 +165,8 @@ class ResponseTfDetailTfListTfItem implements ModelInterface, ArrayAccess, \Json
         'cic_company_name' => 'setCicCompanyName',
         'activate_display_name' => 'setActivateDisplayName',
         'activate_date' => 'setActivateDate',
+        'tn_note' => 'setTnNote',
+        'dno' => 'setDno',
         'tn_feature' => 'setTnFeature',
         'dnis' => 'setDnis',
         'billing_tn' => 'setBillingTn',
@@ -181,6 +189,8 @@ class ResponseTfDetailTfListTfItem implements ModelInterface, ArrayAccess, \Json
         'cic_company_name' => 'getCicCompanyName',
         'activate_display_name' => 'getActivateDisplayName',
         'activate_date' => 'getActivateDate',
+        'tn_note' => 'getTnNote',
+        'dno' => 'getDno',
         'tn_feature' => 'getTnFeature',
         'dnis' => 'getDnis',
         'billing_tn' => 'getBillingTn',
@@ -254,6 +264,8 @@ class ResponseTfDetailTfListTfItem implements ModelInterface, ArrayAccess, \Json
         $this->container['cic_company_name'] = $data['cic_company_name'] ?? null;
         $this->container['activate_display_name'] = $data['activate_display_name'] ?? null;
         $this->container['activate_date'] = $data['activate_date'] ?? null;
+        $this->container['tn_note'] = $data['tn_note'] ?? null;
+        $this->container['dno'] = $data['dno'] ?? null;
         $this->container['tn_feature'] = $data['tn_feature'] ?? null;
         $this->container['dnis'] = $data['dnis'] ?? null;
         $this->container['billing_tn'] = $data['billing_tn'] ?? null;
@@ -520,6 +532,54 @@ class ResponseTfDetailTfListTfItem implements ModelInterface, ArrayAccess, \Json
     public function setActivateDate($activate_date)
     {
         $this->container['activate_date'] = $activate_date;
+
+        return $this;
+    }
+
+    /**
+     * Gets tn_note
+     *
+     * @return string|null
+     */
+    public function getTnNote()
+    {
+        return $this->container['tn_note'];
+    }
+
+    /**
+     * Sets tn_note
+     *
+     * @param string|null $tn_note tn_note
+     *
+     * @return self
+     */
+    public function setTnNote($tn_note)
+    {
+        $this->container['tn_note'] = $tn_note;
+
+        return $this;
+    }
+
+    /**
+     * Gets dno
+     *
+     * @return string|null
+     */
+    public function getDno()
+    {
+        return $this->container['dno'];
+    }
+
+    /**
+     * Sets dno
+     *
+     * @param string|null $dno dno
+     *
+     * @return self
+     */
+    public function setDno($dno)
+    {
+        $this->container['dno'] = $dno;
 
         return $this;
     }

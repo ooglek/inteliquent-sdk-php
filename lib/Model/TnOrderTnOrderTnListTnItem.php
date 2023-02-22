@@ -61,11 +61,13 @@ class TnOrderTnOrderTnListTnItem implements ModelInterface, ArrayAccess, \JsonSe
       */
     protected static $openAPITypes = [
         'tn' => 'string',
-        'routing_label' => 'string',
         'tn_note' => 'string',
         'port_out_pin' => 'string',
         'trunk_group' => 'string',
+        'routing_option' => 'string',
         'remove_tn' => 'string',
+        'alt_spid' => 'string',
+        'remove_alt_spid' => 'string',
         'end_user' => '\OpenAPI\Client\Model\OrderUpdateOrderUpdateTnListEndUser',
         'tn_feature' => '\OpenAPI\Client\Model\TnOrderTnOrderTnListTnFeature'
     ];
@@ -79,11 +81,13 @@ class TnOrderTnOrderTnListTnItem implements ModelInterface, ArrayAccess, \JsonSe
       */
     protected static $openAPIFormats = [
         'tn' => null,
-        'routing_label' => null,
         'tn_note' => null,
         'port_out_pin' => null,
         'trunk_group' => null,
+        'routing_option' => null,
         'remove_tn' => null,
+        'alt_spid' => null,
+        'remove_alt_spid' => null,
         'end_user' => null,
         'tn_feature' => null
     ];
@@ -116,11 +120,13 @@ class TnOrderTnOrderTnListTnItem implements ModelInterface, ArrayAccess, \JsonSe
      */
     protected static $attributeMap = [
         'tn' => 'tn',
-        'routing_label' => 'routingLabel',
         'tn_note' => 'tnNote',
         'port_out_pin' => 'portOutPin',
         'trunk_group' => 'trunkGroup',
+        'routing_option' => 'routingOption',
         'remove_tn' => 'removeTn',
+        'alt_spid' => 'altSpid',
+        'remove_alt_spid' => 'removeAltSpid',
         'end_user' => 'endUser',
         'tn_feature' => 'tnFeature'
     ];
@@ -132,11 +138,13 @@ class TnOrderTnOrderTnListTnItem implements ModelInterface, ArrayAccess, \JsonSe
      */
     protected static $setters = [
         'tn' => 'setTn',
-        'routing_label' => 'setRoutingLabel',
         'tn_note' => 'setTnNote',
         'port_out_pin' => 'setPortOutPin',
         'trunk_group' => 'setTrunkGroup',
+        'routing_option' => 'setRoutingOption',
         'remove_tn' => 'setRemoveTn',
+        'alt_spid' => 'setAltSpid',
+        'remove_alt_spid' => 'setRemoveAltSpid',
         'end_user' => 'setEndUser',
         'tn_feature' => 'setTnFeature'
     ];
@@ -148,11 +156,13 @@ class TnOrderTnOrderTnListTnItem implements ModelInterface, ArrayAccess, \JsonSe
      */
     protected static $getters = [
         'tn' => 'getTn',
-        'routing_label' => 'getRoutingLabel',
         'tn_note' => 'getTnNote',
         'port_out_pin' => 'getPortOutPin',
         'trunk_group' => 'getTrunkGroup',
+        'routing_option' => 'getRoutingOption',
         'remove_tn' => 'getRemoveTn',
+        'alt_spid' => 'getAltSpid',
+        'remove_alt_spid' => 'getRemoveAltSpid',
         'end_user' => 'getEndUser',
         'tn_feature' => 'getTnFeature'
     ];
@@ -215,11 +225,13 @@ class TnOrderTnOrderTnListTnItem implements ModelInterface, ArrayAccess, \JsonSe
     public function __construct(array $data = null)
     {
         $this->container['tn'] = $data['tn'] ?? null;
-        $this->container['routing_label'] = $data['routing_label'] ?? null;
         $this->container['tn_note'] = $data['tn_note'] ?? null;
         $this->container['port_out_pin'] = $data['port_out_pin'] ?? null;
         $this->container['trunk_group'] = $data['trunk_group'] ?? null;
+        $this->container['routing_option'] = $data['routing_option'] ?? null;
         $this->container['remove_tn'] = $data['remove_tn'] ?? null;
+        $this->container['alt_spid'] = $data['alt_spid'] ?? null;
+        $this->container['remove_alt_spid'] = $data['remove_alt_spid'] ?? null;
         $this->container['end_user'] = $data['end_user'] ?? null;
         $this->container['tn_feature'] = $data['tn_feature'] ?? null;
     }
@@ -271,30 +283,6 @@ class TnOrderTnOrderTnListTnItem implements ModelInterface, ArrayAccess, \JsonSe
     public function setTn($tn)
     {
         $this->container['tn'] = $tn;
-
-        return $this;
-    }
-
-    /**
-     * Gets routing_label
-     *
-     * @return string|null
-     */
-    public function getRoutingLabel()
-    {
-        return $this->container['routing_label'];
-    }
-
-    /**
-     * Sets routing_label
-     *
-     * @param string|null $routing_label routing_label
-     *
-     * @return self
-     */
-    public function setRoutingLabel($routing_label)
-    {
-        $this->container['routing_label'] = $routing_label;
 
         return $this;
     }
@@ -372,6 +360,30 @@ class TnOrderTnOrderTnListTnItem implements ModelInterface, ArrayAccess, \JsonSe
     }
 
     /**
+     * Gets routing_option
+     *
+     * @return string|null
+     */
+    public function getRoutingOption()
+    {
+        return $this->container['routing_option'];
+    }
+
+    /**
+     * Sets routing_option
+     *
+     * @param string|null $routing_option Desired routing option to assign the requested telephone number (e.g. CHCGIL24CL2_997)
+     *
+     * @return self
+     */
+    public function setRoutingOption($routing_option)
+    {
+        $this->container['routing_option'] = $routing_option;
+
+        return $this;
+    }
+
+    /**
      * Gets remove_tn
      *
      * @return string|null
@@ -391,6 +403,54 @@ class TnOrderTnOrderTnListTnItem implements ModelInterface, ArrayAccess, \JsonSe
     public function setRemoveTn($remove_tn)
     {
         $this->container['remove_tn'] = $remove_tn;
+
+        return $this;
+    }
+
+    /**
+     * Gets alt_spid
+     *
+     * @return string|null
+     */
+    public function getAltSpid()
+    {
+        return $this->container['alt_spid'];
+    }
+
+    /**
+     * Sets alt_spid
+     *
+     * @param string|null $alt_spid Alternate Spid for the telephone number.
+     *
+     * @return self
+     */
+    public function setAltSpid($alt_spid)
+    {
+        $this->container['alt_spid'] = $alt_spid;
+
+        return $this;
+    }
+
+    /**
+     * Gets remove_alt_spid
+     *
+     * @return string|null
+     */
+    public function getRemoveAltSpid()
+    {
+        return $this->container['remove_alt_spid'];
+    }
+
+    /**
+     * Sets remove_alt_spid
+     *
+     * @param string|null $remove_alt_spid Add or Remove alternate Spid for telephone number. Accepted Value Y and N
+     *
+     * @return self
+     */
+    public function setRemoveAltSpid($remove_alt_spid)
+    {
+        $this->container['remove_alt_spid'] = $remove_alt_spid;
 
         return $this;
     }

@@ -61,8 +61,7 @@ class InlineObject186 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'order_id' => 'int',
-        'customer_order_reference' => 'string'
+        'tn_note' => '\OpenAPI\Client\Model\IntlTnNoteUpdateTnNote'
     ];
 
     /**
@@ -74,8 +73,7 @@ class InlineObject186 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'order_id' => null,
-        'customer_order_reference' => null
+        'tn_note' => null
     ];
 
     /**
@@ -106,8 +104,7 @@ class InlineObject186 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'order_id' => 'orderId',
-        'customer_order_reference' => 'customerOrderReference'
+        'tn_note' => 'tnNote'
     ];
 
     /**
@@ -117,8 +114,7 @@ class InlineObject186 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'order_id' => 'setOrderId',
-        'customer_order_reference' => 'setCustomerOrderReference'
+        'tn_note' => 'setTnNote'
     ];
 
     /**
@@ -128,8 +124,7 @@ class InlineObject186 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'order_id' => 'getOrderId',
-        'customer_order_reference' => 'getCustomerOrderReference'
+        'tn_note' => 'getTnNote'
     ];
 
     /**
@@ -190,8 +185,7 @@ class InlineObject186 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['order_id'] = $data['order_id'] ?? null;
-        $this->container['customer_order_reference'] = $data['customer_order_reference'] ?? null;
+        $this->container['tn_note'] = $data['tn_note'] ?? null;
     }
 
     /**
@@ -243,49 +237,25 @@ class InlineObject186 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets order_id
+     * Gets tn_note
      *
-     * @return int|null
+     * @return \OpenAPI\Client\Model\IntlTnNoteUpdateTnNote|null
      */
-    public function getOrderId()
+    public function getTnNote()
     {
-        return $this->container['order_id'];
+        return $this->container['tn_note'];
     }
 
     /**
-     * Sets order_id
+     * Sets tn_note
      *
-     * @param int|null $order_id order_id
+     * @param \OpenAPI\Client\Model\IntlTnNoteUpdateTnNote|null $tn_note tn_note
      *
      * @return self
      */
-    public function setOrderId($order_id)
+    public function setTnNote($tn_note)
     {
-        $this->container['order_id'] = $order_id;
-
-        return $this;
-    }
-
-    /**
-     * Gets customer_order_reference
-     *
-     * @return string|null
-     */
-    public function getCustomerOrderReference()
-    {
-        return $this->container['customer_order_reference'];
-    }
-
-    /**
-     * Sets customer_order_reference
-     *
-     * @param string|null $customer_order_reference customer_order_reference
-     *
-     * @return self
-     */
-    public function setCustomerOrderReference($customer_order_reference)
-    {
-        $this->container['customer_order_reference'] = $customer_order_reference;
+        $this->container['tn_note'] = $tn_note;
 
         return $this;
     }

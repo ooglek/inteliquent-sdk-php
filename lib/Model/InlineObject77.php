@@ -61,7 +61,7 @@ class InlineObject77 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'tn_note' => '\OpenAPI\Client\Model\TnNoteUpdateTnNote'
+        'port_out_pin' => '\OpenAPI\Client\Model\PortOutPinUpdatePortOutPin'
     ];
 
     /**
@@ -73,7 +73,7 @@ class InlineObject77 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'tn_note' => null
+        'port_out_pin' => null
     ];
 
     /**
@@ -104,7 +104,7 @@ class InlineObject77 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'tn_note' => 'tnNote'
+        'port_out_pin' => 'portOutPin'
     ];
 
     /**
@@ -114,7 +114,7 @@ class InlineObject77 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'tn_note' => 'setTnNote'
+        'port_out_pin' => 'setPortOutPin'
     ];
 
     /**
@@ -124,7 +124,7 @@ class InlineObject77 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'tn_note' => 'getTnNote'
+        'port_out_pin' => 'getPortOutPin'
     ];
 
     /**
@@ -185,7 +185,7 @@ class InlineObject77 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['tn_note'] = $data['tn_note'] ?? null;
+        $this->container['port_out_pin'] = $data['port_out_pin'] ?? null;
     }
 
     /**
@@ -200,8 +200,8 @@ class InlineObject77 implements ModelInterface, ArrayAccess, \JsonSerializable
         if ($this->container['private_key'] === null) {
             $invalidProperties[] = "'private_key' can't be null";
         }
-        if ($this->container['tn_note'] === null) {
-            $invalidProperties[] = "'tn_note' can't be null";
+        if ($this->container['port_out_pin'] === null) {
+            $invalidProperties[] = "'port_out_pin' can't be null";
         }
         return $invalidProperties;
     }
@@ -243,25 +243,25 @@ class InlineObject77 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets tn_note
+     * Gets port_out_pin
      *
-     * @return \OpenAPI\Client\Model\TnNoteUpdateTnNote
+     * @return \OpenAPI\Client\Model\PortOutPinUpdatePortOutPin
      */
-    public function getTnNote()
+    public function getPortOutPin()
     {
-        return $this->container['tn_note'];
+        return $this->container['port_out_pin'];
     }
 
     /**
-     * Sets tn_note
+     * Sets port_out_pin
      *
-     * @param \OpenAPI\Client\Model\TnNoteUpdateTnNote $tn_note tn_note
+     * @param \OpenAPI\Client\Model\PortOutPinUpdatePortOutPin $port_out_pin port_out_pin
      *
      * @return self
      */
-    public function setTnNote($tn_note)
+    public function setPortOutPin($port_out_pin)
     {
-        $this->container['tn_note'] = $tn_note;
+        $this->container['port_out_pin'] = $port_out_pin;
 
         return $this;
     }

@@ -5,6 +5,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **private_key** | **string** |  | [optional]
-**document_id** | **string** |  | [optional]
+**tn_list** | [**\OpenAPI\Client\Model\IntlTnAddDocumentTnList**](IntlTnAddDocumentTnList.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

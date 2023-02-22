@@ -60,7 +60,8 @@ class InlineObject128 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'private_key' => 'string'
+        'private_key' => 'string',
+        'tn_list' => '\OpenAPI\Client\Model\LataInventoryTnList'
     ];
 
     /**
@@ -71,7 +72,8 @@ class InlineObject128 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'private_key' => null
+        'private_key' => null,
+        'tn_list' => null
     ];
 
     /**
@@ -101,7 +103,8 @@ class InlineObject128 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        'private_key' => 'privateKey'
+        'private_key' => 'privateKey',
+        'tn_list' => 'tnList'
     ];
 
     /**
@@ -110,7 +113,8 @@ class InlineObject128 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        'private_key' => 'setPrivateKey'
+        'private_key' => 'setPrivateKey',
+        'tn_list' => 'setTnList'
     ];
 
     /**
@@ -119,7 +123,8 @@ class InlineObject128 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        'private_key' => 'getPrivateKey'
+        'private_key' => 'getPrivateKey',
+        'tn_list' => 'getTnList'
     ];
 
     /**
@@ -180,6 +185,7 @@ class InlineObject128 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
+        $this->container['tn_list'] = $data['tn_list'] ?? null;
     }
 
     /**
@@ -229,6 +235,30 @@ class InlineObject128 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function setPrivateKey($private_key)
     {
         $this->container['private_key'] = $private_key;
+
+        return $this;
+    }
+
+    /**
+     * Gets tn_list
+     *
+     * @return \OpenAPI\Client\Model\LataInventoryTnList|null
+     */
+    public function getTnList()
+    {
+        return $this->container['tn_list'];
+    }
+
+    /**
+     * Sets tn_list
+     *
+     * @param \OpenAPI\Client\Model\LataInventoryTnList|null $tn_list tn_list
+     *
+     * @return self
+     */
+    public function setTnList($tn_list)
+    {
+        $this->container['tn_list'] = $tn_list;
 
         return $this;
     }

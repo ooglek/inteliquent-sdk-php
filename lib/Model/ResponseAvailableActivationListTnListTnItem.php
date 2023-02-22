@@ -60,7 +60,8 @@ class ResponseAvailableActivationListTnListTnItem implements ModelInterface, Arr
       * @var string[]
       */
     protected static $openAPITypes = [
-        'tn' => 'string'
+        'tn' => 'string',
+        'routing_option' => 'string'
     ];
 
     /**
@@ -71,7 +72,8 @@ class ResponseAvailableActivationListTnListTnItem implements ModelInterface, Arr
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'tn' => null
+        'tn' => null,
+        'routing_option' => null
     ];
 
     /**
@@ -101,7 +103,8 @@ class ResponseAvailableActivationListTnListTnItem implements ModelInterface, Arr
      * @var string[]
      */
     protected static $attributeMap = [
-        'tn' => 'tn'
+        'tn' => 'tn',
+        'routing_option' => 'routingOption'
     ];
 
     /**
@@ -110,7 +113,8 @@ class ResponseAvailableActivationListTnListTnItem implements ModelInterface, Arr
      * @var string[]
      */
     protected static $setters = [
-        'tn' => 'setTn'
+        'tn' => 'setTn',
+        'routing_option' => 'setRoutingOption'
     ];
 
     /**
@@ -119,7 +123,8 @@ class ResponseAvailableActivationListTnListTnItem implements ModelInterface, Arr
      * @var string[]
      */
     protected static $getters = [
-        'tn' => 'getTn'
+        'tn' => 'getTn',
+        'routing_option' => 'getRoutingOption'
     ];
 
     /**
@@ -180,6 +185,7 @@ class ResponseAvailableActivationListTnListTnItem implements ModelInterface, Arr
     public function __construct(array $data = null)
     {
         $this->container['tn'] = $data['tn'] ?? null;
+        $this->container['routing_option'] = $data['routing_option'] ?? null;
     }
 
     /**
@@ -219,13 +225,37 @@ class ResponseAvailableActivationListTnListTnItem implements ModelInterface, Arr
     /**
      * Sets tn
      *
-     * @param string|null $tn telephone number requested
+     * @param string|null $tn telephone number
      *
      * @return self
      */
     public function setTn($tn)
     {
         $this->container['tn'] = $tn;
+
+        return $this;
+    }
+
+    /**
+     * Gets routing_option
+     *
+     * @return string|null
+     */
+    public function getRoutingOption()
+    {
+        return $this->container['routing_option'];
+    }
+
+    /**
+     * Sets routing_option
+     *
+     * @param string|null $routing_option routing option for the telephone number
+     *
+     * @return self
+     */
+    public function setRoutingOption($routing_option)
+    {
+        $this->container['routing_option'] = $routing_option;
 
         return $this;
     }

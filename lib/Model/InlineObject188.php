@@ -61,7 +61,8 @@ class InlineObject188 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'country_ref' => 'string'
+        'order_id' => 'int',
+        'customer_order_reference' => 'string'
     ];
 
     /**
@@ -73,7 +74,8 @@ class InlineObject188 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'country_ref' => null
+        'order_id' => null,
+        'customer_order_reference' => null
     ];
 
     /**
@@ -104,7 +106,8 @@ class InlineObject188 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'country_ref' => 'countryRef'
+        'order_id' => 'orderId',
+        'customer_order_reference' => 'customerOrderReference'
     ];
 
     /**
@@ -114,7 +117,8 @@ class InlineObject188 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'country_ref' => 'setCountryRef'
+        'order_id' => 'setOrderId',
+        'customer_order_reference' => 'setCustomerOrderReference'
     ];
 
     /**
@@ -124,7 +128,8 @@ class InlineObject188 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'country_ref' => 'getCountryRef'
+        'order_id' => 'getOrderId',
+        'customer_order_reference' => 'getCustomerOrderReference'
     ];
 
     /**
@@ -185,7 +190,8 @@ class InlineObject188 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['country_ref'] = $data['country_ref'] ?? null;
+        $this->container['order_id'] = $data['order_id'] ?? null;
+        $this->container['customer_order_reference'] = $data['customer_order_reference'] ?? null;
     }
 
     /**
@@ -237,25 +243,49 @@ class InlineObject188 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets country_ref
+     * Gets order_id
      *
-     * @return string|null
+     * @return int|null
      */
-    public function getCountryRef()
+    public function getOrderId()
     {
-        return $this->container['country_ref'];
+        return $this->container['order_id'];
     }
 
     /**
-     * Sets country_ref
+     * Sets order_id
      *
-     * @param string|null $country_ref country_ref
+     * @param int|null $order_id order_id
      *
      * @return self
      */
-    public function setCountryRef($country_ref)
+    public function setOrderId($order_id)
     {
-        $this->container['country_ref'] = $country_ref;
+        $this->container['order_id'] = $order_id;
+
+        return $this;
+    }
+
+    /**
+     * Gets customer_order_reference
+     *
+     * @return string|null
+     */
+    public function getCustomerOrderReference()
+    {
+        return $this->container['customer_order_reference'];
+    }
+
+    /**
+     * Sets customer_order_reference
+     *
+     * @param string|null $customer_order_reference customer_order_reference
+     *
+     * @return self
+     */
+    public function setCustomerOrderReference($customer_order_reference)
+    {
+        $this->container['customer_order_reference'] = $customer_order_reference;
 
         return $this;
     }

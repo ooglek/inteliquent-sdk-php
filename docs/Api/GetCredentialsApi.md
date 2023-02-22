@@ -36,7 +36,7 @@ $apiInstance = new OpenAPI\Client\Api\GetCredentialsApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject138(); // \OpenAPI\Client\Model\InlineObject138
+$payload = new \OpenAPI\Client\Model\InlineObject139(); // \OpenAPI\Client\Model\InlineObject139
 
 try {
     $result = $apiInstance->credentialPost($payload);
@@ -50,7 +50,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject138**](../Model/InlineObject138.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject139**](../Model/InlineObject139.md)|  |
 
 ### Return type
 

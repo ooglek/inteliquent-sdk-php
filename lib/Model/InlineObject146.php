@@ -61,7 +61,7 @@ class InlineObject146 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'tn_release' => '\OpenAPI\Client\Model\TnReleaseTnRelease'
+        'tn_reserve' => '\OpenAPI\Client\Model\TnReserveTnReserve'
     ];
 
     /**
@@ -73,7 +73,7 @@ class InlineObject146 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'tn_release' => null
+        'tn_reserve' => null
     ];
 
     /**
@@ -104,7 +104,7 @@ class InlineObject146 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'tn_release' => 'tnRelease'
+        'tn_reserve' => 'tnReserve'
     ];
 
     /**
@@ -114,7 +114,7 @@ class InlineObject146 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'tn_release' => 'setTnRelease'
+        'tn_reserve' => 'setTnReserve'
     ];
 
     /**
@@ -124,7 +124,7 @@ class InlineObject146 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'tn_release' => 'getTnRelease'
+        'tn_reserve' => 'getTnReserve'
     ];
 
     /**
@@ -185,7 +185,7 @@ class InlineObject146 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['tn_release'] = $data['tn_release'] ?? null;
+        $this->container['tn_reserve'] = $data['tn_reserve'] ?? null;
     }
 
     /**
@@ -200,8 +200,8 @@ class InlineObject146 implements ModelInterface, ArrayAccess, \JsonSerializable
         if ($this->container['private_key'] === null) {
             $invalidProperties[] = "'private_key' can't be null";
         }
-        if ($this->container['tn_release'] === null) {
-            $invalidProperties[] = "'tn_release' can't be null";
+        if ($this->container['tn_reserve'] === null) {
+            $invalidProperties[] = "'tn_reserve' can't be null";
         }
         return $invalidProperties;
     }
@@ -243,25 +243,25 @@ class InlineObject146 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets tn_release
+     * Gets tn_reserve
      *
-     * @return \OpenAPI\Client\Model\TnReleaseTnRelease
+     * @return \OpenAPI\Client\Model\TnReserveTnReserve
      */
-    public function getTnRelease()
+    public function getTnReserve()
     {
-        return $this->container['tn_release'];
+        return $this->container['tn_reserve'];
     }
 
     /**
-     * Sets tn_release
+     * Sets tn_reserve
      *
-     * @param \OpenAPI\Client\Model\TnReleaseTnRelease $tn_release tn_release
+     * @param \OpenAPI\Client\Model\TnReserveTnReserve $tn_reserve tn_reserve
      *
      * @return self
      */
-    public function setTnRelease($tn_release)
+    public function setTnReserve($tn_reserve)
     {
-        $this->container['tn_release'] = $tn_release;
+        $this->container['tn_reserve'] = $tn_reserve;
 
         return $this;
     }

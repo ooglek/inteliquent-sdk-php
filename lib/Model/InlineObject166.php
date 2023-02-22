@@ -61,8 +61,7 @@ class InlineObject166 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'order_id' => 'string',
-        'tn_note' => '\OpenAPI\Client\Model\IntlTnAddNoteTnNote'
+        'country_ref' => 'string'
     ];
 
     /**
@@ -74,8 +73,7 @@ class InlineObject166 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'order_id' => null,
-        'tn_note' => null
+        'country_ref' => null
     ];
 
     /**
@@ -106,8 +104,7 @@ class InlineObject166 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'order_id' => 'orderId',
-        'tn_note' => 'tnNote'
+        'country_ref' => 'countryRef'
     ];
 
     /**
@@ -117,8 +114,7 @@ class InlineObject166 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'order_id' => 'setOrderId',
-        'tn_note' => 'setTnNote'
+        'country_ref' => 'setCountryRef'
     ];
 
     /**
@@ -128,8 +124,7 @@ class InlineObject166 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'order_id' => 'getOrderId',
-        'tn_note' => 'getTnNote'
+        'country_ref' => 'getCountryRef'
     ];
 
     /**
@@ -190,8 +185,7 @@ class InlineObject166 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['order_id'] = $data['order_id'] ?? null;
-        $this->container['tn_note'] = $data['tn_note'] ?? null;
+        $this->container['country_ref'] = $data['country_ref'] ?? null;
     }
 
     /**
@@ -243,49 +237,25 @@ class InlineObject166 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets order_id
+     * Gets country_ref
      *
      * @return string|null
      */
-    public function getOrderId()
+    public function getCountryRef()
     {
-        return $this->container['order_id'];
+        return $this->container['country_ref'];
     }
 
     /**
-     * Sets order_id
+     * Sets country_ref
      *
-     * @param string|null $order_id order_id
+     * @param string|null $country_ref country_ref
      *
      * @return self
      */
-    public function setOrderId($order_id)
+    public function setCountryRef($country_ref)
     {
-        $this->container['order_id'] = $order_id;
-
-        return $this;
-    }
-
-    /**
-     * Gets tn_note
-     *
-     * @return \OpenAPI\Client\Model\IntlTnAddNoteTnNote|null
-     */
-    public function getTnNote()
-    {
-        return $this->container['tn_note'];
-    }
-
-    /**
-     * Sets tn_note
-     *
-     * @param \OpenAPI\Client\Model\IntlTnAddNoteTnNote|null $tn_note tn_note
-     *
-     * @return self
-     */
-    public function setTnNote($tn_note)
-    {
-        $this->container['tn_note'] = $tn_note;
+        $this->container['country_ref'] = $country_ref;
 
         return $this;
     }

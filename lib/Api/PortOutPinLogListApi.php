@@ -121,7 +121,7 @@ class PortOutPinLogListApi
      *
      * Log list associated with PortOut PINs
      *
-     * @param  \OpenAPI\Client\Model\InlineObject137 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject138 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -138,7 +138,7 @@ class PortOutPinLogListApi
      *
      * Log list associated with PortOut PINs
      *
-     * @param  \OpenAPI\Client\Model\InlineObject137 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject138 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -251,7 +251,7 @@ class PortOutPinLogListApi
      *
      * Log list associated with PortOut PINs
      *
-     * @param  \OpenAPI\Client\Model\InlineObject137 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject138 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -271,7 +271,7 @@ class PortOutPinLogListApi
      *
      * Log list associated with PortOut PINs
      *
-     * @param  \OpenAPI\Client\Model\InlineObject137 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject138 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -317,7 +317,7 @@ class PortOutPinLogListApi
     /**
      * Create request for operation 'portOutPinLogListPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject137 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject138 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

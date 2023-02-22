@@ -61,8 +61,7 @@ class InlineObject66 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'tn_search_list' => '\OpenAPI\Client\Model\TnSearchAssignedTnSearchList',
-        'page_sort' => '\OpenAPI\Client\Model\TnInventoryPageSort'
+        'tn_messaging_order' => '\OpenAPI\Client\Model\TnMessagingOrderTnMessagingOrder'
     ];
 
     /**
@@ -74,8 +73,7 @@ class InlineObject66 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'tn_search_list' => null,
-        'page_sort' => null
+        'tn_messaging_order' => null
     ];
 
     /**
@@ -106,8 +104,7 @@ class InlineObject66 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'tn_search_list' => 'tnSearchList',
-        'page_sort' => 'pageSort'
+        'tn_messaging_order' => 'tnMessagingOrder'
     ];
 
     /**
@@ -117,8 +114,7 @@ class InlineObject66 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'tn_search_list' => 'setTnSearchList',
-        'page_sort' => 'setPageSort'
+        'tn_messaging_order' => 'setTnMessagingOrder'
     ];
 
     /**
@@ -128,8 +124,7 @@ class InlineObject66 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'tn_search_list' => 'getTnSearchList',
-        'page_sort' => 'getPageSort'
+        'tn_messaging_order' => 'getTnMessagingOrder'
     ];
 
     /**
@@ -190,8 +185,7 @@ class InlineObject66 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['tn_search_list'] = $data['tn_search_list'] ?? null;
-        $this->container['page_sort'] = $data['page_sort'] ?? null;
+        $this->container['tn_messaging_order'] = $data['tn_messaging_order'] ?? null;
     }
 
     /**
@@ -206,8 +200,8 @@ class InlineObject66 implements ModelInterface, ArrayAccess, \JsonSerializable
         if ($this->container['private_key'] === null) {
             $invalidProperties[] = "'private_key' can't be null";
         }
-        if ($this->container['tn_search_list'] === null) {
-            $invalidProperties[] = "'tn_search_list' can't be null";
+        if ($this->container['tn_messaging_order'] === null) {
+            $invalidProperties[] = "'tn_messaging_order' can't be null";
         }
         return $invalidProperties;
     }
@@ -249,49 +243,25 @@ class InlineObject66 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets tn_search_list
+     * Gets tn_messaging_order
      *
-     * @return \OpenAPI\Client\Model\TnSearchAssignedTnSearchList
+     * @return \OpenAPI\Client\Model\TnMessagingOrderTnMessagingOrder
      */
-    public function getTnSearchList()
+    public function getTnMessagingOrder()
     {
-        return $this->container['tn_search_list'];
+        return $this->container['tn_messaging_order'];
     }
 
     /**
-     * Sets tn_search_list
+     * Sets tn_messaging_order
      *
-     * @param \OpenAPI\Client\Model\TnSearchAssignedTnSearchList $tn_search_list tn_search_list
+     * @param \OpenAPI\Client\Model\TnMessagingOrderTnMessagingOrder $tn_messaging_order tn_messaging_order
      *
      * @return self
      */
-    public function setTnSearchList($tn_search_list)
+    public function setTnMessagingOrder($tn_messaging_order)
     {
-        $this->container['tn_search_list'] = $tn_search_list;
-
-        return $this;
-    }
-
-    /**
-     * Gets page_sort
-     *
-     * @return \OpenAPI\Client\Model\TnInventoryPageSort|null
-     */
-    public function getPageSort()
-    {
-        return $this->container['page_sort'];
-    }
-
-    /**
-     * Sets page_sort
-     *
-     * @param \OpenAPI\Client\Model\TnInventoryPageSort|null $page_sort page_sort
-     *
-     * @return self
-     */
-    public function setPageSort($page_sort)
-    {
-        $this->container['page_sort'] = $page_sort;
+        $this->container['tn_messaging_order'] = $tn_messaging_order;
 
         return $this;
     }

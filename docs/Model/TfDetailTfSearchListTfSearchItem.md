@@ -23,5 +23,6 @@ Name | Type | Description | Notes
 **net_number_id** | **string** |  | [optional]
 **dnis** | **string** |  | [optional]
 **billing_tn** | **string** |  | [optional]
+**dno** | **string** | Search for tns that have DNO set to Y or N.Acceptable values are Y and N | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

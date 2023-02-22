@@ -61,8 +61,8 @@ class InlineObject95 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'tf_search_list' => '\OpenAPI\Client\Model\TfDetailTfSearchList',
-        'page_sort' => '\OpenAPI\Client\Model\TfDetailPageSort'
+        'product_abbr' => 'string',
+        'tf_order' => '\OpenAPI\Client\Model\TfOrderTfOrder'
     ];
 
     /**
@@ -74,8 +74,8 @@ class InlineObject95 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'tf_search_list' => null,
-        'page_sort' => null
+        'product_abbr' => null,
+        'tf_order' => null
     ];
 
     /**
@@ -106,8 +106,8 @@ class InlineObject95 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'tf_search_list' => 'tfSearchList',
-        'page_sort' => 'pageSort'
+        'product_abbr' => 'productAbbr',
+        'tf_order' => 'tfOrder'
     ];
 
     /**
@@ -117,8 +117,8 @@ class InlineObject95 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'tf_search_list' => 'setTfSearchList',
-        'page_sort' => 'setPageSort'
+        'product_abbr' => 'setProductAbbr',
+        'tf_order' => 'setTfOrder'
     ];
 
     /**
@@ -128,8 +128,8 @@ class InlineObject95 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'tf_search_list' => 'getTfSearchList',
-        'page_sort' => 'getPageSort'
+        'product_abbr' => 'getProductAbbr',
+        'tf_order' => 'getTfOrder'
     ];
 
     /**
@@ -190,8 +190,8 @@ class InlineObject95 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['tf_search_list'] = $data['tf_search_list'] ?? null;
-        $this->container['page_sort'] = $data['page_sort'] ?? null;
+        $this->container['product_abbr'] = $data['product_abbr'] ?? null;
+        $this->container['tf_order'] = $data['tf_order'] ?? null;
     }
 
     /**
@@ -203,6 +203,15 @@ class InlineObject95 implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         $invalidProperties = [];
 
+        if ($this->container['private_key'] === null) {
+            $invalidProperties[] = "'private_key' can't be null";
+        }
+        if ($this->container['product_abbr'] === null) {
+            $invalidProperties[] = "'product_abbr' can't be null";
+        }
+        if ($this->container['tf_order'] === null) {
+            $invalidProperties[] = "'tf_order' can't be null";
+        }
         return $invalidProperties;
     }
 
@@ -221,7 +230,7 @@ class InlineObject95 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets private_key
      *
-     * @return string|null
+     * @return string
      */
     public function getPrivateKey()
     {
@@ -231,7 +240,7 @@ class InlineObject95 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets private_key
      *
-     * @param string|null $private_key API key required to validate your application
+     * @param string $private_key API key required to validate your application
      *
      * @return self
      */
@@ -243,49 +252,49 @@ class InlineObject95 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets tf_search_list
+     * Gets product_abbr
      *
-     * @return \OpenAPI\Client\Model\TfDetailTfSearchList|null
+     * @return string
      */
-    public function getTfSearchList()
+    public function getProductAbbr()
     {
-        return $this->container['tf_search_list'];
+        return $this->container['product_abbr'];
     }
 
     /**
-     * Sets tf_search_list
+     * Sets product_abbr
      *
-     * @param \OpenAPI\Client\Model\TfDetailTfSearchList|null $tf_search_list tf_search_list
+     * @param string $product_abbr Product abbreviation for order. Accepted values 8XX - Load free numbers on your own Resporg to the Inteliquent CIC. 8XXPORTIN - Port toll free numbers to Inteliquent.8XXAVAIL - Order available toll free numbers from Inteliquent inventory (max 100 per month)
      *
      * @return self
      */
-    public function setTfSearchList($tf_search_list)
+    public function setProductAbbr($product_abbr)
     {
-        $this->container['tf_search_list'] = $tf_search_list;
+        $this->container['product_abbr'] = $product_abbr;
 
         return $this;
     }
 
     /**
-     * Gets page_sort
+     * Gets tf_order
      *
-     * @return \OpenAPI\Client\Model\TfDetailPageSort|null
+     * @return \OpenAPI\Client\Model\TfOrderTfOrder
      */
-    public function getPageSort()
+    public function getTfOrder()
     {
-        return $this->container['page_sort'];
+        return $this->container['tf_order'];
     }
 
     /**
-     * Sets page_sort
+     * Sets tf_order
      *
-     * @param \OpenAPI\Client\Model\TfDetailPageSort|null $page_sort page_sort
+     * @param \OpenAPI\Client\Model\TfOrderTfOrder $tf_order tf_order
      *
      * @return self
      */
-    public function setPageSort($page_sort)
+    public function setTfOrder($tf_order)
     {
-        $this->container['page_sort'] = $page_sort;
+        $this->container['tf_order'] = $tf_order;
 
         return $this;
     }

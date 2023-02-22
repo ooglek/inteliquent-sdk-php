@@ -61,8 +61,7 @@ class InlineObject94 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'product_abbr' => 'string',
-        'tf_order' => '\OpenAPI\Client\Model\TfOrderTfOrder'
+        'tf_move' => '\OpenAPI\Client\Model\TfMoveTfMove'
     ];
 
     /**
@@ -74,8 +73,7 @@ class InlineObject94 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'product_abbr' => null,
-        'tf_order' => null
+        'tf_move' => null
     ];
 
     /**
@@ -106,8 +104,7 @@ class InlineObject94 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'product_abbr' => 'productAbbr',
-        'tf_order' => 'tfOrder'
+        'tf_move' => 'tfMove'
     ];
 
     /**
@@ -117,8 +114,7 @@ class InlineObject94 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'product_abbr' => 'setProductAbbr',
-        'tf_order' => 'setTfOrder'
+        'tf_move' => 'setTfMove'
     ];
 
     /**
@@ -128,8 +124,7 @@ class InlineObject94 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'product_abbr' => 'getProductAbbr',
-        'tf_order' => 'getTfOrder'
+        'tf_move' => 'getTfMove'
     ];
 
     /**
@@ -190,8 +185,7 @@ class InlineObject94 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['product_abbr'] = $data['product_abbr'] ?? null;
-        $this->container['tf_order'] = $data['tf_order'] ?? null;
+        $this->container['tf_move'] = $data['tf_move'] ?? null;
     }
 
     /**
@@ -203,12 +197,6 @@ class InlineObject94 implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         $invalidProperties = [];
 
-        if ($this->container['private_key'] === null) {
-            $invalidProperties[] = "'private_key' can't be null";
-        }
-        if ($this->container['product_abbr'] === null) {
-            $invalidProperties[] = "'product_abbr' can't be null";
-        }
         return $invalidProperties;
     }
 
@@ -227,7 +215,7 @@ class InlineObject94 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets private_key
      *
-     * @return string
+     * @return string|null
      */
     public function getPrivateKey()
     {
@@ -237,7 +225,7 @@ class InlineObject94 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets private_key
      *
-     * @param string $private_key API key required to validate your application
+     * @param string|null $private_key Private Key
      *
      * @return self
      */
@@ -249,49 +237,25 @@ class InlineObject94 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets product_abbr
+     * Gets tf_move
      *
-     * @return string
+     * @return \OpenAPI\Client\Model\TfMoveTfMove|null
      */
-    public function getProductAbbr()
+    public function getTfMove()
     {
-        return $this->container['product_abbr'];
+        return $this->container['tf_move'];
     }
 
     /**
-     * Sets product_abbr
+     * Sets tf_move
      *
-     * @param string $product_abbr Product abbreviation for order
+     * @param \OpenAPI\Client\Model\TfMoveTfMove|null $tf_move tf_move
      *
      * @return self
      */
-    public function setProductAbbr($product_abbr)
+    public function setTfMove($tf_move)
     {
-        $this->container['product_abbr'] = $product_abbr;
-
-        return $this;
-    }
-
-    /**
-     * Gets tf_order
-     *
-     * @return \OpenAPI\Client\Model\TfOrderTfOrder|null
-     */
-    public function getTfOrder()
-    {
-        return $this->container['tf_order'];
-    }
-
-    /**
-     * Sets tf_order
-     *
-     * @param \OpenAPI\Client\Model\TfOrderTfOrder|null $tf_order tf_order
-     *
-     * @return self
-     */
-    public function setTfOrder($tf_order)
-    {
-        $this->container['tf_order'] = $tf_order;
+        $this->container['tf_move'] = $tf_move;
 
         return $this;
     }

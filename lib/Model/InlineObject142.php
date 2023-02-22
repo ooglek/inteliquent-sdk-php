@@ -60,12 +60,7 @@ class InlineObject142 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'reference_id' => 'string',
-        'from' => 'string',
-        'text' => 'string',
-        'delivery_receipt' => 'bool',
-        'to' => 'string[]',
-        'media_urls' => 'string[]'
+        'authorizations' => '\OpenAPI\Client\Model\RemoveAuthorizationAuthorizations[]'
     ];
 
     /**
@@ -76,12 +71,7 @@ class InlineObject142 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'reference_id' => null,
-        'from' => null,
-        'text' => null,
-        'delivery_receipt' => null,
-        'to' => null,
-        'media_urls' => null
+        'authorizations' => null
     ];
 
     /**
@@ -111,12 +101,7 @@ class InlineObject142 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        'reference_id' => 'referenceId',
-        'from' => 'from',
-        'text' => 'text',
-        'delivery_receipt' => 'deliveryReceipt',
-        'to' => 'to',
-        'media_urls' => 'mediaUrls'
+        'authorizations' => 'authorizations'
     ];
 
     /**
@@ -125,12 +110,7 @@ class InlineObject142 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        'reference_id' => 'setReferenceId',
-        'from' => 'setFrom',
-        'text' => 'setText',
-        'delivery_receipt' => 'setDeliveryReceipt',
-        'to' => 'setTo',
-        'media_urls' => 'setMediaUrls'
+        'authorizations' => 'setAuthorizations'
     ];
 
     /**
@@ -139,12 +119,7 @@ class InlineObject142 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        'reference_id' => 'getReferenceId',
-        'from' => 'getFrom',
-        'text' => 'getText',
-        'delivery_receipt' => 'getDeliveryReceipt',
-        'to' => 'getTo',
-        'media_urls' => 'getMediaUrls'
+        'authorizations' => 'getAuthorizations'
     ];
 
     /**
@@ -204,12 +179,7 @@ class InlineObject142 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function __construct(array $data = null)
     {
-        $this->container['reference_id'] = $data['reference_id'] ?? null;
-        $this->container['from'] = $data['from'] ?? null;
-        $this->container['text'] = $data['text'] ?? null;
-        $this->container['delivery_receipt'] = $data['delivery_receipt'] ?? null;
-        $this->container['to'] = $data['to'] ?? null;
-        $this->container['media_urls'] = $data['media_urls'] ?? null;
+        $this->container['authorizations'] = $data['authorizations'] ?? null;
     }
 
     /**
@@ -221,8 +191,8 @@ class InlineObject142 implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         $invalidProperties = [];
 
-        if ($this->container['reference_id'] === null) {
-            $invalidProperties[] = "'reference_id' can't be null";
+        if ($this->container['authorizations'] === null) {
+            $invalidProperties[] = "'authorizations' can't be null";
         }
         return $invalidProperties;
     }
@@ -240,145 +210,25 @@ class InlineObject142 implements ModelInterface, ArrayAccess, \JsonSerializable
 
 
     /**
-     * Gets reference_id
+     * Gets authorizations
      *
-     * @return string
+     * @return \OpenAPI\Client\Model\RemoveAuthorizationAuthorizations[]
      */
-    public function getReferenceId()
+    public function getAuthorizations()
     {
-        return $this->container['reference_id'];
+        return $this->container['authorizations'];
     }
 
     /**
-     * Sets reference_id
+     * Sets authorizations
      *
-     * @param string $reference_id Cross reference for the message Id
+     * @param \OpenAPI\Client\Model\RemoveAuthorizationAuthorizations[] $authorizations Contains one or more sets of API or webhook information to be removed from your account
      *
      * @return self
      */
-    public function setReferenceId($reference_id)
+    public function setAuthorizations($authorizations)
     {
-        $this->container['reference_id'] = $reference_id;
-
-        return $this;
-    }
-
-    /**
-     * Gets from
-     *
-     * @return string|null
-     */
-    public function getFrom()
-    {
-        return $this->container['from'];
-    }
-
-    /**
-     * Sets from
-     *
-     * @param string|null $from TN of the sender
-     *
-     * @return self
-     */
-    public function setFrom($from)
-    {
-        $this->container['from'] = $from;
-
-        return $this;
-    }
-
-    /**
-     * Gets text
-     *
-     * @return string|null
-     */
-    public function getText()
-    {
-        return $this->container['text'];
-    }
-
-    /**
-     * Sets text
-     *
-     * @param string|null $text Text message included as part of the MMS call
-     *
-     * @return self
-     */
-    public function setText($text)
-    {
-        $this->container['text'] = $text;
-
-        return $this;
-    }
-
-    /**
-     * Gets delivery_receipt
-     *
-     * @return bool|null
-     */
-    public function getDeliveryReceipt()
-    {
-        return $this->container['delivery_receipt'];
-    }
-
-    /**
-     * Sets delivery_receipt
-     *
-     * @param bool|null $delivery_receipt If this message is a delivery receipt, then the value is set to true.
-     *
-     * @return self
-     */
-    public function setDeliveryReceipt($delivery_receipt)
-    {
-        $this->container['delivery_receipt'] = $delivery_receipt;
-
-        return $this;
-    }
-
-    /**
-     * Gets to
-     *
-     * @return string[]|null
-     */
-    public function getTo()
-    {
-        return $this->container['to'];
-    }
-
-    /**
-     * Sets to
-     *
-     * @param string[]|null $to Array of multiple TNs to whom the message was sent
-     *
-     * @return self
-     */
-    public function setTo($to)
-    {
-        $this->container['to'] = $to;
-
-        return $this;
-    }
-
-    /**
-     * Gets media_urls
-     *
-     * @return string[]|null
-     */
-    public function getMediaUrls()
-    {
-        return $this->container['media_urls'];
-    }
-
-    /**
-     * Sets media_urls
-     *
-     * @param string[]|null $media_urls Optional field with an array of media assets retrievable via URL
-     *
-     * @return self
-     */
-    public function setMediaUrls($media_urls)
-    {
-        $this->container['media_urls'] = $media_urls;
+        $this->container['authorizations'] = $authorizations;
 
         return $this;
     }

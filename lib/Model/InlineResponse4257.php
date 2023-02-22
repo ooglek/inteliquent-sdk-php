@@ -249,7 +249,7 @@ class InlineResponse4257 implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets status
      *
-     * @param string|null $status Error Message
+     * @param string|null $status Partial Success |  Error Message:(Some Error)
      *
      * @return self
      */

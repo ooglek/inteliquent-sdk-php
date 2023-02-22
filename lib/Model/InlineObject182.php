@@ -61,9 +61,7 @@ class InlineObject182 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'portal_user_id' => 'int',
-        'order_id' => 'int',
-        'tn_list' => '\OpenAPI\Client\Model\IntlTnEndUserTnList'
+        'tn_list' => '\OpenAPI\Client\Model\IntlTnDisconnectTnList'
     ];
 
     /**
@@ -75,8 +73,6 @@ class InlineObject182 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'portal_user_id' => null,
-        'order_id' => null,
         'tn_list' => null
     ];
 
@@ -108,8 +104,6 @@ class InlineObject182 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'portal_user_id' => 'portalUserId',
-        'order_id' => 'orderId',
         'tn_list' => 'tnList'
     ];
 
@@ -120,8 +114,6 @@ class InlineObject182 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'portal_user_id' => 'setPortalUserId',
-        'order_id' => 'setOrderId',
         'tn_list' => 'setTnList'
     ];
 
@@ -132,8 +124,6 @@ class InlineObject182 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'portal_user_id' => 'getPortalUserId',
-        'order_id' => 'getOrderId',
         'tn_list' => 'getTnList'
     ];
 
@@ -195,8 +185,6 @@ class InlineObject182 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['portal_user_id'] = $data['portal_user_id'] ?? null;
-        $this->container['order_id'] = $data['order_id'] ?? null;
         $this->container['tn_list'] = $data['tn_list'] ?? null;
     }
 
@@ -249,57 +237,9 @@ class InlineObject182 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets portal_user_id
-     *
-     * @return int|null
-     */
-    public function getPortalUserId()
-    {
-        return $this->container['portal_user_id'];
-    }
-
-    /**
-     * Sets portal_user_id
-     *
-     * @param int|null $portal_user_id portal_user_id
-     *
-     * @return self
-     */
-    public function setPortalUserId($portal_user_id)
-    {
-        $this->container['portal_user_id'] = $portal_user_id;
-
-        return $this;
-    }
-
-    /**
-     * Gets order_id
-     *
-     * @return int|null
-     */
-    public function getOrderId()
-    {
-        return $this->container['order_id'];
-    }
-
-    /**
-     * Sets order_id
-     *
-     * @param int|null $order_id order_id
-     *
-     * @return self
-     */
-    public function setOrderId($order_id)
-    {
-        $this->container['order_id'] = $order_id;
-
-        return $this;
-    }
-
-    /**
      * Gets tn_list
      *
-     * @return \OpenAPI\Client\Model\IntlTnEndUserTnList|null
+     * @return \OpenAPI\Client\Model\IntlTnDisconnectTnList|null
      */
     public function getTnList()
     {
@@ -309,7 +249,7 @@ class InlineObject182 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets tn_list
      *
-     * @param \OpenAPI\Client\Model\IntlTnEndUserTnList|null $tn_list tn_list
+     * @param \OpenAPI\Client\Model\IntlTnDisconnectTnList|null $tn_list tn_list
      *
      * @return self
      */

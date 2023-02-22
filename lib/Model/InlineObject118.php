@@ -61,7 +61,7 @@ class InlineObject118 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'page_sort' => '\OpenAPI\Client\Model\TnDetailPageSort'
+        'tn_port_out_reject' => '\OpenAPI\Client\Model\TnPortOutRejectTnPortOutReject'
     ];
 
     /**
@@ -73,7 +73,7 @@ class InlineObject118 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'page_sort' => null
+        'tn_port_out_reject' => null
     ];
 
     /**
@@ -104,7 +104,7 @@ class InlineObject118 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'page_sort' => 'pageSort'
+        'tn_port_out_reject' => 'tnPortOutReject'
     ];
 
     /**
@@ -114,7 +114,7 @@ class InlineObject118 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'page_sort' => 'setPageSort'
+        'tn_port_out_reject' => 'setTnPortOutReject'
     ];
 
     /**
@@ -124,7 +124,7 @@ class InlineObject118 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'page_sort' => 'getPageSort'
+        'tn_port_out_reject' => 'getTnPortOutReject'
     ];
 
     /**
@@ -185,7 +185,7 @@ class InlineObject118 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['page_sort'] = $data['page_sort'] ?? null;
+        $this->container['tn_port_out_reject'] = $data['tn_port_out_reject'] ?? null;
     }
 
     /**
@@ -199,6 +199,9 @@ class InlineObject118 implements ModelInterface, ArrayAccess, \JsonSerializable
 
         if ($this->container['private_key'] === null) {
             $invalidProperties[] = "'private_key' can't be null";
+        }
+        if ($this->container['tn_port_out_reject'] === null) {
+            $invalidProperties[] = "'tn_port_out_reject' can't be null";
         }
         return $invalidProperties;
     }
@@ -228,7 +231,7 @@ class InlineObject118 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets private_key
      *
-     * @param string $private_key API key required to validate your application; can be retrieved from Admin page of customer portal
+     * @param string $private_key API key required to validate your application
      *
      * @return self
      */
@@ -240,25 +243,25 @@ class InlineObject118 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets page_sort
+     * Gets tn_port_out_reject
      *
-     * @return \OpenAPI\Client\Model\TnDetailPageSort|null
+     * @return \OpenAPI\Client\Model\TnPortOutRejectTnPortOutReject
      */
-    public function getPageSort()
+    public function getTnPortOutReject()
     {
-        return $this->container['page_sort'];
+        return $this->container['tn_port_out_reject'];
     }
 
     /**
-     * Sets page_sort
+     * Sets tn_port_out_reject
      *
-     * @param \OpenAPI\Client\Model\TnDetailPageSort|null $page_sort page_sort
+     * @param \OpenAPI\Client\Model\TnPortOutRejectTnPortOutReject $tn_port_out_reject tn_port_out_reject
      *
      * @return self
      */
-    public function setPageSort($page_sort)
+    public function setTnPortOutReject($tn_port_out_reject)
     {
-        $this->container['page_sort'] = $page_sort;
+        $this->container['tn_port_out_reject'] = $tn_port_out_reject;
 
         return $this;
     }

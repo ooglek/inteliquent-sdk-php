@@ -60,7 +60,8 @@ class InlineObject149 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'private_key' => 'string'
+        'private_key' => 'string',
+        'tn_restore' => '\OpenAPI\Client\Model\TnRestoreTnRestore'
     ];
 
     /**
@@ -71,7 +72,8 @@ class InlineObject149 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'private_key' => null
+        'private_key' => null,
+        'tn_restore' => null
     ];
 
     /**
@@ -101,7 +103,8 @@ class InlineObject149 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        'private_key' => 'privateKey'
+        'private_key' => 'privateKey',
+        'tn_restore' => 'tnRestore'
     ];
 
     /**
@@ -110,7 +113,8 @@ class InlineObject149 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        'private_key' => 'setPrivateKey'
+        'private_key' => 'setPrivateKey',
+        'tn_restore' => 'setTnRestore'
     ];
 
     /**
@@ -119,7 +123,8 @@ class InlineObject149 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        'private_key' => 'getPrivateKey'
+        'private_key' => 'getPrivateKey',
+        'tn_restore' => 'getTnRestore'
     ];
 
     /**
@@ -180,6 +185,7 @@ class InlineObject149 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
+        $this->container['tn_restore'] = $data['tn_restore'] ?? null;
     }
 
     /**
@@ -193,6 +199,9 @@ class InlineObject149 implements ModelInterface, ArrayAccess, \JsonSerializable
 
         if ($this->container['private_key'] === null) {
             $invalidProperties[] = "'private_key' can't be null";
+        }
+        if ($this->container['tn_restore'] === null) {
+            $invalidProperties[] = "'tn_restore' can't be null";
         }
         return $invalidProperties;
     }
@@ -229,6 +238,30 @@ class InlineObject149 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function setPrivateKey($private_key)
     {
         $this->container['private_key'] = $private_key;
+
+        return $this;
+    }
+
+    /**
+     * Gets tn_restore
+     *
+     * @return \OpenAPI\Client\Model\TnRestoreTnRestore
+     */
+    public function getTnRestore()
+    {
+        return $this->container['tn_restore'];
+    }
+
+    /**
+     * Sets tn_restore
+     *
+     * @param \OpenAPI\Client\Model\TnRestoreTnRestore $tn_restore tn_restore
+     *
+     * @return self
+     */
+    public function setTnRestore($tn_restore)
+    {
+        $this->container['tn_restore'] = $tn_restore;
 
         return $this;
     }

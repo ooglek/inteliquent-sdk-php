@@ -13,6 +13,6 @@ Name | Type | Description | Notes
 **auth_date** | **\DateTime** |  | [optional]
 **account_pin** | **string** |  | [optional]
 **tn_feature** | [**\OpenAPI\Client\Model\PortInMessagingOrderPortInMessagingOrderTnListTnFeature**](PortInMessagingOrderPortInMessagingOrderTnListTnFeature.md) |  | [optional]
-**end_user** | [**\OpenAPI\Client\Model\PortInOrderPortInOrderTnListEndUser**](PortInOrderPortInOrderTnListEndUser.md) |  | [optional]
+**end_user** | [**\OpenAPI\Client\Model\PortInMessagingOrderPortInMessagingOrderTnListEndUser**](PortInMessagingOrderPortInMessagingOrderTnListEndUser.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

@@ -61,7 +61,7 @@ class InlineObject124 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'address_external_id_list' => 'string[]'
+        'page_sort' => '\OpenAPI\Client\Model\TnDetailPageSort'
     ];
 
     /**
@@ -73,7 +73,7 @@ class InlineObject124 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'address_external_id_list' => null
+        'page_sort' => null
     ];
 
     /**
@@ -104,7 +104,7 @@ class InlineObject124 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'address_external_id_list' => 'addressExternalIdList'
+        'page_sort' => 'pageSort'
     ];
 
     /**
@@ -114,7 +114,7 @@ class InlineObject124 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'address_external_id_list' => 'setAddressExternalIdList'
+        'page_sort' => 'setPageSort'
     ];
 
     /**
@@ -124,7 +124,7 @@ class InlineObject124 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'address_external_id_list' => 'getAddressExternalIdList'
+        'page_sort' => 'getPageSort'
     ];
 
     /**
@@ -185,7 +185,7 @@ class InlineObject124 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['address_external_id_list'] = $data['address_external_id_list'] ?? null;
+        $this->container['page_sort'] = $data['page_sort'] ?? null;
     }
 
     /**
@@ -240,25 +240,25 @@ class InlineObject124 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets address_external_id_list
+     * Gets page_sort
      *
-     * @return string[]|null
+     * @return \OpenAPI\Client\Model\TnDetailPageSort|null
      */
-    public function getAddressExternalIdList()
+    public function getPageSort()
     {
-        return $this->container['address_external_id_list'];
+        return $this->container['page_sort'];
     }
 
     /**
-     * Sets address_external_id_list
+     * Sets page_sort
      *
-     * @param string[]|null $address_external_id_list address_external_id_list
+     * @param \OpenAPI\Client\Model\TnDetailPageSort|null $page_sort page_sort
      *
      * @return self
      */
-    public function setAddressExternalIdList($address_external_id_list)
+    public function setPageSort($page_sort)
     {
-        $this->container['address_external_id_list'] = $address_external_id_list;
+        $this->container['page_sort'] = $page_sort;
 
         return $this;
     }

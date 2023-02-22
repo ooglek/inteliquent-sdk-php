@@ -60,10 +60,7 @@ class InlineObject139 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'from' => 'string',
-        'to' => 'string[]',
-        'text' => 'string',
-        'media_urls' => 'string'
+        'company_class_id' => 'int'
     ];
 
     /**
@@ -74,10 +71,7 @@ class InlineObject139 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'from' => null,
-        'to' => null,
-        'text' => null,
-        'media_urls' => null
+        'company_class_id' => null
     ];
 
     /**
@@ -107,10 +101,7 @@ class InlineObject139 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        'from' => 'from',
-        'to' => 'to',
-        'text' => 'text',
-        'media_urls' => 'mediaUrls'
+        'company_class_id' => 'companyClassId'
     ];
 
     /**
@@ -119,10 +110,7 @@ class InlineObject139 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        'from' => 'setFrom',
-        'to' => 'setTo',
-        'text' => 'setText',
-        'media_urls' => 'setMediaUrls'
+        'company_class_id' => 'setCompanyClassId'
     ];
 
     /**
@@ -131,10 +119,7 @@ class InlineObject139 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        'from' => 'getFrom',
-        'to' => 'getTo',
-        'text' => 'getText',
-        'media_urls' => 'getMediaUrls'
+        'company_class_id' => 'getCompanyClassId'
     ];
 
     /**
@@ -194,10 +179,7 @@ class InlineObject139 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function __construct(array $data = null)
     {
-        $this->container['from'] = $data['from'] ?? null;
-        $this->container['to'] = $data['to'] ?? null;
-        $this->container['text'] = $data['text'] ?? null;
-        $this->container['media_urls'] = $data['media_urls'] ?? null;
+        $this->container['company_class_id'] = $data['company_class_id'] ?? null;
     }
 
     /**
@@ -209,12 +191,6 @@ class InlineObject139 implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         $invalidProperties = [];
 
-        if ($this->container['from'] === null) {
-            $invalidProperties[] = "'from' can't be null";
-        }
-        if ($this->container['to'] === null) {
-            $invalidProperties[] = "'to' can't be null";
-        }
         return $invalidProperties;
     }
 
@@ -231,97 +207,25 @@ class InlineObject139 implements ModelInterface, ArrayAccess, \JsonSerializable
 
 
     /**
-     * Gets from
+     * Gets company_class_id
      *
-     * @return string
+     * @return int|null
      */
-    public function getFrom()
+    public function getCompanyClassId()
     {
-        return $this->container['from'];
+        return $this->container['company_class_id'];
     }
 
     /**
-     * Sets from
+     * Sets company_class_id
      *
-     * @param string $from Telephone number to send message; must be assigned to your account with active SMS services enabled (e.g. 19205550000)
+     * @param int|null $company_class_id company_class_id
      *
      * @return self
      */
-    public function setFrom($from)
+    public function setCompanyClassId($company_class_id)
     {
-        $this->container['from'] = $from;
-
-        return $this;
-    }
-
-    /**
-     * Gets to
-     *
-     * @return string[]
-     */
-    public function getTo()
-    {
-        return $this->container['to'];
-    }
-
-    /**
-     * Sets to
-     *
-     * @param string[] $to Aelephone number to receive message (e.g. 19205550001)
-     *
-     * @return self
-     */
-    public function setTo($to)
-    {
-        $this->container['to'] = $to;
-
-        return $this;
-    }
-
-    /**
-     * Gets text
-     *
-     * @return string|null
-     */
-    public function getText()
-    {
-        return $this->container['text'];
-    }
-
-    /**
-     * Sets text
-     *
-     * @param string|null $text SMS text message content; message will be sent as SMS if mediaUrls is not sent
-     *
-     * @return self
-     */
-    public function setText($text)
-    {
-        $this->container['text'] = $text;
-
-        return $this;
-    }
-
-    /**
-     * Gets media_urls
-     *
-     * @return string|null
-     */
-    public function getMediaUrls()
-    {
-        return $this->container['media_urls'];
-    }
-
-    /**
-     * Sets media_urls
-     *
-     * @param string|null $media_urls MMS file content location; message will be sent as MMS if this value is sent
-     *
-     * @return self
-     */
-    public function setMediaUrls($media_urls)
-    {
-        $this->container['media_urls'] = $media_urls;
+        $this->container['company_class_id'] = $company_class_id;
 
         return $this;
     }

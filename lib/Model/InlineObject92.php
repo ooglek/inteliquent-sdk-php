@@ -63,7 +63,7 @@ class InlineObject92 implements ModelInterface, ArrayAccess, \JsonSerializable
         'private_key' => 'string',
         'customer_order_reference' => 'string',
         'desired_due_date' => 'string',
-        'tn_list' => '\OpenAPI\Client\Model\TfUpdateTnList'
+        'tn_list' => '\OpenAPI\Client\Model\TfDisconnectTnList'
     ];
 
     /**
@@ -302,7 +302,7 @@ class InlineObject92 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets tn_list
      *
-     * @return \OpenAPI\Client\Model\TfUpdateTnList|null
+     * @return \OpenAPI\Client\Model\TfDisconnectTnList|null
      */
     public function getTnList()
     {
@@ -312,7 +312,7 @@ class InlineObject92 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets tn_list
      *
-     * @param \OpenAPI\Client\Model\TfUpdateTnList|null $tn_list tn_list
+     * @param \OpenAPI\Client\Model\TfDisconnectTnList|null $tn_list tn_list
      *
      * @return self
      */

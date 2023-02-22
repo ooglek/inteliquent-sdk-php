@@ -121,7 +121,7 @@ class PortInApi
      *
      * Check Telephone Number Porting Service Availability
      *
-     * @param  \OpenAPI\Client\Model\InlineObject79 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject80 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -138,7 +138,7 @@ class PortInApi
      *
      * Check Telephone Number Porting Service Availability
      *
-     * @param  \OpenAPI\Client\Model\InlineObject79 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject80 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -371,7 +371,7 @@ class PortInApi
      *
      * Check Telephone Number Porting Service Availability
      *
-     * @param  \OpenAPI\Client\Model\InlineObject79 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject80 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -391,7 +391,7 @@ class PortInApi
      *
      * Check Telephone Number Porting Service Availability
      *
-     * @param  \OpenAPI\Client\Model\InlineObject79 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject80 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -437,7 +437,7 @@ class PortInApi
     /**
      * Create request for operation 'portInAvailabilityPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject79 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject80 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -535,7 +535,7 @@ class PortInApi
      *
      * Activate Port-In Order
      *
-     * @param  \OpenAPI\Client\Model\InlineObject82 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject83 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -552,7 +552,7 @@ class PortInApi
      *
      * Activate Port-In Order
      *
-     * @param  \OpenAPI\Client\Model\InlineObject82 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject83 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -725,7 +725,7 @@ class PortInApi
      *
      * Activate Port-In Order
      *
-     * @param  \OpenAPI\Client\Model\InlineObject82 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject83 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -745,7 +745,7 @@ class PortInApi
      *
      * Activate Port-In Order
      *
-     * @param  \OpenAPI\Client\Model\InlineObject82 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject83 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -791,7 +791,7 @@ class PortInApi
     /**
      * Create request for operation 'portInOrderActivatePost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject82 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject83 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -889,7 +889,7 @@ class PortInApi
      *
      * Retrieve Port-In Order Available Activation Groups
      *
-     * @param  \OpenAPI\Client\Model\InlineObject81 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject82 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -906,7 +906,7 @@ class PortInApi
      *
      * Retrieve Port-In Order Available Activation Groups
      *
-     * @param  \OpenAPI\Client\Model\InlineObject81 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject82 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1099,7 +1099,7 @@ class PortInApi
      *
      * Retrieve Port-In Order Available Activation Groups
      *
-     * @param  \OpenAPI\Client\Model\InlineObject81 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject82 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1119,7 +1119,7 @@ class PortInApi
      *
      * Retrieve Port-In Order Available Activation Groups
      *
-     * @param  \OpenAPI\Client\Model\InlineObject81 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject82 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1165,7 +1165,7 @@ class PortInApi
     /**
      * Create request for operation 'portInOrderAvailableActivationPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject81 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject82 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1263,7 +1263,7 @@ class PortInApi
      *
      * Get Port In Order Listing
      *
-     * @param  \OpenAPI\Client\Model\InlineObject83 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject84 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1280,7 +1280,7 @@ class PortInApi
      *
      * Get Port In Order Listing
      *
-     * @param  \OpenAPI\Client\Model\InlineObject83 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject84 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1493,7 +1493,7 @@ class PortInApi
      *
      * Get Port In Order Listing
      *
-     * @param  \OpenAPI\Client\Model\InlineObject83 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject84 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1513,7 +1513,7 @@ class PortInApi
      *
      * Get Port In Order Listing
      *
-     * @param  \OpenAPI\Client\Model\InlineObject83 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject84 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1559,7 +1559,7 @@ class PortInApi
     /**
      * Create request for operation 'portInOrderListPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject83 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject84 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1657,7 +1657,7 @@ class PortInApi
      *
      * Order Port-In Telephone Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject78 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject79 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1674,7 +1674,7 @@ class PortInApi
      *
      * Order Port-In Telephone Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject78 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject79 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1867,7 +1867,7 @@ class PortInApi
      *
      * Order Port-In Telephone Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject78 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject79 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1887,7 +1887,7 @@ class PortInApi
      *
      * Order Port-In Telephone Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject78 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject79 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1933,7 +1933,7 @@ class PortInApi
     /**
      * Create request for operation 'portInOrderPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject78 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject79 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -2031,7 +2031,7 @@ class PortInApi
      *
      * Get Port In Order TN Listing
      *
-     * @param  \OpenAPI\Client\Model\InlineObject84 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject85 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -2048,7 +2048,7 @@ class PortInApi
      *
      * Get Port In Order TN Listing
      *
-     * @param  \OpenAPI\Client\Model\InlineObject84 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject85 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -2221,7 +2221,7 @@ class PortInApi
      *
      * Get Port In Order TN Listing
      *
-     * @param  \OpenAPI\Client\Model\InlineObject84 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject85 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2241,7 +2241,7 @@ class PortInApi
      *
      * Get Port In Order TN Listing
      *
-     * @param  \OpenAPI\Client\Model\InlineObject84 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject85 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2287,7 +2287,7 @@ class PortInApi
     /**
      * Create request for operation 'portInOrderTnListPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject84 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject85 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -2385,7 +2385,7 @@ class PortInApi
      *
      * CSR Lookup
      *
-     * @param  \OpenAPI\Client\Model\InlineObject89 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject90 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -2402,7 +2402,7 @@ class PortInApi
      *
      * CSR Lookup
      *
-     * @param  \OpenAPI\Client\Model\InlineObject89 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject90 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -2615,7 +2615,7 @@ class PortInApi
      *
      * CSR Lookup
      *
-     * @param  \OpenAPI\Client\Model\InlineObject89 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject90 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2635,7 +2635,7 @@ class PortInApi
      *
      * CSR Lookup
      *
-     * @param  \OpenAPI\Client\Model\InlineObject89 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject90 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2681,7 +2681,7 @@ class PortInApi
     /**
      * Create request for operation 'tnCsrLookupPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject89 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject90 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

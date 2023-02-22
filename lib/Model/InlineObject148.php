@@ -61,7 +61,7 @@ class InlineObject148 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'tn_restore' => '\OpenAPI\Client\Model\TnRestoreTnRestore'
+        'tn_mask' => 'string'
     ];
 
     /**
@@ -73,7 +73,7 @@ class InlineObject148 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'tn_restore' => null
+        'tn_mask' => null
     ];
 
     /**
@@ -104,7 +104,7 @@ class InlineObject148 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'tn_restore' => 'tnRestore'
+        'tn_mask' => 'tnMask'
     ];
 
     /**
@@ -114,7 +114,7 @@ class InlineObject148 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'tn_restore' => 'setTnRestore'
+        'tn_mask' => 'setTnMask'
     ];
 
     /**
@@ -124,7 +124,7 @@ class InlineObject148 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'tn_restore' => 'getTnRestore'
+        'tn_mask' => 'getTnMask'
     ];
 
     /**
@@ -185,7 +185,7 @@ class InlineObject148 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['tn_restore'] = $data['tn_restore'] ?? null;
+        $this->container['tn_mask'] = $data['tn_mask'] ?? null;
     }
 
     /**
@@ -200,8 +200,8 @@ class InlineObject148 implements ModelInterface, ArrayAccess, \JsonSerializable
         if ($this->container['private_key'] === null) {
             $invalidProperties[] = "'private_key' can't be null";
         }
-        if ($this->container['tn_restore'] === null) {
-            $invalidProperties[] = "'tn_restore' can't be null";
+        if ($this->container['tn_mask'] === null) {
+            $invalidProperties[] = "'tn_mask' can't be null";
         }
         return $invalidProperties;
     }
@@ -243,25 +243,25 @@ class InlineObject148 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets tn_restore
+     * Gets tn_mask
      *
-     * @return \OpenAPI\Client\Model\TnRestoreTnRestore
+     * @return string
      */
-    public function getTnRestore()
+    public function getTnMask()
     {
-        return $this->container['tn_restore'];
+        return $this->container['tn_mask'];
     }
 
     /**
-     * Sets tn_restore
+     * Sets tn_mask
      *
-     * @param \OpenAPI\Client\Model\TnRestoreTnRestore $tn_restore tn_restore
+     * @param string $tn_mask Ten-digit telephone number; enter x as wildcard (e.g. 312xxxxxxx, xxx4xxxxx1, xxxxxxxxxx)
      *
      * @return self
      */
-    public function setTnRestore($tn_restore)
+    public function setTnMask($tn_mask)
     {
-        $this->container['tn_restore'] = $tn_restore;
+        $this->container['tn_mask'] = $tn_mask;
 
         return $this;
     }

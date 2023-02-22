@@ -62,7 +62,8 @@ class InlineObject171 implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'private_key' => 'string',
         'order_id' => 'int',
-        'customer_order_reference' => 'string'
+        'customer_order_reference' => 'string',
+        'order_note' => 'string'
     ];
 
     /**
@@ -75,7 +76,8 @@ class InlineObject171 implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPIFormats = [
         'private_key' => null,
         'order_id' => null,
-        'customer_order_reference' => null
+        'customer_order_reference' => null,
+        'order_note' => null
     ];
 
     /**
@@ -107,7 +109,8 @@ class InlineObject171 implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $attributeMap = [
         'private_key' => 'privateKey',
         'order_id' => 'orderId',
-        'customer_order_reference' => 'customerOrderReference'
+        'customer_order_reference' => 'customerOrderReference',
+        'order_note' => 'orderNote'
     ];
 
     /**
@@ -118,7 +121,8 @@ class InlineObject171 implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $setters = [
         'private_key' => 'setPrivateKey',
         'order_id' => 'setOrderId',
-        'customer_order_reference' => 'setCustomerOrderReference'
+        'customer_order_reference' => 'setCustomerOrderReference',
+        'order_note' => 'setOrderNote'
     ];
 
     /**
@@ -129,7 +133,8 @@ class InlineObject171 implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $getters = [
         'private_key' => 'getPrivateKey',
         'order_id' => 'getOrderId',
-        'customer_order_reference' => 'getCustomerOrderReference'
+        'customer_order_reference' => 'getCustomerOrderReference',
+        'order_note' => 'getOrderNote'
     ];
 
     /**
@@ -192,6 +197,7 @@ class InlineObject171 implements ModelInterface, ArrayAccess, \JsonSerializable
         $this->container['private_key'] = $data['private_key'] ?? null;
         $this->container['order_id'] = $data['order_id'] ?? null;
         $this->container['customer_order_reference'] = $data['customer_order_reference'] ?? null;
+        $this->container['order_note'] = $data['order_note'] ?? null;
     }
 
     /**
@@ -286,6 +292,30 @@ class InlineObject171 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function setCustomerOrderReference($customer_order_reference)
     {
         $this->container['customer_order_reference'] = $customer_order_reference;
+
+        return $this;
+    }
+
+    /**
+     * Gets order_note
+     *
+     * @return string|null
+     */
+    public function getOrderNote()
+    {
+        return $this->container['order_note'];
+    }
+
+    /**
+     * Sets order_note
+     *
+     * @param string|null $order_note order_note
+     *
+     * @return self
+     */
+    public function setOrderNote($order_note)
+    {
+        $this->container['order_note'] = $order_note;
 
         return $this;
     }

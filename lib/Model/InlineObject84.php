@@ -60,7 +60,16 @@ class InlineObject84 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'private_key' => 'string'
+        'private_key' => 'string',
+        'order_id' => 'int',
+        'customer_order_reference' => 'string',
+        'service_order_reference' => 'string',
+        'order_status' => 'string',
+        'product_id' => 'int',
+        'created_date_start_range' => 'string',
+        'created_date_end_range' => 'string',
+        'tn' => 'string',
+        'page_sort' => '\OpenAPI\Client\Model\PortInOrderListPageSort'
     ];
 
     /**
@@ -71,7 +80,16 @@ class InlineObject84 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'private_key' => null
+        'private_key' => null,
+        'order_id' => null,
+        'customer_order_reference' => null,
+        'service_order_reference' => null,
+        'order_status' => null,
+        'product_id' => null,
+        'created_date_start_range' => 'dateTime',
+        'created_date_end_range' => 'dateTime',
+        'tn' => null,
+        'page_sort' => null
     ];
 
     /**
@@ -101,7 +119,16 @@ class InlineObject84 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        'private_key' => 'privateKey'
+        'private_key' => 'privateKey',
+        'order_id' => 'orderId',
+        'customer_order_reference' => 'customerOrderReference',
+        'service_order_reference' => 'serviceOrderReference',
+        'order_status' => 'orderStatus',
+        'product_id' => 'productId',
+        'created_date_start_range' => 'createdDateStartRange',
+        'created_date_end_range' => 'createdDateEndRange',
+        'tn' => 'tn',
+        'page_sort' => 'pageSort'
     ];
 
     /**
@@ -110,7 +137,16 @@ class InlineObject84 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        'private_key' => 'setPrivateKey'
+        'private_key' => 'setPrivateKey',
+        'order_id' => 'setOrderId',
+        'customer_order_reference' => 'setCustomerOrderReference',
+        'service_order_reference' => 'setServiceOrderReference',
+        'order_status' => 'setOrderStatus',
+        'product_id' => 'setProductId',
+        'created_date_start_range' => 'setCreatedDateStartRange',
+        'created_date_end_range' => 'setCreatedDateEndRange',
+        'tn' => 'setTn',
+        'page_sort' => 'setPageSort'
     ];
 
     /**
@@ -119,7 +155,16 @@ class InlineObject84 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        'private_key' => 'getPrivateKey'
+        'private_key' => 'getPrivateKey',
+        'order_id' => 'getOrderId',
+        'customer_order_reference' => 'getCustomerOrderReference',
+        'service_order_reference' => 'getServiceOrderReference',
+        'order_status' => 'getOrderStatus',
+        'product_id' => 'getProductId',
+        'created_date_start_range' => 'getCreatedDateStartRange',
+        'created_date_end_range' => 'getCreatedDateEndRange',
+        'tn' => 'getTn',
+        'page_sort' => 'getPageSort'
     ];
 
     /**
@@ -180,6 +225,15 @@ class InlineObject84 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
+        $this->container['order_id'] = $data['order_id'] ?? null;
+        $this->container['customer_order_reference'] = $data['customer_order_reference'] ?? null;
+        $this->container['service_order_reference'] = $data['service_order_reference'] ?? null;
+        $this->container['order_status'] = $data['order_status'] ?? null;
+        $this->container['product_id'] = $data['product_id'] ?? null;
+        $this->container['created_date_start_range'] = $data['created_date_start_range'] ?? null;
+        $this->container['created_date_end_range'] = $data['created_date_end_range'] ?? null;
+        $this->container['tn'] = $data['tn'] ?? null;
+        $this->container['page_sort'] = $data['page_sort'] ?? null;
     }
 
     /**
@@ -226,6 +280,222 @@ class InlineObject84 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function setPrivateKey($private_key)
     {
         $this->container['private_key'] = $private_key;
+
+        return $this;
+    }
+
+    /**
+     * Gets order_id
+     *
+     * @return int|null
+     */
+    public function getOrderId()
+    {
+        return $this->container['order_id'];
+    }
+
+    /**
+     * Sets order_id
+     *
+     * @param int|null $order_id Order Id, if entered, will show the orders matching this order Id.
+     *
+     * @return self
+     */
+    public function setOrderId($order_id)
+    {
+        $this->container['order_id'] = $order_id;
+
+        return $this;
+    }
+
+    /**
+     * Gets customer_order_reference
+     *
+     * @return string|null
+     */
+    public function getCustomerOrderReference()
+    {
+        return $this->container['customer_order_reference'];
+    }
+
+    /**
+     * Sets customer_order_reference
+     *
+     * @param string|null $customer_order_reference Order listing for a particular customer.
+     *
+     * @return self
+     */
+    public function setCustomerOrderReference($customer_order_reference)
+    {
+        $this->container['customer_order_reference'] = $customer_order_reference;
+
+        return $this;
+    }
+
+    /**
+     * Gets service_order_reference
+     *
+     * @return string|null
+     */
+    public function getServiceOrderReference()
+    {
+        return $this->container['service_order_reference'];
+    }
+
+    /**
+     * Sets service_order_reference
+     *
+     * @param string|null $service_order_reference Order listing based on the type of service provided.
+     *
+     * @return self
+     */
+    public function setServiceOrderReference($service_order_reference)
+    {
+        $this->container['service_order_reference'] = $service_order_reference;
+
+        return $this;
+    }
+
+    /**
+     * Gets order_status
+     *
+     * @return string|null
+     */
+    public function getOrderStatus()
+    {
+        return $this->container['order_status'];
+    }
+
+    /**
+     * Sets order_status
+     *
+     * @param string|null $order_status Order listing based on the order status provided.
+     *
+     * @return self
+     */
+    public function setOrderStatus($order_status)
+    {
+        $this->container['order_status'] = $order_status;
+
+        return $this;
+    }
+
+    /**
+     * Gets product_id
+     *
+     * @return int|null
+     */
+    public function getProductId()
+    {
+        return $this->container['product_id'];
+    }
+
+    /**
+     * Sets product_id
+     *
+     * @param int|null $product_id Order listing based on the product Id provided.
+     *
+     * @return self
+     */
+    public function setProductId($product_id)
+    {
+        $this->container['product_id'] = $product_id;
+
+        return $this;
+    }
+
+    /**
+     * Gets created_date_start_range
+     *
+     * @return string|null
+     */
+    public function getCreatedDateStartRange()
+    {
+        return $this->container['created_date_start_range'];
+    }
+
+    /**
+     * Sets created_date_start_range
+     *
+     * @param string|null $created_date_start_range Order listing based on the created date.
+     *
+     * @return self
+     */
+    public function setCreatedDateStartRange($created_date_start_range)
+    {
+        $this->container['created_date_start_range'] = $created_date_start_range;
+
+        return $this;
+    }
+
+    /**
+     * Gets created_date_end_range
+     *
+     * @return string|null
+     */
+    public function getCreatedDateEndRange()
+    {
+        return $this->container['created_date_end_range'];
+    }
+
+    /**
+     * Sets created_date_end_range
+     *
+     * @param string|null $created_date_end_range Order listing based on the created date.
+     *
+     * @return self
+     */
+    public function setCreatedDateEndRange($created_date_end_range)
+    {
+        $this->container['created_date_end_range'] = $created_date_end_range;
+
+        return $this;
+    }
+
+    /**
+     * Gets tn
+     *
+     * @return string|null
+     */
+    public function getTn()
+    {
+        return $this->container['tn'];
+    }
+
+    /**
+     * Sets tn
+     *
+     * @param string|null $tn Order listing based on the telephone number provided.
+     *
+     * @return self
+     */
+    public function setTn($tn)
+    {
+        $this->container['tn'] = $tn;
+
+        return $this;
+    }
+
+    /**
+     * Gets page_sort
+     *
+     * @return \OpenAPI\Client\Model\PortInOrderListPageSort|null
+     */
+    public function getPageSort()
+    {
+        return $this->container['page_sort'];
+    }
+
+    /**
+     * Sets page_sort
+     *
+     * @param \OpenAPI\Client\Model\PortInOrderListPageSort|null $page_sort page_sort
+     *
+     * @return self
+     */
+    public function setPageSort($page_sort)
+    {
+        $this->container['page_sort'] = $page_sort;
 
         return $this;
     }

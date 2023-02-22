@@ -228,7 +228,7 @@ class InlineObject121 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets private_key
      *
-     * @param string $private_key API key required to validate your application
+     * @param string $private_key API key required to validate your application; can be retrieved from Admin page of customer portal
      *
      * @return self
      */

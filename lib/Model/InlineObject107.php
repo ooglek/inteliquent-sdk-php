@@ -60,8 +60,7 @@ class InlineObject107 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'private_key' => 'string',
-        'trunk_group_name' => 'string'
+        'private_key' => 'string'
     ];
 
     /**
@@ -72,8 +71,7 @@ class InlineObject107 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'private_key' => null,
-        'trunk_group_name' => null
+        'private_key' => null
     ];
 
     /**
@@ -103,8 +101,7 @@ class InlineObject107 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        'private_key' => 'privateKey',
-        'trunk_group_name' => 'trunkGroupName'
+        'private_key' => 'privateKey'
     ];
 
     /**
@@ -113,8 +110,7 @@ class InlineObject107 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        'private_key' => 'setPrivateKey',
-        'trunk_group_name' => 'setTrunkGroupName'
+        'private_key' => 'setPrivateKey'
     ];
 
     /**
@@ -123,8 +119,7 @@ class InlineObject107 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        'private_key' => 'getPrivateKey',
-        'trunk_group_name' => 'getTrunkGroupName'
+        'private_key' => 'getPrivateKey'
     ];
 
     /**
@@ -185,7 +180,6 @@ class InlineObject107 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['trunk_group_name'] = $data['trunk_group_name'] ?? null;
     }
 
     /**
@@ -235,30 +229,6 @@ class InlineObject107 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function setPrivateKey($private_key)
     {
         $this->container['private_key'] = $private_key;
-
-        return $this;
-    }
-
-    /**
-     * Gets trunk_group_name
-     *
-     * @return string|null
-     */
-    public function getTrunkGroupName()
-    {
-        return $this->container['trunk_group_name'];
-    }
-
-    /**
-     * Sets trunk_group_name
-     *
-     * @param string|null $trunk_group_name Trunk group name
-     *
-     * @return self
-     */
-    public function setTrunkGroupName($trunk_group_name)
-    {
-        $this->container['trunk_group_name'] = $trunk_group_name;
 
         return $this;
     }

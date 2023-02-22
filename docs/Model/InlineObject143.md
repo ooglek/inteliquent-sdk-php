@@ -4,16 +4,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**message** | **string** |  | [optional]
-**notification_type** | **string** |  | [optional]
-**order_id** | **int** | Order Id of the order. | [optional]
-**customer_order_reference** | **string** | Customer for whom the order is. | [optional]
-**order_type** | **string** | Type of order submitted | [optional]
-**order_status** | **string** |  | [optional]
-**timestamp** | **string** | The timestamp format should match \&quot;7/31/2017 4:56:06.000000 AM -05:00\&quot; | [optional]
-**tn_group** | **string** |  | [optional]
-**group_status** | **string** |  | [optional]
-**tn_list** | [**\OpenAPI\Client\Model\CustomerConfiguredWebhookURLForOrderUpdatesTnList**](CustomerConfiguredWebhookURLForOrderUpdatesTnList.md) |  | [optional]
-**tn_item** | [**\OpenAPI\Client\Model\CustomerConfiguredWebhookURLForOrderUpdatesTnItem**](CustomerConfiguredWebhookURLForOrderUpdatesTnItem.md) |  | [optional]
+**reference_id** | **string** | Cross reference for the message Id |
+**from** | **string** | TN of the sender | [optional]
+**text** | **string** | Text message included as part of the MMS call | [optional]
+**delivery_receipt** | **bool** | If this message is a delivery receipt, then the value is set to true. | [optional]
+**to** | **string[]** | Array of multiple TNs to whom the message was sent | [optional]
+**media_urls** | **string[]** | Optional field with an array of media assets retrievable via URL | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

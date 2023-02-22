@@ -36,7 +36,7 @@ $apiInstance = new OpenAPI\Client\Api\ApproveAllTelephoneNumbersOnPortOutOrderAp
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject135(); // \OpenAPI\Client\Model\InlineObject135
+$payload = new \OpenAPI\Client\Model\InlineObject136(); // \OpenAPI\Client\Model\InlineObject136
 
 try {
     $result = $apiInstance->portOutApprovalPost($payload);
@@ -50,7 +50,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject135**](../Model/InlineObject135.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject136**](../Model/InlineObject136.md)|  |
 
 ### Return type
 

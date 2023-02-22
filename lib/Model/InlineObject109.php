@@ -200,9 +200,6 @@ class InlineObject109 implements ModelInterface, ArrayAccess, \JsonSerializable
         if ($this->container['private_key'] === null) {
             $invalidProperties[] = "'private_key' can't be null";
         }
-        if ($this->container['routing_label'] === null) {
-            $invalidProperties[] = "'routing_label' can't be null";
-        }
         return $invalidProperties;
     }
 
@@ -245,7 +242,7 @@ class InlineObject109 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets routing_label
      *
-     * @return string
+     * @return string|null
      */
     public function getRoutingLabel()
     {
@@ -255,7 +252,7 @@ class InlineObject109 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets routing_label
      *
-     * @param string $routing_label routingLabel or customerAssignedName as retrieved in the /routingLabelSearchAssigned operation
+     * @param string|null $routing_label Routing Label Name to be searched
      *
      * @return self
      */

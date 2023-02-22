@@ -60,7 +60,9 @@ class InlineObject119 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'private_key' => 'string'
+        'private_key' => 'string',
+        'order_id' => 'int',
+        'customer_order_reference' => 'string'
     ];
 
     /**
@@ -71,7 +73,9 @@ class InlineObject119 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'private_key' => null
+        'private_key' => null,
+        'order_id' => null,
+        'customer_order_reference' => null
     ];
 
     /**
@@ -101,7 +105,9 @@ class InlineObject119 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        'private_key' => 'privateKey'
+        'private_key' => 'privateKey',
+        'order_id' => 'orderId',
+        'customer_order_reference' => 'customerOrderReference'
     ];
 
     /**
@@ -110,7 +116,9 @@ class InlineObject119 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        'private_key' => 'setPrivateKey'
+        'private_key' => 'setPrivateKey',
+        'order_id' => 'setOrderId',
+        'customer_order_reference' => 'setCustomerOrderReference'
     ];
 
     /**
@@ -119,7 +127,9 @@ class InlineObject119 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        'private_key' => 'getPrivateKey'
+        'private_key' => 'getPrivateKey',
+        'order_id' => 'getOrderId',
+        'customer_order_reference' => 'getCustomerOrderReference'
     ];
 
     /**
@@ -180,6 +190,8 @@ class InlineObject119 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
+        $this->container['order_id'] = $data['order_id'] ?? null;
+        $this->container['customer_order_reference'] = $data['customer_order_reference'] ?? null;
     }
 
     /**
@@ -191,9 +203,6 @@ class InlineObject119 implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         $invalidProperties = [];
 
-        if ($this->container['private_key'] === null) {
-            $invalidProperties[] = "'private_key' can't be null";
-        }
         return $invalidProperties;
     }
 
@@ -212,7 +221,7 @@ class InlineObject119 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets private_key
      *
-     * @return string
+     * @return string|null
      */
     public function getPrivateKey()
     {
@@ -222,13 +231,61 @@ class InlineObject119 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets private_key
      *
-     * @param string $private_key API key required to validate your application
+     * @param string|null $private_key private_key
      *
      * @return self
      */
     public function setPrivateKey($private_key)
     {
         $this->container['private_key'] = $private_key;
+
+        return $this;
+    }
+
+    /**
+     * Gets order_id
+     *
+     * @return int|null
+     */
+    public function getOrderId()
+    {
+        return $this->container['order_id'];
+    }
+
+    /**
+     * Sets order_id
+     *
+     * @param int|null $order_id order_id
+     *
+     * @return self
+     */
+    public function setOrderId($order_id)
+    {
+        $this->container['order_id'] = $order_id;
+
+        return $this;
+    }
+
+    /**
+     * Gets customer_order_reference
+     *
+     * @return string|null
+     */
+    public function getCustomerOrderReference()
+    {
+        return $this->container['customer_order_reference'];
+    }
+
+    /**
+     * Sets customer_order_reference
+     *
+     * @param string|null $customer_order_reference Customer for whom the order is.
+     *
+     * @return self
+     */
+    public function setCustomerOrderReference($customer_order_reference)
+    {
+        $this->container['customer_order_reference'] = $customer_order_reference;
 
         return $this;
     }

@@ -60,7 +60,10 @@ class InlineObject140 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'authorizations' => '\OpenAPI\Client\Model\ConfigureAuthorizationAuthorizations[]'
+        'from' => 'string',
+        'to' => 'string[]',
+        'text' => 'string',
+        'media_urls' => 'string'
     ];
 
     /**
@@ -71,7 +74,10 @@ class InlineObject140 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'authorizations' => null
+        'from' => null,
+        'to' => null,
+        'text' => null,
+        'media_urls' => null
     ];
 
     /**
@@ -101,7 +107,10 @@ class InlineObject140 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        'authorizations' => 'authorizations'
+        'from' => 'from',
+        'to' => 'to',
+        'text' => 'text',
+        'media_urls' => 'mediaUrls'
     ];
 
     /**
@@ -110,7 +119,10 @@ class InlineObject140 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        'authorizations' => 'setAuthorizations'
+        'from' => 'setFrom',
+        'to' => 'setTo',
+        'text' => 'setText',
+        'media_urls' => 'setMediaUrls'
     ];
 
     /**
@@ -119,7 +131,10 @@ class InlineObject140 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        'authorizations' => 'getAuthorizations'
+        'from' => 'getFrom',
+        'to' => 'getTo',
+        'text' => 'getText',
+        'media_urls' => 'getMediaUrls'
     ];
 
     /**
@@ -179,7 +194,10 @@ class InlineObject140 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function __construct(array $data = null)
     {
-        $this->container['authorizations'] = $data['authorizations'] ?? null;
+        $this->container['from'] = $data['from'] ?? null;
+        $this->container['to'] = $data['to'] ?? null;
+        $this->container['text'] = $data['text'] ?? null;
+        $this->container['media_urls'] = $data['media_urls'] ?? null;
     }
 
     /**
@@ -191,8 +209,11 @@ class InlineObject140 implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         $invalidProperties = [];
 
-        if ($this->container['authorizations'] === null) {
-            $invalidProperties[] = "'authorizations' can't be null";
+        if ($this->container['from'] === null) {
+            $invalidProperties[] = "'from' can't be null";
+        }
+        if ($this->container['to'] === null) {
+            $invalidProperties[] = "'to' can't be null";
         }
         return $invalidProperties;
     }
@@ -210,25 +231,97 @@ class InlineObject140 implements ModelInterface, ArrayAccess, \JsonSerializable
 
 
     /**
-     * Gets authorizations
+     * Gets from
      *
-     * @return \OpenAPI\Client\Model\ConfigureAuthorizationAuthorizations[]
+     * @return string
      */
-    public function getAuthorizations()
+    public function getFrom()
     {
-        return $this->container['authorizations'];
+        return $this->container['from'];
     }
 
     /**
-     * Sets authorizations
+     * Sets from
      *
-     * @param \OpenAPI\Client\Model\ConfigureAuthorizationAuthorizations[] $authorizations Contains one or more sets of webhook URL information
+     * @param string $from Telephone number to send message; must be assigned to your account with active SMS services enabled (e.g. 19205550000)
      *
      * @return self
      */
-    public function setAuthorizations($authorizations)
+    public function setFrom($from)
     {
-        $this->container['authorizations'] = $authorizations;
+        $this->container['from'] = $from;
+
+        return $this;
+    }
+
+    /**
+     * Gets to
+     *
+     * @return string[]
+     */
+    public function getTo()
+    {
+        return $this->container['to'];
+    }
+
+    /**
+     * Sets to
+     *
+     * @param string[] $to Aelephone number to receive message (e.g. 19205550001)
+     *
+     * @return self
+     */
+    public function setTo($to)
+    {
+        $this->container['to'] = $to;
+
+        return $this;
+    }
+
+    /**
+     * Gets text
+     *
+     * @return string|null
+     */
+    public function getText()
+    {
+        return $this->container['text'];
+    }
+
+    /**
+     * Sets text
+     *
+     * @param string|null $text SMS text message content; message will be sent as SMS if mediaUrls is not sent
+     *
+     * @return self
+     */
+    public function setText($text)
+    {
+        $this->container['text'] = $text;
+
+        return $this;
+    }
+
+    /**
+     * Gets media_urls
+     *
+     * @return string|null
+     */
+    public function getMediaUrls()
+    {
+        return $this->container['media_urls'];
+    }
+
+    /**
+     * Sets media_urls
+     *
+     * @param string|null $media_urls MMS file content location; message will be sent as MMS if this value is sent
+     *
+     * @return self
+     */
+    public function setMediaUrls($media_urls)
+    {
+        $this->container['media_urls'] = $media_urls;
 
         return $this;
     }

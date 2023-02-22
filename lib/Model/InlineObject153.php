@@ -61,7 +61,7 @@ class InlineObject153 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'change_trunk_group_order' => '\OpenAPI\Client\Model\ChangeTrunkGroupOrderChangeTrunkGroupOrder'
+        'trunk_group_order' => '\OpenAPI\Client\Model\TrunkGroupOrderTrunkGroupOrder'
     ];
 
     /**
@@ -73,7 +73,7 @@ class InlineObject153 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'change_trunk_group_order' => null
+        'trunk_group_order' => null
     ];
 
     /**
@@ -104,7 +104,7 @@ class InlineObject153 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'change_trunk_group_order' => 'changeTrunkGroupOrder'
+        'trunk_group_order' => 'trunkGroupOrder'
     ];
 
     /**
@@ -114,7 +114,7 @@ class InlineObject153 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'change_trunk_group_order' => 'setChangeTrunkGroupOrder'
+        'trunk_group_order' => 'setTrunkGroupOrder'
     ];
 
     /**
@@ -124,7 +124,7 @@ class InlineObject153 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'change_trunk_group_order' => 'getChangeTrunkGroupOrder'
+        'trunk_group_order' => 'getTrunkGroupOrder'
     ];
 
     /**
@@ -185,7 +185,7 @@ class InlineObject153 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['change_trunk_group_order'] = $data['change_trunk_group_order'] ?? null;
+        $this->container['trunk_group_order'] = $data['trunk_group_order'] ?? null;
     }
 
     /**
@@ -200,8 +200,8 @@ class InlineObject153 implements ModelInterface, ArrayAccess, \JsonSerializable
         if ($this->container['private_key'] === null) {
             $invalidProperties[] = "'private_key' can't be null";
         }
-        if ($this->container['change_trunk_group_order'] === null) {
-            $invalidProperties[] = "'change_trunk_group_order' can't be null";
+        if ($this->container['trunk_group_order'] === null) {
+            $invalidProperties[] = "'trunk_group_order' can't be null";
         }
         return $invalidProperties;
     }
@@ -243,25 +243,25 @@ class InlineObject153 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets change_trunk_group_order
+     * Gets trunk_group_order
      *
-     * @return \OpenAPI\Client\Model\ChangeTrunkGroupOrderChangeTrunkGroupOrder
+     * @return \OpenAPI\Client\Model\TrunkGroupOrderTrunkGroupOrder
      */
-    public function getChangeTrunkGroupOrder()
+    public function getTrunkGroupOrder()
     {
-        return $this->container['change_trunk_group_order'];
+        return $this->container['trunk_group_order'];
     }
 
     /**
-     * Sets change_trunk_group_order
+     * Sets trunk_group_order
      *
-     * @param \OpenAPI\Client\Model\ChangeTrunkGroupOrderChangeTrunkGroupOrder $change_trunk_group_order change_trunk_group_order
+     * @param \OpenAPI\Client\Model\TrunkGroupOrderTrunkGroupOrder $trunk_group_order trunk_group_order
      *
      * @return self
      */
-    public function setChangeTrunkGroupOrder($change_trunk_group_order)
+    public function setTrunkGroupOrder($trunk_group_order)
     {
-        $this->container['change_trunk_group_order'] = $change_trunk_group_order;
+        $this->container['trunk_group_order'] = $trunk_group_order;
 
         return $this;
     }

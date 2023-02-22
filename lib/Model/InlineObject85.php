@@ -60,8 +60,7 @@ class InlineObject85 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'private_key' => 'string',
-        'tn_e911_notification' => '\OpenAPI\Client\Model\TnE911NotificationTnE911Notification'
+        'private_key' => 'string'
     ];
 
     /**
@@ -72,8 +71,7 @@ class InlineObject85 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'private_key' => null,
-        'tn_e911_notification' => null
+        'private_key' => null
     ];
 
     /**
@@ -103,8 +101,7 @@ class InlineObject85 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        'private_key' => 'privateKey',
-        'tn_e911_notification' => 'tnE911Notification'
+        'private_key' => 'privateKey'
     ];
 
     /**
@@ -113,8 +110,7 @@ class InlineObject85 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        'private_key' => 'setPrivateKey',
-        'tn_e911_notification' => 'setTnE911Notification'
+        'private_key' => 'setPrivateKey'
     ];
 
     /**
@@ -123,8 +119,7 @@ class InlineObject85 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        'private_key' => 'getPrivateKey',
-        'tn_e911_notification' => 'getTnE911Notification'
+        'private_key' => 'getPrivateKey'
     ];
 
     /**
@@ -185,7 +180,6 @@ class InlineObject85 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['tn_e911_notification'] = $data['tn_e911_notification'] ?? null;
     }
 
     /**
@@ -197,12 +191,6 @@ class InlineObject85 implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         $invalidProperties = [];
 
-        if ($this->container['private_key'] === null) {
-            $invalidProperties[] = "'private_key' can't be null";
-        }
-        if ($this->container['tn_e911_notification'] === null) {
-            $invalidProperties[] = "'tn_e911_notification' can't be null";
-        }
         return $invalidProperties;
     }
 
@@ -221,7 +209,7 @@ class InlineObject85 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets private_key
      *
-     * @return string
+     * @return string|null
      */
     public function getPrivateKey()
     {
@@ -231,37 +219,13 @@ class InlineObject85 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets private_key
      *
-     * @param string $private_key API key required to validate your application; can be retrieved from Admin page of customer portal
+     * @param string|null $private_key Private Key
      *
      * @return self
      */
     public function setPrivateKey($private_key)
     {
         $this->container['private_key'] = $private_key;
-
-        return $this;
-    }
-
-    /**
-     * Gets tn_e911_notification
-     *
-     * @return \OpenAPI\Client\Model\TnE911NotificationTnE911Notification
-     */
-    public function getTnE911Notification()
-    {
-        return $this->container['tn_e911_notification'];
-    }
-
-    /**
-     * Sets tn_e911_notification
-     *
-     * @param \OpenAPI\Client\Model\TnE911NotificationTnE911Notification $tn_e911_notification tn_e911_notification
-     *
-     * @return self
-     */
-    public function setTnE911Notification($tn_e911_notification)
-    {
-        $this->container['tn_e911_notification'] = $tn_e911_notification;
 
         return $this;
     }

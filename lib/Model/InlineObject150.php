@@ -60,10 +60,7 @@ class InlineObject150 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'private_key' => 'string',
-        'trunk_group_name' => 'string',
-        'update_action' => 'string',
-        'update_session_count_by' => 'int'
+        'private_key' => 'string'
     ];
 
     /**
@@ -74,10 +71,7 @@ class InlineObject150 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'private_key' => null,
-        'trunk_group_name' => null,
-        'update_action' => null,
-        'update_session_count_by' => null
+        'private_key' => null
     ];
 
     /**
@@ -107,10 +101,7 @@ class InlineObject150 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        'private_key' => 'privateKey',
-        'trunk_group_name' => 'trunkGroupName',
-        'update_action' => 'updateAction',
-        'update_session_count_by' => 'updateSessionCountBy'
+        'private_key' => 'privateKey'
     ];
 
     /**
@@ -119,10 +110,7 @@ class InlineObject150 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        'private_key' => 'setPrivateKey',
-        'trunk_group_name' => 'setTrunkGroupName',
-        'update_action' => 'setUpdateAction',
-        'update_session_count_by' => 'setUpdateSessionCountBy'
+        'private_key' => 'setPrivateKey'
     ];
 
     /**
@@ -131,10 +119,7 @@ class InlineObject150 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        'private_key' => 'getPrivateKey',
-        'trunk_group_name' => 'getTrunkGroupName',
-        'update_action' => 'getUpdateAction',
-        'update_session_count_by' => 'getUpdateSessionCountBy'
+        'private_key' => 'getPrivateKey'
     ];
 
     /**
@@ -195,9 +180,6 @@ class InlineObject150 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['trunk_group_name'] = $data['trunk_group_name'] ?? null;
-        $this->container['update_action'] = $data['update_action'] ?? null;
-        $this->container['update_session_count_by'] = $data['update_session_count_by'] ?? null;
     }
 
     /**
@@ -211,15 +193,6 @@ class InlineObject150 implements ModelInterface, ArrayAccess, \JsonSerializable
 
         if ($this->container['private_key'] === null) {
             $invalidProperties[] = "'private_key' can't be null";
-        }
-        if ($this->container['trunk_group_name'] === null) {
-            $invalidProperties[] = "'trunk_group_name' can't be null";
-        }
-        if ($this->container['update_action'] === null) {
-            $invalidProperties[] = "'update_action' can't be null";
-        }
-        if ($this->container['update_session_count_by'] === null) {
-            $invalidProperties[] = "'update_session_count_by' can't be null";
         }
         return $invalidProperties;
     }
@@ -256,78 +229,6 @@ class InlineObject150 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function setPrivateKey($private_key)
     {
         $this->container['private_key'] = $private_key;
-
-        return $this;
-    }
-
-    /**
-     * Gets trunk_group_name
-     *
-     * @return string
-     */
-    public function getTrunkGroupName()
-    {
-        return $this->container['trunk_group_name'];
-    }
-
-    /**
-     * Sets trunk_group_name
-     *
-     * @param string $trunk_group_name Name of trunk group to be updated
-     *
-     * @return self
-     */
-    public function setTrunkGroupName($trunk_group_name)
-    {
-        $this->container['trunk_group_name'] = $trunk_group_name;
-
-        return $this;
-    }
-
-    /**
-     * Gets update_action
-     *
-     * @return string
-     */
-    public function getUpdateAction()
-    {
-        return $this->container['update_action'];
-    }
-
-    /**
-     * Sets update_action
-     *
-     * @param string $update_action Session count update action. Accepted values are Increase or Decrease
-     *
-     * @return self
-     */
-    public function setUpdateAction($update_action)
-    {
-        $this->container['update_action'] = $update_action;
-
-        return $this;
-    }
-
-    /**
-     * Gets update_session_count_by
-     *
-     * @return int
-     */
-    public function getUpdateSessionCountBy()
-    {
-        return $this->container['update_session_count_by'];
-    }
-
-    /**
-     * Sets update_session_count_by
-     *
-     * @param int $update_session_count_by Number of sessions to be increased or decreased
-     *
-     * @return self
-     */
-    public function setUpdateSessionCountBy($update_session_count_by)
-    {
-        $this->container['update_session_count_by'] = $update_session_count_by;
 
         return $this;
     }

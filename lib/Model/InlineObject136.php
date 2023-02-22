@@ -61,8 +61,7 @@ class InlineObject136 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'tn_mask' => 'string',
-        'port_out_pin' => 'string'
+        'order_id' => 'int'
     ];
 
     /**
@@ -74,8 +73,7 @@ class InlineObject136 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'tn_mask' => null,
-        'port_out_pin' => null
+        'order_id' => null
     ];
 
     /**
@@ -106,8 +104,7 @@ class InlineObject136 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'tn_mask' => 'tnMask',
-        'port_out_pin' => 'portOutPin'
+        'order_id' => 'orderId'
     ];
 
     /**
@@ -117,8 +114,7 @@ class InlineObject136 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'tn_mask' => 'setTnMask',
-        'port_out_pin' => 'setPortOutPin'
+        'order_id' => 'setOrderId'
     ];
 
     /**
@@ -128,8 +124,7 @@ class InlineObject136 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'tn_mask' => 'getTnMask',
-        'port_out_pin' => 'getPortOutPin'
+        'order_id' => 'getOrderId'
     ];
 
     /**
@@ -190,8 +185,7 @@ class InlineObject136 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['tn_mask'] = $data['tn_mask'] ?? null;
-        $this->container['port_out_pin'] = $data['port_out_pin'] ?? null;
+        $this->container['order_id'] = $data['order_id'] ?? null;
     }
 
     /**
@@ -243,49 +237,25 @@ class InlineObject136 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets tn_mask
+     * Gets order_id
      *
-     * @return string|null
+     * @return int|null
      */
-    public function getTnMask()
+    public function getOrderId()
     {
-        return $this->container['tn_mask'];
+        return $this->container['order_id'];
     }
 
     /**
-     * Sets tn_mask
+     * Sets order_id
      *
-     * @param string|null $tn_mask tn_mask
+     * @param int|null $order_id order_id
      *
      * @return self
      */
-    public function setTnMask($tn_mask)
+    public function setOrderId($order_id)
     {
-        $this->container['tn_mask'] = $tn_mask;
-
-        return $this;
-    }
-
-    /**
-     * Gets port_out_pin
-     *
-     * @return string|null
-     */
-    public function getPortOutPin()
-    {
-        return $this->container['port_out_pin'];
-    }
-
-    /**
-     * Sets port_out_pin
-     *
-     * @param string|null $port_out_pin port_out_pin
-     *
-     * @return self
-     */
-    public function setPortOutPin($port_out_pin)
-    {
-        $this->container['port_out_pin'] = $port_out_pin;
+        $this->container['order_id'] = $order_id;
 
         return $this;
     }

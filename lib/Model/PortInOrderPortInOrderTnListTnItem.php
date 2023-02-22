@@ -61,10 +61,10 @@ class PortInOrderPortInOrderTnListTnItem implements ModelInterface, ArrayAccess,
       */
     protected static $openAPITypes = [
         'tn' => 'string',
-        'routing_label' => 'string',
         'tn_note' => 'string',
         'port_out_pin' => 'string',
         'trunk_group' => 'string',
+        'routing_option' => 'string',
         'account_num' => 'string',
         'atn' => 'string',
         'auth_name' => 'string',
@@ -83,10 +83,10 @@ class PortInOrderPortInOrderTnListTnItem implements ModelInterface, ArrayAccess,
       */
     protected static $openAPIFormats = [
         'tn' => null,
-        'routing_label' => null,
         'tn_note' => null,
         'port_out_pin' => null,
         'trunk_group' => null,
+        'routing_option' => null,
         'account_num' => null,
         'atn' => null,
         'auth_name' => null,
@@ -124,10 +124,10 @@ class PortInOrderPortInOrderTnListTnItem implements ModelInterface, ArrayAccess,
      */
     protected static $attributeMap = [
         'tn' => 'tn',
-        'routing_label' => 'routingLabel',
         'tn_note' => 'tnNote',
         'port_out_pin' => 'portOutPin',
         'trunk_group' => 'trunkGroup',
+        'routing_option' => 'routingOption',
         'account_num' => 'accountNum',
         'atn' => 'atn',
         'auth_name' => 'authName',
@@ -144,10 +144,10 @@ class PortInOrderPortInOrderTnListTnItem implements ModelInterface, ArrayAccess,
      */
     protected static $setters = [
         'tn' => 'setTn',
-        'routing_label' => 'setRoutingLabel',
         'tn_note' => 'setTnNote',
         'port_out_pin' => 'setPortOutPin',
         'trunk_group' => 'setTrunkGroup',
+        'routing_option' => 'setRoutingOption',
         'account_num' => 'setAccountNum',
         'atn' => 'setAtn',
         'auth_name' => 'setAuthName',
@@ -164,10 +164,10 @@ class PortInOrderPortInOrderTnListTnItem implements ModelInterface, ArrayAccess,
      */
     protected static $getters = [
         'tn' => 'getTn',
-        'routing_label' => 'getRoutingLabel',
         'tn_note' => 'getTnNote',
         'port_out_pin' => 'getPortOutPin',
         'trunk_group' => 'getTrunkGroup',
+        'routing_option' => 'getRoutingOption',
         'account_num' => 'getAccountNum',
         'atn' => 'getAtn',
         'auth_name' => 'getAuthName',
@@ -235,10 +235,10 @@ class PortInOrderPortInOrderTnListTnItem implements ModelInterface, ArrayAccess,
     public function __construct(array $data = null)
     {
         $this->container['tn'] = $data['tn'] ?? null;
-        $this->container['routing_label'] = $data['routing_label'] ?? null;
         $this->container['tn_note'] = $data['tn_note'] ?? null;
         $this->container['port_out_pin'] = $data['port_out_pin'] ?? null;
         $this->container['trunk_group'] = $data['trunk_group'] ?? null;
+        $this->container['routing_option'] = $data['routing_option'] ?? null;
         $this->container['account_num'] = $data['account_num'] ?? null;
         $this->container['atn'] = $data['atn'] ?? null;
         $this->container['auth_name'] = $data['auth_name'] ?? null;
@@ -257,6 +257,24 @@ class PortInOrderPortInOrderTnListTnItem implements ModelInterface, ArrayAccess,
     {
         $invalidProperties = [];
 
+        if ($this->container['tn'] === null) {
+            $invalidProperties[] = "'tn' can't be null";
+        }
+        if ($this->container['account_num'] === null) {
+            $invalidProperties[] = "'account_num' can't be null";
+        }
+        if ($this->container['atn'] === null) {
+            $invalidProperties[] = "'atn' can't be null";
+        }
+        if ($this->container['auth_name'] === null) {
+            $invalidProperties[] = "'auth_name' can't be null";
+        }
+        if ($this->container['auth_date'] === null) {
+            $invalidProperties[] = "'auth_date' can't be null";
+        }
+        if ($this->container['end_user'] === null) {
+            $invalidProperties[] = "'end_user' can't be null";
+        }
         return $invalidProperties;
     }
 
@@ -275,7 +293,7 @@ class PortInOrderPortInOrderTnListTnItem implements ModelInterface, ArrayAccess,
     /**
      * Gets tn
      *
-     * @return string|null
+     * @return string
      */
     public function getTn()
     {
@@ -285,37 +303,13 @@ class PortInOrderPortInOrderTnListTnItem implements ModelInterface, ArrayAccess,
     /**
      * Sets tn
      *
-     * @param string|null $tn telephone number requested
+     * @param string $tn telephone number requested
      *
      * @return self
      */
     public function setTn($tn)
     {
         $this->container['tn'] = $tn;
-
-        return $this;
-    }
-
-    /**
-     * Gets routing_label
-     *
-     * @return string|null
-     */
-    public function getRoutingLabel()
-    {
-        return $this->container['routing_label'];
-    }
-
-    /**
-     * Sets routing_label
-     *
-     * @param string|null $routing_label routing_label
-     *
-     * @return self
-     */
-    public function setRoutingLabel($routing_label)
-    {
-        $this->container['routing_label'] = $routing_label;
 
         return $this;
     }
@@ -381,7 +375,7 @@ class PortInOrderPortInOrderTnListTnItem implements ModelInterface, ArrayAccess,
     /**
      * Sets trunk_group
      *
-     * @param string|null $trunk_group trunk group number for the telephone number
+     * @param string|null $trunk_group trunk group for the telephone number
      *
      * @return self
      */
@@ -393,9 +387,33 @@ class PortInOrderPortInOrderTnListTnItem implements ModelInterface, ArrayAccess,
     }
 
     /**
-     * Gets account_num
+     * Gets routing_option
      *
      * @return string|null
+     */
+    public function getRoutingOption()
+    {
+        return $this->container['routing_option'];
+    }
+
+    /**
+     * Sets routing_option
+     *
+     * @param string|null $routing_option routing option for the telephone number
+     *
+     * @return self
+     */
+    public function setRoutingOption($routing_option)
+    {
+        $this->container['routing_option'] = $routing_option;
+
+        return $this;
+    }
+
+    /**
+     * Gets account_num
+     *
+     * @return string
      */
     public function getAccountNum()
     {
@@ -405,7 +423,7 @@ class PortInOrderPortInOrderTnListTnItem implements ModelInterface, ArrayAccess,
     /**
      * Sets account_num
      *
-     * @param string|null $account_num account_num
+     * @param string $account_num account_num
      *
      * @return self
      */
@@ -419,7 +437,7 @@ class PortInOrderPortInOrderTnListTnItem implements ModelInterface, ArrayAccess,
     /**
      * Gets atn
      *
-     * @return string|null
+     * @return string
      */
     public function getAtn()
     {
@@ -429,7 +447,7 @@ class PortInOrderPortInOrderTnListTnItem implements ModelInterface, ArrayAccess,
     /**
      * Sets atn
      *
-     * @param string|null $atn atn
+     * @param string $atn atn
      *
      * @return self
      */
@@ -443,7 +461,7 @@ class PortInOrderPortInOrderTnListTnItem implements ModelInterface, ArrayAccess,
     /**
      * Gets auth_name
      *
-     * @return string|null
+     * @return string
      */
     public function getAuthName()
     {
@@ -453,7 +471,7 @@ class PortInOrderPortInOrderTnListTnItem implements ModelInterface, ArrayAccess,
     /**
      * Sets auth_name
      *
-     * @param string|null $auth_name auth_name
+     * @param string $auth_name auth_name
      *
      * @return self
      */
@@ -467,7 +485,7 @@ class PortInOrderPortInOrderTnListTnItem implements ModelInterface, ArrayAccess,
     /**
      * Gets auth_date
      *
-     * @return \DateTime|null
+     * @return \DateTime
      */
     public function getAuthDate()
     {
@@ -477,7 +495,7 @@ class PortInOrderPortInOrderTnListTnItem implements ModelInterface, ArrayAccess,
     /**
      * Sets auth_date
      *
-     * @param \DateTime|null $auth_date auth_date
+     * @param \DateTime $auth_date auth_date
      *
      * @return self
      */
@@ -515,7 +533,7 @@ class PortInOrderPortInOrderTnListTnItem implements ModelInterface, ArrayAccess,
     /**
      * Gets end_user
      *
-     * @return \OpenAPI\Client\Model\PortInOrderPortInOrderTnListEndUser|null
+     * @return \OpenAPI\Client\Model\PortInOrderPortInOrderTnListEndUser
      */
     public function getEndUser()
     {
@@ -525,7 +543,7 @@ class PortInOrderPortInOrderTnListTnItem implements ModelInterface, ArrayAccess,
     /**
      * Sets end_user
      *
-     * @param \OpenAPI\Client\Model\PortInOrderPortInOrderTnListEndUser|null $end_user end_user
+     * @param \OpenAPI\Client\Model\PortInOrderPortInOrderTnListEndUser $end_user end_user
      *
      * @return self
      */

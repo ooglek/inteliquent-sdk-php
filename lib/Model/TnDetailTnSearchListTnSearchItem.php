@@ -63,6 +63,7 @@ class TnDetailTnSearchListTnSearchItem implements ModelInterface, ArrayAccess, \
         'tn_mask' => 'string',
         'tn_status' => 'string',
         'trunk_group_name' => 'string',
+        'routing_option' => 'string',
         'lata' => 'string',
         'rate_center' => 'string',
         'province' => 'string',
@@ -83,7 +84,9 @@ class TnDetailTnSearchListTnSearchItem implements ModelInterface, ArrayAccess, \
         'message_type' => 'string',
         'messaging' => 'string',
         'net_number_id' => 'string',
-        'wireless' => 'string'
+        'wireless' => 'string',
+        'dno' => 'string',
+        'alt_spid' => 'string'
     ];
 
     /**
@@ -97,6 +100,7 @@ class TnDetailTnSearchListTnSearchItem implements ModelInterface, ArrayAccess, \
         'tn_mask' => null,
         'tn_status' => null,
         'trunk_group_name' => null,
+        'routing_option' => null,
         'lata' => null,
         'rate_center' => null,
         'province' => null,
@@ -117,7 +121,9 @@ class TnDetailTnSearchListTnSearchItem implements ModelInterface, ArrayAccess, \
         'message_type' => null,
         'messaging' => null,
         'net_number_id' => null,
-        'wireless' => null
+        'wireless' => null,
+        'dno' => null,
+        'alt_spid' => null
     ];
 
     /**
@@ -150,6 +156,7 @@ class TnDetailTnSearchListTnSearchItem implements ModelInterface, ArrayAccess, \
         'tn_mask' => 'tnMask',
         'tn_status' => 'tnStatus',
         'trunk_group_name' => 'trunkGroupName',
+        'routing_option' => 'routingOption',
         'lata' => 'lata',
         'rate_center' => 'rateCenter',
         'province' => 'province',
@@ -170,7 +177,9 @@ class TnDetailTnSearchListTnSearchItem implements ModelInterface, ArrayAccess, \
         'message_type' => 'messageType',
         'messaging' => 'messaging',
         'net_number_id' => 'netNumberId',
-        'wireless' => 'wireless'
+        'wireless' => 'wireless',
+        'dno' => 'dno',
+        'alt_spid' => 'altSpid'
     ];
 
     /**
@@ -182,6 +191,7 @@ class TnDetailTnSearchListTnSearchItem implements ModelInterface, ArrayAccess, \
         'tn_mask' => 'setTnMask',
         'tn_status' => 'setTnStatus',
         'trunk_group_name' => 'setTrunkGroupName',
+        'routing_option' => 'setRoutingOption',
         'lata' => 'setLata',
         'rate_center' => 'setRateCenter',
         'province' => 'setProvince',
@@ -202,7 +212,9 @@ class TnDetailTnSearchListTnSearchItem implements ModelInterface, ArrayAccess, \
         'message_type' => 'setMessageType',
         'messaging' => 'setMessaging',
         'net_number_id' => 'setNetNumberId',
-        'wireless' => 'setWireless'
+        'wireless' => 'setWireless',
+        'dno' => 'setDno',
+        'alt_spid' => 'setAltSpid'
     ];
 
     /**
@@ -214,6 +226,7 @@ class TnDetailTnSearchListTnSearchItem implements ModelInterface, ArrayAccess, \
         'tn_mask' => 'getTnMask',
         'tn_status' => 'getTnStatus',
         'trunk_group_name' => 'getTrunkGroupName',
+        'routing_option' => 'getRoutingOption',
         'lata' => 'getLata',
         'rate_center' => 'getRateCenter',
         'province' => 'getProvince',
@@ -234,7 +247,9 @@ class TnDetailTnSearchListTnSearchItem implements ModelInterface, ArrayAccess, \
         'message_type' => 'getMessageType',
         'messaging' => 'getMessaging',
         'net_number_id' => 'getNetNumberId',
-        'wireless' => 'getWireless'
+        'wireless' => 'getWireless',
+        'dno' => 'getDno',
+        'alt_spid' => 'getAltSpid'
     ];
 
     /**
@@ -305,6 +320,8 @@ class TnDetailTnSearchListTnSearchItem implements ModelInterface, ArrayAccess, \
     const MESSAGING_N = 'N';
     const WIRELESS_Y = 'Y';
     const WIRELESS_N = 'N';
+    const DNO_Y = 'Y';
+    const DNO_N = 'N';
 
     /**
      * Gets allowable values of the enum
@@ -411,6 +428,19 @@ class TnDetailTnSearchListTnSearchItem implements ModelInterface, ArrayAccess, \
     }
 
     /**
+     * Gets allowable values of the enum
+     *
+     * @return string[]
+     */
+    public function getDnoAllowableValues()
+    {
+        return [
+            self::DNO_Y,
+            self::DNO_N,
+        ];
+    }
+
+    /**
      * Associative array for storing property values
      *
      * @var mixed[]
@@ -428,6 +458,7 @@ class TnDetailTnSearchListTnSearchItem implements ModelInterface, ArrayAccess, \
         $this->container['tn_mask'] = $data['tn_mask'] ?? null;
         $this->container['tn_status'] = $data['tn_status'] ?? null;
         $this->container['trunk_group_name'] = $data['trunk_group_name'] ?? null;
+        $this->container['routing_option'] = $data['routing_option'] ?? null;
         $this->container['lata'] = $data['lata'] ?? null;
         $this->container['rate_center'] = $data['rate_center'] ?? null;
         $this->container['province'] = $data['province'] ?? null;
@@ -449,6 +480,8 @@ class TnDetailTnSearchListTnSearchItem implements ModelInterface, ArrayAccess, \
         $this->container['messaging'] = $data['messaging'] ?? null;
         $this->container['net_number_id'] = $data['net_number_id'] ?? null;
         $this->container['wireless'] = $data['wireless'] ?? null;
+        $this->container['dno'] = $data['dno'] ?? null;
+        $this->container['alt_spid'] = $data['alt_spid'] ?? null;
     }
 
     /**
@@ -522,6 +555,15 @@ class TnDetailTnSearchListTnSearchItem implements ModelInterface, ArrayAccess, \
             $invalidProperties[] = sprintf(
                 "invalid value '%s' for 'wireless', must be one of '%s'",
                 $this->container['wireless'],
+                implode("', '", $allowedValues)
+            );
+        }
+
+        $allowedValues = $this->getDnoAllowableValues();
+        if (!is_null($this->container['dno']) && !in_array($this->container['dno'], $allowedValues, true)) {
+            $invalidProperties[] = sprintf(
+                "invalid value '%s' for 'dno', must be one of '%s'",
+                $this->container['dno'],
                 implode("', '", $allowedValues)
             );
         }
@@ -609,6 +651,30 @@ class TnDetailTnSearchListTnSearchItem implements ModelInterface, ArrayAccess, \
     public function setTrunkGroupName($trunk_group_name)
     {
         $this->container['trunk_group_name'] = $trunk_group_name;
+
+        return $this;
+    }
+
+    /**
+     * Gets routing_option
+     *
+     * @return string|null
+     */
+    public function getRoutingOption()
+    {
+        return $this->container['routing_option'];
+    }
+
+    /**
+     * Sets routing_option
+     *
+     * @param string|null $routing_option Assigned routing option (e.g. API Rename Trunk 1663041555072)
+     *
+     * @return self
+     */
+    public function setRoutingOption($routing_option)
+    {
+        $this->container['routing_option'] = $routing_option;
 
         return $this;
     }
@@ -1183,6 +1249,64 @@ class TnDetailTnSearchListTnSearchItem implements ModelInterface, ArrayAccess, \
             );
         }
         $this->container['wireless'] = $wireless;
+
+        return $this;
+    }
+
+    /**
+     * Gets dno
+     *
+     * @return string|null
+     */
+    public function getDno()
+    {
+        return $this->container['dno'];
+    }
+
+    /**
+     * Sets dno
+     *
+     * @param string|null $dno Search for tns that have DNO set to Y or N.Acceptable values are Y and N
+     *
+     * @return self
+     */
+    public function setDno($dno)
+    {
+        $allowedValues = $this->getDnoAllowableValues();
+        if (!is_null($dno) && !in_array($dno, $allowedValues, true)) {
+            throw new \InvalidArgumentException(
+                sprintf(
+                    "Invalid value '%s' for 'dno', must be one of '%s'",
+                    $dno,
+                    implode("', '", $allowedValues)
+                )
+            );
+        }
+        $this->container['dno'] = $dno;
+
+        return $this;
+    }
+
+    /**
+     * Gets alt_spid
+     *
+     * @return string|null
+     */
+    public function getAltSpid()
+    {
+        return $this->container['alt_spid'];
+    }
+
+    /**
+     * Sets alt_spid
+     *
+     * @param string|null $alt_spid Search for tns that have the specified altSpid.
+     *
+     * @return self
+     */
+    public function setAltSpid($alt_spid)
+    {
+        $this->container['alt_spid'] = $alt_spid;
 
         return $this;
     }

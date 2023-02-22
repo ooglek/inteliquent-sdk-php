@@ -61,7 +61,7 @@ class InlineObject98 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'tf_feature_order' => '\OpenAPI\Client\Model\TfFeatureOrderTfFeatureOrder'
+        'tf_messaging_order' => '\OpenAPI\Client\Model\TfMessagingOrderTfMessagingOrder'
     ];
 
     /**
@@ -73,7 +73,7 @@ class InlineObject98 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'tf_feature_order' => null
+        'tf_messaging_order' => null
     ];
 
     /**
@@ -104,7 +104,7 @@ class InlineObject98 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'tf_feature_order' => 'tfFeatureOrder'
+        'tf_messaging_order' => 'tfMessagingOrder'
     ];
 
     /**
@@ -114,7 +114,7 @@ class InlineObject98 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'tf_feature_order' => 'setTfFeatureOrder'
+        'tf_messaging_order' => 'setTfMessagingOrder'
     ];
 
     /**
@@ -124,7 +124,7 @@ class InlineObject98 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'tf_feature_order' => 'getTfFeatureOrder'
+        'tf_messaging_order' => 'getTfMessagingOrder'
     ];
 
     /**
@@ -185,7 +185,7 @@ class InlineObject98 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['tf_feature_order'] = $data['tf_feature_order'] ?? null;
+        $this->container['tf_messaging_order'] = $data['tf_messaging_order'] ?? null;
     }
 
     /**
@@ -237,25 +237,25 @@ class InlineObject98 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets tf_feature_order
+     * Gets tf_messaging_order
      *
-     * @return \OpenAPI\Client\Model\TfFeatureOrderTfFeatureOrder|null
+     * @return \OpenAPI\Client\Model\TfMessagingOrderTfMessagingOrder|null
      */
-    public function getTfFeatureOrder()
+    public function getTfMessagingOrder()
     {
-        return $this->container['tf_feature_order'];
+        return $this->container['tf_messaging_order'];
     }
 
     /**
-     * Sets tf_feature_order
+     * Sets tf_messaging_order
      *
-     * @param \OpenAPI\Client\Model\TfFeatureOrderTfFeatureOrder|null $tf_feature_order tf_feature_order
+     * @param \OpenAPI\Client\Model\TfMessagingOrderTfMessagingOrder|null $tf_messaging_order tf_messaging_order
      *
      * @return self
      */
-    public function setTfFeatureOrder($tf_feature_order)
+    public function setTfMessagingOrder($tf_messaging_order)
     {
-        $this->container['tf_feature_order'] = $tf_feature_order;
+        $this->container['tf_messaging_order'] = $tf_messaging_order;
 
         return $this;
     }

@@ -74,7 +74,7 @@ class CampaignOrderCampaignOrderCampaignListCampaignItem implements ModelInterfa
         'subscriber_optout' => 'string',
         'subscriber_help' => 'string',
         'auto_renewal' => 'string',
-        'affiliate_marketing' => 'string',
+        'terms_and_conditions' => 'string',
         'sample1' => 'string',
         'sample2' => 'string',
         'sample3' => 'string',
@@ -82,7 +82,9 @@ class CampaignOrderCampaignOrderCampaignListCampaignItem implements ModelInterfa
         'sample5' => 'string',
         'message_flow' => 'string',
         'help_message' => 'string',
-        'cancel_campaign' => 'string'
+        'cancel_campaign' => 'string',
+        'opt_out_message' => 'string',
+        'opt_in_message' => 'string'
     ];
 
     /**
@@ -107,7 +109,7 @@ class CampaignOrderCampaignOrderCampaignListCampaignItem implements ModelInterfa
         'subscriber_optout' => null,
         'subscriber_help' => null,
         'auto_renewal' => null,
-        'affiliate_marketing' => null,
+        'terms_and_conditions' => null,
         'sample1' => null,
         'sample2' => null,
         'sample3' => null,
@@ -115,7 +117,9 @@ class CampaignOrderCampaignOrderCampaignListCampaignItem implements ModelInterfa
         'sample5' => null,
         'message_flow' => null,
         'help_message' => null,
-        'cancel_campaign' => null
+        'cancel_campaign' => null,
+        'opt_out_message' => null,
+        'opt_in_message' => null
     ];
 
     /**
@@ -159,7 +163,7 @@ class CampaignOrderCampaignOrderCampaignListCampaignItem implements ModelInterfa
         'subscriber_optout' => 'subscriberOptout',
         'subscriber_help' => 'subscriberHelp',
         'auto_renewal' => 'autoRenewal',
-        'affiliate_marketing' => 'affiliateMarketing',
+        'terms_and_conditions' => 'termsAndConditions',
         'sample1' => 'sample1',
         'sample2' => 'sample2',
         'sample3' => 'sample3',
@@ -167,7 +171,9 @@ class CampaignOrderCampaignOrderCampaignListCampaignItem implements ModelInterfa
         'sample5' => 'sample5',
         'message_flow' => 'messageFlow',
         'help_message' => 'helpMessage',
-        'cancel_campaign' => 'cancelCampaign'
+        'cancel_campaign' => 'cancelCampaign',
+        'opt_out_message' => 'optOutMessage',
+        'opt_in_message' => 'optInMessage'
     ];
 
     /**
@@ -190,7 +196,7 @@ class CampaignOrderCampaignOrderCampaignListCampaignItem implements ModelInterfa
         'subscriber_optout' => 'setSubscriberOptout',
         'subscriber_help' => 'setSubscriberHelp',
         'auto_renewal' => 'setAutoRenewal',
-        'affiliate_marketing' => 'setAffiliateMarketing',
+        'terms_and_conditions' => 'setTermsAndConditions',
         'sample1' => 'setSample1',
         'sample2' => 'setSample2',
         'sample3' => 'setSample3',
@@ -198,7 +204,9 @@ class CampaignOrderCampaignOrderCampaignListCampaignItem implements ModelInterfa
         'sample5' => 'setSample5',
         'message_flow' => 'setMessageFlow',
         'help_message' => 'setHelpMessage',
-        'cancel_campaign' => 'setCancelCampaign'
+        'cancel_campaign' => 'setCancelCampaign',
+        'opt_out_message' => 'setOptOutMessage',
+        'opt_in_message' => 'setOptInMessage'
     ];
 
     /**
@@ -221,7 +229,7 @@ class CampaignOrderCampaignOrderCampaignListCampaignItem implements ModelInterfa
         'subscriber_optout' => 'getSubscriberOptout',
         'subscriber_help' => 'getSubscriberHelp',
         'auto_renewal' => 'getAutoRenewal',
-        'affiliate_marketing' => 'getAffiliateMarketing',
+        'terms_and_conditions' => 'getTermsAndConditions',
         'sample1' => 'getSample1',
         'sample2' => 'getSample2',
         'sample3' => 'getSample3',
@@ -229,7 +237,9 @@ class CampaignOrderCampaignOrderCampaignListCampaignItem implements ModelInterfa
         'sample5' => 'getSample5',
         'message_flow' => 'getMessageFlow',
         'help_message' => 'getHelpMessage',
-        'cancel_campaign' => 'getCancelCampaign'
+        'cancel_campaign' => 'getCancelCampaign',
+        'opt_out_message' => 'getOptOutMessage',
+        'opt_in_message' => 'getOptInMessage'
     ];
 
     /**
@@ -303,7 +313,7 @@ class CampaignOrderCampaignOrderCampaignListCampaignItem implements ModelInterfa
         $this->container['subscriber_optout'] = $data['subscriber_optout'] ?? null;
         $this->container['subscriber_help'] = $data['subscriber_help'] ?? null;
         $this->container['auto_renewal'] = $data['auto_renewal'] ?? null;
-        $this->container['affiliate_marketing'] = $data['affiliate_marketing'] ?? null;
+        $this->container['terms_and_conditions'] = $data['terms_and_conditions'] ?? null;
         $this->container['sample1'] = $data['sample1'] ?? null;
         $this->container['sample2'] = $data['sample2'] ?? null;
         $this->container['sample3'] = $data['sample3'] ?? null;
@@ -312,6 +322,8 @@ class CampaignOrderCampaignOrderCampaignListCampaignItem implements ModelInterfa
         $this->container['message_flow'] = $data['message_flow'] ?? null;
         $this->container['help_message'] = $data['help_message'] ?? null;
         $this->container['cancel_campaign'] = $data['cancel_campaign'] ?? null;
+        $this->container['opt_out_message'] = $data['opt_out_message'] ?? null;
+        $this->container['opt_in_message'] = $data['opt_in_message'] ?? null;
     }
 
     /**
@@ -447,7 +459,7 @@ class CampaignOrderCampaignOrderCampaignListCampaignItem implements ModelInterfa
     /**
      * Sets description
      *
-     * @param string|null $description Description for the campaign
+     * @param string|null $description Description for the campaign. Min length is 40.
      *
      * @return self
      */
@@ -675,25 +687,25 @@ class CampaignOrderCampaignOrderCampaignListCampaignItem implements ModelInterfa
     }
 
     /**
-     * Gets affiliate_marketing
+     * Gets terms_and_conditions
      *
      * @return string|null
      */
-    public function getAffiliateMarketing()
+    public function getTermsAndConditions()
     {
-        return $this->container['affiliate_marketing'];
+        return $this->container['terms_and_conditions'];
     }
 
     /**
-     * Sets affiliate_marketing
+     * Sets terms_and_conditions
      *
-     * @param string|null $affiliate_marketing Valid Values – Y or N
+     * @param string|null $terms_and_conditions Valid Values – Y or N
      *
      * @return self
      */
-    public function setAffiliateMarketing($affiliate_marketing)
+    public function setTermsAndConditions($terms_and_conditions)
     {
-        $this->container['affiliate_marketing'] = $affiliate_marketing;
+        $this->container['terms_and_conditions'] = $terms_and_conditions;
 
         return $this;
     }
@@ -711,7 +723,7 @@ class CampaignOrderCampaignOrderCampaignListCampaignItem implements ModelInterfa
     /**
      * Sets sample1
      *
-     * @param string|null $sample1 Brand status
+     * @param string|null $sample1 Sample message. Min length is 20.
      *
      * @return self
      */
@@ -735,7 +747,7 @@ class CampaignOrderCampaignOrderCampaignListCampaignItem implements ModelInterfa
     /**
      * Sets sample2
      *
-     * @param string|null $sample2 Type of Entity
+     * @param string|null $sample2 Sample message. Min length is 20.
      *
      * @return self
      */
@@ -759,7 +771,7 @@ class CampaignOrderCampaignOrderCampaignListCampaignItem implements ModelInterfa
     /**
      * Sets sample3
      *
-     * @param string|null $sample3 Type of Relationship
+     * @param string|null $sample3 Sample message. Min length is 20.
      *
      * @return self
      */
@@ -783,7 +795,7 @@ class CampaignOrderCampaignOrderCampaignListCampaignItem implements ModelInterfa
     /**
      * Sets sample4
      *
-     * @param string|null $sample4 Stock Exchange on which the company is listed
+     * @param string|null $sample4 Sample message. Min length is 20.
      *
      * @return self
      */
@@ -807,7 +819,7 @@ class CampaignOrderCampaignOrderCampaignListCampaignItem implements ModelInterfa
     /**
      * Sets sample5
      *
-     * @param string|null $sample5 Alternate Business Name
+     * @param string|null $sample5 Sample message. Min length is 20.
      *
      * @return self
      */
@@ -831,7 +843,7 @@ class CampaignOrderCampaignOrderCampaignListCampaignItem implements ModelInterfa
     /**
      * Sets message_flow
      *
-     * @param string|null $message_flow Valid Values – Y or N
+     * @param string|null $message_flow Message flow description. Min length is 40.
      *
      * @return self
      */
@@ -855,7 +867,7 @@ class CampaignOrderCampaignOrderCampaignListCampaignItem implements ModelInterfa
     /**
      * Sets help_message
      *
-     * @param string|null $help_message Valid Values – Y or N
+     * @param string|null $help_message Help message for campaign. Min length is 20.
      *
      * @return self
      */
@@ -886,6 +898,54 @@ class CampaignOrderCampaignOrderCampaignListCampaignItem implements ModelInterfa
     public function setCancelCampaign($cancel_campaign)
     {
         $this->container['cancel_campaign'] = $cancel_campaign;
+
+        return $this;
+    }
+
+    /**
+     * Gets opt_out_message
+     *
+     * @return string|null
+     */
+    public function getOptOutMessage()
+    {
+        return $this->container['opt_out_message'];
+    }
+
+    /**
+     * Sets opt_out_message
+     *
+     * @param string|null $opt_out_message Opt-out message for campaign. Min length is 20.
+     *
+     * @return self
+     */
+    public function setOptOutMessage($opt_out_message)
+    {
+        $this->container['opt_out_message'] = $opt_out_message;
+
+        return $this;
+    }
+
+    /**
+     * Gets opt_in_message
+     *
+     * @return string|null
+     */
+    public function getOptInMessage()
+    {
+        return $this->container['opt_in_message'];
+    }
+
+    /**
+     * Sets opt_in_message
+     *
+     * @param string|null $opt_in_message Opt-in message for campaign. Min length is 20.
+     *
+     * @return self
+     */
+    public function setOptInMessage($opt_in_message)
+    {
+        $this->container['opt_in_message'] = $opt_in_message;
 
         return $this;
     }

@@ -60,8 +60,7 @@ class InlineObject114 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'private_key' => 'string',
-        'tn_port_out_reject' => '\OpenAPI\Client\Model\TnPortOutRejectTnPortOutReject'
+        'private_key' => 'string'
     ];
 
     /**
@@ -72,8 +71,7 @@ class InlineObject114 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'private_key' => null,
-        'tn_port_out_reject' => null
+        'private_key' => null
     ];
 
     /**
@@ -103,8 +101,7 @@ class InlineObject114 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        'private_key' => 'privateKey',
-        'tn_port_out_reject' => 'tnPortOutReject'
+        'private_key' => 'privateKey'
     ];
 
     /**
@@ -113,8 +110,7 @@ class InlineObject114 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        'private_key' => 'setPrivateKey',
-        'tn_port_out_reject' => 'setTnPortOutReject'
+        'private_key' => 'setPrivateKey'
     ];
 
     /**
@@ -123,8 +119,7 @@ class InlineObject114 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        'private_key' => 'getPrivateKey',
-        'tn_port_out_reject' => 'getTnPortOutReject'
+        'private_key' => 'getPrivateKey'
     ];
 
     /**
@@ -185,7 +180,6 @@ class InlineObject114 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['tn_port_out_reject'] = $data['tn_port_out_reject'] ?? null;
     }
 
     /**
@@ -199,9 +193,6 @@ class InlineObject114 implements ModelInterface, ArrayAccess, \JsonSerializable
 
         if ($this->container['private_key'] === null) {
             $invalidProperties[] = "'private_key' can't be null";
-        }
-        if ($this->container['tn_port_out_reject'] === null) {
-            $invalidProperties[] = "'tn_port_out_reject' can't be null";
         }
         return $invalidProperties;
     }
@@ -238,30 +229,6 @@ class InlineObject114 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function setPrivateKey($private_key)
     {
         $this->container['private_key'] = $private_key;
-
-        return $this;
-    }
-
-    /**
-     * Gets tn_port_out_reject
-     *
-     * @return \OpenAPI\Client\Model\TnPortOutRejectTnPortOutReject
-     */
-    public function getTnPortOutReject()
-    {
-        return $this->container['tn_port_out_reject'];
-    }
-
-    /**
-     * Sets tn_port_out_reject
-     *
-     * @param \OpenAPI\Client\Model\TnPortOutRejectTnPortOutReject $tn_port_out_reject tn_port_out_reject
-     *
-     * @return self
-     */
-    public function setTnPortOutReject($tn_port_out_reject)
-    {
-        $this->container['tn_port_out_reject'] = $tn_port_out_reject;
 
         return $this;
     }

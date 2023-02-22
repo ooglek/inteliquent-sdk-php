@@ -79,7 +79,8 @@ class ResponseTrunkGroupDetailTrunkGroupDetail implements ModelInterface, ArrayA
         'customer_sip_signaling_list' => '\OpenAPI\Client\Model\TrunkGroupOrderDetailTrunkGroupOrderDetailCustomerSipSignalingList',
         'customer_media_list' => '\OpenAPI\Client\Model\TrunkGroupOrderDetailTrunkGroupOrderDetailCustomerMediaList',
         'fqdn_list' => '\OpenAPI\Client\Model\TrunkGroupOrderDetailTrunkGroupOrderDetailFqdnList',
-        'codec_list' => '\OpenAPI\Client\Model\TrunkGroupOrderDetailTrunkGroupOrderDetailCodecList'
+        'codec_list' => '\OpenAPI\Client\Model\TrunkGroupOrderDetailTrunkGroupOrderDetailCodecList',
+        'enterprise_customer_account' => '\OpenAPI\Client\Model\ResponseTrunkGroupDetailTrunkGroupDetailEnterpriseCustomerAccount'
     ];
 
     /**
@@ -109,7 +110,8 @@ class ResponseTrunkGroupDetailTrunkGroupDetail implements ModelInterface, ArrayA
         'customer_sip_signaling_list' => null,
         'customer_media_list' => null,
         'fqdn_list' => null,
-        'codec_list' => null
+        'codec_list' => null,
+        'enterprise_customer_account' => null
     ];
 
     /**
@@ -158,7 +160,8 @@ class ResponseTrunkGroupDetailTrunkGroupDetail implements ModelInterface, ArrayA
         'customer_sip_signaling_list' => 'customerSipSignalingList',
         'customer_media_list' => 'customerMediaList',
         'fqdn_list' => 'fqdnList',
-        'codec_list' => 'codecList'
+        'codec_list' => 'codecList',
+        'enterprise_customer_account' => 'enterpriseCustomerAccount'
     ];
 
     /**
@@ -186,7 +189,8 @@ class ResponseTrunkGroupDetailTrunkGroupDetail implements ModelInterface, ArrayA
         'customer_sip_signaling_list' => 'setCustomerSipSignalingList',
         'customer_media_list' => 'setCustomerMediaList',
         'fqdn_list' => 'setFqdnList',
-        'codec_list' => 'setCodecList'
+        'codec_list' => 'setCodecList',
+        'enterprise_customer_account' => 'setEnterpriseCustomerAccount'
     ];
 
     /**
@@ -214,7 +218,8 @@ class ResponseTrunkGroupDetailTrunkGroupDetail implements ModelInterface, ArrayA
         'customer_sip_signaling_list' => 'getCustomerSipSignalingList',
         'customer_media_list' => 'getCustomerMediaList',
         'fqdn_list' => 'getFqdnList',
-        'codec_list' => 'getCodecList'
+        'codec_list' => 'getCodecList',
+        'enterprise_customer_account' => 'getEnterpriseCustomerAccount'
     ];
 
     /**
@@ -294,6 +299,7 @@ class ResponseTrunkGroupDetailTrunkGroupDetail implements ModelInterface, ArrayA
         $this->container['customer_media_list'] = $data['customer_media_list'] ?? null;
         $this->container['fqdn_list'] = $data['fqdn_list'] ?? null;
         $this->container['codec_list'] = $data['codec_list'] ?? null;
+        $this->container['enterprise_customer_account'] = $data['enterprise_customer_account'] ?? null;
     }
 
     /**
@@ -796,6 +802,30 @@ class ResponseTrunkGroupDetailTrunkGroupDetail implements ModelInterface, ArrayA
     public function setCodecList($codec_list)
     {
         $this->container['codec_list'] = $codec_list;
+
+        return $this;
+    }
+
+    /**
+     * Gets enterprise_customer_account
+     *
+     * @return \OpenAPI\Client\Model\ResponseTrunkGroupDetailTrunkGroupDetailEnterpriseCustomerAccount|null
+     */
+    public function getEnterpriseCustomerAccount()
+    {
+        return $this->container['enterprise_customer_account'];
+    }
+
+    /**
+     * Sets enterprise_customer_account
+     *
+     * @param \OpenAPI\Client\Model\ResponseTrunkGroupDetailTrunkGroupDetailEnterpriseCustomerAccount|null $enterprise_customer_account enterprise_customer_account
+     *
+     * @return self
+     */
+    public function setEnterpriseCustomerAccount($enterprise_customer_account)
+    {
+        $this->container['enterprise_customer_account'] = $enterprise_customer_account;
 
         return $this;
     }

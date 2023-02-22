@@ -4,8 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**private_key** | **string** | API key required to validate your application |
-**product_abbr** | **string** | Product abbreviation for order |
-**tf_order** | [**\OpenAPI\Client\Model\TfOrderTfOrder**](TfOrderTfOrder.md) |  | [optional]
+**private_key** | **string** | Private Key | [optional]
+**tf_move** | [**\OpenAPI\Client\Model\TfMoveTfMove**](TfMoveTfMove.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

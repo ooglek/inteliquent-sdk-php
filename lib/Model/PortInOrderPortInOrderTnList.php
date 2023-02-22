@@ -191,6 +191,9 @@ class PortInOrderPortInOrderTnList implements ModelInterface, ArrayAccess, \Json
     {
         $invalidProperties = [];
 
+        if ($this->container['tn_item'] === null) {
+            $invalidProperties[] = "'tn_item' can't be null";
+        }
         return $invalidProperties;
     }
 
@@ -209,7 +212,7 @@ class PortInOrderPortInOrderTnList implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets tn_item
      *
-     * @return \OpenAPI\Client\Model\PortInOrderPortInOrderTnListTnItem[]|null
+     * @return \OpenAPI\Client\Model\PortInOrderPortInOrderTnListTnItem[]
      */
     public function getTnItem()
     {
@@ -219,7 +222,7 @@ class PortInOrderPortInOrderTnList implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets tn_item
      *
-     * @param \OpenAPI\Client\Model\PortInOrderPortInOrderTnListTnItem[]|null $tn_item tn_item
+     * @param \OpenAPI\Client\Model\PortInOrderPortInOrderTnListTnItem[] $tn_item tn_item
      *
      * @return self
      */

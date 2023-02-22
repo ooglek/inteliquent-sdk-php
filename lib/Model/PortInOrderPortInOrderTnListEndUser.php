@@ -281,6 +281,27 @@ class PortInOrderPortInOrderTnListEndUser implements ModelInterface, ArrayAccess
     {
         $invalidProperties = [];
 
+        if ($this->container['name'] === null) {
+            $invalidProperties[] = "'name' can't be null";
+        }
+        if ($this->container['street_num'] === null) {
+            $invalidProperties[] = "'street_num' can't be null";
+        }
+        if ($this->container['street_name'] === null) {
+            $invalidProperties[] = "'street_name' can't be null";
+        }
+        if ($this->container['city'] === null) {
+            $invalidProperties[] = "'city' can't be null";
+        }
+        if ($this->container['state'] === null) {
+            $invalidProperties[] = "'state' can't be null";
+        }
+        if ($this->container['postal_code'] === null) {
+            $invalidProperties[] = "'postal_code' can't be null";
+        }
+        if ($this->container['type_of_service'] === null) {
+            $invalidProperties[] = "'type_of_service' can't be null";
+        }
         return $invalidProperties;
     }
 
@@ -299,7 +320,7 @@ class PortInOrderPortInOrderTnListEndUser implements ModelInterface, ArrayAccess
     /**
      * Gets name
      *
-     * @return string|null
+     * @return string
      */
     public function getName()
     {
@@ -309,7 +330,7 @@ class PortInOrderPortInOrderTnListEndUser implements ModelInterface, ArrayAccess
     /**
      * Sets name
      *
-     * @param string|null $name name
+     * @param string $name name
      *
      * @return self
      */
@@ -323,7 +344,7 @@ class PortInOrderPortInOrderTnListEndUser implements ModelInterface, ArrayAccess
     /**
      * Gets street_num
      *
-     * @return string|null
+     * @return string
      */
     public function getStreetNum()
     {
@@ -333,7 +354,7 @@ class PortInOrderPortInOrderTnListEndUser implements ModelInterface, ArrayAccess
     /**
      * Sets street_num
      *
-     * @param string|null $street_num street_num
+     * @param string $street_num street_num
      *
      * @return self
      */
@@ -371,7 +392,7 @@ class PortInOrderPortInOrderTnListEndUser implements ModelInterface, ArrayAccess
     /**
      * Gets street_name
      *
-     * @return string|null
+     * @return string
      */
     public function getStreetName()
     {
@@ -381,7 +402,7 @@ class PortInOrderPortInOrderTnListEndUser implements ModelInterface, ArrayAccess
     /**
      * Sets street_name
      *
-     * @param string|null $street_name street_name
+     * @param string $street_name street_name
      *
      * @return self
      */
@@ -587,7 +608,7 @@ class PortInOrderPortInOrderTnListEndUser implements ModelInterface, ArrayAccess
     /**
      * Gets city
      *
-     * @return string|null
+     * @return string
      */
     public function getCity()
     {
@@ -597,7 +618,7 @@ class PortInOrderPortInOrderTnListEndUser implements ModelInterface, ArrayAccess
     /**
      * Sets city
      *
-     * @param string|null $city city
+     * @param string $city city
      *
      * @return self
      */
@@ -611,7 +632,7 @@ class PortInOrderPortInOrderTnListEndUser implements ModelInterface, ArrayAccess
     /**
      * Gets state
      *
-     * @return string|null
+     * @return string
      */
     public function getState()
     {
@@ -621,7 +642,7 @@ class PortInOrderPortInOrderTnListEndUser implements ModelInterface, ArrayAccess
     /**
      * Sets state
      *
-     * @param string|null $state state
+     * @param string $state state
      *
      * @return self
      */
@@ -635,7 +656,7 @@ class PortInOrderPortInOrderTnListEndUser implements ModelInterface, ArrayAccess
     /**
      * Gets postal_code
      *
-     * @return string|null
+     * @return string
      */
     public function getPostalCode()
     {
@@ -645,7 +666,7 @@ class PortInOrderPortInOrderTnListEndUser implements ModelInterface, ArrayAccess
     /**
      * Sets postal_code
      *
-     * @param string|null $postal_code postal_code
+     * @param string $postal_code postal_code
      *
      * @return self
      */
@@ -659,7 +680,7 @@ class PortInOrderPortInOrderTnListEndUser implements ModelInterface, ArrayAccess
     /**
      * Gets type_of_service
      *
-     * @return string|null
+     * @return string
      */
     public function getTypeOfService()
     {
@@ -669,7 +690,7 @@ class PortInOrderPortInOrderTnListEndUser implements ModelInterface, ArrayAccess
     /**
      * Sets type_of_service
      *
-     * @param string|null $type_of_service type_of_service
+     * @param string $type_of_service type_of_service
      *
      * @return self
      */

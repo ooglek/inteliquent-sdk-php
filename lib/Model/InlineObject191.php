@@ -61,8 +61,8 @@ class InlineObject191 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'country_ref' => 'string',
-        'number_type_ref' => 'string'
+        'order_id' => 'int',
+        'tn_list' => '\OpenAPI\Client\Model\IntlTnRoutingUpdateTnList'
     ];
 
     /**
@@ -74,8 +74,8 @@ class InlineObject191 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'country_ref' => null,
-        'number_type_ref' => null
+        'order_id' => null,
+        'tn_list' => null
     ];
 
     /**
@@ -106,8 +106,8 @@ class InlineObject191 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'country_ref' => 'countryRef',
-        'number_type_ref' => 'numberTypeRef'
+        'order_id' => 'orderId',
+        'tn_list' => 'tnList'
     ];
 
     /**
@@ -117,8 +117,8 @@ class InlineObject191 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'country_ref' => 'setCountryRef',
-        'number_type_ref' => 'setNumberTypeRef'
+        'order_id' => 'setOrderId',
+        'tn_list' => 'setTnList'
     ];
 
     /**
@@ -128,8 +128,8 @@ class InlineObject191 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'country_ref' => 'getCountryRef',
-        'number_type_ref' => 'getNumberTypeRef'
+        'order_id' => 'getOrderId',
+        'tn_list' => 'getTnList'
     ];
 
     /**
@@ -190,8 +190,8 @@ class InlineObject191 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['country_ref'] = $data['country_ref'] ?? null;
-        $this->container['number_type_ref'] = $data['number_type_ref'] ?? null;
+        $this->container['order_id'] = $data['order_id'] ?? null;
+        $this->container['tn_list'] = $data['tn_list'] ?? null;
     }
 
     /**
@@ -243,49 +243,49 @@ class InlineObject191 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets country_ref
+     * Gets order_id
      *
-     * @return string|null
+     * @return int|null
      */
-    public function getCountryRef()
+    public function getOrderId()
     {
-        return $this->container['country_ref'];
+        return $this->container['order_id'];
     }
 
     /**
-     * Sets country_ref
+     * Sets order_id
      *
-     * @param string|null $country_ref country_ref
+     * @param int|null $order_id order_id
      *
      * @return self
      */
-    public function setCountryRef($country_ref)
+    public function setOrderId($order_id)
     {
-        $this->container['country_ref'] = $country_ref;
+        $this->container['order_id'] = $order_id;
 
         return $this;
     }
 
     /**
-     * Gets number_type_ref
+     * Gets tn_list
      *
-     * @return string|null
+     * @return \OpenAPI\Client\Model\IntlTnRoutingUpdateTnList|null
      */
-    public function getNumberTypeRef()
+    public function getTnList()
     {
-        return $this->container['number_type_ref'];
+        return $this->container['tn_list'];
     }
 
     /**
-     * Sets number_type_ref
+     * Sets tn_list
      *
-     * @param string|null $number_type_ref number_type_ref
+     * @param \OpenAPI\Client\Model\IntlTnRoutingUpdateTnList|null $tn_list tn_list
      *
      * @return self
      */
-    public function setNumberTypeRef($number_type_ref)
+    public function setTnList($tn_list)
     {
-        $this->container['number_type_ref'] = $number_type_ref;
+        $this->container['tn_list'] = $tn_list;
 
         return $this;
     }

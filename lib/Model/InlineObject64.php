@@ -60,9 +60,7 @@ class InlineObject64 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'private_key' => 'string',
-        'tn_search_list' => '\OpenAPI\Client\Model\TnDetailTnSearchList',
-        'page_sort' => '\OpenAPI\Client\Model\TnDetailPageSort'
+        'private_key' => 'string'
     ];
 
     /**
@@ -73,9 +71,7 @@ class InlineObject64 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'private_key' => null,
-        'tn_search_list' => null,
-        'page_sort' => null
+        'private_key' => null
     ];
 
     /**
@@ -105,9 +101,7 @@ class InlineObject64 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        'private_key' => 'privateKey',
-        'tn_search_list' => 'tnSearchList',
-        'page_sort' => 'pageSort'
+        'private_key' => 'privateKey'
     ];
 
     /**
@@ -116,9 +110,7 @@ class InlineObject64 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        'private_key' => 'setPrivateKey',
-        'tn_search_list' => 'setTnSearchList',
-        'page_sort' => 'setPageSort'
+        'private_key' => 'setPrivateKey'
     ];
 
     /**
@@ -127,9 +119,7 @@ class InlineObject64 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        'private_key' => 'getPrivateKey',
-        'tn_search_list' => 'getTnSearchList',
-        'page_sort' => 'getPageSort'
+        'private_key' => 'getPrivateKey'
     ];
 
     /**
@@ -190,8 +180,6 @@ class InlineObject64 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['tn_search_list'] = $data['tn_search_list'] ?? null;
-        $this->container['page_sort'] = $data['page_sort'] ?? null;
     }
 
     /**
@@ -203,6 +191,9 @@ class InlineObject64 implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         $invalidProperties = [];
 
+        if ($this->container['private_key'] === null) {
+            $invalidProperties[] = "'private_key' can't be null";
+        }
         return $invalidProperties;
     }
 
@@ -221,7 +212,7 @@ class InlineObject64 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets private_key
      *
-     * @return string|null
+     * @return string
      */
     public function getPrivateKey()
     {
@@ -231,61 +222,13 @@ class InlineObject64 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets private_key
      *
-     * @param string|null $private_key API key required to validate your application
+     * @param string $private_key API key required to validate your application
      *
      * @return self
      */
     public function setPrivateKey($private_key)
     {
         $this->container['private_key'] = $private_key;
-
-        return $this;
-    }
-
-    /**
-     * Gets tn_search_list
-     *
-     * @return \OpenAPI\Client\Model\TnDetailTnSearchList|null
-     */
-    public function getTnSearchList()
-    {
-        return $this->container['tn_search_list'];
-    }
-
-    /**
-     * Sets tn_search_list
-     *
-     * @param \OpenAPI\Client\Model\TnDetailTnSearchList|null $tn_search_list tn_search_list
-     *
-     * @return self
-     */
-    public function setTnSearchList($tn_search_list)
-    {
-        $this->container['tn_search_list'] = $tn_search_list;
-
-        return $this;
-    }
-
-    /**
-     * Gets page_sort
-     *
-     * @return \OpenAPI\Client\Model\TnDetailPageSort|null
-     */
-    public function getPageSort()
-    {
-        return $this->container['page_sort'];
-    }
-
-    /**
-     * Sets page_sort
-     *
-     * @param \OpenAPI\Client\Model\TnDetailPageSort|null $page_sort page_sort
-     *
-     * @return self
-     */
-    public function setPageSort($page_sort)
-    {
-        $this->container['page_sort'] = $page_sort;
 
         return $this;
     }

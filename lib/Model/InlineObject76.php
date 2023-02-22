@@ -60,8 +60,7 @@ class InlineObject76 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'private_key' => 'string',
-        'port_out_pin' => '\OpenAPI\Client\Model\PortOutPinUpdatePortOutPin'
+        'private_key' => 'string'
     ];
 
     /**
@@ -72,8 +71,7 @@ class InlineObject76 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'private_key' => null,
-        'port_out_pin' => null
+        'private_key' => null
     ];
 
     /**
@@ -103,8 +101,7 @@ class InlineObject76 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        'private_key' => 'privateKey',
-        'port_out_pin' => 'portOutPin'
+        'private_key' => 'privateKey'
     ];
 
     /**
@@ -113,8 +110,7 @@ class InlineObject76 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        'private_key' => 'setPrivateKey',
-        'port_out_pin' => 'setPortOutPin'
+        'private_key' => 'setPrivateKey'
     ];
 
     /**
@@ -123,8 +119,7 @@ class InlineObject76 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        'private_key' => 'getPrivateKey',
-        'port_out_pin' => 'getPortOutPin'
+        'private_key' => 'getPrivateKey'
     ];
 
     /**
@@ -185,7 +180,6 @@ class InlineObject76 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['port_out_pin'] = $data['port_out_pin'] ?? null;
     }
 
     /**
@@ -199,9 +193,6 @@ class InlineObject76 implements ModelInterface, ArrayAccess, \JsonSerializable
 
         if ($this->container['private_key'] === null) {
             $invalidProperties[] = "'private_key' can't be null";
-        }
-        if ($this->container['port_out_pin'] === null) {
-            $invalidProperties[] = "'port_out_pin' can't be null";
         }
         return $invalidProperties;
     }
@@ -238,30 +229,6 @@ class InlineObject76 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function setPrivateKey($private_key)
     {
         $this->container['private_key'] = $private_key;
-
-        return $this;
-    }
-
-    /**
-     * Gets port_out_pin
-     *
-     * @return \OpenAPI\Client\Model\PortOutPinUpdatePortOutPin
-     */
-    public function getPortOutPin()
-    {
-        return $this->container['port_out_pin'];
-    }
-
-    /**
-     * Sets port_out_pin
-     *
-     * @param \OpenAPI\Client\Model\PortOutPinUpdatePortOutPin $port_out_pin port_out_pin
-     *
-     * @return self
-     */
-    public function setPortOutPin($port_out_pin)
-    {
-        $this->container['port_out_pin'] = $port_out_pin;
 
         return $this;
     }

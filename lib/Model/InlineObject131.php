@@ -60,8 +60,7 @@ class InlineObject131 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'private_key' => 'string',
-        'customer_default' => '\OpenAPI\Client\Model\AccountDefaultCustomerDefault'
+        'private_key' => 'string'
     ];
 
     /**
@@ -72,8 +71,7 @@ class InlineObject131 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'private_key' => null,
-        'customer_default' => null
+        'private_key' => null
     ];
 
     /**
@@ -103,8 +101,7 @@ class InlineObject131 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        'private_key' => 'privateKey',
-        'customer_default' => 'customerDefault'
+        'private_key' => 'privateKey'
     ];
 
     /**
@@ -113,8 +110,7 @@ class InlineObject131 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        'private_key' => 'setPrivateKey',
-        'customer_default' => 'setCustomerDefault'
+        'private_key' => 'setPrivateKey'
     ];
 
     /**
@@ -123,8 +119,7 @@ class InlineObject131 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        'private_key' => 'getPrivateKey',
-        'customer_default' => 'getCustomerDefault'
+        'private_key' => 'getPrivateKey'
     ];
 
     /**
@@ -185,7 +180,6 @@ class InlineObject131 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['customer_default'] = $data['customer_default'] ?? null;
     }
 
     /**
@@ -235,30 +229,6 @@ class InlineObject131 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function setPrivateKey($private_key)
     {
         $this->container['private_key'] = $private_key;
-
-        return $this;
-    }
-
-    /**
-     * Gets customer_default
-     *
-     * @return \OpenAPI\Client\Model\AccountDefaultCustomerDefault|null
-     */
-    public function getCustomerDefault()
-    {
-        return $this->container['customer_default'];
-    }
-
-    /**
-     * Sets customer_default
-     *
-     * @param \OpenAPI\Client\Model\AccountDefaultCustomerDefault|null $customer_default customer_default
-     *
-     * @return self
-     */
-    public function setCustomerDefault($customer_default)
-    {
-        $this->container['customer_default'] = $customer_default;
 
         return $this;
     }

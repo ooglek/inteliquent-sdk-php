@@ -61,8 +61,7 @@ class InlineObject54 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'order_id' => 'int',
-        'customer_order_reference' => 'string'
+        'order_update' => '\OpenAPI\Client\Model\OrderUpdateOrderUpdate'
     ];
 
     /**
@@ -74,8 +73,7 @@ class InlineObject54 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'order_id' => null,
-        'customer_order_reference' => null
+        'order_update' => null
     ];
 
     /**
@@ -106,8 +104,7 @@ class InlineObject54 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'order_id' => 'orderId',
-        'customer_order_reference' => 'customerOrderReference'
+        'order_update' => 'orderUpdate'
     ];
 
     /**
@@ -117,8 +114,7 @@ class InlineObject54 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'order_id' => 'setOrderId',
-        'customer_order_reference' => 'setCustomerOrderReference'
+        'order_update' => 'setOrderUpdate'
     ];
 
     /**
@@ -128,8 +124,7 @@ class InlineObject54 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'order_id' => 'getOrderId',
-        'customer_order_reference' => 'getCustomerOrderReference'
+        'order_update' => 'getOrderUpdate'
     ];
 
     /**
@@ -190,8 +185,7 @@ class InlineObject54 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['order_id'] = $data['order_id'] ?? null;
-        $this->container['customer_order_reference'] = $data['customer_order_reference'] ?? null;
+        $this->container['order_update'] = $data['order_update'] ?? null;
     }
 
     /**
@@ -205,6 +199,9 @@ class InlineObject54 implements ModelInterface, ArrayAccess, \JsonSerializable
 
         if ($this->container['private_key'] === null) {
             $invalidProperties[] = "'private_key' can't be null";
+        }
+        if ($this->container['order_update'] === null) {
+            $invalidProperties[] = "'order_update' can't be null";
         }
         return $invalidProperties;
     }
@@ -246,49 +243,25 @@ class InlineObject54 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets order_id
+     * Gets order_update
      *
-     * @return int|null
+     * @return \OpenAPI\Client\Model\OrderUpdateOrderUpdate
      */
-    public function getOrderId()
+    public function getOrderUpdate()
     {
-        return $this->container['order_id'];
+        return $this->container['order_update'];
     }
 
     /**
-     * Sets order_id
+     * Sets order_update
      *
-     * @param int|null $order_id Existing order number
+     * @param \OpenAPI\Client\Model\OrderUpdateOrderUpdate $order_update order_update
      *
      * @return self
      */
-    public function setOrderId($order_id)
+    public function setOrderUpdate($order_update)
     {
-        $this->container['order_id'] = $order_id;
-
-        return $this;
-    }
-
-    /**
-     * Gets customer_order_reference
-     *
-     * @return string|null
-     */
-    public function getCustomerOrderReference()
-    {
-        return $this->container['customer_order_reference'];
-    }
-
-    /**
-     * Sets customer_order_reference
-     *
-     * @param string|null $customer_order_reference Customer for whom the order is.
-     *
-     * @return self
-     */
-    public function setCustomerOrderReference($customer_order_reference)
-    {
-        $this->container['customer_order_reference'] = $customer_order_reference;
+        $this->container['order_update'] = $order_update;
 
         return $this;
     }

@@ -40,7 +40,7 @@ $apiInstance = new OpenAPI\Client\Api\MessageBrokerApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject140(); // \OpenAPI\Client\Model\InlineObject140
+$payload = new \OpenAPI\Client\Model\InlineObject141(); // \OpenAPI\Client\Model\InlineObject141
 
 try {
     $result = $apiInstance->configureAuthorizationPost($payload);
@@ -54,7 +54,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject140**](../Model/InlineObject140.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject141**](../Model/InlineObject141.md)|  |
 
 ### Return type
 
@@ -102,7 +102,7 @@ $apiInstance = new OpenAPI\Client\Api\MessageBrokerApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject142(); // \OpenAPI\Client\Model\InlineObject142
+$payload = new \OpenAPI\Client\Model\InlineObject143(); // \OpenAPI\Client\Model\InlineObject143
 
 try {
     $result = $apiInstance->customerConfiguredWebhookURLForInboundMessagingPost($payload);
@@ -116,7 +116,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject142**](../Model/InlineObject142.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject143**](../Model/InlineObject143.md)|  |
 
 ### Return type
 
@@ -143,7 +143,7 @@ publishMessagesPost($payload): \OpenAPI\Client\Model\ResponsePublishMessage
 
 Send Outbound Message
 
-This endpoint allows you to send an outbound SMS or MMS message. The value of the from parameter must be a telephone number on your Inteliquent account with active messaging services enabled. The authorization bearer header in your request must match one of your API keys for the message broker service. Validation is performed to ensure that the number sent in the from parameter is assigned to your account and has active messaging service enabled.
+This endpoint allows you to send an outbound SMS or MMS message. The value of the from parameter must be a telephone number on your Inteliquent account with active messaging services enabled. The authorization bearer header in your request must match one of your API keys for the message broker service. Validation is performed to ensure that the number sent in the from parameter is assigned to your account and has active messaging service enabled.Url for this API will be 'https://messagebroker.inteliquent.com/msgbroker/rest/publishMessages' and Authorization should be \"Authorization:Bearer Api_key\".
 
 ### Example
 
@@ -164,7 +164,7 @@ $apiInstance = new OpenAPI\Client\Api\MessageBrokerApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject139(); // \OpenAPI\Client\Model\InlineObject139
+$payload = new \OpenAPI\Client\Model\InlineObject140(); // \OpenAPI\Client\Model\InlineObject140
 
 try {
     $result = $apiInstance->publishMessagesPost($payload);
@@ -178,7 +178,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject139**](../Model/InlineObject139.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject140**](../Model/InlineObject140.md)|  |
 
 ### Return type
 
@@ -226,7 +226,7 @@ $apiInstance = new OpenAPI\Client\Api\MessageBrokerApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject141(); // \OpenAPI\Client\Model\InlineObject141
+$payload = new \OpenAPI\Client\Model\InlineObject142(); // \OpenAPI\Client\Model\InlineObject142
 
 try {
     $result = $apiInstance->removeAuthorizationPost($payload);
@@ -240,7 +240,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject141**](../Model/InlineObject141.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject142**](../Model/InlineObject142.md)|  |
 
 ### Return type
 

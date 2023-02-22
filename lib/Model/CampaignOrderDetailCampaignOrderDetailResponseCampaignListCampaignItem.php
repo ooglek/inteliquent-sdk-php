@@ -74,7 +74,7 @@ class CampaignOrderDetailCampaignOrderDetailResponseCampaignListCampaignItem imp
         'subscriber_optout' => 'string',
         'subscriber_help' => 'string',
         'auto_renewal' => 'string',
-        'affiliate_marketing' => 'string',
+        'terms_and_conditions' => 'string',
         'sample1' => 'string',
         'sample2' => 'string',
         'sample3' => 'string',
@@ -108,7 +108,7 @@ class CampaignOrderDetailCampaignOrderDetailResponseCampaignListCampaignItem imp
         'subscriber_optout' => null,
         'subscriber_help' => null,
         'auto_renewal' => null,
-        'affiliate_marketing' => null,
+        'terms_and_conditions' => null,
         'sample1' => null,
         'sample2' => null,
         'sample3' => null,
@@ -161,7 +161,7 @@ class CampaignOrderDetailCampaignOrderDetailResponseCampaignListCampaignItem imp
         'subscriber_optout' => 'subscriberOptout',
         'subscriber_help' => 'subscriberHelp',
         'auto_renewal' => 'autoRenewal',
-        'affiliate_marketing' => 'affiliateMarketing',
+        'terms_and_conditions' => 'termsAndConditions',
         'sample1' => 'sample1',
         'sample2' => 'sample2',
         'sample3' => 'sample3',
@@ -193,7 +193,7 @@ class CampaignOrderDetailCampaignOrderDetailResponseCampaignListCampaignItem imp
         'subscriber_optout' => 'setSubscriberOptout',
         'subscriber_help' => 'setSubscriberHelp',
         'auto_renewal' => 'setAutoRenewal',
-        'affiliate_marketing' => 'setAffiliateMarketing',
+        'terms_and_conditions' => 'setTermsAndConditions',
         'sample1' => 'setSample1',
         'sample2' => 'setSample2',
         'sample3' => 'setSample3',
@@ -225,7 +225,7 @@ class CampaignOrderDetailCampaignOrderDetailResponseCampaignListCampaignItem imp
         'subscriber_optout' => 'getSubscriberOptout',
         'subscriber_help' => 'getSubscriberHelp',
         'auto_renewal' => 'getAutoRenewal',
-        'affiliate_marketing' => 'getAffiliateMarketing',
+        'terms_and_conditions' => 'getTermsAndConditions',
         'sample1' => 'getSample1',
         'sample2' => 'getSample2',
         'sample3' => 'getSample3',
@@ -308,7 +308,7 @@ class CampaignOrderDetailCampaignOrderDetailResponseCampaignListCampaignItem imp
         $this->container['subscriber_optout'] = $data['subscriber_optout'] ?? null;
         $this->container['subscriber_help'] = $data['subscriber_help'] ?? null;
         $this->container['auto_renewal'] = $data['auto_renewal'] ?? null;
-        $this->container['affiliate_marketing'] = $data['affiliate_marketing'] ?? null;
+        $this->container['terms_and_conditions'] = $data['terms_and_conditions'] ?? null;
         $this->container['sample1'] = $data['sample1'] ?? null;
         $this->container['sample2'] = $data['sample2'] ?? null;
         $this->container['sample3'] = $data['sample3'] ?? null;
@@ -681,25 +681,25 @@ class CampaignOrderDetailCampaignOrderDetailResponseCampaignListCampaignItem imp
     }
 
     /**
-     * Gets affiliate_marketing
+     * Gets terms_and_conditions
      *
      * @return string|null
      */
-    public function getAffiliateMarketing()
+    public function getTermsAndConditions()
     {
-        return $this->container['affiliate_marketing'];
+        return $this->container['terms_and_conditions'];
     }
 
     /**
-     * Sets affiliate_marketing
+     * Sets terms_and_conditions
      *
-     * @param string|null $affiliate_marketing Valid Values – Y or N
+     * @param string|null $terms_and_conditions Valid Values – Y or N
      *
      * @return self
      */
-    public function setAffiliateMarketing($affiliate_marketing)
+    public function setTermsAndConditions($terms_and_conditions)
     {
-        $this->container['affiliate_marketing'] = $affiliate_marketing;
+        $this->container['terms_and_conditions'] = $terms_and_conditions;
 
         return $this;
     }

@@ -61,7 +61,7 @@ class InlineObject78 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'port_in_order' => '\OpenAPI\Client\Model\PortInOrderPortInOrder'
+        'tn_note' => '\OpenAPI\Client\Model\TnNoteUpdateTnNote'
     ];
 
     /**
@@ -73,7 +73,7 @@ class InlineObject78 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'port_in_order' => null
+        'tn_note' => null
     ];
 
     /**
@@ -104,7 +104,7 @@ class InlineObject78 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'port_in_order' => 'portInOrder'
+        'tn_note' => 'tnNote'
     ];
 
     /**
@@ -114,7 +114,7 @@ class InlineObject78 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'port_in_order' => 'setPortInOrder'
+        'tn_note' => 'setTnNote'
     ];
 
     /**
@@ -124,7 +124,7 @@ class InlineObject78 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'port_in_order' => 'getPortInOrder'
+        'tn_note' => 'getTnNote'
     ];
 
     /**
@@ -185,7 +185,7 @@ class InlineObject78 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['port_in_order'] = $data['port_in_order'] ?? null;
+        $this->container['tn_note'] = $data['tn_note'] ?? null;
     }
 
     /**
@@ -197,6 +197,12 @@ class InlineObject78 implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         $invalidProperties = [];
 
+        if ($this->container['private_key'] === null) {
+            $invalidProperties[] = "'private_key' can't be null";
+        }
+        if ($this->container['tn_note'] === null) {
+            $invalidProperties[] = "'tn_note' can't be null";
+        }
         return $invalidProperties;
     }
 
@@ -215,7 +221,7 @@ class InlineObject78 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets private_key
      *
-     * @return string|null
+     * @return string
      */
     public function getPrivateKey()
     {
@@ -225,7 +231,7 @@ class InlineObject78 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets private_key
      *
-     * @param string|null $private_key private_key
+     * @param string $private_key API key required to validate your application
      *
      * @return self
      */
@@ -237,25 +243,25 @@ class InlineObject78 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets port_in_order
+     * Gets tn_note
      *
-     * @return \OpenAPI\Client\Model\PortInOrderPortInOrder|null
+     * @return \OpenAPI\Client\Model\TnNoteUpdateTnNote
      */
-    public function getPortInOrder()
+    public function getTnNote()
     {
-        return $this->container['port_in_order'];
+        return $this->container['tn_note'];
     }
 
     /**
-     * Sets port_in_order
+     * Sets tn_note
      *
-     * @param \OpenAPI\Client\Model\PortInOrderPortInOrder|null $port_in_order port_in_order
+     * @param \OpenAPI\Client\Model\TnNoteUpdateTnNote $tn_note tn_note
      *
      * @return self
      */
-    public function setPortInOrder($port_in_order)
+    public function setTnNote($tn_note)
     {
-        $this->container['port_in_order'] = $port_in_order;
+        $this->container['tn_note'] = $tn_note;
 
         return $this;
     }

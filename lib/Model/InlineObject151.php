@@ -61,8 +61,9 @@ class InlineObject151 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'order_id' => 'int',
-        'customer_order_reference' => 'string'
+        'trunk_group_name' => 'string',
+        'update_action' => 'string',
+        'update_session_count_by' => 'int'
     ];
 
     /**
@@ -74,8 +75,9 @@ class InlineObject151 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'order_id' => null,
-        'customer_order_reference' => null
+        'trunk_group_name' => null,
+        'update_action' => null,
+        'update_session_count_by' => null
     ];
 
     /**
@@ -106,8 +108,9 @@ class InlineObject151 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'order_id' => 'orderId',
-        'customer_order_reference' => 'customerOrderReference'
+        'trunk_group_name' => 'trunkGroupName',
+        'update_action' => 'updateAction',
+        'update_session_count_by' => 'updateSessionCountBy'
     ];
 
     /**
@@ -117,8 +120,9 @@ class InlineObject151 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'order_id' => 'setOrderId',
-        'customer_order_reference' => 'setCustomerOrderReference'
+        'trunk_group_name' => 'setTrunkGroupName',
+        'update_action' => 'setUpdateAction',
+        'update_session_count_by' => 'setUpdateSessionCountBy'
     ];
 
     /**
@@ -128,8 +132,9 @@ class InlineObject151 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'order_id' => 'getOrderId',
-        'customer_order_reference' => 'getCustomerOrderReference'
+        'trunk_group_name' => 'getTrunkGroupName',
+        'update_action' => 'getUpdateAction',
+        'update_session_count_by' => 'getUpdateSessionCountBy'
     ];
 
     /**
@@ -190,8 +195,9 @@ class InlineObject151 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['order_id'] = $data['order_id'] ?? null;
-        $this->container['customer_order_reference'] = $data['customer_order_reference'] ?? null;
+        $this->container['trunk_group_name'] = $data['trunk_group_name'] ?? null;
+        $this->container['update_action'] = $data['update_action'] ?? null;
+        $this->container['update_session_count_by'] = $data['update_session_count_by'] ?? null;
     }
 
     /**
@@ -203,6 +209,18 @@ class InlineObject151 implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         $invalidProperties = [];
 
+        if ($this->container['private_key'] === null) {
+            $invalidProperties[] = "'private_key' can't be null";
+        }
+        if ($this->container['trunk_group_name'] === null) {
+            $invalidProperties[] = "'trunk_group_name' can't be null";
+        }
+        if ($this->container['update_action'] === null) {
+            $invalidProperties[] = "'update_action' can't be null";
+        }
+        if ($this->container['update_session_count_by'] === null) {
+            $invalidProperties[] = "'update_session_count_by' can't be null";
+        }
         return $invalidProperties;
     }
 
@@ -221,7 +239,7 @@ class InlineObject151 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets private_key
      *
-     * @return string|null
+     * @return string
      */
     public function getPrivateKey()
     {
@@ -231,7 +249,7 @@ class InlineObject151 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets private_key
      *
-     * @param string|null $private_key private_key
+     * @param string $private_key API key required to validate your application
      *
      * @return self
      */
@@ -243,49 +261,73 @@ class InlineObject151 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets order_id
+     * Gets trunk_group_name
      *
-     * @return int|null
+     * @return string
      */
-    public function getOrderId()
+    public function getTrunkGroupName()
     {
-        return $this->container['order_id'];
+        return $this->container['trunk_group_name'];
     }
 
     /**
-     * Sets order_id
+     * Sets trunk_group_name
      *
-     * @param int|null $order_id order_id
+     * @param string $trunk_group_name Name of trunk group to be updated
      *
      * @return self
      */
-    public function setOrderId($order_id)
+    public function setTrunkGroupName($trunk_group_name)
     {
-        $this->container['order_id'] = $order_id;
+        $this->container['trunk_group_name'] = $trunk_group_name;
 
         return $this;
     }
 
     /**
-     * Gets customer_order_reference
+     * Gets update_action
      *
-     * @return string|null
+     * @return string
      */
-    public function getCustomerOrderReference()
+    public function getUpdateAction()
     {
-        return $this->container['customer_order_reference'];
+        return $this->container['update_action'];
     }
 
     /**
-     * Sets customer_order_reference
+     * Sets update_action
      *
-     * @param string|null $customer_order_reference Customer for whom the order is.
+     * @param string $update_action Session count update action. Accepted values are Increase or Decrease
      *
      * @return self
      */
-    public function setCustomerOrderReference($customer_order_reference)
+    public function setUpdateAction($update_action)
     {
-        $this->container['customer_order_reference'] = $customer_order_reference;
+        $this->container['update_action'] = $update_action;
+
+        return $this;
+    }
+
+    /**
+     * Gets update_session_count_by
+     *
+     * @return int
+     */
+    public function getUpdateSessionCountBy()
+    {
+        return $this->container['update_session_count_by'];
+    }
+
+    /**
+     * Sets update_session_count_by
+     *
+     * @param int $update_session_count_by Number of sessions to be increased or decreased
+     *
+     * @return self
+     */
+    public function setUpdateSessionCountBy($update_session_count_by)
+    {
+        $this->container['update_session_count_by'] = $update_session_count_by;
 
         return $this;
     }

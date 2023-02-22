@@ -121,7 +121,7 @@ class DeprecatedAPIsApi
      *
      * Port-In TN with Messaging Feature - DEPRECATED
      *
-     * @param  \OpenAPI\Client\Model\InlineObject80 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject81 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -138,7 +138,7 @@ class DeprecatedAPIsApi
      *
      * Port-In TN with Messaging Feature - DEPRECATED
      *
-     * @param  \OpenAPI\Client\Model\InlineObject80 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject81 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -391,7 +391,7 @@ class DeprecatedAPIsApi
      *
      * Port-In TN with Messaging Feature - DEPRECATED
      *
-     * @param  \OpenAPI\Client\Model\InlineObject80 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject81 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -411,7 +411,7 @@ class DeprecatedAPIsApi
      *
      * Port-In TN with Messaging Feature - DEPRECATED
      *
-     * @param  \OpenAPI\Client\Model\InlineObject80 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject81 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -457,7 +457,7 @@ class DeprecatedAPIsApi
     /**
      * Create request for operation 'portInMessagingOrderPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject80 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject81 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -555,7 +555,7 @@ class DeprecatedAPIsApi
      *
      * Retrieve Assigned TF Detail - DEPRECATED
      *
-     * @param  \OpenAPI\Client\Model\InlineObject103 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject104 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -572,7 +572,7 @@ class DeprecatedAPIsApi
      *
      * Retrieve Assigned TF Detail - DEPRECATED
      *
-     * @param  \OpenAPI\Client\Model\InlineObject103 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject104 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -745,7 +745,7 @@ class DeprecatedAPIsApi
      *
      * Retrieve Assigned TF Detail - DEPRECATED
      *
-     * @param  \OpenAPI\Client\Model\InlineObject103 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject104 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -765,7 +765,7 @@ class DeprecatedAPIsApi
      *
      * Retrieve Assigned TF Detail - DEPRECATED
      *
-     * @param  \OpenAPI\Client\Model\InlineObject103 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject104 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -811,7 +811,7 @@ class DeprecatedAPIsApi
     /**
      * Create request for operation 'tfFeatureDetailPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject103 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject104 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -909,7 +909,7 @@ class DeprecatedAPIsApi
      *
      * Order/Add TF Messaging Feature - DEPRECATED
      *
-     * @param  \OpenAPI\Client\Model\InlineObject97 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject98 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -926,7 +926,7 @@ class DeprecatedAPIsApi
      *
      * Order/Add TF Messaging Feature - DEPRECATED
      *
-     * @param  \OpenAPI\Client\Model\InlineObject97 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject98 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1159,7 +1159,7 @@ class DeprecatedAPIsApi
      *
      * Order/Add TF Messaging Feature - DEPRECATED
      *
-     * @param  \OpenAPI\Client\Model\InlineObject97 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject98 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1179,7 +1179,7 @@ class DeprecatedAPIsApi
      *
      * Order/Add TF Messaging Feature - DEPRECATED
      *
-     * @param  \OpenAPI\Client\Model\InlineObject97 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject98 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1225,7 +1225,7 @@ class DeprecatedAPIsApi
     /**
      * Create request for operation 'tfMessagingOrderPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject97 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject98 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1323,7 +1323,7 @@ class DeprecatedAPIsApi
      *
      * Order E911-Only Telephone Number - DEPRECATED
      *
-     * @param  \OpenAPI\Client\Model\InlineObject69 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject70 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1340,7 +1340,7 @@ class DeprecatedAPIsApi
      *
      * Order E911-Only Telephone Number - DEPRECATED
      *
-     * @param  \OpenAPI\Client\Model\InlineObject69 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject70 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1613,7 +1613,7 @@ class DeprecatedAPIsApi
      *
      * Order E911-Only Telephone Number - DEPRECATED
      *
-     * @param  \OpenAPI\Client\Model\InlineObject69 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject70 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1633,7 +1633,7 @@ class DeprecatedAPIsApi
      *
      * Order E911-Only Telephone Number - DEPRECATED
      *
-     * @param  \OpenAPI\Client\Model\InlineObject69 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject70 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1679,7 +1679,7 @@ class DeprecatedAPIsApi
     /**
      * Create request for operation 'tnE911OrderPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject69 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject70 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1777,7 +1777,7 @@ class DeprecatedAPIsApi
      *
      * Order Messaging-Only Telephone Number - DEPRECATED
      *
-     * @param  \OpenAPI\Client\Model\InlineObject65 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject66 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1794,7 +1794,7 @@ class DeprecatedAPIsApi
      *
      * Order Messaging-Only Telephone Number - DEPRECATED
      *
-     * @param  \OpenAPI\Client\Model\InlineObject65 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject66 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -2007,7 +2007,7 @@ class DeprecatedAPIsApi
      *
      * Order Messaging-Only Telephone Number - DEPRECATED
      *
-     * @param  \OpenAPI\Client\Model\InlineObject65 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject66 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2027,7 +2027,7 @@ class DeprecatedAPIsApi
      *
      * Order Messaging-Only Telephone Number - DEPRECATED
      *
-     * @param  \OpenAPI\Client\Model\InlineObject65 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject66 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2073,7 +2073,7 @@ class DeprecatedAPIsApi
     /**
      * Create request for operation 'tnMessagingOrderPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject65 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject66 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -2171,7 +2171,7 @@ class DeprecatedAPIsApi
      *
      * Search Assigned Telephone Number - DEPRECATED
      *
-     * @param  \OpenAPI\Client\Model\InlineObject66 $payload payload (optional)
+     * @param  \OpenAPI\Client\Model\InlineObject67 $payload payload (optional)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -2188,7 +2188,7 @@ class DeprecatedAPIsApi
      *
      * Search Assigned Telephone Number - DEPRECATED
      *
-     * @param  \OpenAPI\Client\Model\InlineObject66 $payload (optional)
+     * @param  \OpenAPI\Client\Model\InlineObject67 $payload (optional)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -2381,7 +2381,7 @@ class DeprecatedAPIsApi
      *
      * Search Assigned Telephone Number - DEPRECATED
      *
-     * @param  \OpenAPI\Client\Model\InlineObject66 $payload (optional)
+     * @param  \OpenAPI\Client\Model\InlineObject67 $payload (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2401,7 +2401,7 @@ class DeprecatedAPIsApi
      *
      * Search Assigned Telephone Number - DEPRECATED
      *
-     * @param  \OpenAPI\Client\Model\InlineObject66 $payload (optional)
+     * @param  \OpenAPI\Client\Model\InlineObject67 $payload (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2447,7 +2447,7 @@ class DeprecatedAPIsApi
     /**
      * Create request for operation 'tnSearchAssignedPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject66 $payload (optional)
+     * @param  \OpenAPI\Client\Model\InlineObject67 $payload (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

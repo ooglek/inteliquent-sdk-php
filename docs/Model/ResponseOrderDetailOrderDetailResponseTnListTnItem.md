@@ -17,6 +17,7 @@ Name | Type | Description | Notes
 **auth_date** | **\DateTime** |  | [optional]
 **account_pin** | **string** |  | [optional]
 **port_out_pin** | **string** |  | [optional]
+**routing_option** | **string** |  | [optional]
 **routing_label** | **string** |  | [optional]
 **resp_org_id** | **string** |  | [optional]
 **port_dt** | **\DateTime** | date forat is yyyy-mm-ddTHH:mm:ss.SSS+Z | [optional]

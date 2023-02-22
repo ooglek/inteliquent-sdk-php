@@ -61,10 +61,8 @@ class InlineObject111 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'start_date' => 'string',
-        'end_date' => 'string',
-        'trunk_group_name' => 'string',
-        'super_group_name' => 'string'
+        'routing_label' => 'string',
+        'new_routing_label' => 'string'
     ];
 
     /**
@@ -76,10 +74,8 @@ class InlineObject111 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'start_date' => null,
-        'end_date' => null,
-        'trunk_group_name' => null,
-        'super_group_name' => null
+        'routing_label' => null,
+        'new_routing_label' => null
     ];
 
     /**
@@ -110,10 +106,8 @@ class InlineObject111 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'start_date' => 'startDate',
-        'end_date' => 'endDate',
-        'trunk_group_name' => 'trunkGroupName',
-        'super_group_name' => 'superGroupName'
+        'routing_label' => 'routingLabel',
+        'new_routing_label' => 'newRoutingLabel'
     ];
 
     /**
@@ -123,10 +117,8 @@ class InlineObject111 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'start_date' => 'setStartDate',
-        'end_date' => 'setEndDate',
-        'trunk_group_name' => 'setTrunkGroupName',
-        'super_group_name' => 'setSuperGroupName'
+        'routing_label' => 'setRoutingLabel',
+        'new_routing_label' => 'setNewRoutingLabel'
     ];
 
     /**
@@ -136,10 +128,8 @@ class InlineObject111 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'start_date' => 'getStartDate',
-        'end_date' => 'getEndDate',
-        'trunk_group_name' => 'getTrunkGroupName',
-        'super_group_name' => 'getSuperGroupName'
+        'routing_label' => 'getRoutingLabel',
+        'new_routing_label' => 'getNewRoutingLabel'
     ];
 
     /**
@@ -200,10 +190,8 @@ class InlineObject111 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['start_date'] = $data['start_date'] ?? null;
-        $this->container['end_date'] = $data['end_date'] ?? null;
-        $this->container['trunk_group_name'] = $data['trunk_group_name'] ?? null;
-        $this->container['super_group_name'] = $data['super_group_name'] ?? null;
+        $this->container['routing_label'] = $data['routing_label'] ?? null;
+        $this->container['new_routing_label'] = $data['new_routing_label'] ?? null;
     }
 
     /**
@@ -218,14 +206,11 @@ class InlineObject111 implements ModelInterface, ArrayAccess, \JsonSerializable
         if ($this->container['private_key'] === null) {
             $invalidProperties[] = "'private_key' can't be null";
         }
-        if ($this->container['start_date'] === null) {
-            $invalidProperties[] = "'start_date' can't be null";
+        if ($this->container['routing_label'] === null) {
+            $invalidProperties[] = "'routing_label' can't be null";
         }
-        if ($this->container['end_date'] === null) {
-            $invalidProperties[] = "'end_date' can't be null";
-        }
-        if ($this->container['trunk_group_name'] === null) {
-            $invalidProperties[] = "'trunk_group_name' can't be null";
+        if ($this->container['new_routing_label'] === null) {
+            $invalidProperties[] = "'new_routing_label' can't be null";
         }
         return $invalidProperties;
     }
@@ -267,97 +252,49 @@ class InlineObject111 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets start_date
+     * Gets routing_label
      *
      * @return string
      */
-    public function getStartDate()
+    public function getRoutingLabel()
     {
-        return $this->container['start_date'];
+        return $this->container['routing_label'];
     }
 
     /**
-     * Sets start_date
+     * Sets routing_label
      *
-     * @param string $start_date Start of date range (e.g. 2015-12-15)
+     * @param string $routing_label routingLabel or customerAssignedName as retrieved in the /routingLabelSearchAssigned operation
      *
      * @return self
      */
-    public function setStartDate($start_date)
+    public function setRoutingLabel($routing_label)
     {
-        $this->container['start_date'] = $start_date;
+        $this->container['routing_label'] = $routing_label;
 
         return $this;
     }
 
     /**
-     * Gets end_date
+     * Gets new_routing_label
      *
      * @return string
      */
-    public function getEndDate()
+    public function getNewRoutingLabel()
     {
-        return $this->container['end_date'];
+        return $this->container['new_routing_label'];
     }
 
     /**
-     * Sets end_date
+     * Sets new_routing_label
      *
-     * @param string $end_date End of date range (e.g. 2015-12-15)
+     * @param string $new_routing_label New routing label name
      *
      * @return self
      */
-    public function setEndDate($end_date)
+    public function setNewRoutingLabel($new_routing_label)
     {
-        $this->container['end_date'] = $end_date;
-
-        return $this;
-    }
-
-    /**
-     * Gets trunk_group_name
-     *
-     * @return string
-     */
-    public function getTrunkGroupName()
-    {
-        return $this->container['trunk_group_name'];
-    }
-
-    /**
-     * Sets trunk_group_name
-     *
-     * @param string $trunk_group_name Name of trunk group to search utilization
-     *
-     * @return self
-     */
-    public function setTrunkGroupName($trunk_group_name)
-    {
-        $this->container['trunk_group_name'] = $trunk_group_name;
-
-        return $this;
-    }
-
-    /**
-     * Gets super_group_name
-     *
-     * @return string|null
-     */
-    public function getSuperGroupName()
-    {
-        return $this->container['super_group_name'];
-    }
-
-    /**
-     * Sets super_group_name
-     *
-     * @param string|null $super_group_name super_group_name
-     *
-     * @return self
-     */
-    public function setSuperGroupName($super_group_name)
-    {
-        $this->container['super_group_name'] = $super_group_name;
+        $this->container['new_routing_label'] = $new_routing_label;
 
         return $this;
     }

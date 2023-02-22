@@ -4,12 +4,12 @@ All URIs are relative to https://services.inteliquent.com/Services/2.0.0.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**bulkTnInventoryPost()**](TelephoneNumberApi.md#bulkTnInventoryPost) | **POST** /bulkTnInventory | Multi Search Telephone Number Inventory
-[**npaNxxFootPrintPost()**](TelephoneNumberApi.md#npaNxxFootPrintPost) | **POST** /npaNxxFootPrint | Return NPA NXX Footprint
 [**portOutPinUpdatePost()**](TelephoneNumberApi.md#portOutPinUpdatePost) | **POST** /portOutPinUpdate | Update Port-Out PIN for Active Telephone Number
+[**tnAltSpidPost()**](TelephoneNumberApi.md#tnAltSpidPost) | **POST** /tnAltSpid | Add or Remove Alternative SPID for Active Telephone Number
 [**tnAssignedListPost()**](TelephoneNumberApi.md#tnAssignedListPost) | **POST** /tnAssignedList | Retrieve Assigned Telephone Number List
 [**tnDetailPost()**](TelephoneNumberApi.md#tnDetailPost) | **POST** /tnDetail | Retrieve Telephone Number Detail
 [**tnDisconnectPost()**](TelephoneNumberApi.md#tnDisconnectPost) | **POST** /tnDisconnect | Disconnect Active Telephone Number
+[**tnDnoPost()**](TelephoneNumberApi.md#tnDnoPost) | **POST** /tnDno | Update Active Telephone Number Dno
 [**tnFeatureOrderPost()**](TelephoneNumberApi.md#tnFeatureOrderPost) | **POST** /tnFeatureOrder | Add, Update, or Remove Active Telephone Number Feature
 [**tnForwardListPost()**](TelephoneNumberApi.md#tnForwardListPost) | **POST** /tnForwardList | Phone Number Call Forward Listing
 [**tnForwardPost()**](TelephoneNumberApi.md#tnForwardPost) | **POST** /tnForward | Manage Phone Number Call Forward Settings
@@ -26,130 +26,6 @@ Method | HTTP request | Description
 [**voiceScriptDetailPost()**](TelephoneNumberApi.md#voiceScriptDetailPost) | **POST** /voiceScriptDetail | List Voice Script Settings
 [**voiceScriptPost()**](TelephoneNumberApi.md#voiceScriptPost) | **POST** /voiceScript | Voice Platform Script Configuration
 
-
-## `bulkTnInventoryPost()`
-
-```php
-bulkTnInventoryPost($payload): \OpenAPI\Client\Model\ResponseSearchTN
-```
-
-Multi Search Telephone Number Inventory
-
-This endpoint allows users to apply multiple search criteria's Inteliquent's customers to search for available telephone numbers. There are a number of parameters that can be leveraged to filter the list of telephone numbers.
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: api_key
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new OpenAPI\Client\Api\TelephoneNumberApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$payload = new \OpenAPI\Client\Model\InlineObject133(); // \OpenAPI\Client\Model\InlineObject133
-
-try {
-    $result = $apiInstance->bulkTnInventoryPost($payload);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling TelephoneNumberApi->bulkTnInventoryPost: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject133**](../Model/InlineObject133.md)|  |
-
-### Return type
-
-[**\OpenAPI\Client\Model\ResponseSearchTN**](../Model/ResponseSearchTN.md)
-
-### Authorization
-
-[api_key](../../README.md#api_key)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: `application/json`
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
-## `npaNxxFootPrintPost()`
-
-```php
-npaNxxFootPrintPost($payload): \OpenAPI\Client\Model\ResponseNpaNxxFootPrint
-```
-
-Return NPA NXX Footprint
-
-This endpoint allows user to retrive NPA NXX foot print
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: api_key
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new OpenAPI\Client\Api\TelephoneNumberApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$payload = new \OpenAPI\Client\Model\InlineObject134(); // \OpenAPI\Client\Model\InlineObject134
-
-try {
-    $result = $apiInstance->npaNxxFootPrintPost($payload);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling TelephoneNumberApi->npaNxxFootPrintPost: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject134**](../Model/InlineObject134.md)|  |
-
-### Return type
-
-[**\OpenAPI\Client\Model\ResponseNpaNxxFootPrint**](../Model/ResponseNpaNxxFootPrint.md)
-
-### Authorization
-
-[api_key](../../README.md#api_key)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: `application/json`
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
 
 ## `portOutPinUpdatePost()`
 
@@ -180,7 +56,7 @@ $apiInstance = new OpenAPI\Client\Api\TelephoneNumberApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject76(); // \OpenAPI\Client\Model\InlineObject76
+$payload = new \OpenAPI\Client\Model\InlineObject77(); // \OpenAPI\Client\Model\InlineObject77
 
 try {
     $result = $apiInstance->portOutPinUpdatePost($payload);
@@ -194,11 +70,73 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject76**](../Model/InlineObject76.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject77**](../Model/InlineObject77.md)|  |
 
 ### Return type
 
 [**\OpenAPI\Client\Model\InlineResponse20012**](../Model/InlineResponse20012.md)
+
+### Authorization
+
+[api_key](../../README.md#api_key)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `tnAltSpidPost()`
+
+```php
+tnAltSpidPost($payload): \OpenAPI\Client\Model\InlineResponse20022
+```
+
+Add or Remove Alternative SPID for Active Telephone Number
+
+This operation allows you to add or remove alternative SPID of active (In Service) telephone numbers assigned to your company. Immediate validation is performed for requests with 100 or fewer numbers, and invalid numbers are returned in the response along with the order number (if applicable). Validation for larger orders is backgrounded as documented in the Order Validation section.
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+// Configure API key authorization: api_key
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
+
+$apiInstance = new OpenAPI\Client\Api\TelephoneNumberApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$payload = new \OpenAPI\Client\Model\InlineObject61(); // \OpenAPI\Client\Model\InlineObject61
+
+try {
+    $result = $apiInstance->tnAltSpidPost($payload);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling TelephoneNumberApi->tnAltSpidPost: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **payload** | [**\OpenAPI\Client\Model\InlineObject61**](../Model/InlineObject61.md)|  |
+
+### Return type
+
+[**\OpenAPI\Client\Model\InlineResponse20022**](../Model/InlineResponse20022.md)
 
 ### Authorization
 
@@ -242,7 +180,7 @@ $apiInstance = new OpenAPI\Client\Api\TelephoneNumberApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject63(); // \OpenAPI\Client\Model\InlineObject63
+$payload = new \OpenAPI\Client\Model\InlineObject64(); // \OpenAPI\Client\Model\InlineObject64
 
 try {
     $result = $apiInstance->tnAssignedListPost($payload);
@@ -256,7 +194,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject63**](../Model/InlineObject63.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject64**](../Model/InlineObject64.md)|  |
 
 ### Return type
 
@@ -304,7 +242,7 @@ $apiInstance = new OpenAPI\Client\Api\TelephoneNumberApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject64(); // \OpenAPI\Client\Model\InlineObject64
+$payload = new \OpenAPI\Client\Model\InlineObject65(); // \OpenAPI\Client\Model\InlineObject65
 
 try {
     $result = $apiInstance->tnDetailPost($payload);
@@ -318,7 +256,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject64**](../Model/InlineObject64.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject65**](../Model/InlineObject65.md)|  |
 
 ### Return type
 
@@ -366,7 +304,7 @@ $apiInstance = new OpenAPI\Client\Api\TelephoneNumberApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject61(); // \OpenAPI\Client\Model\InlineObject61
+$payload = new \OpenAPI\Client\Model\InlineObject62(); // \OpenAPI\Client\Model\InlineObject62
 
 try {
     $result = $apiInstance->tnDisconnectPost($payload);
@@ -380,11 +318,73 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject61**](../Model/InlineObject61.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject62**](../Model/InlineObject62.md)|  |
 
 ### Return type
 
 [**\OpenAPI\Client\Model\InlineResponse20023**](../Model/InlineResponse20023.md)
+
+### Authorization
+
+[api_key](../../README.md#api_key)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `tnDnoPost()`
+
+```php
+tnDnoPost($payload): \OpenAPI\Client\Model\InlineResponse20022
+```
+
+Update Active Telephone Number Dno
+
+This operation allows you to modify the DNO status of active (In Service) telephone numbers assigned to your company. Immediate validation is performed for requests with 100 or fewer numbers, and invalid numbers are returned in the response along with the order number (if applicable). Validation for larger orders is backgrounded as documented in the Order Validation section.
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+// Configure API key authorization: api_key
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
+
+$apiInstance = new OpenAPI\Client\Api\TelephoneNumberApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$payload = new \OpenAPI\Client\Model\InlineObject60(); // \OpenAPI\Client\Model\InlineObject60
+
+try {
+    $result = $apiInstance->tnDnoPost($payload);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling TelephoneNumberApi->tnDnoPost: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **payload** | [**\OpenAPI\Client\Model\InlineObject60**](../Model/InlineObject60.md)|  |
+
+### Return type
+
+[**\OpenAPI\Client\Model\InlineResponse20022**](../Model/InlineResponse20022.md)
 
 ### Authorization
 
@@ -428,7 +428,7 @@ $apiInstance = new OpenAPI\Client\Api\TelephoneNumberApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject68(); // \OpenAPI\Client\Model\InlineObject68
+$payload = new \OpenAPI\Client\Model\InlineObject69(); // \OpenAPI\Client\Model\InlineObject69
 
 try {
     $result = $apiInstance->tnFeatureOrderPost($payload);
@@ -442,7 +442,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject68**](../Model/InlineObject68.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject69**](../Model/InlineObject69.md)|  |
 
 ### Return type
 
@@ -490,7 +490,7 @@ $apiInstance = new OpenAPI\Client\Api\TelephoneNumberApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject73(); // \OpenAPI\Client\Model\InlineObject73
+$payload = new \OpenAPI\Client\Model\InlineObject74(); // \OpenAPI\Client\Model\InlineObject74
 
 try {
     $result = $apiInstance->tnForwardListPost($payload);
@@ -504,7 +504,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject73**](../Model/InlineObject73.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject74**](../Model/InlineObject74.md)|  |
 
 ### Return type
 
@@ -552,7 +552,7 @@ $apiInstance = new OpenAPI\Client\Api\TelephoneNumberApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject72(); // \OpenAPI\Client\Model\InlineObject72
+$payload = new \OpenAPI\Client\Model\InlineObject73(); // \OpenAPI\Client\Model\InlineObject73
 
 try {
     $result = $apiInstance->tnForwardPost($payload);
@@ -566,7 +566,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject72**](../Model/InlineObject72.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject73**](../Model/InlineObject73.md)|  |
 
 ### Return type
 
@@ -614,7 +614,7 @@ $apiInstance = new OpenAPI\Client\Api\TelephoneNumberApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject67(); // \OpenAPI\Client\Model\InlineObject67
+$payload = new \OpenAPI\Client\Model\InlineObject68(); // \OpenAPI\Client\Model\InlineObject68
 
 try {
     $result = $apiInstance->tnInventoryCoveragePost($payload);
@@ -628,7 +628,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject67**](../Model/InlineObject67.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject68**](../Model/InlineObject68.md)|  |
 
 ### Return type
 
@@ -676,7 +676,7 @@ $apiInstance = new OpenAPI\Client\Api\TelephoneNumberApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject62(); // \OpenAPI\Client\Model\InlineObject62
+$payload = new \OpenAPI\Client\Model\InlineObject63(); // \OpenAPI\Client\Model\InlineObject63
 
 try {
     $result = $apiInstance->tnInventoryPost($payload);
@@ -690,7 +690,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject62**](../Model/InlineObject62.md)|  | [optional]
+ **payload** | [**\OpenAPI\Client\Model\InlineObject63**](../Model/InlineObject63.md)|  | [optional]
 
 ### Return type
 
@@ -738,7 +738,7 @@ $apiInstance = new OpenAPI\Client\Api\TelephoneNumberApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject77(); // \OpenAPI\Client\Model\InlineObject77
+$payload = new \OpenAPI\Client\Model\InlineObject78(); // \OpenAPI\Client\Model\InlineObject78
 
 try {
     $result = $apiInstance->tnNoteUpdatePost($payload);
@@ -752,7 +752,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject77**](../Model/InlineObject77.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject78**](../Model/InlineObject78.md)|  |
 
 ### Return type
 
@@ -800,7 +800,7 @@ $apiInstance = new OpenAPI\Client\Api\TelephoneNumberApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject59(); // \OpenAPI\Client\Model\InlineObject59
+$payload = new \OpenAPI\Client\Model\InlineObject58(); // \OpenAPI\Client\Model\InlineObject58
 
 try {
     $result = $apiInstance->tnOrderPost($payload);
@@ -814,7 +814,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject59**](../Model/InlineObject59.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject58**](../Model/InlineObject58.md)|  |
 
 ### Return type
 
@@ -862,7 +862,7 @@ $apiInstance = new OpenAPI\Client\Api\TelephoneNumberApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject147(); // \OpenAPI\Client\Model\InlineObject147
+$payload = new \OpenAPI\Client\Model\InlineObject148(); // \OpenAPI\Client\Model\InlineObject148
 
 try {
     $result = $apiInstance->tnPendingDisconnectListPost($payload);
@@ -876,7 +876,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject147**](../Model/InlineObject147.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject148**](../Model/InlineObject148.md)|  |
 
 ### Return type
 
@@ -924,7 +924,7 @@ $apiInstance = new OpenAPI\Client\Api\TelephoneNumberApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject146(); // \OpenAPI\Client\Model\InlineObject146
+$payload = new \OpenAPI\Client\Model\InlineObject147(); // \OpenAPI\Client\Model\InlineObject147
 
 try {
     $result = $apiInstance->tnReleasePost($payload);
@@ -938,7 +938,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject146**](../Model/InlineObject146.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject147**](../Model/InlineObject147.md)|  |
 
 ### Return type
 
@@ -986,7 +986,7 @@ $apiInstance = new OpenAPI\Client\Api\TelephoneNumberApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject145(); // \OpenAPI\Client\Model\InlineObject145
+$payload = new \OpenAPI\Client\Model\InlineObject146(); // \OpenAPI\Client\Model\InlineObject146
 
 try {
     $result = $apiInstance->tnReservePost($payload);
@@ -1000,7 +1000,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject145**](../Model/InlineObject145.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject146**](../Model/InlineObject146.md)|  |
 
 ### Return type
 
@@ -1048,7 +1048,7 @@ $apiInstance = new OpenAPI\Client\Api\TelephoneNumberApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject149(); // \OpenAPI\Client\Model\InlineObject149
+$payload = new \OpenAPI\Client\Model\InlineObject150(); // \OpenAPI\Client\Model\InlineObject150
 
 try {
     $result = $apiInstance->tnReservedListPost($payload);
@@ -1062,7 +1062,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject149**](../Model/InlineObject149.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject150**](../Model/InlineObject150.md)|  |
 
 ### Return type
 
@@ -1110,7 +1110,7 @@ $apiInstance = new OpenAPI\Client\Api\TelephoneNumberApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject148(); // \OpenAPI\Client\Model\InlineObject148
+$payload = new \OpenAPI\Client\Model\InlineObject149(); // \OpenAPI\Client\Model\InlineObject149
 
 try {
     $result = $apiInstance->tnRestorePost($payload);
@@ -1124,7 +1124,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject148**](../Model/InlineObject148.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject149**](../Model/InlineObject149.md)|  |
 
 ### Return type
 
@@ -1172,7 +1172,7 @@ $apiInstance = new OpenAPI\Client\Api\TelephoneNumberApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject60(); // \OpenAPI\Client\Model\InlineObject60
+$payload = new \OpenAPI\Client\Model\InlineObject59(); // \OpenAPI\Client\Model\InlineObject59
 
 try {
     $result = $apiInstance->tnUpdatePost($payload);
@@ -1186,7 +1186,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject60**](../Model/InlineObject60.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject59**](../Model/InlineObject59.md)|  |
 
 ### Return type
 
@@ -1234,7 +1234,7 @@ $apiInstance = new OpenAPI\Client\Api\TelephoneNumberApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject71(); // \OpenAPI\Client\Model\InlineObject71
+$payload = new \OpenAPI\Client\Model\InlineObject72(); // \OpenAPI\Client\Model\InlineObject72
 
 try {
     $result = $apiInstance->voiceScriptDetailPost($payload);
@@ -1248,7 +1248,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject71**](../Model/InlineObject71.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject72**](../Model/InlineObject72.md)|  |
 
 ### Return type
 
@@ -1296,7 +1296,7 @@ $apiInstance = new OpenAPI\Client\Api\TelephoneNumberApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject70(); // \OpenAPI\Client\Model\InlineObject70
+$payload = new \OpenAPI\Client\Model\InlineObject71(); // \OpenAPI\Client\Model\InlineObject71
 
 try {
     $result = $apiInstance->voiceScriptPost($payload);
@@ -1310,7 +1310,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject70**](../Model/InlineObject70.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject71**](../Model/InlineObject71.md)|  |
 
 ### Return type
 

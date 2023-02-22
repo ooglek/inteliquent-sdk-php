@@ -60,7 +60,14 @@ class InlineObject126 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'private_key' => 'string'
+        'private_key' => 'string',
+        'street_num' => 'int',
+        'street_info' => 'string',
+        'street_pre_dir' => 'string',
+        'city' => 'string',
+        'state' => 'string',
+        'postal_code' => 'string',
+        'postal_code_plus_four' => 'string'
     ];
 
     /**
@@ -71,7 +78,14 @@ class InlineObject126 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'private_key' => null
+        'private_key' => null,
+        'street_num' => null,
+        'street_info' => null,
+        'street_pre_dir' => null,
+        'city' => null,
+        'state' => null,
+        'postal_code' => null,
+        'postal_code_plus_four' => null
     ];
 
     /**
@@ -101,7 +115,14 @@ class InlineObject126 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        'private_key' => 'privateKey'
+        'private_key' => 'privateKey',
+        'street_num' => 'streetNum',
+        'street_info' => 'streetInfo',
+        'street_pre_dir' => 'streetPreDir',
+        'city' => 'city',
+        'state' => 'state',
+        'postal_code' => 'postalCode',
+        'postal_code_plus_four' => 'postalCodePlusFour'
     ];
 
     /**
@@ -110,7 +131,14 @@ class InlineObject126 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        'private_key' => 'setPrivateKey'
+        'private_key' => 'setPrivateKey',
+        'street_num' => 'setStreetNum',
+        'street_info' => 'setStreetInfo',
+        'street_pre_dir' => 'setStreetPreDir',
+        'city' => 'setCity',
+        'state' => 'setState',
+        'postal_code' => 'setPostalCode',
+        'postal_code_plus_four' => 'setPostalCodePlusFour'
     ];
 
     /**
@@ -119,7 +147,14 @@ class InlineObject126 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        'private_key' => 'getPrivateKey'
+        'private_key' => 'getPrivateKey',
+        'street_num' => 'getStreetNum',
+        'street_info' => 'getStreetInfo',
+        'street_pre_dir' => 'getStreetPreDir',
+        'city' => 'getCity',
+        'state' => 'getState',
+        'postal_code' => 'getPostalCode',
+        'postal_code_plus_four' => 'getPostalCodePlusFour'
     ];
 
     /**
@@ -180,6 +215,13 @@ class InlineObject126 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
+        $this->container['street_num'] = $data['street_num'] ?? null;
+        $this->container['street_info'] = $data['street_info'] ?? null;
+        $this->container['street_pre_dir'] = $data['street_pre_dir'] ?? null;
+        $this->container['city'] = $data['city'] ?? null;
+        $this->container['state'] = $data['state'] ?? null;
+        $this->container['postal_code'] = $data['postal_code'] ?? null;
+        $this->container['postal_code_plus_four'] = $data['postal_code_plus_four'] ?? null;
     }
 
     /**
@@ -193,6 +235,21 @@ class InlineObject126 implements ModelInterface, ArrayAccess, \JsonSerializable
 
         if ($this->container['private_key'] === null) {
             $invalidProperties[] = "'private_key' can't be null";
+        }
+        if ($this->container['street_num'] === null) {
+            $invalidProperties[] = "'street_num' can't be null";
+        }
+        if ($this->container['street_info'] === null) {
+            $invalidProperties[] = "'street_info' can't be null";
+        }
+        if ($this->container['city'] === null) {
+            $invalidProperties[] = "'city' can't be null";
+        }
+        if ($this->container['state'] === null) {
+            $invalidProperties[] = "'state' can't be null";
+        }
+        if ($this->container['postal_code'] === null) {
+            $invalidProperties[] = "'postal_code' can't be null";
         }
         return $invalidProperties;
     }
@@ -222,13 +279,181 @@ class InlineObject126 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets private_key
      *
-     * @param string $private_key API key required to validate your application
+     * @param string $private_key API key required to validate your application; can be retrieved from Admin page of customer portal
      *
      * @return self
      */
     public function setPrivateKey($private_key)
     {
         $this->container['private_key'] = $private_key;
+
+        return $this;
+    }
+
+    /**
+     * Gets street_num
+     *
+     * @return int
+     */
+    public function getStreetNum()
+    {
+        return $this->container['street_num'];
+    }
+
+    /**
+     * Sets street_num
+     *
+     * @param int $street_num E911 address street number (e.g. 100, 550)
+     *
+     * @return self
+     */
+    public function setStreetNum($street_num)
+    {
+        $this->container['street_num'] = $street_num;
+
+        return $this;
+    }
+
+    /**
+     * Gets street_info
+     *
+     * @return string
+     */
+    public function getStreetInfo()
+    {
+        return $this->container['street_info'];
+    }
+
+    /**
+     * Sets street_info
+     *
+     * @param string $street_info E911 address street information (e.g. W Adams St)
+     *
+     * @return self
+     */
+    public function setStreetInfo($street_info)
+    {
+        $this->container['street_info'] = $street_info;
+
+        return $this;
+    }
+
+    /**
+     * Gets street_pre_dir
+     *
+     * @return string|null
+     */
+    public function getStreetPreDir()
+    {
+        return $this->container['street_pre_dir'];
+    }
+
+    /**
+     * Sets street_pre_dir
+     *
+     * @param string|null $street_pre_dir E911 address street direction prefix (e.g. N)
+     *
+     * @return self
+     */
+    public function setStreetPreDir($street_pre_dir)
+    {
+        $this->container['street_pre_dir'] = $street_pre_dir;
+
+        return $this;
+    }
+
+    /**
+     * Gets city
+     *
+     * @return string
+     */
+    public function getCity()
+    {
+        return $this->container['city'];
+    }
+
+    /**
+     * Sets city
+     *
+     * @param string $city E911 address city
+     *
+     * @return self
+     */
+    public function setCity($city)
+    {
+        $this->container['city'] = $city;
+
+        return $this;
+    }
+
+    /**
+     * Gets state
+     *
+     * @return string
+     */
+    public function getState()
+    {
+        return $this->container['state'];
+    }
+
+    /**
+     * Sets state
+     *
+     * @param string $state E911 address state
+     *
+     * @return self
+     */
+    public function setState($state)
+    {
+        $this->container['state'] = $state;
+
+        return $this;
+    }
+
+    /**
+     * Gets postal_code
+     *
+     * @return string
+     */
+    public function getPostalCode()
+    {
+        return $this->container['postal_code'];
+    }
+
+    /**
+     * Sets postal_code
+     *
+     * @param string $postal_code E911 address zip code
+     *
+     * @return self
+     */
+    public function setPostalCode($postal_code)
+    {
+        $this->container['postal_code'] = $postal_code;
+
+        return $this;
+    }
+
+    /**
+     * Gets postal_code_plus_four
+     *
+     * @return string|null
+     */
+    public function getPostalCodePlusFour()
+    {
+        return $this->container['postal_code_plus_four'];
+    }
+
+    /**
+     * Sets postal_code_plus_four
+     *
+     * @param string|null $postal_code_plus_four postal_code_plus_four
+     *
+     * @return self
+     */
+    public function setPostalCodePlusFour($postal_code_plus_four)
+    {
+        $this->container['postal_code_plus_four'] = $postal_code_plus_four;
 
         return $this;
     }

@@ -121,7 +121,7 @@ class AccountSettingsApi
      *
      * View Account Default Settings
      *
-     * @param  \OpenAPI\Client\Model\InlineObject132 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject135 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -138,7 +138,7 @@ class AccountSettingsApi
      *
      * View Account Default Settings
      *
-     * @param  \OpenAPI\Client\Model\InlineObject132 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject135 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -331,7 +331,7 @@ class AccountSettingsApi
      *
      * View Account Default Settings
      *
-     * @param  \OpenAPI\Client\Model\InlineObject132 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject135 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -351,7 +351,7 @@ class AccountSettingsApi
      *
      * View Account Default Settings
      *
-     * @param  \OpenAPI\Client\Model\InlineObject132 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject135 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -397,7 +397,7 @@ class AccountSettingsApi
     /**
      * Create request for operation 'accountDefaultDetailPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject132 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject135 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -495,7 +495,7 @@ class AccountSettingsApi
      *
      * Update Account Default Settings
      *
-     * @param  \OpenAPI\Client\Model\InlineObject131 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject134 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -512,7 +512,7 @@ class AccountSettingsApi
      *
      * Update Account Default Settings
      *
-     * @param  \OpenAPI\Client\Model\InlineObject131 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject134 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -765,7 +765,7 @@ class AccountSettingsApi
      *
      * Update Account Default Settings
      *
-     * @param  \OpenAPI\Client\Model\InlineObject131 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject134 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -785,7 +785,7 @@ class AccountSettingsApi
      *
      * Update Account Default Settings
      *
-     * @param  \OpenAPI\Client\Model\InlineObject131 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject134 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -831,7 +831,7 @@ class AccountSettingsApi
     /**
      * Create request for operation 'accountDefaultPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject131 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject134 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

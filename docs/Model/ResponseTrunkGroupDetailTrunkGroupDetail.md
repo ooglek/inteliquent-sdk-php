@@ -24,5 +24,6 @@ Name | Type | Description | Notes
 **customer_media_list** | [**\OpenAPI\Client\Model\TrunkGroupOrderDetailTrunkGroupOrderDetailCustomerMediaList**](TrunkGroupOrderDetailTrunkGroupOrderDetailCustomerMediaList.md) |  | [optional]
 **fqdn_list** | [**\OpenAPI\Client\Model\TrunkGroupOrderDetailTrunkGroupOrderDetailFqdnList**](TrunkGroupOrderDetailTrunkGroupOrderDetailFqdnList.md) |  | [optional]
 **codec_list** | [**\OpenAPI\Client\Model\TrunkGroupOrderDetailTrunkGroupOrderDetailCodecList**](TrunkGroupOrderDetailTrunkGroupOrderDetailCodecList.md) |  | [optional]
+**enterprise_customer_account** | [**\OpenAPI\Client\Model\ResponseTrunkGroupDetailTrunkGroupDetailEnterpriseCustomerAccount**](ResponseTrunkGroupDetailTrunkGroupDetailEnterpriseCustomerAccount.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

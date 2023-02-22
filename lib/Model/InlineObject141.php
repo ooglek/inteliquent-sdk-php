@@ -60,7 +60,7 @@ class InlineObject141 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'authorizations' => '\OpenAPI\Client\Model\RemoveAuthorizationAuthorizations[]'
+        'authorizations' => '\OpenAPI\Client\Model\ConfigureAuthorizationAuthorizations[]'
     ];
 
     /**
@@ -212,7 +212,7 @@ class InlineObject141 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets authorizations
      *
-     * @return \OpenAPI\Client\Model\RemoveAuthorizationAuthorizations[]
+     * @return \OpenAPI\Client\Model\ConfigureAuthorizationAuthorizations[]
      */
     public function getAuthorizations()
     {
@@ -222,7 +222,7 @@ class InlineObject141 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets authorizations
      *
-     * @param \OpenAPI\Client\Model\RemoveAuthorizationAuthorizations[] $authorizations Contains one or more sets of API or webhook information to be removed from your account
+     * @param \OpenAPI\Client\Model\ConfigureAuthorizationAuthorizations[] $authorizations Contains one or more sets of webhook URL information
      *
      * @return self
      */

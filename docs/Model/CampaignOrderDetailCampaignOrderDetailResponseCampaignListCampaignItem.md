@@ -18,7 +18,7 @@ Name | Type | Description | Notes
 **subscriber_optout** | **string** | Valid Values – Y or N | [optional]
 **subscriber_help** | **string** | Valid Values – Y or N | [optional]
 **auto_renewal** | **string** | Valid Values – Y or N | [optional]
-**affiliate_marketing** | **string** | Valid Values – Y or N | [optional]
+**terms_and_conditions** | **string** | Valid Values – Y or N | [optional]
 **sample1** | **string** | Sample message that will be sent as the campaign | [optional]
 **sample2** | **string** | Sample message that will be sent as the campaign | [optional]
 **sample3** | **string** | Sample message that will be sent as the campaign | [optional]

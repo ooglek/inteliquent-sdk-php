@@ -61,8 +61,7 @@ class InlineObject81 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'order_id' => 'int',
-        'customer_order_reference' => 'string'
+        'port_in_messaging_order' => '\OpenAPI\Client\Model\PortInMessagingOrderPortInMessagingOrder'
     ];
 
     /**
@@ -74,8 +73,7 @@ class InlineObject81 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'order_id' => null,
-        'customer_order_reference' => null
+        'port_in_messaging_order' => null
     ];
 
     /**
@@ -106,8 +104,7 @@ class InlineObject81 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'order_id' => 'orderId',
-        'customer_order_reference' => 'customerOrderReference'
+        'port_in_messaging_order' => 'portInMessagingOrder'
     ];
 
     /**
@@ -117,8 +114,7 @@ class InlineObject81 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'order_id' => 'setOrderId',
-        'customer_order_reference' => 'setCustomerOrderReference'
+        'port_in_messaging_order' => 'setPortInMessagingOrder'
     ];
 
     /**
@@ -128,8 +124,7 @@ class InlineObject81 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'order_id' => 'getOrderId',
-        'customer_order_reference' => 'getCustomerOrderReference'
+        'port_in_messaging_order' => 'getPortInMessagingOrder'
     ];
 
     /**
@@ -190,8 +185,7 @@ class InlineObject81 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['order_id'] = $data['order_id'] ?? null;
-        $this->container['customer_order_reference'] = $data['customer_order_reference'] ?? null;
+        $this->container['port_in_messaging_order'] = $data['port_in_messaging_order'] ?? null;
     }
 
     /**
@@ -243,49 +237,25 @@ class InlineObject81 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets order_id
+     * Gets port_in_messaging_order
      *
-     * @return int|null
+     * @return \OpenAPI\Client\Model\PortInMessagingOrderPortInMessagingOrder|null
      */
-    public function getOrderId()
+    public function getPortInMessagingOrder()
     {
-        return $this->container['order_id'];
+        return $this->container['port_in_messaging_order'];
     }
 
     /**
-     * Sets order_id
+     * Sets port_in_messaging_order
      *
-     * @param int|null $order_id order_id
+     * @param \OpenAPI\Client\Model\PortInMessagingOrderPortInMessagingOrder|null $port_in_messaging_order port_in_messaging_order
      *
      * @return self
      */
-    public function setOrderId($order_id)
+    public function setPortInMessagingOrder($port_in_messaging_order)
     {
-        $this->container['order_id'] = $order_id;
-
-        return $this;
-    }
-
-    /**
-     * Gets customer_order_reference
-     *
-     * @return string|null
-     */
-    public function getCustomerOrderReference()
-    {
-        return $this->container['customer_order_reference'];
-    }
-
-    /**
-     * Sets customer_order_reference
-     *
-     * @param string|null $customer_order_reference Customer for whom the order is.
-     *
-     * @return self
-     */
-    public function setCustomerOrderReference($customer_order_reference)
-    {
-        $this->container['customer_order_reference'] = $customer_order_reference;
+        $this->container['port_in_messaging_order'] = $port_in_messaging_order;
 
         return $this;
     }

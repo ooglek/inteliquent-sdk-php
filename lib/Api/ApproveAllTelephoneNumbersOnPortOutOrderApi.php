@@ -121,7 +121,7 @@ class ApproveAllTelephoneNumbersOnPortOutOrderApi
      *
      * Approve Port-Out Telephone Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject135 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject136 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -138,7 +138,7 @@ class ApproveAllTelephoneNumbersOnPortOutOrderApi
      *
      * Approve Port-Out Telephone Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject135 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject136 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -331,7 +331,7 @@ class ApproveAllTelephoneNumbersOnPortOutOrderApi
      *
      * Approve Port-Out Telephone Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject135 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject136 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -351,7 +351,7 @@ class ApproveAllTelephoneNumbersOnPortOutOrderApi
      *
      * Approve Port-Out Telephone Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject135 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject136 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -397,7 +397,7 @@ class ApproveAllTelephoneNumbersOnPortOutOrderApi
     /**
      * Create request for operation 'portOutApprovalPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject135 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject136 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

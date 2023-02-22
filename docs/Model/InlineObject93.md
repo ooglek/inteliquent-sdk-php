@@ -4,7 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**private_key** | **string** | Private Key | [optional]
-**tf_move** | [**\OpenAPI\Client\Model\TfMoveTfMove**](TfMoveTfMove.md) |  | [optional]
+**private_key** | **string** | API key required to validate your application |
+**customer_order_reference** | **string** | Alphanumeric order reference name | [optional]
+**desired_due_date** | **string** |  | [optional]
+**tn_list** | [**\OpenAPI\Client\Model\TfUpdateTnList**](TfUpdateTnList.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

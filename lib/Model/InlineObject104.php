@@ -60,7 +60,10 @@ class InlineObject104 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'private_key' => 'string'
+        'private_key' => 'string',
+        'tn_mask' => 'string',
+        'tn_status' => 'string',
+        'routing_label' => 'string'
     ];
 
     /**
@@ -71,7 +74,10 @@ class InlineObject104 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'private_key' => null
+        'private_key' => null,
+        'tn_mask' => null,
+        'tn_status' => null,
+        'routing_label' => null
     ];
 
     /**
@@ -101,7 +107,10 @@ class InlineObject104 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        'private_key' => 'privateKey'
+        'private_key' => 'privateKey',
+        'tn_mask' => 'tnMask',
+        'tn_status' => 'tnStatus',
+        'routing_label' => 'routingLabel'
     ];
 
     /**
@@ -110,7 +119,10 @@ class InlineObject104 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        'private_key' => 'setPrivateKey'
+        'private_key' => 'setPrivateKey',
+        'tn_mask' => 'setTnMask',
+        'tn_status' => 'setTnStatus',
+        'routing_label' => 'setRoutingLabel'
     ];
 
     /**
@@ -119,7 +131,10 @@ class InlineObject104 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        'private_key' => 'getPrivateKey'
+        'private_key' => 'getPrivateKey',
+        'tn_mask' => 'getTnMask',
+        'tn_status' => 'getTnStatus',
+        'routing_label' => 'getRoutingLabel'
     ];
 
     /**
@@ -180,6 +195,9 @@ class InlineObject104 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
+        $this->container['tn_mask'] = $data['tn_mask'] ?? null;
+        $this->container['tn_status'] = $data['tn_status'] ?? null;
+        $this->container['routing_label'] = $data['routing_label'] ?? null;
     }
 
     /**
@@ -191,9 +209,6 @@ class InlineObject104 implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         $invalidProperties = [];
 
-        if ($this->container['private_key'] === null) {
-            $invalidProperties[] = "'private_key' can't be null";
-        }
         return $invalidProperties;
     }
 
@@ -212,7 +227,7 @@ class InlineObject104 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets private_key
      *
-     * @return string
+     * @return string|null
      */
     public function getPrivateKey()
     {
@@ -222,13 +237,85 @@ class InlineObject104 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets private_key
      *
-     * @param string $private_key API key required to validate your application
+     * @param string|null $private_key private_key
      *
      * @return self
      */
     public function setPrivateKey($private_key)
     {
         $this->container['private_key'] = $private_key;
+
+        return $this;
+    }
+
+    /**
+     * Gets tn_mask
+     *
+     * @return string|null
+     */
+    public function getTnMask()
+    {
+        return $this->container['tn_mask'];
+    }
+
+    /**
+     * Sets tn_mask
+     *
+     * @param string|null $tn_mask tn_mask
+     *
+     * @return self
+     */
+    public function setTnMask($tn_mask)
+    {
+        $this->container['tn_mask'] = $tn_mask;
+
+        return $this;
+    }
+
+    /**
+     * Gets tn_status
+     *
+     * @return string|null
+     */
+    public function getTnStatus()
+    {
+        return $this->container['tn_status'];
+    }
+
+    /**
+     * Sets tn_status
+     *
+     * @param string|null $tn_status tn_status
+     *
+     * @return self
+     */
+    public function setTnStatus($tn_status)
+    {
+        $this->container['tn_status'] = $tn_status;
+
+        return $this;
+    }
+
+    /**
+     * Gets routing_label
+     *
+     * @return string|null
+     */
+    public function getRoutingLabel()
+    {
+        return $this->container['routing_label'];
+    }
+
+    /**
+     * Sets routing_label
+     *
+     * @param string|null $routing_label routing_label
+     *
+     * @return self
+     */
+    public function setRoutingLabel($routing_label)
+    {
+        $this->container['routing_label'] = $routing_label;
 
         return $this;
     }

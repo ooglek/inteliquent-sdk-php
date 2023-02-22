@@ -121,11 +121,11 @@ class TollFreeApi
      *
      * Update billing Tn value for Toll free numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject161 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject162 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\InlineResponse20033|\OpenAPI\Client\Model\InlineResponse4081|\OpenAPI\Client\Model\InlineResponse40930|\OpenAPI\Client\Model\InlineResponse410|\OpenAPI\Client\Model\InlineResponse414|\OpenAPI\Client\Model\InlineResponse4183|\OpenAPI\Client\Model\InlineResponse4224|\OpenAPI\Client\Model\InlineResponse4257|\OpenAPI\Client\Model\InlineResponse431|\OpenAPI\Client\Model\InlineResponse4321
+     * @return \OpenAPI\Client\Model\InlineResponse20033|\OpenAPI\Client\Model\InlineResponse4081|\OpenAPI\Client\Model\InlineResponse40930|\OpenAPI\Client\Model\InlineResponse410|\OpenAPI\Client\Model\InlineResponse414|\OpenAPI\Client\Model\InlineResponse4183|\OpenAPI\Client\Model\InlineResponse4224|\OpenAPI\Client\Model\InlineResponse4259|\OpenAPI\Client\Model\InlineResponse431|\OpenAPI\Client\Model\InlineResponse4321
      */
     public function tfBtnPost($payload)
     {
@@ -138,11 +138,11 @@ class TollFreeApi
      *
      * Update billing Tn value for Toll free numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject161 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject162 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\InlineResponse20033|\OpenAPI\Client\Model\InlineResponse4081|\OpenAPI\Client\Model\InlineResponse40930|\OpenAPI\Client\Model\InlineResponse410|\OpenAPI\Client\Model\InlineResponse414|\OpenAPI\Client\Model\InlineResponse4183|\OpenAPI\Client\Model\InlineResponse4224|\OpenAPI\Client\Model\InlineResponse4257|\OpenAPI\Client\Model\InlineResponse431|\OpenAPI\Client\Model\InlineResponse4321, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \OpenAPI\Client\Model\InlineResponse20033|\OpenAPI\Client\Model\InlineResponse4081|\OpenAPI\Client\Model\InlineResponse40930|\OpenAPI\Client\Model\InlineResponse410|\OpenAPI\Client\Model\InlineResponse414|\OpenAPI\Client\Model\InlineResponse4183|\OpenAPI\Client\Model\InlineResponse4224|\OpenAPI\Client\Model\InlineResponse4259|\OpenAPI\Client\Model\InlineResponse431|\OpenAPI\Client\Model\InlineResponse4321, HTTP status code, HTTP response headers (array of strings)
      */
     public function tfBtnPostWithHttpInfo($payload)
     {
@@ -269,14 +269,14 @@ class TollFreeApi
                         $response->getHeaders()
                     ];
                 case 425:
-                    if ('\OpenAPI\Client\Model\InlineResponse4257' === '\SplFileObject') {
+                    if ('\OpenAPI\Client\Model\InlineResponse4259' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse4257', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse4259', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -380,7 +380,7 @@ class TollFreeApi
                 case 425:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse4257',
+                        '\OpenAPI\Client\Model\InlineResponse4259',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -411,7 +411,7 @@ class TollFreeApi
      *
      * Update billing Tn value for Toll free numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject161 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject162 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -431,7 +431,7 @@ class TollFreeApi
      *
      * Update billing Tn value for Toll free numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject161 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject162 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -477,7 +477,7 @@ class TollFreeApi
     /**
      * Create request for operation 'tfBtnPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject161 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject162 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -575,7 +575,7 @@ class TollFreeApi
      *
      * Search Assigned Toll Free Number Detail
      *
-     * @param  \OpenAPI\Client\Model\InlineObject95 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject96 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -592,7 +592,7 @@ class TollFreeApi
      *
      * Search Assigned Toll Free Number Detail
      *
-     * @param  \OpenAPI\Client\Model\InlineObject95 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject96 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -785,7 +785,7 @@ class TollFreeApi
      *
      * Search Assigned Toll Free Number Detail
      *
-     * @param  \OpenAPI\Client\Model\InlineObject95 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject96 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -805,7 +805,7 @@ class TollFreeApi
      *
      * Search Assigned Toll Free Number Detail
      *
-     * @param  \OpenAPI\Client\Model\InlineObject95 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject96 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -851,7 +851,7 @@ class TollFreeApi
     /**
      * Create request for operation 'tfDetailPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject95 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject96 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -949,11 +949,11 @@ class TollFreeApi
      *
      * Disconnect Toll Free Number
      *
-     * @param  \OpenAPI\Client\Model\InlineObject91 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject92 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\InlineResponse20023|\OpenAPI\Client\Model\InlineResponse408|\OpenAPI\Client\Model\InlineResponse40930|\OpenAPI\Client\Model\InlineResponse410|\OpenAPI\Client\Model\InlineResponse41416|\OpenAPI\Client\Model\InlineResponse4181|\OpenAPI\Client\Model\InlineResponse4254|\OpenAPI\Client\Model\InlineResponse431
+     * @return \OpenAPI\Client\Model\InlineResponse20023|\OpenAPI\Client\Model\InlineResponse408|\OpenAPI\Client\Model\InlineResponse40930|\OpenAPI\Client\Model\InlineResponse410|\OpenAPI\Client\Model\InlineResponse41416|\OpenAPI\Client\Model\InlineResponse4181|\OpenAPI\Client\Model\InlineResponse4256|\OpenAPI\Client\Model\InlineResponse431
      */
     public function tfDisconnectPost($payload)
     {
@@ -966,11 +966,11 @@ class TollFreeApi
      *
      * Disconnect Toll Free Number
      *
-     * @param  \OpenAPI\Client\Model\InlineObject91 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject92 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\InlineResponse20023|\OpenAPI\Client\Model\InlineResponse408|\OpenAPI\Client\Model\InlineResponse40930|\OpenAPI\Client\Model\InlineResponse410|\OpenAPI\Client\Model\InlineResponse41416|\OpenAPI\Client\Model\InlineResponse4181|\OpenAPI\Client\Model\InlineResponse4254|\OpenAPI\Client\Model\InlineResponse431, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \OpenAPI\Client\Model\InlineResponse20023|\OpenAPI\Client\Model\InlineResponse408|\OpenAPI\Client\Model\InlineResponse40930|\OpenAPI\Client\Model\InlineResponse410|\OpenAPI\Client\Model\InlineResponse41416|\OpenAPI\Client\Model\InlineResponse4181|\OpenAPI\Client\Model\InlineResponse4256|\OpenAPI\Client\Model\InlineResponse431, HTTP status code, HTTP response headers (array of strings)
      */
     public function tfDisconnectPostWithHttpInfo($payload)
     {
@@ -1085,14 +1085,14 @@ class TollFreeApi
                         $response->getHeaders()
                     ];
                 case 425:
-                    if ('\OpenAPI\Client\Model\InlineResponse4254' === '\SplFileObject') {
+                    if ('\OpenAPI\Client\Model\InlineResponse4256' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse4254', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse4256', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1176,7 +1176,7 @@ class TollFreeApi
                 case 425:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse4254',
+                        '\OpenAPI\Client\Model\InlineResponse4256',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1199,7 +1199,7 @@ class TollFreeApi
      *
      * Disconnect Toll Free Number
      *
-     * @param  \OpenAPI\Client\Model\InlineObject91 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject92 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1219,7 +1219,7 @@ class TollFreeApi
      *
      * Disconnect Toll Free Number
      *
-     * @param  \OpenAPI\Client\Model\InlineObject91 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject92 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1265,7 +1265,7 @@ class TollFreeApi
     /**
      * Create request for operation 'tfDisconnectPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject91 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject92 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1363,11 +1363,11 @@ class TollFreeApi
      *
      * Update dnis value for Toll free numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject160 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject161 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\InlineResponse20033|\OpenAPI\Client\Model\InlineResponse4081|\OpenAPI\Client\Model\InlineResponse40930|\OpenAPI\Client\Model\InlineResponse410|\OpenAPI\Client\Model\InlineResponse414|\OpenAPI\Client\Model\InlineResponse4183|\OpenAPI\Client\Model\InlineResponse4224|\OpenAPI\Client\Model\InlineResponse4257|\OpenAPI\Client\Model\InlineResponse431|\OpenAPI\Client\Model\InlineResponse4321
+     * @return \OpenAPI\Client\Model\InlineResponse20033|\OpenAPI\Client\Model\InlineResponse4081|\OpenAPI\Client\Model\InlineResponse40930|\OpenAPI\Client\Model\InlineResponse410|\OpenAPI\Client\Model\InlineResponse414|\OpenAPI\Client\Model\InlineResponse4183|\OpenAPI\Client\Model\InlineResponse4224|\OpenAPI\Client\Model\InlineResponse4259|\OpenAPI\Client\Model\InlineResponse431|\OpenAPI\Client\Model\InlineResponse4321
      */
     public function tfDnisPost($payload)
     {
@@ -1380,11 +1380,11 @@ class TollFreeApi
      *
      * Update dnis value for Toll free numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject160 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject161 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\InlineResponse20033|\OpenAPI\Client\Model\InlineResponse4081|\OpenAPI\Client\Model\InlineResponse40930|\OpenAPI\Client\Model\InlineResponse410|\OpenAPI\Client\Model\InlineResponse414|\OpenAPI\Client\Model\InlineResponse4183|\OpenAPI\Client\Model\InlineResponse4224|\OpenAPI\Client\Model\InlineResponse4257|\OpenAPI\Client\Model\InlineResponse431|\OpenAPI\Client\Model\InlineResponse4321, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \OpenAPI\Client\Model\InlineResponse20033|\OpenAPI\Client\Model\InlineResponse4081|\OpenAPI\Client\Model\InlineResponse40930|\OpenAPI\Client\Model\InlineResponse410|\OpenAPI\Client\Model\InlineResponse414|\OpenAPI\Client\Model\InlineResponse4183|\OpenAPI\Client\Model\InlineResponse4224|\OpenAPI\Client\Model\InlineResponse4259|\OpenAPI\Client\Model\InlineResponse431|\OpenAPI\Client\Model\InlineResponse4321, HTTP status code, HTTP response headers (array of strings)
      */
     public function tfDnisPostWithHttpInfo($payload)
     {
@@ -1511,14 +1511,14 @@ class TollFreeApi
                         $response->getHeaders()
                     ];
                 case 425:
-                    if ('\OpenAPI\Client\Model\InlineResponse4257' === '\SplFileObject') {
+                    if ('\OpenAPI\Client\Model\InlineResponse4259' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse4257', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse4259', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1622,7 +1622,7 @@ class TollFreeApi
                 case 425:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse4257',
+                        '\OpenAPI\Client\Model\InlineResponse4259',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1653,7 +1653,7 @@ class TollFreeApi
      *
      * Update dnis value for Toll free numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject160 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject161 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1673,7 +1673,7 @@ class TollFreeApi
      *
      * Update dnis value for Toll free numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject160 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject161 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1719,7 +1719,7 @@ class TollFreeApi
     /**
      * Create request for operation 'tfDnisPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject160 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject161 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1813,11 +1813,465 @@ class TollFreeApi
     }
 
     /**
+     * Operation tfDnoPost
+     *
+     * Update dno setting for Toll free numbers
+     *
+     * @param  \OpenAPI\Client\Model\InlineObject163 $payload payload (required)
+     *
+     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \InvalidArgumentException
+     * @return \OpenAPI\Client\Model\InlineResponse20022|\OpenAPI\Client\Model\InlineResponse403|\OpenAPI\Client\Model\InlineResponse40811|\OpenAPI\Client\Model\InlineResponse40915|\OpenAPI\Client\Model\InlineResponse41010|\OpenAPI\Client\Model\InlineResponse4145|\OpenAPI\Client\Model\InlineResponse4253|\OpenAPI\Client\Model\InlineResponse430|\OpenAPI\Client\Model\InlineResponse431|\OpenAPI\Client\Model\InlineResponse4321
+     */
+    public function tfDnoPost($payload)
+    {
+        list($response) = $this->tfDnoPostWithHttpInfo($payload);
+        return $response;
+    }
+
+    /**
+     * Operation tfDnoPostWithHttpInfo
+     *
+     * Update dno setting for Toll free numbers
+     *
+     * @param  \OpenAPI\Client\Model\InlineObject163 $payload (required)
+     *
+     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \InvalidArgumentException
+     * @return array of \OpenAPI\Client\Model\InlineResponse20022|\OpenAPI\Client\Model\InlineResponse403|\OpenAPI\Client\Model\InlineResponse40811|\OpenAPI\Client\Model\InlineResponse40915|\OpenAPI\Client\Model\InlineResponse41010|\OpenAPI\Client\Model\InlineResponse4145|\OpenAPI\Client\Model\InlineResponse4253|\OpenAPI\Client\Model\InlineResponse430|\OpenAPI\Client\Model\InlineResponse431|\OpenAPI\Client\Model\InlineResponse4321, HTTP status code, HTTP response headers (array of strings)
+     */
+    public function tfDnoPostWithHttpInfo($payload)
+    {
+        $request = $this->tfDnoPostRequest($payload);
+
+        try {
+            $options = $this->createHttpClientOption();
+            try {
+                $response = $this->client->send($request, $options);
+            } catch (RequestException $e) {
+                throw new ApiException(
+                    "[{$e->getCode()}] {$e->getMessage()}",
+                    (int) $e->getCode(),
+                    $e->getResponse() ? $e->getResponse()->getHeaders() : null,
+                    $e->getResponse() ? (string) $e->getResponse()->getBody() : null
+                );
+            } catch (ConnectException $e) {
+                throw new ApiException(
+                    "[{$e->getCode()}] {$e->getMessage()}",
+                    (int) $e->getCode(),
+                    null,
+                    null
+                );
+            }
+
+            $statusCode = $response->getStatusCode();
+
+            if ($statusCode < 200 || $statusCode > 299) {
+                throw new ApiException(
+                    sprintf(
+                        '[%d] Error connecting to the API (%s)',
+                        $statusCode,
+                        (string) $request->getUri()
+                    ),
+                    $statusCode,
+                    $response->getHeaders(),
+                    (string) $response->getBody()
+                );
+            }
+
+            switch($statusCode) {
+                case 200:
+                    if ('\OpenAPI\Client\Model\InlineResponse20022' === '\SplFileObject') {
+                        $content = $response->getBody(); //stream goes to serializer
+                    } else {
+                        $content = (string) $response->getBody();
+                    }
+
+                    return [
+                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse20022', []),
+                        $response->getStatusCode(),
+                        $response->getHeaders()
+                    ];
+                case 403:
+                    if ('\OpenAPI\Client\Model\InlineResponse403' === '\SplFileObject') {
+                        $content = $response->getBody(); //stream goes to serializer
+                    } else {
+                        $content = (string) $response->getBody();
+                    }
+
+                    return [
+                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse403', []),
+                        $response->getStatusCode(),
+                        $response->getHeaders()
+                    ];
+                case 408:
+                    if ('\OpenAPI\Client\Model\InlineResponse40811' === '\SplFileObject') {
+                        $content = $response->getBody(); //stream goes to serializer
+                    } else {
+                        $content = (string) $response->getBody();
+                    }
+
+                    return [
+                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse40811', []),
+                        $response->getStatusCode(),
+                        $response->getHeaders()
+                    ];
+                case 409:
+                    if ('\OpenAPI\Client\Model\InlineResponse40915' === '\SplFileObject') {
+                        $content = $response->getBody(); //stream goes to serializer
+                    } else {
+                        $content = (string) $response->getBody();
+                    }
+
+                    return [
+                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse40915', []),
+                        $response->getStatusCode(),
+                        $response->getHeaders()
+                    ];
+                case 410:
+                    if ('\OpenAPI\Client\Model\InlineResponse41010' === '\SplFileObject') {
+                        $content = $response->getBody(); //stream goes to serializer
+                    } else {
+                        $content = (string) $response->getBody();
+                    }
+
+                    return [
+                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse41010', []),
+                        $response->getStatusCode(),
+                        $response->getHeaders()
+                    ];
+                case 414:
+                    if ('\OpenAPI\Client\Model\InlineResponse4145' === '\SplFileObject') {
+                        $content = $response->getBody(); //stream goes to serializer
+                    } else {
+                        $content = (string) $response->getBody();
+                    }
+
+                    return [
+                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse4145', []),
+                        $response->getStatusCode(),
+                        $response->getHeaders()
+                    ];
+                case 425:
+                    if ('\OpenAPI\Client\Model\InlineResponse4253' === '\SplFileObject') {
+                        $content = $response->getBody(); //stream goes to serializer
+                    } else {
+                        $content = (string) $response->getBody();
+                    }
+
+                    return [
+                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse4253', []),
+                        $response->getStatusCode(),
+                        $response->getHeaders()
+                    ];
+                case 430:
+                    if ('\OpenAPI\Client\Model\InlineResponse430' === '\SplFileObject') {
+                        $content = $response->getBody(); //stream goes to serializer
+                    } else {
+                        $content = (string) $response->getBody();
+                    }
+
+                    return [
+                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse430', []),
+                        $response->getStatusCode(),
+                        $response->getHeaders()
+                    ];
+                case 431:
+                    if ('\OpenAPI\Client\Model\InlineResponse431' === '\SplFileObject') {
+                        $content = $response->getBody(); //stream goes to serializer
+                    } else {
+                        $content = (string) $response->getBody();
+                    }
+
+                    return [
+                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse431', []),
+                        $response->getStatusCode(),
+                        $response->getHeaders()
+                    ];
+                case 432:
+                    if ('\OpenAPI\Client\Model\InlineResponse4321' === '\SplFileObject') {
+                        $content = $response->getBody(); //stream goes to serializer
+                    } else {
+                        $content = (string) $response->getBody();
+                    }
+
+                    return [
+                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse4321', []),
+                        $response->getStatusCode(),
+                        $response->getHeaders()
+                    ];
+            }
+
+            $returnType = '\OpenAPI\Client\Model\InlineResponse20022';
+            if ($returnType === '\SplFileObject') {
+                $content = $response->getBody(); //stream goes to serializer
+            } else {
+                $content = (string) $response->getBody();
+            }
+
+            return [
+                ObjectSerializer::deserialize($content, $returnType, []),
+                $response->getStatusCode(),
+                $response->getHeaders()
+            ];
+
+        } catch (ApiException $e) {
+            switch ($e->getCode()) {
+                case 200:
+                    $data = ObjectSerializer::deserialize(
+                        $e->getResponseBody(),
+                        '\OpenAPI\Client\Model\InlineResponse20022',
+                        $e->getResponseHeaders()
+                    );
+                    $e->setResponseObject($data);
+                    break;
+                case 403:
+                    $data = ObjectSerializer::deserialize(
+                        $e->getResponseBody(),
+                        '\OpenAPI\Client\Model\InlineResponse403',
+                        $e->getResponseHeaders()
+                    );
+                    $e->setResponseObject($data);
+                    break;
+                case 408:
+                    $data = ObjectSerializer::deserialize(
+                        $e->getResponseBody(),
+                        '\OpenAPI\Client\Model\InlineResponse40811',
+                        $e->getResponseHeaders()
+                    );
+                    $e->setResponseObject($data);
+                    break;
+                case 409:
+                    $data = ObjectSerializer::deserialize(
+                        $e->getResponseBody(),
+                        '\OpenAPI\Client\Model\InlineResponse40915',
+                        $e->getResponseHeaders()
+                    );
+                    $e->setResponseObject($data);
+                    break;
+                case 410:
+                    $data = ObjectSerializer::deserialize(
+                        $e->getResponseBody(),
+                        '\OpenAPI\Client\Model\InlineResponse41010',
+                        $e->getResponseHeaders()
+                    );
+                    $e->setResponseObject($data);
+                    break;
+                case 414:
+                    $data = ObjectSerializer::deserialize(
+                        $e->getResponseBody(),
+                        '\OpenAPI\Client\Model\InlineResponse4145',
+                        $e->getResponseHeaders()
+                    );
+                    $e->setResponseObject($data);
+                    break;
+                case 425:
+                    $data = ObjectSerializer::deserialize(
+                        $e->getResponseBody(),
+                        '\OpenAPI\Client\Model\InlineResponse4253',
+                        $e->getResponseHeaders()
+                    );
+                    $e->setResponseObject($data);
+                    break;
+                case 430:
+                    $data = ObjectSerializer::deserialize(
+                        $e->getResponseBody(),
+                        '\OpenAPI\Client\Model\InlineResponse430',
+                        $e->getResponseHeaders()
+                    );
+                    $e->setResponseObject($data);
+                    break;
+                case 431:
+                    $data = ObjectSerializer::deserialize(
+                        $e->getResponseBody(),
+                        '\OpenAPI\Client\Model\InlineResponse431',
+                        $e->getResponseHeaders()
+                    );
+                    $e->setResponseObject($data);
+                    break;
+                case 432:
+                    $data = ObjectSerializer::deserialize(
+                        $e->getResponseBody(),
+                        '\OpenAPI\Client\Model\InlineResponse4321',
+                        $e->getResponseHeaders()
+                    );
+                    $e->setResponseObject($data);
+                    break;
+            }
+            throw $e;
+        }
+    }
+
+    /**
+     * Operation tfDnoPostAsync
+     *
+     * Update dno setting for Toll free numbers
+     *
+     * @param  \OpenAPI\Client\Model\InlineObject163 $payload (required)
+     *
+     * @throws \InvalidArgumentException
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function tfDnoPostAsync($payload)
+    {
+        return $this->tfDnoPostAsyncWithHttpInfo($payload)
+            ->then(
+                function ($response) {
+                    return $response[0];
+                }
+            );
+    }
+
+    /**
+     * Operation tfDnoPostAsyncWithHttpInfo
+     *
+     * Update dno setting for Toll free numbers
+     *
+     * @param  \OpenAPI\Client\Model\InlineObject163 $payload (required)
+     *
+     * @throws \InvalidArgumentException
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function tfDnoPostAsyncWithHttpInfo($payload)
+    {
+        $returnType = '\OpenAPI\Client\Model\InlineResponse20022';
+        $request = $this->tfDnoPostRequest($payload);
+
+        return $this->client
+            ->sendAsync($request, $this->createHttpClientOption())
+            ->then(
+                function ($response) use ($returnType) {
+                    if ($returnType === '\SplFileObject') {
+                        $content = $response->getBody(); //stream goes to serializer
+                    } else {
+                        $content = (string) $response->getBody();
+                    }
+
+                    return [
+                        ObjectSerializer::deserialize($content, $returnType, []),
+                        $response->getStatusCode(),
+                        $response->getHeaders()
+                    ];
+                },
+                function ($exception) {
+                    $response = $exception->getResponse();
+                    $statusCode = $response->getStatusCode();
+                    throw new ApiException(
+                        sprintf(
+                            '[%d] Error connecting to the API (%s)',
+                            $statusCode,
+                            $exception->getRequest()->getUri()
+                        ),
+                        $statusCode,
+                        $response->getHeaders(),
+                        (string) $response->getBody()
+                    );
+                }
+            );
+    }
+
+    /**
+     * Create request for operation 'tfDnoPost'
+     *
+     * @param  \OpenAPI\Client\Model\InlineObject163 $payload (required)
+     *
+     * @throws \InvalidArgumentException
+     * @return \GuzzleHttp\Psr7\Request
+     */
+    public function tfDnoPostRequest($payload)
+    {
+        // verify the required parameter 'payload' is set
+        if ($payload === null || (is_array($payload) && count($payload) === 0)) {
+            throw new \InvalidArgumentException(
+                'Missing the required parameter $payload when calling tfDnoPost'
+            );
+        }
+
+        $resourcePath = '/tfDno';
+        $formParams = [];
+        $queryParams = [];
+        $headerParams = [];
+        $httpBody = '';
+        $multipart = false;
+
+
+
+
+
+        if ($multipart) {
+            $headers = $this->headerSelector->selectHeadersForMultipart(
+                ['application/json']
+            );
+        } else {
+            $headers = $this->headerSelector->selectHeaders(
+                ['application/json'],
+                []
+            );
+        }
+
+        // for model (json/xml)
+        if (isset($payload)) {
+            if ($headers['Content-Type'] === 'application/json') {
+                $httpBody = \GuzzleHttp\json_encode(ObjectSerializer::sanitizeForSerialization($payload));
+            } else {
+                $httpBody = $payload;
+            }
+        } elseif (count($formParams) > 0) {
+            if ($multipart) {
+                $multipartContents = [];
+                foreach ($formParams as $formParamName => $formParamValue) {
+                    $formParamValueItems = is_array($formParamValue) ? $formParamValue : [$formParamValue];
+                    foreach ($formParamValueItems as $formParamValueItem) {
+                        $multipartContents[] = [
+                            'name' => $formParamName,
+                            'contents' => $formParamValueItem
+                        ];
+                    }
+                }
+                // for HTTP post (form)
+                $httpBody = new MultipartStream($multipartContents);
+
+            } elseif ($headers['Content-Type'] === 'application/json') {
+                $httpBody = \GuzzleHttp\json_encode($formParams);
+
+            } else {
+                // for HTTP post (form)
+                $httpBody = \GuzzleHttp\Psr7\Query::build($formParams);
+            }
+        }
+
+        // this endpoint requires API key authentication
+        $apiKey = $this->config->getApiKeyWithPrefix('Authorization');
+        if ($apiKey !== null) {
+            $headers['Authorization'] = $apiKey;
+        }
+
+        $defaultHeaders = [];
+        if ($this->config->getUserAgent()) {
+            $defaultHeaders['User-Agent'] = $this->config->getUserAgent();
+        }
+
+        $headers = array_merge(
+            $defaultHeaders,
+            $headerParams,
+            $headers
+        );
+
+        $query = \GuzzleHttp\Psr7\Query::build($queryParams);
+        return new Request(
+            'POST',
+            $this->config->getHost() . $resourcePath . ($query ? "?{$query}" : ''),
+            $headers,
+            $httpBody
+        );
+    }
+
+    /**
      * Operation tfFeatureCNamListPost
      *
      * Retrieve Assigned TF for feature Calling Name
      *
-     * @param  \OpenAPI\Client\Model\InlineObject99 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject100 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -1834,7 +2288,7 @@ class TollFreeApi
      *
      * Retrieve Assigned TF for feature Calling Name
      *
-     * @param  \OpenAPI\Client\Model\InlineObject99 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject100 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -2007,7 +2461,7 @@ class TollFreeApi
      *
      * Retrieve Assigned TF for feature Calling Name
      *
-     * @param  \OpenAPI\Client\Model\InlineObject99 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject100 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2027,7 +2481,7 @@ class TollFreeApi
      *
      * Retrieve Assigned TF for feature Calling Name
      *
-     * @param  \OpenAPI\Client\Model\InlineObject99 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject100 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2073,7 +2527,7 @@ class TollFreeApi
     /**
      * Create request for operation 'tfFeatureCNamListPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject99 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject100 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -2171,7 +2625,7 @@ class TollFreeApi
      *
      * Retrieve E911 Toll Free Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject159 $payload payload (optional)
+     * @param  \OpenAPI\Client\Model\InlineObject160 $payload payload (optional)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -2188,7 +2642,7 @@ class TollFreeApi
      *
      * Retrieve E911 Toll Free Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject159 $payload (optional)
+     * @param  \OpenAPI\Client\Model\InlineObject160 $payload (optional)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -2361,7 +2815,7 @@ class TollFreeApi
      *
      * Retrieve E911 Toll Free Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject159 $payload (optional)
+     * @param  \OpenAPI\Client\Model\InlineObject160 $payload (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2381,7 +2835,7 @@ class TollFreeApi
      *
      * Retrieve E911 Toll Free Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject159 $payload (optional)
+     * @param  \OpenAPI\Client\Model\InlineObject160 $payload (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2427,7 +2881,7 @@ class TollFreeApi
     /**
      * Create request for operation 'tfFeatureE911ListPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject159 $payload (optional)
+     * @param  \OpenAPI\Client\Model\InlineObject160 $payload (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -2519,7 +2973,7 @@ class TollFreeApi
      *
      * Retrieve Assigned TF for feature Message
      *
-     * @param  \OpenAPI\Client\Model\InlineObject100 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject101 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -2536,7 +2990,7 @@ class TollFreeApi
      *
      * Retrieve Assigned TF for feature Message
      *
-     * @param  \OpenAPI\Client\Model\InlineObject100 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject101 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -2709,7 +3163,7 @@ class TollFreeApi
      *
      * Retrieve Assigned TF for feature Message
      *
-     * @param  \OpenAPI\Client\Model\InlineObject100 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject101 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2729,7 +3183,7 @@ class TollFreeApi
      *
      * Retrieve Assigned TF for feature Message
      *
-     * @param  \OpenAPI\Client\Model\InlineObject100 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject101 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2775,7 +3229,7 @@ class TollFreeApi
     /**
      * Create request for operation 'tfFeatureMessageListPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject100 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject101 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -2873,11 +3327,11 @@ class TollFreeApi
      *
      * ADD/Update/Remove Messaging, E911 &amp; Calling feature
      *
-     * @param  \OpenAPI\Client\Model\InlineObject98 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject99 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\InlineResponse20025|\OpenAPI\Client\Model\InlineResponse408|\OpenAPI\Client\Model\InlineResponse40934|\OpenAPI\Client\Model\InlineResponse410|\OpenAPI\Client\Model\InlineResponse41421|\OpenAPI\Client\Model\InlineResponse4224|\OpenAPI\Client\Model\InlineResponse4256|\OpenAPI\Client\Model\InlineResponse431
+     * @return \OpenAPI\Client\Model\InlineResponse20025|\OpenAPI\Client\Model\InlineResponse408|\OpenAPI\Client\Model\InlineResponse40934|\OpenAPI\Client\Model\InlineResponse410|\OpenAPI\Client\Model\InlineResponse41421|\OpenAPI\Client\Model\InlineResponse4224|\OpenAPI\Client\Model\InlineResponse4258|\OpenAPI\Client\Model\InlineResponse431
      */
     public function tfFeatureOrderPost($payload)
     {
@@ -2890,11 +3344,11 @@ class TollFreeApi
      *
      * ADD/Update/Remove Messaging, E911 &amp; Calling feature
      *
-     * @param  \OpenAPI\Client\Model\InlineObject98 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject99 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\InlineResponse20025|\OpenAPI\Client\Model\InlineResponse408|\OpenAPI\Client\Model\InlineResponse40934|\OpenAPI\Client\Model\InlineResponse410|\OpenAPI\Client\Model\InlineResponse41421|\OpenAPI\Client\Model\InlineResponse4224|\OpenAPI\Client\Model\InlineResponse4256|\OpenAPI\Client\Model\InlineResponse431, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \OpenAPI\Client\Model\InlineResponse20025|\OpenAPI\Client\Model\InlineResponse408|\OpenAPI\Client\Model\InlineResponse40934|\OpenAPI\Client\Model\InlineResponse410|\OpenAPI\Client\Model\InlineResponse41421|\OpenAPI\Client\Model\InlineResponse4224|\OpenAPI\Client\Model\InlineResponse4258|\OpenAPI\Client\Model\InlineResponse431, HTTP status code, HTTP response headers (array of strings)
      */
     public function tfFeatureOrderPostWithHttpInfo($payload)
     {
@@ -3009,14 +3463,14 @@ class TollFreeApi
                         $response->getHeaders()
                     ];
                 case 425:
-                    if ('\OpenAPI\Client\Model\InlineResponse4256' === '\SplFileObject') {
+                    if ('\OpenAPI\Client\Model\InlineResponse4258' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse4256', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse4258', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -3100,7 +3554,7 @@ class TollFreeApi
                 case 425:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse4256',
+                        '\OpenAPI\Client\Model\InlineResponse4258',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3123,7 +3577,7 @@ class TollFreeApi
      *
      * ADD/Update/Remove Messaging, E911 &amp; Calling feature
      *
-     * @param  \OpenAPI\Client\Model\InlineObject98 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject99 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3143,7 +3597,7 @@ class TollFreeApi
      *
      * ADD/Update/Remove Messaging, E911 &amp; Calling feature
      *
-     * @param  \OpenAPI\Client\Model\InlineObject98 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject99 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3189,7 +3643,7 @@ class TollFreeApi
     /**
      * Create request for operation 'tfFeatureOrderPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject98 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject99 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -3287,7 +3741,7 @@ class TollFreeApi
      *
      * Toll Free Number Call Forward Listing
      *
-     * @param  \OpenAPI\Client\Model\InlineObject75 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject76 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -3304,7 +3758,7 @@ class TollFreeApi
      *
      * Toll Free Number Call Forward Listing
      *
-     * @param  \OpenAPI\Client\Model\InlineObject75 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject76 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -3537,7 +3991,7 @@ class TollFreeApi
      *
      * Toll Free Number Call Forward Listing
      *
-     * @param  \OpenAPI\Client\Model\InlineObject75 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject76 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3557,7 +4011,7 @@ class TollFreeApi
      *
      * Toll Free Number Call Forward Listing
      *
-     * @param  \OpenAPI\Client\Model\InlineObject75 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject76 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3603,7 +4057,7 @@ class TollFreeApi
     /**
      * Create request for operation 'tfForwardListPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject75 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject76 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -3701,11 +4155,11 @@ class TollFreeApi
      *
      * Manage Toll Free Number Call Forward Settings
      *
-     * @param  \OpenAPI\Client\Model\InlineObject74 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject75 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\InlineResponse20027|\OpenAPI\Client\Model\InlineResponse40816|\OpenAPI\Client\Model\InlineResponse40922|\OpenAPI\Client\Model\InlineResponse4146|\OpenAPI\Client\Model\InlineResponse4184|\OpenAPI\Client\Model\InlineResponse422|\OpenAPI\Client\Model\InlineResponse4253|\OpenAPI\Client\Model\InlineResponse4261|\OpenAPI\Client\Model\InlineResponse4302|\OpenAPI\Client\Model\InlineResponse431|\OpenAPI\Client\Model\InlineResponse4323
+     * @return \OpenAPI\Client\Model\InlineResponse20027|\OpenAPI\Client\Model\InlineResponse40816|\OpenAPI\Client\Model\InlineResponse40922|\OpenAPI\Client\Model\InlineResponse4146|\OpenAPI\Client\Model\InlineResponse4184|\OpenAPI\Client\Model\InlineResponse422|\OpenAPI\Client\Model\InlineResponse4255|\OpenAPI\Client\Model\InlineResponse4261|\OpenAPI\Client\Model\InlineResponse4302|\OpenAPI\Client\Model\InlineResponse431|\OpenAPI\Client\Model\InlineResponse4323
      */
     public function tfForwardPost($payload)
     {
@@ -3718,11 +4172,11 @@ class TollFreeApi
      *
      * Manage Toll Free Number Call Forward Settings
      *
-     * @param  \OpenAPI\Client\Model\InlineObject74 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject75 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\InlineResponse20027|\OpenAPI\Client\Model\InlineResponse40816|\OpenAPI\Client\Model\InlineResponse40922|\OpenAPI\Client\Model\InlineResponse4146|\OpenAPI\Client\Model\InlineResponse4184|\OpenAPI\Client\Model\InlineResponse422|\OpenAPI\Client\Model\InlineResponse4253|\OpenAPI\Client\Model\InlineResponse4261|\OpenAPI\Client\Model\InlineResponse4302|\OpenAPI\Client\Model\InlineResponse431|\OpenAPI\Client\Model\InlineResponse4323, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \OpenAPI\Client\Model\InlineResponse20027|\OpenAPI\Client\Model\InlineResponse40816|\OpenAPI\Client\Model\InlineResponse40922|\OpenAPI\Client\Model\InlineResponse4146|\OpenAPI\Client\Model\InlineResponse4184|\OpenAPI\Client\Model\InlineResponse422|\OpenAPI\Client\Model\InlineResponse4255|\OpenAPI\Client\Model\InlineResponse4261|\OpenAPI\Client\Model\InlineResponse4302|\OpenAPI\Client\Model\InlineResponse431|\OpenAPI\Client\Model\InlineResponse4323, HTTP status code, HTTP response headers (array of strings)
      */
     public function tfForwardPostWithHttpInfo($payload)
     {
@@ -3837,14 +4291,14 @@ class TollFreeApi
                         $response->getHeaders()
                     ];
                 case 425:
-                    if ('\OpenAPI\Client\Model\InlineResponse4253' === '\SplFileObject') {
+                    if ('\OpenAPI\Client\Model\InlineResponse4255' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse4253', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse4255', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -3964,7 +4418,7 @@ class TollFreeApi
                 case 425:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse4253',
+                        '\OpenAPI\Client\Model\InlineResponse4255',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4011,7 +4465,7 @@ class TollFreeApi
      *
      * Manage Toll Free Number Call Forward Settings
      *
-     * @param  \OpenAPI\Client\Model\InlineObject74 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject75 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4031,7 +4485,7 @@ class TollFreeApi
      *
      * Manage Toll Free Number Call Forward Settings
      *
-     * @param  \OpenAPI\Client\Model\InlineObject74 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject75 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4077,7 +4531,7 @@ class TollFreeApi
     /**
      * Create request for operation 'tfForwardPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject74 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject75 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -4175,7 +4629,7 @@ class TollFreeApi
      *
      * Search Toll Free Number Inventory
      *
-     * @param  \OpenAPI\Client\Model\InlineObject96 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject97 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -4192,7 +4646,7 @@ class TollFreeApi
      *
      * Search Toll Free Number Inventory
      *
-     * @param  \OpenAPI\Client\Model\InlineObject96 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject97 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -4425,7 +4879,7 @@ class TollFreeApi
      *
      * Search Toll Free Number Inventory
      *
-     * @param  \OpenAPI\Client\Model\InlineObject96 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject97 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4445,7 +4899,7 @@ class TollFreeApi
      *
      * Search Toll Free Number Inventory
      *
-     * @param  \OpenAPI\Client\Model\InlineObject96 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject97 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4491,7 +4945,7 @@ class TollFreeApi
     /**
      * Create request for operation 'tfInventoryPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject96 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject97 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -4589,11 +5043,11 @@ class TollFreeApi
      *
      * Moving TFNs between Accounts
      *
-     * @param  \OpenAPI\Client\Model\InlineObject93 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject94 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\InlineResponse20034|\OpenAPI\Client\Model\InlineResponse408|\OpenAPI\Client\Model\InlineResponse40931|\OpenAPI\Client\Model\InlineResponse410|\OpenAPI\Client\Model\InlineResponse412|\OpenAPI\Client\Model\InlineResponse41417|\OpenAPI\Client\Model\InlineResponse4187|\OpenAPI\Client\Model\InlineResponse4193|\OpenAPI\Client\Model\InlineResponse4207|\OpenAPI\Client\Model\InlineResponse4223|\OpenAPI\Client\Model\InlineResponse4255|\OpenAPI\Client\Model\InlineResponse426|\OpenAPI\Client\Model\InlineResponse430|\OpenAPI\Client\Model\InlineResponse431|\OpenAPI\Client\Model\InlineResponse4321
+     * @return \OpenAPI\Client\Model\InlineResponse20034|\OpenAPI\Client\Model\InlineResponse408|\OpenAPI\Client\Model\InlineResponse40931|\OpenAPI\Client\Model\InlineResponse410|\OpenAPI\Client\Model\InlineResponse412|\OpenAPI\Client\Model\InlineResponse41417|\OpenAPI\Client\Model\InlineResponse4187|\OpenAPI\Client\Model\InlineResponse4193|\OpenAPI\Client\Model\InlineResponse4207|\OpenAPI\Client\Model\InlineResponse4223|\OpenAPI\Client\Model\InlineResponse4257|\OpenAPI\Client\Model\InlineResponse426|\OpenAPI\Client\Model\InlineResponse430|\OpenAPI\Client\Model\InlineResponse431|\OpenAPI\Client\Model\InlineResponse4321
      */
     public function tfMovePost($payload)
     {
@@ -4606,11 +5060,11 @@ class TollFreeApi
      *
      * Moving TFNs between Accounts
      *
-     * @param  \OpenAPI\Client\Model\InlineObject93 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject94 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\InlineResponse20034|\OpenAPI\Client\Model\InlineResponse408|\OpenAPI\Client\Model\InlineResponse40931|\OpenAPI\Client\Model\InlineResponse410|\OpenAPI\Client\Model\InlineResponse412|\OpenAPI\Client\Model\InlineResponse41417|\OpenAPI\Client\Model\InlineResponse4187|\OpenAPI\Client\Model\InlineResponse4193|\OpenAPI\Client\Model\InlineResponse4207|\OpenAPI\Client\Model\InlineResponse4223|\OpenAPI\Client\Model\InlineResponse4255|\OpenAPI\Client\Model\InlineResponse426|\OpenAPI\Client\Model\InlineResponse430|\OpenAPI\Client\Model\InlineResponse431|\OpenAPI\Client\Model\InlineResponse4321, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \OpenAPI\Client\Model\InlineResponse20034|\OpenAPI\Client\Model\InlineResponse408|\OpenAPI\Client\Model\InlineResponse40931|\OpenAPI\Client\Model\InlineResponse410|\OpenAPI\Client\Model\InlineResponse412|\OpenAPI\Client\Model\InlineResponse41417|\OpenAPI\Client\Model\InlineResponse4187|\OpenAPI\Client\Model\InlineResponse4193|\OpenAPI\Client\Model\InlineResponse4207|\OpenAPI\Client\Model\InlineResponse4223|\OpenAPI\Client\Model\InlineResponse4257|\OpenAPI\Client\Model\InlineResponse426|\OpenAPI\Client\Model\InlineResponse430|\OpenAPI\Client\Model\InlineResponse431|\OpenAPI\Client\Model\InlineResponse4321, HTTP status code, HTTP response headers (array of strings)
      */
     public function tfMovePostWithHttpInfo($payload)
     {
@@ -4773,14 +5227,14 @@ class TollFreeApi
                         $response->getHeaders()
                     ];
                 case 425:
-                    if ('\OpenAPI\Client\Model\InlineResponse4255' === '\SplFileObject') {
+                    if ('\OpenAPI\Client\Model\InlineResponse4257' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse4255', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse4257', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -4932,7 +5386,7 @@ class TollFreeApi
                 case 425:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse4255',
+                        '\OpenAPI\Client\Model\InlineResponse4257',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4979,7 +5433,7 @@ class TollFreeApi
      *
      * Moving TFNs between Accounts
      *
-     * @param  \OpenAPI\Client\Model\InlineObject93 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject94 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4999,7 +5453,7 @@ class TollFreeApi
      *
      * Moving TFNs between Accounts
      *
-     * @param  \OpenAPI\Client\Model\InlineObject93 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject94 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -5045,7 +5499,7 @@ class TollFreeApi
     /**
      * Create request for operation 'tfMovePost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject93 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject94 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -5143,7 +5597,7 @@ class TollFreeApi
      *
      * Load, Order, or Port Toll Free Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject94 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject95 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -5160,7 +5614,7 @@ class TollFreeApi
      *
      * Load, Order, or Port Toll Free Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject94 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject95 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -5393,7 +5847,7 @@ class TollFreeApi
      *
      * Load, Order, or Port Toll Free Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject94 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject95 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -5413,7 +5867,7 @@ class TollFreeApi
      *
      * Load, Order, or Port Toll Free Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject94 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject95 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -5459,7 +5913,7 @@ class TollFreeApi
     /**
      * Create request for operation 'tfOrderPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject94 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject95 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -5557,7 +6011,7 @@ class TollFreeApi
      *
      * Request Toll Free Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject101 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject102 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -5574,7 +6028,7 @@ class TollFreeApi
      *
      * Request Toll Free Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject101 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject102 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -5707,7 +6161,7 @@ class TollFreeApi
      *
      * Request Toll Free Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject101 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject102 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -5727,7 +6181,7 @@ class TollFreeApi
      *
      * Request Toll Free Numbers
      *
-     * @param  \OpenAPI\Client\Model\InlineObject101 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject102 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -5773,7 +6227,7 @@ class TollFreeApi
     /**
      * Create request for operation 'tfRequestPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject101 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject102 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -5871,7 +6325,7 @@ class TollFreeApi
      *
      * Retrieve Customer RespOrg for given TollFree number.
      *
-     * @param  \OpenAPI\Client\Model\InlineObject102 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject103 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -5888,7 +6342,7 @@ class TollFreeApi
      *
      * Retrieve Customer RespOrg for given TollFree number.
      *
-     * @param  \OpenAPI\Client\Model\InlineObject102 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject103 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -6041,7 +6495,7 @@ class TollFreeApi
      *
      * Retrieve Customer RespOrg for given TollFree number.
      *
-     * @param  \OpenAPI\Client\Model\InlineObject102 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject103 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -6061,7 +6515,7 @@ class TollFreeApi
      *
      * Retrieve Customer RespOrg for given TollFree number.
      *
-     * @param  \OpenAPI\Client\Model\InlineObject102 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject103 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -6107,7 +6561,7 @@ class TollFreeApi
     /**
      * Create request for operation 'tfRespOrgPost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject102 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject103 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -6205,11 +6659,11 @@ class TollFreeApi
      *
      * Update Active Toll Free Number Routing
      *
-     * @param  \OpenAPI\Client\Model\InlineObject92 $payload payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject93 $payload payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\InlineResponse20023|\OpenAPI\Client\Model\InlineResponse408|\OpenAPI\Client\Model\InlineResponse40930|\OpenAPI\Client\Model\InlineResponse410|\OpenAPI\Client\Model\InlineResponse41416|\OpenAPI\Client\Model\InlineResponse4181|\OpenAPI\Client\Model\InlineResponse4206|\OpenAPI\Client\Model\InlineResponse4254|\OpenAPI\Client\Model\InlineResponse431
+     * @return \OpenAPI\Client\Model\InlineResponse20023|\OpenAPI\Client\Model\InlineResponse408|\OpenAPI\Client\Model\InlineResponse40930|\OpenAPI\Client\Model\InlineResponse410|\OpenAPI\Client\Model\InlineResponse41416|\OpenAPI\Client\Model\InlineResponse4181|\OpenAPI\Client\Model\InlineResponse4206|\OpenAPI\Client\Model\InlineResponse4256|\OpenAPI\Client\Model\InlineResponse431
      */
     public function tfUpdatePost($payload)
     {
@@ -6222,11 +6676,11 @@ class TollFreeApi
      *
      * Update Active Toll Free Number Routing
      *
-     * @param  \OpenAPI\Client\Model\InlineObject92 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject93 $payload (required)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\InlineResponse20023|\OpenAPI\Client\Model\InlineResponse408|\OpenAPI\Client\Model\InlineResponse40930|\OpenAPI\Client\Model\InlineResponse410|\OpenAPI\Client\Model\InlineResponse41416|\OpenAPI\Client\Model\InlineResponse4181|\OpenAPI\Client\Model\InlineResponse4206|\OpenAPI\Client\Model\InlineResponse4254|\OpenAPI\Client\Model\InlineResponse431, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \OpenAPI\Client\Model\InlineResponse20023|\OpenAPI\Client\Model\InlineResponse408|\OpenAPI\Client\Model\InlineResponse40930|\OpenAPI\Client\Model\InlineResponse410|\OpenAPI\Client\Model\InlineResponse41416|\OpenAPI\Client\Model\InlineResponse4181|\OpenAPI\Client\Model\InlineResponse4206|\OpenAPI\Client\Model\InlineResponse4256|\OpenAPI\Client\Model\InlineResponse431, HTTP status code, HTTP response headers (array of strings)
      */
     public function tfUpdatePostWithHttpInfo($payload)
     {
@@ -6353,14 +6807,14 @@ class TollFreeApi
                         $response->getHeaders()
                     ];
                 case 425:
-                    if ('\OpenAPI\Client\Model\InlineResponse4254' === '\SplFileObject') {
+                    if ('\OpenAPI\Client\Model\InlineResponse4256' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse4254', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse4256', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -6452,7 +6906,7 @@ class TollFreeApi
                 case 425:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse4254',
+                        '\OpenAPI\Client\Model\InlineResponse4256',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6475,7 +6929,7 @@ class TollFreeApi
      *
      * Update Active Toll Free Number Routing
      *
-     * @param  \OpenAPI\Client\Model\InlineObject92 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject93 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -6495,7 +6949,7 @@ class TollFreeApi
      *
      * Update Active Toll Free Number Routing
      *
-     * @param  \OpenAPI\Client\Model\InlineObject92 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject93 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -6541,7 +6995,7 @@ class TollFreeApi
     /**
      * Create request for operation 'tfUpdatePost'
      *
-     * @param  \OpenAPI\Client\Model\InlineObject92 $payload (required)
+     * @param  \OpenAPI\Client\Model\InlineObject93 $payload (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

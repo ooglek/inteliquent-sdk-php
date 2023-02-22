@@ -61,7 +61,10 @@ class InlineObject80 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'port_in_messaging_order' => '\OpenAPI\Client\Model\PortInMessagingOrderPortInMessagingOrder'
+        'return_service_provider_name' => 'bool',
+        'search_on_net_only' => 'string',
+        'wireless' => 'string',
+        'tn_list' => '\OpenAPI\Client\Model\PortInAvailabilityTnList'
     ];
 
     /**
@@ -73,7 +76,10 @@ class InlineObject80 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'port_in_messaging_order' => null
+        'return_service_provider_name' => null,
+        'search_on_net_only' => null,
+        'wireless' => null,
+        'tn_list' => null
     ];
 
     /**
@@ -104,7 +110,10 @@ class InlineObject80 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'port_in_messaging_order' => 'portInMessagingOrder'
+        'return_service_provider_name' => 'returnServiceProviderName',
+        'search_on_net_only' => 'searchOnNetOnly',
+        'wireless' => 'wireless',
+        'tn_list' => 'tnList'
     ];
 
     /**
@@ -114,7 +123,10 @@ class InlineObject80 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'port_in_messaging_order' => 'setPortInMessagingOrder'
+        'return_service_provider_name' => 'setReturnServiceProviderName',
+        'search_on_net_only' => 'setSearchOnNetOnly',
+        'wireless' => 'setWireless',
+        'tn_list' => 'setTnList'
     ];
 
     /**
@@ -124,7 +136,10 @@ class InlineObject80 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'port_in_messaging_order' => 'getPortInMessagingOrder'
+        'return_service_provider_name' => 'getReturnServiceProviderName',
+        'search_on_net_only' => 'getSearchOnNetOnly',
+        'wireless' => 'getWireless',
+        'tn_list' => 'getTnList'
     ];
 
     /**
@@ -185,7 +200,10 @@ class InlineObject80 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['port_in_messaging_order'] = $data['port_in_messaging_order'] ?? null;
+        $this->container['return_service_provider_name'] = $data['return_service_provider_name'] ?? null;
+        $this->container['search_on_net_only'] = $data['search_on_net_only'] ?? null;
+        $this->container['wireless'] = $data['wireless'] ?? null;
+        $this->container['tn_list'] = $data['tn_list'] ?? null;
     }
 
     /**
@@ -237,25 +255,97 @@ class InlineObject80 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets port_in_messaging_order
+     * Gets return_service_provider_name
      *
-     * @return \OpenAPI\Client\Model\PortInMessagingOrderPortInMessagingOrder|null
+     * @return bool|null
      */
-    public function getPortInMessagingOrder()
+    public function getReturnServiceProviderName()
     {
-        return $this->container['port_in_messaging_order'];
+        return $this->container['return_service_provider_name'];
     }
 
     /**
-     * Sets port_in_messaging_order
+     * Sets return_service_provider_name
      *
-     * @param \OpenAPI\Client\Model\PortInMessagingOrderPortInMessagingOrder|null $port_in_messaging_order port_in_messaging_order
+     * @param bool|null $return_service_provider_name return_service_provider_name
      *
      * @return self
      */
-    public function setPortInMessagingOrder($port_in_messaging_order)
+    public function setReturnServiceProviderName($return_service_provider_name)
     {
-        $this->container['port_in_messaging_order'] = $port_in_messaging_order;
+        $this->container['return_service_provider_name'] = $return_service_provider_name;
+
+        return $this;
+    }
+
+    /**
+     * Gets search_on_net_only
+     *
+     * @return string|null
+     */
+    public function getSearchOnNetOnly()
+    {
+        return $this->container['search_on_net_only'];
+    }
+
+    /**
+     * Sets search_on_net_only
+     *
+     * @param string|null $search_on_net_only search_on_net_only
+     *
+     * @return self
+     */
+    public function setSearchOnNetOnly($search_on_net_only)
+    {
+        $this->container['search_on_net_only'] = $search_on_net_only;
+
+        return $this;
+    }
+
+    /**
+     * Gets wireless
+     *
+     * @return string|null
+     */
+    public function getWireless()
+    {
+        return $this->container['wireless'];
+    }
+
+    /**
+     * Sets wireless
+     *
+     * @param string|null $wireless wireless
+     *
+     * @return self
+     */
+    public function setWireless($wireless)
+    {
+        $this->container['wireless'] = $wireless;
+
+        return $this;
+    }
+
+    /**
+     * Gets tn_list
+     *
+     * @return \OpenAPI\Client\Model\PortInAvailabilityTnList|null
+     */
+    public function getTnList()
+    {
+        return $this->container['tn_list'];
+    }
+
+    /**
+     * Sets tn_list
+     *
+     * @param \OpenAPI\Client\Model\PortInAvailabilityTnList|null $tn_list tn_list
+     *
+     * @return self
+     */
+    public function setTnList($tn_list)
+    {
+        $this->container['tn_list'] = $tn_list;
 
         return $this;
     }

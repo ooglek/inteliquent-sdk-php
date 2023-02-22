@@ -61,8 +61,7 @@ class InlineResponse4253 implements ModelInterface, ArrayAccess, \JsonSerializab
       */
     protected static $openAPITypes = [
         'status_code' => 'string',
-        'status' => 'string',
-        'result' => 'string[]'
+        'status' => 'string'
     ];
 
     /**
@@ -74,8 +73,7 @@ class InlineResponse4253 implements ModelInterface, ArrayAccess, \JsonSerializab
       */
     protected static $openAPIFormats = [
         'status_code' => null,
-        'status' => null,
-        'result' => null
+        'status' => null
     ];
 
     /**
@@ -106,8 +104,7 @@ class InlineResponse4253 implements ModelInterface, ArrayAccess, \JsonSerializab
      */
     protected static $attributeMap = [
         'status_code' => 'statusCode',
-        'status' => 'status',
-        'result' => 'result'
+        'status' => 'status'
     ];
 
     /**
@@ -117,8 +114,7 @@ class InlineResponse4253 implements ModelInterface, ArrayAccess, \JsonSerializab
      */
     protected static $setters = [
         'status_code' => 'setStatusCode',
-        'status' => 'setStatus',
-        'result' => 'setResult'
+        'status' => 'setStatus'
     ];
 
     /**
@@ -128,8 +124,7 @@ class InlineResponse4253 implements ModelInterface, ArrayAccess, \JsonSerializab
      */
     protected static $getters = [
         'status_code' => 'getStatusCode',
-        'status' => 'getStatus',
-        'result' => 'getResult'
+        'status' => 'getStatus'
     ];
 
     /**
@@ -191,7 +186,6 @@ class InlineResponse4253 implements ModelInterface, ArrayAccess, \JsonSerializab
     {
         $this->container['status_code'] = $data['status_code'] ?? null;
         $this->container['status'] = $data['status'] ?? null;
-        $this->container['result'] = $data['result'] ?? null;
     }
 
     /**
@@ -255,37 +249,13 @@ class InlineResponse4253 implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets status
      *
-     * @param string|null $status Partial Success
+     * @param string|null $status Error Message:[TN is not In Service in our inventory]
      *
      * @return self
      */
     public function setStatus($status)
     {
         $this->container['status'] = $status;
-
-        return $this;
-    }
-
-    /**
-     * Gets result
-     *
-     * @return string[]|null
-     */
-    public function getResult()
-    {
-        return $this->container['result'];
-    }
-
-    /**
-     * Sets result
-     *
-     * @param string[]|null $result result
-     *
-     * @return self
-     */
-    public function setResult($result)
-    {
-        $this->container['result'] = $result;
 
         return $this;
     }

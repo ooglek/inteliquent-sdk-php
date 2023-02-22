@@ -61,7 +61,11 @@ class InlineObject102 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'tn_list' => '\OpenAPI\Client\Model\TfRespOrgTnList'
+        'customer_order_reference' => 'string',
+        'desired_due_date' => '\DateTime',
+        'quantity' => 'int',
+        'routing_label' => 'string',
+        'resp_org_id' => 'string'
     ];
 
     /**
@@ -73,7 +77,11 @@ class InlineObject102 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'tn_list' => null
+        'customer_order_reference' => null,
+        'desired_due_date' => 'date',
+        'quantity' => null,
+        'routing_label' => null,
+        'resp_org_id' => null
     ];
 
     /**
@@ -104,7 +112,11 @@ class InlineObject102 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'tn_list' => 'tnList'
+        'customer_order_reference' => 'customerOrderReference',
+        'desired_due_date' => 'desiredDueDate',
+        'quantity' => 'quantity',
+        'routing_label' => 'routingLabel',
+        'resp_org_id' => 'respOrgId'
     ];
 
     /**
@@ -114,7 +126,11 @@ class InlineObject102 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'tn_list' => 'setTnList'
+        'customer_order_reference' => 'setCustomerOrderReference',
+        'desired_due_date' => 'setDesiredDueDate',
+        'quantity' => 'setQuantity',
+        'routing_label' => 'setRoutingLabel',
+        'resp_org_id' => 'setRespOrgId'
     ];
 
     /**
@@ -124,7 +140,11 @@ class InlineObject102 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'tn_list' => 'getTnList'
+        'customer_order_reference' => 'getCustomerOrderReference',
+        'desired_due_date' => 'getDesiredDueDate',
+        'quantity' => 'getQuantity',
+        'routing_label' => 'getRoutingLabel',
+        'resp_org_id' => 'getRespOrgId'
     ];
 
     /**
@@ -185,7 +205,11 @@ class InlineObject102 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['tn_list'] = $data['tn_list'] ?? null;
+        $this->container['customer_order_reference'] = $data['customer_order_reference'] ?? null;
+        $this->container['desired_due_date'] = $data['desired_due_date'] ?? null;
+        $this->container['quantity'] = $data['quantity'] ?? null;
+        $this->container['routing_label'] = $data['routing_label'] ?? null;
+        $this->container['resp_org_id'] = $data['resp_org_id'] ?? null;
     }
 
     /**
@@ -237,25 +261,121 @@ class InlineObject102 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets tn_list
+     * Gets customer_order_reference
      *
-     * @return \OpenAPI\Client\Model\TfRespOrgTnList|null
+     * @return string|null
      */
-    public function getTnList()
+    public function getCustomerOrderReference()
     {
-        return $this->container['tn_list'];
+        return $this->container['customer_order_reference'];
     }
 
     /**
-     * Sets tn_list
+     * Sets customer_order_reference
      *
-     * @param \OpenAPI\Client\Model\TfRespOrgTnList|null $tn_list tn_list
+     * @param string|null $customer_order_reference Customer Order Reference
      *
      * @return self
      */
-    public function setTnList($tn_list)
+    public function setCustomerOrderReference($customer_order_reference)
     {
-        $this->container['tn_list'] = $tn_list;
+        $this->container['customer_order_reference'] = $customer_order_reference;
+
+        return $this;
+    }
+
+    /**
+     * Gets desired_due_date
+     *
+     * @return \DateTime|null
+     */
+    public function getDesiredDueDate()
+    {
+        return $this->container['desired_due_date'];
+    }
+
+    /**
+     * Sets desired_due_date
+     *
+     * @param \DateTime|null $desired_due_date Desired due date of the order, if quantity is more than 100, desired due date must be after 3 business days otherwise must be after next business day
+     *
+     * @return self
+     */
+    public function setDesiredDueDate($desired_due_date)
+    {
+        $this->container['desired_due_date'] = $desired_due_date;
+
+        return $this;
+    }
+
+    /**
+     * Gets quantity
+     *
+     * @return int|null
+     */
+    public function getQuantity()
+    {
+        return $this->container['quantity'];
+    }
+
+    /**
+     * Sets quantity
+     *
+     * @param int|null $quantity Required TN quantity
+     *
+     * @return self
+     */
+    public function setQuantity($quantity)
+    {
+        $this->container['quantity'] = $quantity;
+
+        return $this;
+    }
+
+    /**
+     * Gets routing_label
+     *
+     * @return string|null
+     */
+    public function getRoutingLabel()
+    {
+        return $this->container['routing_label'];
+    }
+
+    /**
+     * Sets routing_label
+     *
+     * @param string|null $routing_label New routing option to assign the toll free number; use the routingLabelSearchAssigned and routingLabelDetail operations to view your toll free routing options
+     *
+     * @return self
+     */
+    public function setRoutingLabel($routing_label)
+    {
+        $this->container['routing_label'] = $routing_label;
+
+        return $this;
+    }
+
+    /**
+     * Gets resp_org_id
+     *
+     * @return string|null
+     */
+    public function getRespOrgId()
+    {
+        return $this->container['resp_org_id'];
+    }
+
+    /**
+     * Sets resp_org_id
+     *
+     * @param string|null $resp_org_id Five character RespOrg ID for the toll-free number
+     *
+     * @return self
+     */
+    public function setRespOrgId($resp_org_id)
+    {
+        $this->container['resp_org_id'] = $resp_org_id;
 
         return $this;
     }

@@ -61,10 +61,10 @@ class TnRestoreTnRestoreTnListTnItem implements ModelInterface, ArrayAccess, \Js
       */
     protected static $openAPITypes = [
         'tn' => 'string',
-        'routing_label' => 'string',
         'tn_note' => 'string',
         'port_out_pin' => 'string',
         'trunk_group' => 'string',
+        'routing_option' => 'string',
         'remove_tn' => 'string',
         'end_user' => '\OpenAPI\Client\Model\OrderUpdateOrderUpdateTnListEndUser',
         'tn_feature' => '\OpenAPI\Client\Model\TnRestoreTnRestoreTnListTnFeature'
@@ -79,10 +79,10 @@ class TnRestoreTnRestoreTnListTnItem implements ModelInterface, ArrayAccess, \Js
       */
     protected static $openAPIFormats = [
         'tn' => null,
-        'routing_label' => null,
         'tn_note' => null,
         'port_out_pin' => null,
         'trunk_group' => null,
+        'routing_option' => null,
         'remove_tn' => null,
         'end_user' => null,
         'tn_feature' => null
@@ -116,10 +116,10 @@ class TnRestoreTnRestoreTnListTnItem implements ModelInterface, ArrayAccess, \Js
      */
     protected static $attributeMap = [
         'tn' => 'tn',
-        'routing_label' => 'routingLabel',
         'tn_note' => 'tnNote',
         'port_out_pin' => 'portOutPin',
         'trunk_group' => 'trunkGroup',
+        'routing_option' => 'routingOption',
         'remove_tn' => 'removeTn',
         'end_user' => 'endUser',
         'tn_feature' => 'tnFeature'
@@ -132,10 +132,10 @@ class TnRestoreTnRestoreTnListTnItem implements ModelInterface, ArrayAccess, \Js
      */
     protected static $setters = [
         'tn' => 'setTn',
-        'routing_label' => 'setRoutingLabel',
         'tn_note' => 'setTnNote',
         'port_out_pin' => 'setPortOutPin',
         'trunk_group' => 'setTrunkGroup',
+        'routing_option' => 'setRoutingOption',
         'remove_tn' => 'setRemoveTn',
         'end_user' => 'setEndUser',
         'tn_feature' => 'setTnFeature'
@@ -148,10 +148,10 @@ class TnRestoreTnRestoreTnListTnItem implements ModelInterface, ArrayAccess, \Js
      */
     protected static $getters = [
         'tn' => 'getTn',
-        'routing_label' => 'getRoutingLabel',
         'tn_note' => 'getTnNote',
         'port_out_pin' => 'getPortOutPin',
         'trunk_group' => 'getTrunkGroup',
+        'routing_option' => 'getRoutingOption',
         'remove_tn' => 'getRemoveTn',
         'end_user' => 'getEndUser',
         'tn_feature' => 'getTnFeature'
@@ -215,10 +215,10 @@ class TnRestoreTnRestoreTnListTnItem implements ModelInterface, ArrayAccess, \Js
     public function __construct(array $data = null)
     {
         $this->container['tn'] = $data['tn'] ?? null;
-        $this->container['routing_label'] = $data['routing_label'] ?? null;
         $this->container['tn_note'] = $data['tn_note'] ?? null;
         $this->container['port_out_pin'] = $data['port_out_pin'] ?? null;
         $this->container['trunk_group'] = $data['trunk_group'] ?? null;
+        $this->container['routing_option'] = $data['routing_option'] ?? null;
         $this->container['remove_tn'] = $data['remove_tn'] ?? null;
         $this->container['end_user'] = $data['end_user'] ?? null;
         $this->container['tn_feature'] = $data['tn_feature'] ?? null;
@@ -271,30 +271,6 @@ class TnRestoreTnRestoreTnListTnItem implements ModelInterface, ArrayAccess, \Js
     public function setTn($tn)
     {
         $this->container['tn'] = $tn;
-
-        return $this;
-    }
-
-    /**
-     * Gets routing_label
-     *
-     * @return string|null
-     */
-    public function getRoutingLabel()
-    {
-        return $this->container['routing_label'];
-    }
-
-    /**
-     * Sets routing_label
-     *
-     * @param string|null $routing_label routing_label
-     *
-     * @return self
-     */
-    public function setRoutingLabel($routing_label)
-    {
-        $this->container['routing_label'] = $routing_label;
 
         return $this;
     }
@@ -367,6 +343,30 @@ class TnRestoreTnRestoreTnListTnItem implements ModelInterface, ArrayAccess, \Js
     public function setTrunkGroup($trunk_group)
     {
         $this->container['trunk_group'] = $trunk_group;
+
+        return $this;
+    }
+
+    /**
+     * Gets routing_option
+     *
+     * @return string|null
+     */
+    public function getRoutingOption()
+    {
+        return $this->container['routing_option'];
+    }
+
+    /**
+     * Sets routing_option
+     *
+     * @param string|null $routing_option Desired routing option to assign the requested telephone number (e.g. CHCGIL24CL2_997)
+     *
+     * @return self
+     */
+    public function setRoutingOption($routing_option)
+    {
+        $this->container['routing_option'] = $routing_option;
 
         return $this;
     }

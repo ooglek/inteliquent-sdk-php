@@ -37,7 +37,7 @@ $apiInstance = new OpenAPI\Client\Api\AccountSettingsApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject132(); // \OpenAPI\Client\Model\InlineObject132
+$payload = new \OpenAPI\Client\Model\InlineObject135(); // \OpenAPI\Client\Model\InlineObject135
 
 try {
     $result = $apiInstance->accountDefaultDetailPost($payload);
@@ -51,7 +51,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject132**](../Model/InlineObject132.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject135**](../Model/InlineObject135.md)|  |
 
 ### Return type
 
@@ -99,7 +99,7 @@ $apiInstance = new OpenAPI\Client\Api\AccountSettingsApi(
     new GuzzleHttp\Client(),
     $config
 );
-$payload = new \OpenAPI\Client\Model\InlineObject131(); // \OpenAPI\Client\Model\InlineObject131
+$payload = new \OpenAPI\Client\Model\InlineObject134(); // \OpenAPI\Client\Model\InlineObject134
 
 try {
     $result = $apiInstance->accountDefaultPost($payload);
@@ -113,7 +113,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **payload** | [**\OpenAPI\Client\Model\InlineObject131**](../Model/InlineObject131.md)|  |
+ **payload** | [**\OpenAPI\Client\Model\InlineObject134**](../Model/InlineObject134.md)|  |
 
 ### Return type
 

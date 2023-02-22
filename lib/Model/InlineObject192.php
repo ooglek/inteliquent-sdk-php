@@ -61,8 +61,8 @@ class InlineObject192 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'private_key' => 'string',
-        'trunk_group_name' => 'string',
-        'test_tn' => 'string'
+        'customer_order_reference' => 'string',
+        'tn_list' => '\OpenAPI\Client\Model\IntlTnUpdateTnList'
     ];
 
     /**
@@ -74,8 +74,8 @@ class InlineObject192 implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPIFormats = [
         'private_key' => null,
-        'trunk_group_name' => null,
-        'test_tn' => null
+        'customer_order_reference' => null,
+        'tn_list' => null
     ];
 
     /**
@@ -106,8 +106,8 @@ class InlineObject192 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $attributeMap = [
         'private_key' => 'privateKey',
-        'trunk_group_name' => 'trunkGroupName',
-        'test_tn' => 'testTn'
+        'customer_order_reference' => 'customerOrderReference',
+        'tn_list' => 'tnList'
     ];
 
     /**
@@ -117,8 +117,8 @@ class InlineObject192 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $setters = [
         'private_key' => 'setPrivateKey',
-        'trunk_group_name' => 'setTrunkGroupName',
-        'test_tn' => 'setTestTn'
+        'customer_order_reference' => 'setCustomerOrderReference',
+        'tn_list' => 'setTnList'
     ];
 
     /**
@@ -128,8 +128,8 @@ class InlineObject192 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     protected static $getters = [
         'private_key' => 'getPrivateKey',
-        'trunk_group_name' => 'getTrunkGroupName',
-        'test_tn' => 'getTestTn'
+        'customer_order_reference' => 'getCustomerOrderReference',
+        'tn_list' => 'getTnList'
     ];
 
     /**
@@ -190,8 +190,8 @@ class InlineObject192 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['trunk_group_name'] = $data['trunk_group_name'] ?? null;
-        $this->container['test_tn'] = $data['test_tn'] ?? null;
+        $this->container['customer_order_reference'] = $data['customer_order_reference'] ?? null;
+        $this->container['tn_list'] = $data['tn_list'] ?? null;
     }
 
     /**
@@ -243,49 +243,49 @@ class InlineObject192 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets trunk_group_name
+     * Gets customer_order_reference
      *
      * @return string|null
      */
-    public function getTrunkGroupName()
+    public function getCustomerOrderReference()
     {
-        return $this->container['trunk_group_name'];
+        return $this->container['customer_order_reference'];
     }
 
     /**
-     * Sets trunk_group_name
+     * Sets customer_order_reference
      *
-     * @param string|null $trunk_group_name trunk_group_name
+     * @param string|null $customer_order_reference customer_order_reference
      *
      * @return self
      */
-    public function setTrunkGroupName($trunk_group_name)
+    public function setCustomerOrderReference($customer_order_reference)
     {
-        $this->container['trunk_group_name'] = $trunk_group_name;
+        $this->container['customer_order_reference'] = $customer_order_reference;
 
         return $this;
     }
 
     /**
-     * Gets test_tn
+     * Gets tn_list
      *
-     * @return string|null
+     * @return \OpenAPI\Client\Model\IntlTnUpdateTnList|null
      */
-    public function getTestTn()
+    public function getTnList()
     {
-        return $this->container['test_tn'];
+        return $this->container['tn_list'];
     }
 
     /**
-     * Sets test_tn
+     * Sets tn_list
      *
-     * @param string|null $test_tn test_tn
+     * @param \OpenAPI\Client\Model\IntlTnUpdateTnList|null $tn_list tn_list
      *
      * @return self
      */
-    public function setTestTn($test_tn)
+    public function setTnList($tn_list)
     {
-        $this->container['test_tn'] = $test_tn;
+        $this->container['tn_list'] = $tn_list;
 
         return $this;
     }

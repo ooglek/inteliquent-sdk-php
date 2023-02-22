@@ -62,8 +62,7 @@ class InlineObject170 implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'private_key' => 'string',
         'order_id' => 'int',
-        'customer_order_reference' => 'string',
-        'document' => 'object'
+        'order_note' => 'string'
     ];
 
     /**
@@ -76,8 +75,7 @@ class InlineObject170 implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPIFormats = [
         'private_key' => null,
         'order_id' => null,
-        'customer_order_reference' => null,
-        'document' => null
+        'order_note' => null
     ];
 
     /**
@@ -109,8 +107,7 @@ class InlineObject170 implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $attributeMap = [
         'private_key' => 'privateKey',
         'order_id' => 'orderId',
-        'customer_order_reference' => 'customerOrderReference',
-        'document' => 'document'
+        'order_note' => 'orderNote'
     ];
 
     /**
@@ -121,8 +118,7 @@ class InlineObject170 implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $setters = [
         'private_key' => 'setPrivateKey',
         'order_id' => 'setOrderId',
-        'customer_order_reference' => 'setCustomerOrderReference',
-        'document' => 'setDocument'
+        'order_note' => 'setOrderNote'
     ];
 
     /**
@@ -133,8 +129,7 @@ class InlineObject170 implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $getters = [
         'private_key' => 'getPrivateKey',
         'order_id' => 'getOrderId',
-        'customer_order_reference' => 'getCustomerOrderReference',
-        'document' => 'getDocument'
+        'order_note' => 'getOrderNote'
     ];
 
     /**
@@ -196,8 +191,7 @@ class InlineObject170 implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
         $this->container['order_id'] = $data['order_id'] ?? null;
-        $this->container['customer_order_reference'] = $data['customer_order_reference'] ?? null;
-        $this->container['document'] = $data['document'] ?? null;
+        $this->container['order_note'] = $data['order_note'] ?? null;
     }
 
     /**
@@ -273,49 +267,25 @@ class InlineObject170 implements ModelInterface, ArrayAccess, \JsonSerializable
     }
 
     /**
-     * Gets customer_order_reference
+     * Gets order_note
      *
      * @return string|null
      */
-    public function getCustomerOrderReference()
+    public function getOrderNote()
     {
-        return $this->container['customer_order_reference'];
+        return $this->container['order_note'];
     }
 
     /**
-     * Sets customer_order_reference
+     * Sets order_note
      *
-     * @param string|null $customer_order_reference customer_order_reference
+     * @param string|null $order_note order_note
      *
      * @return self
      */
-    public function setCustomerOrderReference($customer_order_reference)
+    public function setOrderNote($order_note)
     {
-        $this->container['customer_order_reference'] = $customer_order_reference;
-
-        return $this;
-    }
-
-    /**
-     * Gets document
-     *
-     * @return object|null
-     */
-    public function getDocument()
-    {
-        return $this->container['document'];
-    }
-
-    /**
-     * Sets document
-     *
-     * @param object|null $document document
-     *
-     * @return self
-     */
-    public function setDocument($document)
-    {
-        $this->container['document'] = $document;
+        $this->container['order_note'] = $order_note;
 
         return $this;
     }

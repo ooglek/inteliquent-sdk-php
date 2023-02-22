@@ -60,9 +60,7 @@ class InlineObject105 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'private_key' => 'string',
-        'trunk_group_name_new' => 'string',
-        'trunk_group_name_current' => 'string'
+        'private_key' => 'string'
     ];
 
     /**
@@ -73,9 +71,7 @@ class InlineObject105 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'private_key' => null,
-        'trunk_group_name_new' => null,
-        'trunk_group_name_current' => null
+        'private_key' => null
     ];
 
     /**
@@ -105,9 +101,7 @@ class InlineObject105 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        'private_key' => 'privateKey',
-        'trunk_group_name_new' => 'trunkGroupNameNew',
-        'trunk_group_name_current' => 'trunkGroupNameCurrent'
+        'private_key' => 'privateKey'
     ];
 
     /**
@@ -116,9 +110,7 @@ class InlineObject105 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        'private_key' => 'setPrivateKey',
-        'trunk_group_name_new' => 'setTrunkGroupNameNew',
-        'trunk_group_name_current' => 'setTrunkGroupNameCurrent'
+        'private_key' => 'setPrivateKey'
     ];
 
     /**
@@ -127,9 +119,7 @@ class InlineObject105 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        'private_key' => 'getPrivateKey',
-        'trunk_group_name_new' => 'getTrunkGroupNameNew',
-        'trunk_group_name_current' => 'getTrunkGroupNameCurrent'
+        'private_key' => 'getPrivateKey'
     ];
 
     /**
@@ -190,8 +180,6 @@ class InlineObject105 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(array $data = null)
     {
         $this->container['private_key'] = $data['private_key'] ?? null;
-        $this->container['trunk_group_name_new'] = $data['trunk_group_name_new'] ?? null;
-        $this->container['trunk_group_name_current'] = $data['trunk_group_name_current'] ?? null;
     }
 
     /**
@@ -205,12 +193,6 @@ class InlineObject105 implements ModelInterface, ArrayAccess, \JsonSerializable
 
         if ($this->container['private_key'] === null) {
             $invalidProperties[] = "'private_key' can't be null";
-        }
-        if ($this->container['trunk_group_name_new'] === null) {
-            $invalidProperties[] = "'trunk_group_name_new' can't be null";
-        }
-        if ($this->container['trunk_group_name_current'] === null) {
-            $invalidProperties[] = "'trunk_group_name_current' can't be null";
         }
         return $invalidProperties;
     }
@@ -247,54 +229,6 @@ class InlineObject105 implements ModelInterface, ArrayAccess, \JsonSerializable
     public function setPrivateKey($private_key)
     {
         $this->container['private_key'] = $private_key;
-
-        return $this;
-    }
-
-    /**
-     * Gets trunk_group_name_new
-     *
-     * @return string
-     */
-    public function getTrunkGroupNameNew()
-    {
-        return $this->container['trunk_group_name_new'];
-    }
-
-    /**
-     * Sets trunk_group_name_new
-     *
-     * @param string $trunk_group_name_new New display name trunk group; enter alphanumeric characters, space, and/or underscore
-     *
-     * @return self
-     */
-    public function setTrunkGroupNameNew($trunk_group_name_new)
-    {
-        $this->container['trunk_group_name_new'] = $trunk_group_name_new;
-
-        return $this;
-    }
-
-    /**
-     * Gets trunk_group_name_current
-     *
-     * @return string
-     */
-    public function getTrunkGroupNameCurrent()
-    {
-        return $this->container['trunk_group_name_current'];
-    }
-
-    /**
-     * Sets trunk_group_name_current
-     *
-     * @param string $trunk_group_name_current Current name of trunk group to be updated
-     *
-     * @return self
-     */
-    public function setTrunkGroupNameCurrent($trunk_group_name_current)
-    {
-        $this->container['trunk_group_name_current'] = $trunk_group_name_current;
 
         return $this;
     }
